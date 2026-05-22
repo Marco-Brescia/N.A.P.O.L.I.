@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000009378,"Describe this image in detail, use simple terms","The image shows a person playing with a frisbee. The person is wearing a black shirt and a blue hat with a striped pattern. They have long, curly hair. The frisbee is yellow and they are holding it with their right hand. In the background, there are people watching the game. The setting appears to be indoors, possibly at a sports event or a gathering.",4,person,0.0359,0.8265,0.0689,0.0204,0.2096,0.0888

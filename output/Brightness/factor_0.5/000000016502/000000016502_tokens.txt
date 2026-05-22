@@ -1,0 +1,1 @@
+['The', 'image', 'shows', 'a', 'sheep', 'standing', 'on', 'top', 'of', 'a', 'rocky', 'hill', '.', 'The', 'sky', 'is', 'blue', 'with', 'some', 'clouds', ',', 'and', 'the', 'sheep', 'is', 'facing', 'the', 'camera', '.', 'The', 'hill', 'is', 'rocky', 'and', 'has', 'some', 'grass', 'on', 'it', '.', '<|im_end|>']

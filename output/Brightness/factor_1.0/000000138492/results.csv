@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000138492,"Describe this image in detail, use simple terms","The image shows a dog in mid-air, jumping to catch a frisbee. The dog has a black and white coat, and it appears to be a Border Collie. The frisbee is purple and has a design on it. The background is a grassy field.",4,dog,0.312,0.7971,0.4485,0.3185,0.373,0.048

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","The image shows a young child sitting on a horse. The child is wearing a black helmet and a plaid shirt. The horse has a saddle on it, and the child is holding onto the reins. The background features trees and a cloudy sky.",9,horse,0.2211,0.5839,0.3208,0.1989,0.2406,0.2034
