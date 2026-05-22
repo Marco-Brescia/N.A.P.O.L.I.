@@ -219,4 +219,4 @@ __marimo__/
 
 
 .DS_Store
-.tex
+*.tex
