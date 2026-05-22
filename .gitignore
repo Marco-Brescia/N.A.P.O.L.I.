@@ -221,3 +221,10 @@ __marimo__/
 .DS_Store
 *.tex
 .vscode/
+output/
+images_perturbed/
+masks/
+heatmaps/
+*.csv
+*.pt
+*.pth
