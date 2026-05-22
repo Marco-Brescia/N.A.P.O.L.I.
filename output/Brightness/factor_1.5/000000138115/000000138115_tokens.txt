@@ -1,1 +1,0 @@
-['The', 'image', 'shows', 'a', 'person', 'holding', 'an', 'orange', '.', 'The', 'person', 'has', 'a', 'surprised', 'or', 'shocked', 'expression', 'on', 'their', 'face', ',', 'with', 'wide', 'eyes', 'and', 'a', 'slightly', 'open', 'mouth', '.', 'They', 'are', 'wearing', 'a', 'dark', 'jacket', '.', 'The', 'background', 'is', 'plain', 'and', 'light', '-colored', '.', '<|im_end|>']

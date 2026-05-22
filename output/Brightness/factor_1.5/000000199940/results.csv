@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000199940,"Describe this image in detail, use simple terms","In the image, there is a black cat standing next to a bottle of wine. The cat has a green bottle of wine in front of it, which has a label that says ""NOTRO."" The cat is looking at the bottle with a curious expression. The background is a bit blurry, but it appears to be a kitchen or a similar indoor setting.",8,cat,0.2885,0.8419,0.4298,0.2837,0.4473,0.0311

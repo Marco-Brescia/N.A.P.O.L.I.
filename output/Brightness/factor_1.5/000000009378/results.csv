@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000009378,"Describe this image in detail, use simple terms","The image shows a person playing with a frisbee. The person is wearing a black shirt and a blue hat. They are in the middle of throwing the frisbee, which is yellow and appears to be in motion. The background shows a crowd of people watching the game. The overall setting looks like a casual outdoor event or a game.",4,person,0.0433,0.7959,0.0822,0.0334,0.1894,0.0886

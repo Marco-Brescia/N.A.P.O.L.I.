@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000138492,"Describe this image in detail, use simple terms","The image shows a dog standing on its hind legs and catching a purple frisbee in its mouth. The dog has a black and white coat, and it appears to be a Border Collie. The background is a grassy field, and the dog is focused on the frisbee, which is in mid-air.",4,dog,0.3265,0.8203,0.4671,0.336,0.3978,0.0463

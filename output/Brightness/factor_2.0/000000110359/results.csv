@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is facing upwards, and you can see the sun shining brightly behind it. The plane has two wings and a tail fin. The sky is clear and blue, and the plane appears to be in good condition.",4,plane,0.0543,0.5391,0.0987,0.0491,0.0468,0.1658

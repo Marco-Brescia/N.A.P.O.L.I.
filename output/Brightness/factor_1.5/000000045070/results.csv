@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000045070,"Describe this image in detail, use simple terms",The image shows a young child sitting on a horse. The child is wearing a black helmet and a pink and white checkered shirt. The child is also wearing jeans and has their feet on the saddle. The horse is wearing a purple saddle blanket. The background shows a forest with green trees.,9,horse,0.3466,0.5093,0.4125,0.3428,0.2867,0.1787
