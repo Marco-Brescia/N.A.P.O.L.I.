@@ -109,6 +109,7 @@ def run_inference_thread(img): # Funzione per eseguire l'inferenza in un thread 
 
             # Cicla sulle maschere per lavorare solo sul token target
             for mask in masks:
+                hm_sum = np.zeros(ctx["vision_shape"], dtype=np.float32)
                 category = mask[0]
                 target_mask = mask[1]
                 local_logs.append(f"Categoria maschera: {category} per immagine {img['id']}")
@@ -148,8 +149,10 @@ def run_inference_thread(img): # Funzione per eseguire l'inferenza in un thread 
                         )
                         temp_paths.append((l_idx, Path(tmp_path)))
                         
-                        if l_idx == n_layers - 1:
-                            final_heatmap_array = hm_array
+                        metrics = compute_all_metrics(hm_array, target_mask)
+
+                        if round(metrics["io_ratio"], 4) > 0.2: 
+                            hm_sum += hm_array
 
                     # Creazione grid finale con tutte le heatmap
                     _make_layer_grid_for_token(
@@ -174,11 +177,13 @@ def run_inference_thread(img): # Funzione per eseguire l'inferenza in un thread 
                             target_mask = (target_mask > 0).astype(np.uint8)
                         except Exception as e:
                             local_logs.append(f"Errore rotazione: {e}")
+                    
+                    final_heatmap_array = (_pnorm(hm_sum) * 255.0).astype(np.uint8)
 
                     metrics = compute_all_metrics(final_heatmap_array, target_mask)
 
-                    debug_path = os.path.join(img_out_dir, HEAT_DIR, f"{img['id']}_{category}_debug_thresholded.jpg")
-                    save_thresholded_viz(final_heatmap_array, img['path'], debug_path, target_mask.shape)
+                    thr_out_path = os.path.join(img_out_dir, HEAT_DIR, f"{img['id']}_{category}_thresholded.jpg")
+                    save_thresholded_viz(final_heatmap_array, img['path'], thr_out_path, target_mask.shape)
 
                     results_per_img.append({
                         "img_id": img['id'],
