@@ -192,7 +192,6 @@ def run_inference_thread(img): # Funzione per eseguire l'inferenza in un thread 
                         "iou_hard": round(metrics["iou_hard"], 4),
                         "io_ratio": round(metrics["io_ratio"], 4),
                         "wdp": round(metrics["wdp"], 4),
-                        "precision": round(metrics["precision"], 4)
                     })
                 else:
                     local_logs.append(f"Errore: Il modello non ha generato il token '{category}' per l'immagine {img['id']}.")
@@ -200,7 +199,7 @@ def run_inference_thread(img): # Funzione per eseguire l'inferenza in un thread 
             # Salvataggio metriche in CSV
             if results_per_img:
                 csv_path = os.path.join(img_out_dir, "results.csv")
-                fieldnames = ["img_id", "prompt", "output", "target_token_id", "readable_token", "obj_iou", "func_iou", "f1_iou", "iou_hard", "io_ratio", "wdp", "precision"]
+                fieldnames = ["img_id", "prompt", "output", "target_token_id", "readable_token", "obj_iou", "func_iou", "f1_iou", "iou_hard", "io_ratio", "wdp"]
                 
                 with open(csv_path, mode='w', newline='', encoding='utf-8') as f:
                     writer = csv.DictWriter(f, fieldnames=fieldnames)

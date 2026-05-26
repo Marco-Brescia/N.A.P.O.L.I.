@@ -234,11 +234,10 @@ def metric_iou_hard(heatmap: np.ndarray, mask: np.ndarray,
     Mb = mask.astype(np.uint8)
     return float((Ab & Mb).sum()) / float((Ab | Mb).sum() + eps)
 
-def metric_io_ratio(heatmap: np.ndarray, mask: np.ndarray, noise_floor: float = 0.15, eps: float = 1e-12) -> float:
+def metric_io_ratio(heatmap: np.ndarray, mask: np.ndarray, eps: float = 1e-12) -> float:
     """Fraction of heatmap mass inside GT mask, ignoring Softmax dust."""
     h, w = mask.shape
     A = cv2.resize(heatmap, (w, h))
-    A[A < noise_floor] = 0.0
     _, pred = compute_threashold_pred(A, mask, threshold=0.66)
     
     M = mask.astype(np.float32)
@@ -281,7 +280,7 @@ def compute_all_metrics(heatmap: np.ndarray, mask: np.ndarray) -> dict:
     thresh = 0.66
     obj_iou, fg_thresh = metric_obj_iou_and_thresh(heatmap, mask, threshold=thresh)
     hard = metric_iou_hard(heatmap, mask, threshold=thresh)
-    io   = metric_io_ratio(heatmap, mask, noise_floor=0.15)
+    io   = metric_io_ratio(heatmap, mask)
     wdp  = metric_wdp(heatmap, mask)
     precision = metric_precision_threshold(heatmap, mask, threshold=thresh)
     
