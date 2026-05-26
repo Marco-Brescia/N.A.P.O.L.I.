@@ -33,6 +33,12 @@ from scipy.ndimage import distance_transform_edt as _edt
 
 warnings.filterwarnings("ignore")
 
+def compute_threashold_pred(heatmap: np.ndarray, mask: np.ndarray, threshold: float = 0.66) -> tuple:
+    """Calcola la soglia Otsu usata dall'oggetto (serve per il func_iou)."""
+    thr = int(255 * threshold)
+    t, pred = cv2.threshold(heatmap, thr, 255, cv2.THRESH_BINARY)
+    return t, pred
+
 
 # ---------------------------------------------------------------------------
 # Spatial config loading
@@ -198,11 +204,11 @@ def _pnorm(x: np.ndarray, lo=1.0, hi=99.0) -> np.ndarray:
     return np.clip((x - vlo) / d, 0.0, 1.0)
 
 
-def metric_obj_iou_and_thresh(heatmap: np.ndarray, mask: np.ndarray):
+def metric_obj_iou_and_thresh(heatmap: np.ndarray, mask: np.ndarray, threshold: float = 0.66) -> tuple:
     """Calcola sia l'IoU che la soglia Otsu usata dall'oggetto (serve per il func_iou)."""
     h, w = mask.shape
     hm = cv2.resize(heatmap, (w, h))
-    t, pred = cv2.threshold(hm, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+    t, pred = compute_threashold_pred(hm, mask, threshold)
     gt = mask.astype(np.uint8)
     if gt.sum() == 0:
         return float("nan"), t
@@ -219,44 +225,65 @@ def metric_func_iou(heatmap: np.ndarray, fg_thresh: float) -> float:
 
 
 def metric_iou_hard(heatmap: np.ndarray, mask: np.ndarray,
-                    thr: float = 0.5, eps: float = 1e-12) -> float:
+                    threshold: float = 0.66, eps: float = 1e-12) -> float:
     """Hard IoU at fixed threshold after percentile normalisation."""
-    A = _pnorm(heatmap)
     h, w = mask.shape
-    A = cv2.resize(A, (w, h))
-    Ab = (A >= thr).astype(np.uint8)
+    A = cv2.resize(heatmap, (w, h))
+    t, pred = compute_threashold_pred(A, mask, threshold)
+    Ab = (pred >= t).astype(np.uint8)
     Mb = mask.astype(np.uint8)
     return float((Ab & Mb).sum()) / float((Ab | Mb).sum() + eps)
 
-
-def metric_io_ratio(heatmap: np.ndarray, mask: np.ndarray, eps: float = 1e-12) -> float:
-    """Fraction of heatmap mass inside GT mask."""
-    A = _pnorm(heatmap).astype(np.float32)
+def metric_io_ratio(heatmap: np.ndarray, mask: np.ndarray, noise_floor: float = 0.15, eps: float = 1e-12) -> float:
+    """Fraction of heatmap mass inside GT mask, ignoring Softmax dust."""
     h, w = mask.shape
-    A = cv2.resize(A, (w, h))
+    A = cv2.resize(heatmap, (w, h))
+    A[A < noise_floor] = 0.0
+    _, pred = compute_threashold_pred(A, mask, threshold=0.66)
+    
     M = mask.astype(np.float32)
-    t = float(A.sum())
-    return float((A * M).sum()) / (t + eps) if t > eps else 0.0
+    t = float(pred.sum())
+    
+    return float((pred * M).sum()) / (t + eps) if t > eps else 0.0
 
 
 def metric_wdp(heatmap: np.ndarray, mask: np.ndarray, eps: float = 1e-12) -> float:
     """Distance-weighted penalty — activation outside GT mask."""
-    A = _pnorm(heatmap).astype(np.float32)
     h, w = mask.shape
-    A = cv2.resize(A, (w, h))
+    A = cv2.resize(heatmap, (w, h))
+    _, pred = compute_threashold_pred(A, mask, threshold=0.66)
     M = (mask > 0).astype(np.uint8)
-    t = float(A.sum())
+    t = float(pred.sum())
     if t < eps:
         return 0.0
     d = _edt(1 - M).astype(np.float32) / max(math.sqrt(h * h + w * w), eps)
     return float((A * (1 - M.astype(np.float32)) * d).sum()) / (t + eps)
 
 
+def metric_precision_threshold(heatmap: np.ndarray, mask: np.ndarray, threshold: float = 0.66, eps: float = 1e-12) -> float:
+    """Precision (Focus) at fixed threshold: Intersezione / Area Totale Guardata."""
+    h, w = mask.shape
+    A = cv2.resize(heatmap, (w, h))
+    
+    _, pred = compute_threashold_pred(A, mask, threshold)
+
+    Ab = (pred > 0).astype(np.uint8)
+    Mb = (mask > 0).astype(np.uint8)
+    
+    intersection = (Ab & Mb).sum()
+    
+    total_attention = Ab.sum()
+    
+    # Ritorna il rapporto
+    return float(intersection) / float(total_attention + eps) if total_attention > 0 else 0.0
+
 def compute_all_metrics(heatmap: np.ndarray, mask: np.ndarray) -> dict:
-    obj_iou, fg_thresh = metric_obj_iou_and_thresh(heatmap, mask)
-    hard = metric_iou_hard(heatmap, mask)
-    io   = metric_io_ratio(heatmap, mask)
+    thresh = 0.66
+    obj_iou, fg_thresh = metric_obj_iou_and_thresh(heatmap, mask, threshold=thresh)
+    hard = metric_iou_hard(heatmap, mask, threshold=thresh)
+    io   = metric_io_ratio(heatmap, mask, noise_floor=0.15)
     wdp  = metric_wdp(heatmap, mask)
+    precision = metric_precision_threshold(heatmap, mask, threshold=thresh)
     
     # Calcoliamo le metriche classiche di eval.py
     func = metric_func_iou(heatmap, fg_thresh)
@@ -272,7 +299,8 @@ def compute_all_metrics(heatmap: np.ndarray, mask: np.ndarray) -> dict:
         "io_ratio": io, 
         "wdp": wdp, 
         "func_iou": func, 
-        "f1_iou": f1
+        "f1_iou": f1,
+        "precision": precision
     }
 
 

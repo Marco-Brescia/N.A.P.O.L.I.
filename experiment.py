@@ -23,8 +23,8 @@ from new_eval import (
 )
 from demo import _make_layer_grid_for_token
 
-def save_otsu_debug_viz(heatmap: np.ndarray, orig_img_path: str, save_path: str, mask_shape: tuple): #TO DO: refactoring in funzione a parte, è un po' incasinata
-    """Genera l'immagine a 3 pannelli (Originale | Heatmap | Maschera Otsu in Rosso)"""
+def save_thresholded_viz(heatmap: np.ndarray, orig_img_path: str, save_path: str, mask_shape: tuple, threshold: float = 0.66):
+    """Genera l'immagine a 3 pannelli (Originale | Heatmap | Maschera > 66% in Rosso)"""
     h, w = mask_shape[:2]
     
     orig_bgr = cv2.imread(orig_img_path)
@@ -35,29 +35,28 @@ def save_otsu_debug_viz(heatmap: np.ndarray, orig_img_path: str, save_path: str,
     hm_norm = _pnorm(hm_resized)
     hm_8u = (hm_norm * 255).astype(np.uint8)
 
-    t_val, pred = cv2.threshold(hm_8u, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+    t_val = int(255 * threshold)  # 168
+    _, pred = cv2.threshold(hm_8u, t_val, 255, cv2.THRESH_BINARY)
     
-    if pred.sum() == 0: return
-
     heatmap_color = cv2.applyColorMap(hm_8u, cv2.COLORMAP_JET)
     heatmap_overlay = cv2.addWeighted(heatmap_color, 0.6, orig_bgr, 0.4, 0)
 
-    otsu_overlay = orig_bgr.copy()
-    otsu_overlay[pred == 255] = [0, 0, 255]
-    otsu_overlay = cv2.addWeighted(otsu_overlay, 0.6, orig_bgr, 0.4, 0)
+    thresh_overlay = orig_bgr.copy()
+    thresh_overlay[pred == 255] = [0, 0, 255]
+    thresh_overlay = cv2.addWeighted(thresh_overlay, 0.6, orig_bgr, 0.4, 0)
     
-    cv2.putText(otsu_overlay, f"Soglia: {int(t_val)}", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255,255,255), 2, cv2.LINE_AA)
+    cv2.putText(thresh_overlay, f"Soglia: {t_val} ({threshold*100:.0f}%)", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255,255,255), 2, cv2.LINE_AA)
 
-    debug_vis = np.hstack((orig_bgr, heatmap_overlay, otsu_overlay))
+    debug_vis = np.hstack((orig_bgr, heatmap_overlay, thresh_overlay))
     
     Path(save_path).parent.mkdir(parents=True, exist_ok=True)
     cv2.imwrite(str(save_path), debug_vis)
 
 start_process_time = time.time()
 
-IMAGES_DIR = "images_perturbed"
+IMAGES_DIR = "imgs"
 MASKS_DIR  = "masks"
-OUT_DIR    = "output"
+OUT_DIR    = "out_example"
 HEAT_DIR   = "heatmaps"
 
 os.makedirs(OUT_DIR, exist_ok=True)
@@ -178,9 +177,9 @@ def run_inference_thread(img): # Funzione per eseguire l'inferenza in un thread 
 
                     metrics = compute_all_metrics(final_heatmap_array, target_mask)
 
-                    debug_path = os.path.join(img_out_dir, HEAT_DIR, f"{img['id']}_{category}_debug_otsu.jpg")
-                    save_otsu_debug_viz(final_heatmap_array, img['path'], debug_path, target_mask.shape)
-                    
+                    debug_path = os.path.join(img_out_dir, HEAT_DIR, f"{img['id']}_{category}_debug_thresholded.jpg")
+                    save_thresholded_viz(final_heatmap_array, img['path'], debug_path, target_mask.shape)
+
                     results_per_img.append({
                         "img_id": img['id'],
                         "prompt": PROMPT.replace('\n', ' ').strip(),
@@ -192,7 +191,8 @@ def run_inference_thread(img): # Funzione per eseguire l'inferenza in un thread 
                         "f1_iou": round(metrics["f1_iou"], 4),
                         "iou_hard": round(metrics["iou_hard"], 4),
                         "io_ratio": round(metrics["io_ratio"], 4),
-                        "wdp": round(metrics["wdp"], 4)
+                        "wdp": round(metrics["wdp"], 4),
+                        "precision": round(metrics["precision"], 4)
                     })
                 else:
                     local_logs.append(f"Errore: Il modello non ha generato il token '{category}' per l'immagine {img['id']}.")
@@ -200,7 +200,7 @@ def run_inference_thread(img): # Funzione per eseguire l'inferenza in un thread 
             # Salvataggio metriche in CSV
             if results_per_img:
                 csv_path = os.path.join(img_out_dir, "results.csv")
-                fieldnames = ["img_id", "prompt", "output", "target_token_id", "readable_token", "obj_iou", "func_iou", "f1_iou", "iou_hard", "io_ratio", "wdp"]
+                fieldnames = ["img_id", "prompt", "output", "target_token_id", "readable_token", "obj_iou", "func_iou", "f1_iou", "iou_hard", "io_ratio", "wdp", "precision"]
                 
                 with open(csv_path, mode='w', newline='', encoding='utf-8') as f:
                     writer = csv.DictWriter(f, fieldnames=fieldnames)
