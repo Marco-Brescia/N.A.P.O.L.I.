@@ -224,7 +224,7 @@ __marimo__/
 output/
 images_perturbed/
 extracted_heatmaps/
-heatmaps/
-*.csv
+output/*/heatmaps/
+output/*.csv
 *.pt
 *.pth
