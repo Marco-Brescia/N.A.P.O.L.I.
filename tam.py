@@ -163,8 +163,8 @@ def compile_latex_to_jpg(latex_code, path='word_colors.pdf', delete_aux_files=Tr
     path = Path(path)
     os.makedirs(path.parent, exist_ok=True)
 
-    with open(path.with_suffix(".tex"), 'w') as f:
-        f.write(latex_code)
+    # with open(path.with_suffix(".tex"), 'w') as f:
+    #    f.write(latex_code)
 
     try:
         res_code = subprocess.run(['xelatex', '--output-directory', path.parent, path.with_suffix(".tex")], \
@@ -313,11 +313,11 @@ def multimodal_process(raw_img, vision_shape, img_scores, txt_scores, txts, cand
         try:
             txt_map = vis_text(txts, txt_scores, candidates, candi_scores, vis_token_idx, path=img_save_fn, font=r'{5pt}{6pt}')
         except:
-            print('Skip text visualization, please check the installation of texlive-xetex.')
+            #print('Skip text visualization, please check the installation of texlive-xetex.')
             return out_img, img_map
         
         if not isinstance(txt_map, np.ndarray):
-            print('Skip txt visualization, please check weather the text special character compatible with LaTeX.')
+            #print('Skip txt visualization, please check weather the text special character compatible with LaTeX.')
             return out_img, img_map
 
         # concat multimodal vis
@@ -352,11 +352,11 @@ def multimodal_process(raw_img, vision_shape, img_scores, txt_scores, txts, cand
         try:
             txt_map = vis_text(txts, txt_scores, candidates, candi_scores, vis_token_idx, path=img_save_fn)
         except:
-            print('Skip text visualization, please check the installation of texlive-xetex.')
+            #print('Skip text visualization, please check the installation of texlive-xetex.')
             return out_img, img_scores
 
         if not isinstance(txt_map, np.ndarray):
-            print('Skip txt visualization, please check weather the text special character compatible with LaTeX.')
+            #print('Skip txt visualization, please check weather the text special character compatible with LaTeX.')
             return out_img, img_scores
 
         txt_map = cv2.resize(txt_map, (w, int(float(txt_map.shape[0]) / float(txt_map.shape[1]) * w)))
@@ -388,11 +388,11 @@ def multimodal_process(raw_img, vision_shape, img_scores, txt_scores, txts, cand
         try:
             txt_map = vis_text(txts, txt_scores, candidates, candi_scores, vis_token_idx, path=img_save_fn, font=r'{5pt}{6pt}')
         except:
-            print('Skip text visualization, please check the installation of texlive-xetex.')
+            #print('Skip text visualization, please check the installation of texlive-xetex.')
             return out_img, img_scores
 
         if not isinstance(txt_map, np.ndarray):
-            print('Skip txt visualization, please check weather the text special character compatible with LaTeX.')
+            #print('Skip txt visualization, please check weather the text special character compatible with LaTeX.')
             return out_img, img_scores
 
         txt_map = cv2.resize(txt_map, (int(w * b), int(float(txt_map.shape[0]) / float(txt_map.shape[1]) * w * b)))
