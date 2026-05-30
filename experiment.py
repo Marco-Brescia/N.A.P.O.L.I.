@@ -1,14 +1,18 @@
 import os
 import cv2
 import csv
-import concurrent.futures
+import ast
+import time
+import math
+import torch
 import threading
 import numpy as np
-os.environ["TOKENIZERS_PARALLELISM"] = "false"
-import torch
+import concurrent.futures
 from pathlib import Path
-import time
-import ast
+from collections import defaultdict
+from PIL import Image, ImageDraw, ImageFont
+
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 from tam import TAM
 from new_eval import (
@@ -21,320 +25,405 @@ from new_eval import (
     load_model, 
     run_inference,
 )
-from demo import _make_layer_grid_for_token
 
-def save_thresholded_viz(heatmap: np.ndarray, orig_img_path: str, save_path: str, mask_shape: tuple, threshold: float = 0.66):
-    """Genera l'immagine a 3 pannelli (Originale | Heatmap | Maschera > 66% in Rosso)"""
+SOGLIA_METRICA = 0.2  # Soglia minima per considerare un layer rilevante nell'accumulatore globale
+
+# ---------------------------------------------------------------------------
+# Funzioni di Supporto
+# ---------------------------------------------------------------------------
+
+def find_target_tokens(generated_tokens_lower: list, target_category: str) -> list:
+    """
+    Cerca il target nei token:
+    1. Match esatto di un singolo token (priorità).
+    2. Unione di più token contigui (es. 'gir' + 'affe' == 'giraffe').
+    """
+    target_clean = target_category.replace(' ', '').replace('-', '').replace('_', '').lower()
+    tokens_clean = [t.replace(' ', '').replace('-', '').replace('_', '') for t in generated_tokens_lower]
+    
+    # Match Esatto
+    if target_clean in tokens_clean:
+        return [tokens_clean.index(target_clean)]
+        
+    # Match Contiguo (Sub-words)
+    for i in range(len(tokens_clean)):
+        current_aggregated_str = ""
+        for j in range(i, len(tokens_clean)):
+            current_aggregated_str += tokens_clean[j]
+            
+            if current_aggregated_str == target_clean:
+                return list(range(i, j + 1))
+            
+            if len(current_aggregated_str) > len(target_clean):
+                break
+                
+            if not target_clean.startswith(current_aggregated_str):
+                break
+                
+    return [] 
+
+def save_thresholded_viz(heatmap_array: np.ndarray, original_img_path: str, save_path: str, mask_shape: tuple, threshold: float = 0.66):
+    """Genera l'immagine a 3 pannelli (Originale | Heatmap | Maschera sogliata in Rosso)"""
     h, w = mask_shape[:2]
     
-    orig_bgr = cv2.imread(orig_img_path)
-    if orig_bgr is None: return
-    orig_bgr = cv2.resize(orig_bgr, (w, h))
+    orig_bgr_img = cv2.imread(original_img_path)
+    if orig_bgr_img is None: 
+        return
+    orig_bgr_img = cv2.resize(orig_bgr_img, (w, h))
 
-    hm_resized = cv2.resize(heatmap, (w, h))
-    hm_norm = _pnorm(hm_resized)
-    hm_8u = (hm_norm * 255).astype(np.uint8)
+    heatmap_resized = cv2.resize(heatmap_array, (w, h))
+    heatmap_normalized = _pnorm(heatmap_resized)
+    heatmap_8bit = (heatmap_normalized * 255).astype(np.uint8)
 
-    t_val = int(255 * threshold)  # 168
-    _, pred = cv2.threshold(hm_8u, t_val, 255, cv2.THRESH_BINARY)
+    threshold_value = int(255 * threshold)
+    _, binary_prediction = cv2.threshold(heatmap_8bit, threshold_value, 255, cv2.THRESH_BINARY)
     
-    heatmap_color = cv2.applyColorMap(hm_8u, cv2.COLORMAP_JET)
-    heatmap_overlay = cv2.addWeighted(heatmap_color, 0.6, orig_bgr, 0.4, 0)
+    heatmap_color_map = cv2.applyColorMap(heatmap_8bit, cv2.COLORMAP_JET)
+    heatmap_overlay = cv2.addWeighted(heatmap_color_map, 0.6, orig_bgr_img, 0.4, 0)
 
-    thresh_overlay = orig_bgr.copy()
-    thresh_overlay[pred == 255] = [0, 0, 255]
-    thresh_overlay = cv2.addWeighted(thresh_overlay, 0.6, orig_bgr, 0.4, 0)
+    threshold_overlay = orig_bgr_img.copy()
+    threshold_overlay[binary_prediction == 255] = [0, 0, 255]
+    threshold_overlay = cv2.addWeighted(threshold_overlay, 0.6, orig_bgr_img, 0.4, 0)
     
-    cv2.putText(thresh_overlay, f"Soglia: {t_val} ({threshold*100:.0f}%)", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255,255,255), 2, cv2.LINE_AA)
+    cv2.putText(threshold_overlay, f"Soglia: {threshold_value} ({threshold*100:.0f}%)", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255,255,255), 2, cv2.LINE_AA)
 
-    debug_vis = np.hstack((orig_bgr, heatmap_overlay, thresh_overlay))
+    final_debug_visualization = np.hstack((orig_bgr_img, heatmap_overlay, threshold_overlay))
     
     Path(save_path).parent.mkdir(parents=True, exist_ok=True)
-    cv2.imwrite(str(save_path), debug_vis)
+    cv2.imwrite(str(save_path), final_debug_visualization)
 
-start_process_time = time.time()
 
-IMAGES_DIR = "imgs"
-MASKS_DIR  = "masks"
-OUT_DIR    = "out_example"
-HEAT_DIR   = "heatmaps"
+def _make_layer_grid_in_memory(layer_images, token_label, out_path, cols=8, pad=8, label_h=22, bg=(0,0,0), fg=(255,255,255)):
+    """Crea una griglia PIL elaborando direttamente array OpenCV dalla RAM, senza salvare file intermedi."""
+    tiles = []
+    for layer_idx, img_cv2 in layer_images:
+        im = None
+        if img_cv2 is not None:
+            # Converte da BGR (OpenCV) a RGB (PIL) in memoria
+            img_rgb = cv2.cvtColor(img_cv2, cv2.COLOR_BGR2RGB)
+            im = Image.fromarray(img_rgb)
+        tiles.append((layer_idx, im))
 
-os.makedirs(OUT_DIR, exist_ok=True)
-os.makedirs(MASKS_DIR, exist_ok=True)
-
-PROMPT = "Describe this image in detail, use simple terms"
-
-print_lock = threading.Lock()
-inference_lock = threading.Lock()
-
-imgs = []
-
-def run_inference_thread(img): # Funzione per eseguire l'inferenza in un thread separato, con gestione di errori
-    masks = grouped_masks.get(img['id'], [])
-    
-    if len(masks) == 0:
-        with print_lock:
-            print(f"Immagine ID: {img['id']} - Cartella: {img['folder']} - Zero maschere trovate. Skippata.")
-            print("-" * 60)
+    valid = [im for _, im in tiles if im is not None]
+    if not valid:
         return
         
-    # Creazione ON THE FLY della cartella per questa immagine
-    img_out_dir = os.path.join(OUT_DIR, img['folder'], img['id'])
-    os.makedirs(os.path.join(img_out_dir, HEAT_DIR), exist_ok=True)
+    tw = max(im.size[0] for im in valid)
+    th = max(im.size[1] for im in valid)
+    resized = [(li, im.resize((tw,th), Image.BILINEAR) if im and im.size!=(tw,th) else im) for li, im in tiles]
+
+    rows = math.ceil(len(resized) / cols)
+    W = cols*tw + (cols+1)*pad
+    H = rows*(th+label_h) + (rows+1)*pad
+    canvas = Image.new("RGB", (W, H), bg)
+    draw   = ImageDraw.Draw(canvas)
+    
+    try: font = ImageFont.load_default()
+    except Exception: font = None
+
+    for i, (li, im) in enumerate(resized):
+        r, c = i // cols, i % cols
+        x0 = pad + c*(tw+pad); y0 = pad + r*(th+label_h+pad)
+        draw.rectangle([x0, y0, x0+tw, y0+label_h], fill=bg)
+        draw.text((x0+4, y0+4), f"L{li}", fill=fg, font=font)
+        if im:
+            canvas.paste(im, (x0, y0+label_h))
+        else:
+            draw.rectangle([x0, y0+label_h, x0+tw, y0+label_h+th], outline=fg)
+
+    header_h = 30
+    out_img = Image.new("RGB", (W, H+header_h), bg)
+    out_img.paste(canvas, (0, header_h))
+    draw2 = ImageDraw.Draw(out_img)
+    draw2.text((pad, 7), f"token: {token_label[:70]}", fill=fg, font=font)
+    
+    Path(out_path).parent.mkdir(parents=True, exist_ok=True)
+    out_img.save(str(out_path), quality=95)
+
+
+# ---------------------------------------------------------------------------
+# Core Inference Logic (Thread)
+# ---------------------------------------------------------------------------
+
+def run_inference_thread(image_task: dict): 
+    image_id = image_task['id']
+    target_masks = grouped_masks.get(image_id, [])
+    
+    if not target_masks:
+        with print_lock:
+            print(f"Immagine ID: {image_id} - Cartella: {image_task['folder']} - Zero maschere trovate. Skippata.\n{'-'*60}")
+        return
         
-    tentativo = 1
+    image_output_dir = os.path.join(OUT_DIR, image_task['folder'], image_id)
+    heatmaps_output_dir = os.path.join(image_output_dir, HEAT_DIR)
+    os.makedirs(heatmaps_output_dir, exist_ok=True)
+        
+    attempt = 1
     
     while True:
-        local_logs = []
-        local_logs.append(f"Immagine ID: {img['id']} - Cartella: {img['folder']} - Numero di maschere: {len(masks)} [Tentativo {tentativo}]")
-        
-        ctx = None
+        thread_logs = [f"Immagine ID: {image_id} - Cartella: {image_task['folder']} - Numero maschere: {len(target_masks)} [Tentativo {attempt}]"]
+        inference_context = None
 
         try:
-            results_per_img = []
+            results_for_csv = []
 
-            # Inferenza sincronizzata
+            # Inferenza sincronizzata per evitare crash CUDA
             with inference_lock:
-                ctx = run_inference(model, processor, img['path'], PROMPT, model_type) 
+                inference_context = run_inference(model, processor, image_task['path'], PROMPT, model_type) 
             
-            token_labels_lower = [label.replace('Ġ', '').replace(' ', '').replace('\u2581', '').strip().lower() for label in ctx['token_labels']]
+            clean_token_labels = [label.replace('Ġ', '').replace(' ', '').replace(' ', '').strip().lower() for label in inference_context['token_labels']]
 
-            # Salvataggio token labels
-            token_txt_path = os.path.join(img_out_dir, f"{img['id']}_tokens.txt")
-            with open(token_txt_path, "w", encoding="utf-8") as f_tok:
-                f_tok.write(str(ctx['token_labels']))
-                local_logs.append(f"Token labels salvati in: {token_txt_path}")
+            # Salvataggio token labels testuali
+            tokens_text_path = os.path.join(image_output_dir, f"{image_id}_tokens.txt")
+            with open(tokens_text_path, "w", encoding="utf-8") as f_tok:
+                f_tok.write(str(inference_context['token_labels']))
+                thread_logs.append(f"Token labels salvati in: {tokens_text_path}")
 
-            n_layers = ctx["n_layers"]
+            total_layers = inference_context["n_layers"]
 
-            # Cicla sulle maschere per lavorare solo sul token target
-            for mask in masks:
-                hm_sum = np.zeros(ctx["vision_shape"], dtype=np.float32)
-                category = mask[0]
-                target_mask = mask[1]
-                local_logs.append(f"Categoria maschera: {category} per immagine {img['id']}")
+            # Processamento per singola maschera (oggetto)
+            for category_name, binary_mask in target_masks:
+                global_heatmap_accumulator = np.zeros(inference_context["vision_shape"], dtype=np.float32)
+                thread_logs.append(f"Valutazione maschera: {category_name} per immagine {image_id}")
                 
-                token_id = None
+                matched_token_ids = find_target_tokens(clean_token_labels, category_name)
                 
-                # Se trova il token continua...
-                if category in token_labels_lower:
-                    local_logs.append(f"Token '{category}' trovato! Generazione della GRIGLIA in corso...")
-                    token_id = token_labels_lower.index(category)
+                if matched_token_ids:
+                    thread_logs.append(f"Token '{category_name}' trovato! Generazione GRIGLIA in corso...")
                     
-                    heatmap_path = os.path.join(img_out_dir, HEAT_DIR, f"{img['id']}_{category}_heatmap.png")
+                    csv_token_identifier = matched_token_ids[0] if len(matched_token_ids) == 1 else str(matched_token_ids)
+                    base_heatmap_path = os.path.join(heatmaps_output_dir, f"{image_id}_{category_name}_heatmap.png")
                     
-                    temp_paths = []
-                    final_heatmap_array = None
+                    # Somma in memoria per layer e creazione griglia in RAM
+                    layer_images_in_memory = []
                     
-                    layers_to_plot = list(range(n_layers))
-                    if (n_layers - 1) not in layers_to_plot:
-                        layers_to_plot.append(n_layers - 1)
+                    layers_to_plot = list(range(total_layers))
+                    if (total_layers - 1) not in layers_to_plot:
+                        layers_to_plot.append(total_layers - 1)
 
-                    # Genera heatmap singole per layer
-                    for l_idx in layers_to_plot:
-                        logits_l = _build_logitlens_logits(ctx["outputs"], model, l_idx, n_layers)
-                        tmp_path = heatmap_path.replace(".png", f"_tmp_L{l_idx}.png")
+                    # Generazione heatmap per singolo layer
+                    for layer_idx in layers_to_plot:
+                        layer_logits = _build_logitlens_logits(inference_context["outputs"], model, layer_idx, total_layers)
                         
-                        hm_array = TAM(
-                            ctx["generated_ids"][0].tolist(),
-                            ctx["vision_shape"],
-                            logits_l, 
-                            ctx["special_ids"],
-                            ctx["vis_inputs"],
-                            processor,
-                            tmp_path,
-                            token_id,
-                            [],
-                            False
-                        )
-                        temp_paths.append((l_idx, Path(tmp_path)))
+                        layer_heatmap_accumulator = np.zeros(inference_context["vision_shape"], dtype=np.float32)
                         
-                        metrics = compute_all_metrics(hm_array, target_mask)
+                        # Aggregazione heatmap sub-tokens per il layer corrente
+                        for token_id in matched_token_ids:
+                            token_heatmap_array = TAM(
+                                inference_context["generated_ids"][0].tolist(),
+                                inference_context["vision_shape"],
+                                layer_logits, 
+                                inference_context["special_ids"],
+                                inference_context["vis_inputs"],
+                                processor,
+                                "", # NESSUN PATH: Disabilita il salvataggio su disco in TAM
+                                token_id,
+                                [],
+                                False
+                            )
+                            layer_heatmap_accumulator += token_heatmap_array
+                            
+                        # Generazione overlay visivo per il layer
+                        h_orig, w_orig = image_task['img'].shape[:2]
+                        layer_hm_norm = _pnorm(layer_heatmap_accumulator)
+                        layer_hm_8u = (layer_hm_norm * 255).astype(np.uint8)
+                        
+                        upscaled_heatmap = cv2.resize(layer_hm_8u, (w_orig, h_orig))
+                        heatmap_color_map = cv2.applyColorMap(upscaled_heatmap, cv2.COLORMAP_JET)
+                        
+                        layer_overlay = cv2.addWeighted(heatmap_color_map, 0.6, image_task['img'], 0.4, 0)
+                        
+                        # Aggiungiamo l'immagine alla lista in memoria per la griglia
+                        layer_images_in_memory.append((layer_idx, layer_overlay))
+                        
+                        # Accumulo globale solo se il layer è rilevante
+                        layer_metrics = compute_all_metrics(layer_heatmap_accumulator, binary_mask)
+                        if round(layer_metrics["io_ratio"], 4) > SOGLIA_METRICA: 
+                            global_heatmap_accumulator += layer_heatmap_accumulator
 
-                        if round(metrics["io_ratio"], 4) > 0.2: 
-                            hm_sum += hm_array
-
-                    # Creazione grid finale con tutte le heatmap
-                    _make_layer_grid_for_token(
-                        layer_heatmap_paths=temp_paths,
-                        token_label=category,
-                        out_path=Path(heatmap_path),
+                    # Creazione griglia combinata interamente in RAM
+                    _make_layer_grid_in_memory(
+                        layer_images=layer_images_in_memory,
+                        token_label=category_name,
+                        out_path=base_heatmap_path,
                         cols=8
                     )
 
-                    # Elimina file temporanei
-                    for _, p in temp_paths:
-                        if p.exists():
-                            os.remove(p)
+                    # Pulizia array per ottimizzare l'uso della memoria
+                    del layer_images_in_memory
 
-                    # metriche su ultimo layer
-                    if img['perturbation'] == "Rotate":
+                    # Gestione rotazione perturbazioni prima del calcolo finale
+                    if image_task['perturbation'] == "Rotate":
                         try:
-                            angle = float(img['param_str'].replace('angle_', ''))
-                            h, w = target_mask.shape[:2]
-                            M = cv2.getRotationMatrix2D((w//2, h//2), angle, 1.0)
-                            target_mask = cv2.warpAffine(target_mask, M, (w, h), flags=cv2.INTER_NEAREST)
-                            target_mask = (target_mask > 0).astype(np.uint8)
+                            rotation_angle = float(image_task['param_str'].replace('angle_', ''))
+                            h_mask, w_mask = binary_mask.shape[:2]
+                            rotation_matrix = cv2.getRotationMatrix2D((w_mask//2, h_mask//2), rotation_angle, 1.0)
+                            binary_mask = cv2.warpAffine(binary_mask, rotation_matrix, (w_mask, h_mask), flags=cv2.INTER_NEAREST)
+                            binary_mask = (binary_mask > 0).astype(np.uint8)
                         except Exception as e:
-                            local_logs.append(f"Errore rotazione: {e}")
+                            thread_logs.append(f"Errore rotazione: {e}")
                     
-                    final_heatmap_array = (_pnorm(hm_sum) * 255.0).astype(np.uint8)
+                    # Metriche finali sull'accumulatore globale
+                    final_global_heatmap = (_pnorm(global_heatmap_accumulator) * 255.0).astype(np.uint8)
+                    final_metrics = compute_all_metrics(final_global_heatmap, binary_mask)
 
-                    metrics = compute_all_metrics(final_heatmap_array, target_mask)
+                    final_thresholded_path = os.path.join(heatmaps_output_dir, f"{image_id}_{category_name}_thresholded.jpg")
+                    save_thresholded_viz(final_global_heatmap, image_task['path'], final_thresholded_path, binary_mask.shape)
 
-                    thr_out_path = os.path.join(img_out_dir, HEAT_DIR, f"{img['id']}_{category}_thresholded.jpg")
-                    save_thresholded_viz(final_heatmap_array, img['path'], thr_out_path, target_mask.shape)
-
-                    results_per_img.append({
-                        "img_id": img['id'],
+                    results_for_csv.append({
+                        "img_id": image_id,
                         "prompt": PROMPT.replace('\n', ' ').strip(),
-                        "output": ctx["gen_text"].replace('\n', ' ').strip(),
-                        "target_token_id": token_id,
-                        "readable_token": category,
-                        "obj_iou": round(metrics["obj_iou"], 4),
-                        "func_iou": round(metrics["func_iou"], 4),
-                        "f1_iou": round(metrics["f1_iou"], 4),
-                        "iou_hard": round(metrics["iou_hard"], 4),
-                        "io_ratio": round(metrics["io_ratio"], 4),
-                        "wdp": round(metrics["wdp"], 4),
+                        "output": inference_context["gen_text"].replace('\n', ' ').strip(),
+                        "target_token_id": csv_token_identifier,
+                        "readable_token": category_name,
+                        "obj_iou": round(final_metrics["obj_iou"], 4),
+                        "io_ratio": round(final_metrics["io_ratio"], 4),
+                        "wdp": round(final_metrics["wdp"], 4),
                     })
                 else:
-                    local_logs.append(f"Errore: Il modello non ha generato il token '{category}' per l'immagine {img['id']}.")
-
-            # Salvataggio metriche in CSV
-            if results_per_img:
-                csv_path = os.path.join(img_out_dir, "results.csv")
-                fieldnames = ["img_id", "prompt", "output", "target_token_id", "readable_token", "obj_iou", "func_iou", "f1_iou", "iou_hard", "io_ratio", "wdp"]
+                    thread_logs.append(f"Errore: Il modello non ha generato il token '{category_name}' per l'immagine {image_id}.")
+                    
+            if results_for_csv:
+                csv_output_path = os.path.join(image_output_dir, "results.csv")
+                csv_headers = ["img_id", "prompt", "output", "target_token_id", "readable_token", "obj_iou", "io_ratio", "wdp"]
                 
-                with open(csv_path, mode='w', newline='', encoding='utf-8') as f:
-                    writer = csv.DictWriter(f, fieldnames=fieldnames)
+                with open(csv_output_path, mode='w', newline='', encoding='utf-8') as f:
+                    writer = csv.DictWriter(f, fieldnames=csv_headers)
                     writer.writeheader()
-                    writer.writerows(results_per_img)
-                local_logs.append(f"CSV salvato in: {csv_path}")
+                    writer.writerows(results_for_csv)
+                thread_logs.append(f"CSV salvato in: {csv_output_path}")
 
-            # Pulisci cache
-            del ctx
+            # Pulizia memoria
+            del inference_context
             if torch.cuda.is_available():
                 torch.cuda.empty_cache()
 
             with print_lock:
-                print("\n".join(local_logs))
+                print("\n".join(thread_logs))
                 print("-" * 60)
             break 
 
         except Exception as e:
-            if ctx is not None: del ctx
+            if inference_context is not None: 
+                del inference_context
             if torch.cuda.is_available():
                 torch.cuda.empty_cache()
 
             with print_lock:
-                print(f"\n[! ERRORE TENTATIVO {tentativo} !] L'immagine {img['id']} ha causato un crash:")
-                print(f"Errore: {e}")
-                print(">>> Collisione tra thread rilevata. Attendo 1 secondo e riprovo...")
-                print("-" * 60)
+                print(f"\n[! ERRORE TENTATIVO {attempt} !] L'immagine {image_id} ha causato un crash:\nErrore: {e}\n>>> Collisione/OOM rilevato. Attendo 1 secondo e riprovo...\n{'-'*60}")
             
-            tentativo += 1
+            attempt += 1
             time.sleep(1) 
 
-# --- Caricamento maschere e raggruppamento per ID immagine ---
-grouped_masks = {}
-for f in os.listdir(MASKS_DIR):
-    if f.endswith('.png'):
-        img_id = f.split('_')[0] 
-        cat_category = f.split('_')[1].split('.')[0]
-        
-        mask_path = os.path.join(MASKS_DIR, f)
-        mask_data = load_binary_mask(mask_path)
-        mask_tuple = (cat_category, mask_data)
-        
-        print(f"Caricata maschera: {f} per immagine: {img_id} con categoria: {mask_tuple[0]}")
-        
-        if img_id not in grouped_masks:
-            grouped_masks[img_id] = []
-        grouped_masks[img_id].append(mask_tuple)
 
+# ---------------------------------------------------------------------------
+# Setup & Main Execution
+# ---------------------------------------------------------------------------
+if __name__ == "__main__":
+    start_process_time = time.time()
 
-# --- Caricamento immagini con logica checkpoint per evitare rielaborazione di immagini già processate correttamente ---
-for f in os.listdir(IMAGES_DIR):
-    radix_folder = ""
-    if f.endswith('.jpg') or f.endswith('.png'):
-        base_name = os.path.splitext(f)[0]
+    IMAGES_DIR = "imgs"
+    MASKS_DIR  = "masks"
+    OUT_DIR    = "out_example"
+    HEAT_DIR   = "heatmaps"
+    PROMPT     = "Describe this image in detail, use simple terms"
+
+    os.makedirs(OUT_DIR, exist_ok=True)
+    os.makedirs(MASKS_DIR, exist_ok=True)
+
+    print_lock = threading.Lock()
+    inference_lock = threading.Lock()
+
+    # --- Caricamento maschere ---
+    grouped_masks = defaultdict(list)
+    for filename in os.listdir(MASKS_DIR):
+        if filename.endswith('.png'):
+            img_id = filename.split('_')[0] 
+            category_name = filename.split('_')[1].split('.')[0]
+            
+            mask_path = os.path.join(MASKS_DIR, filename)
+            binary_mask_data = load_binary_mask(mask_path)
+            
+            print(f"Caricata maschera: {filename} per immagine: {img_id} con categoria: {category_name}")
+            grouped_masks[img_id].append((category_name, binary_mask_data))
+
+    # --- Caricamento immagini e Checkpoint Logic ---
+    image_tasks_queue = []
+    for filename in os.listdir(IMAGES_DIR):
+        if not (filename.endswith('.jpg') or filename.endswith('.png')):
+            continue
+            
+        base_name = os.path.splitext(filename)[0]
+        perturbation_type = ""
+        
+        # Estrazione metadati dal nome file
         if '_' in base_name:
             img_id, suffix = base_name.split('_', 1)
-            radix_folder, folder_suffix = suffix.split('_', 1) if '_' in suffix else (suffix, 'Normale')
+            perturbation_type, perturbation_param = suffix.split('_', 1) if '_' in suffix else (suffix, 'Normale')
         else:
             img_id = base_name
-            folder_suffix = 'Normale'
+            perturbation_param = 'Normale'
             
-        if radix_folder and radix_folder != folder_suffix:
-            full_folder = f"{radix_folder}/{folder_suffix}"
-        else:
-            full_folder = folder_suffix
-            
-        full_folder = full_folder.strip('/')
+        full_folder_path = f"{perturbation_type}/{perturbation_param}" if (perturbation_type and perturbation_type != perturbation_param) else perturbation_param
+        full_folder_path = full_folder_path.strip('/')
         
-        #Logica di checkpoint: controlliamo se esiste già una cartella per questa immagine e se contiene i file token e heatmap necessari
-        img_check_dir = os.path.join(OUT_DIR, full_folder, img_id)
-        token_check_file = os.path.join(img_check_dir, f"{img_id}_tokens.txt")
-        check_heatmap_dir = os.path.join(img_check_dir, HEAT_DIR)
+        # Controllo Checkpoint (salto se già elaborata)
+        image_checkpoint_dir = os.path.join(OUT_DIR, full_folder_path, img_id)
+        tokens_checkpoint_file = os.path.join(image_checkpoint_dir, f"{img_id}_tokens.txt")
+        results_checkpoint_dir = os.path.join(image_checkpoint_dir, HEAT_DIR)
         
-        tokens_target = grouped_masks.get(img_id, [])
-        tokens_target = [t[0].lower() for t in tokens_target]
+        required_targets = [target[0].lower() for target in grouped_masks.get(img_id, [])]
+        is_already_completed = False
         
-        is_complete = False
-        
-        if os.path.isdir(img_check_dir) and os.path.exists(token_check_file):
+        if os.path.isdir(image_checkpoint_dir) and os.path.exists(tokens_checkpoint_file):
             try:
-                # cosa dice il modello
-                with open(token_check_file, "r", encoding="utf-8") as f_tok:
-                    raw_tokens = ast.literal_eval(f_tok.read())
-                gen_tokens = [l.replace('Ġ', '').replace(' ', '').replace('\u2581', '').strip().lower() for l in raw_tokens]
+                with open(tokens_checkpoint_file, "r", encoding="utf-8") as f_tok:
+                    raw_tokens_list = ast.literal_eval(f_tok.read())
                 
-                is_complete = True
-                for t_target in tokens_target:
-                    # se il token target è tra quelli generati, allora deve esserci anche la heatmap corrispondente
-                    if t_target in gen_tokens:
-                        if not os.path.exists(check_heatmap_dir):
-                            is_complete = False
+                generated_tokens = [t.replace('Ġ', '').replace(' ', '').replace(' ', '').strip().lower() for t in raw_tokens_list]
+                
+                is_already_completed = True
+                for target_token in required_targets:
+                    if target_token in generated_tokens:
+                        if not os.path.exists(results_checkpoint_dir):
+                            is_already_completed = False
                             break
                         
-                        heatmap_files = os.listdir(check_heatmap_dir)
-                        if not any(f"_{t_target}_heatmap" in f_name.lower() for f_name in heatmap_files):
-                            is_complete = False
+                        existing_heatmaps = os.listdir(results_checkpoint_dir)
+                        if not any(f"_{target_token}_heatmap" in fname.lower() for fname in existing_heatmaps):
+                            is_already_completed = False
                             break
             except Exception:
-                is_complete = False # File corrotto
+                is_already_completed = False # File corrotto, da rielaborare
                 
-        if is_complete:
-            print(f"Skip: Immagine ID {img_id} ({full_folder}) già completata correttamente.")
+        if is_already_completed:
+            print(f"Skip: Immagine ID {img_id} ({full_folder_path}) già completata correttamente.")
             continue 
             
-        imgs.append({
+        image_tasks_queue.append({
             "id": img_id, 
-            "path": os.path.join(IMAGES_DIR, f), 
-            "folder": full_folder, 
-            "perturbation": radix_folder,
-            "param_str": folder_suffix,
-            "img": cv2.imread(os.path.join(IMAGES_DIR, f))
+            "path": os.path.join(IMAGES_DIR, filename), 
+            "folder": full_folder_path, 
+            "perturbation": perturbation_type,
+            "param_str": perturbation_param,
+            "img": cv2.imread(os.path.join(IMAGES_DIR, filename))
         })
 
-print(f"\nTotale nuove immagini in coda: {len(imgs)}\n" + "-"*60)
+    print(f"\nTotale nuove immagini in coda: {len(image_tasks_queue)}\n{'-'*60}")
 
-# --- Caricamento modello ---
-model, processor, model_type = load_model(MODEL_NAME)
-model.eval()
-_check_norm(model)
-print(f"Model type: {model_type}")
+    # --- Setup Modello ---
+    model, processor, model_type = load_model(MODEL_NAME)
+    model.eval()
+    _check_norm(model)
+    print(f"Model type: {model_type}")
 
-# Esecuzione in parallelo
-with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
-    executor.map(run_inference_thread, imgs)
+    # --- Esecuzione Multithread ---
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as executor:
+        executor.map(run_inference_thread, image_tasks_queue)
 
-end_process_time = time.time()
-elapsed_time = end_process_time - start_process_time
+    # --- Statistiche Finali ---
+    total_elapsed_time = time.time() - start_process_time
+    hours, remainder = divmod(total_elapsed_time, 3600)
+    minutes, seconds = divmod(remainder, 60)
 
-hours, remainder = divmod(elapsed_time, 3600)
-minutes, seconds = divmod(remainder, 60)
-
-print(f"\n[{'='*50}]")
-print(f"Processo completo! Tempo totale di esecuzione: {int(hours):02d}h {int(minutes):02d}m {seconds:05.2f}s")
+    print(f"\n[{'='*50}]\nProcesso completo! Tempo totale di esecuzione: {int(hours):02d}h {int(minutes):02d}m {seconds:05.2f}s")
