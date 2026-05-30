@@ -157,6 +157,24 @@ def run_inference_thread(image_task: dict):
     image_output_dir = os.path.join(OUT_DIR, image_task['folder'], image_id)
     heatmaps_output_dir = os.path.join(image_output_dir, HEAT_DIR)
     os.makedirs(heatmaps_output_dir, exist_ok=True)
+
+    processed_target_masks = []
+    for category_name, original_binary_mask in target_masks:
+        binary_mask = original_binary_mask.copy()
+        
+        if image_task['perturbation'] == "Rotate":
+            try:
+                rotation_angle = float(image_task['param_str'].replace('angle_', ''))
+                h_mask, w_mask = binary_mask.shape[:2]
+                rotation_matrix = cv2.getRotationMatrix2D((w_mask//2, h_mask//2), rotation_angle, 1.0)
+                binary_mask = cv2.warpAffine(binary_mask, rotation_matrix, (w_mask, h_mask), flags=cv2.INTER_NEAREST)
+                binary_mask = (binary_mask > 0).astype(np.uint8)
+            except Exception as e:
+                with print_lock:
+                    print(f"Errore pre-rotazione maschera '{category_name}': {e}")
+                    
+        # Salviamo la maschera definitiva (ruotata o meno) pronta per l'uso
+        processed_target_masks.append((category_name, binary_mask))
         
     attempt = 1
     
@@ -182,7 +200,7 @@ def run_inference_thread(image_task: dict):
             total_layers = inference_context["n_layers"]
 
             # Processamento per singola maschera (oggetto)
-            for category_name, binary_mask in target_masks:
+            for category_name, binary_mask in processed_target_masks:
                 global_heatmap_accumulator = np.zeros(inference_context["vision_shape"], dtype=np.float32)
                 thread_logs.append(f"Valutazione maschera: {category_name} per immagine {image_id}")
                 
@@ -251,17 +269,6 @@ def run_inference_thread(image_task: dict):
 
                     # Pulizia array per ottimizzare l'uso della memoria
                     del layer_images_in_memory
-
-                    # Gestione rotazione perturbazioni prima del calcolo finale
-                    if image_task['perturbation'] == "Rotate":
-                        try:
-                            rotation_angle = float(image_task['param_str'].replace('angle_', ''))
-                            h_mask, w_mask = binary_mask.shape[:2]
-                            rotation_matrix = cv2.getRotationMatrix2D((w_mask//2, h_mask//2), rotation_angle, 1.0)
-                            binary_mask = cv2.warpAffine(binary_mask, rotation_matrix, (w_mask, h_mask), flags=cv2.INTER_NEAREST)
-                            binary_mask = (binary_mask > 0).astype(np.uint8)
-                        except Exception as e:
-                            thread_logs.append(f"Errore rotazione: {e}")
                     
                     # Metriche finali sull'accumulatore globale
                     final_global_heatmap = (_pnorm(global_heatmap_accumulator) * 255.0).astype(np.uint8)
