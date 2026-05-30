@@ -675,7 +675,7 @@ def load_model(model_name: str) -> tuple:
     if "qwen2.5" in name_lower or "qwen2_5" in name_lower:
         from transformers import Qwen2_5_VLForConditionalGeneration, AutoProcessor
         model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
-            model_name, torch_dtype=torch.bfloat16, device_map="auto", attn_implementation="sdpa"
+            model_name, torch_dtype=torch.bfloat16, device_map="auto"
         )
         processor = AutoProcessor.from_pretrained(model_name)
         return model, processor, "qwen25vl"
