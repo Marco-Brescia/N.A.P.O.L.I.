@@ -1,47 +1,5 @@
-import os
 import cv2
-from new_eval import load_binary_mask
 import numpy as np
-
-IMAGES_DIR = "test_phase0"
-MASKS_DIR  = "masks_experiment"
-OUT_DIR    = "images_perturbed"
-
-os.makedirs(OUT_DIR, exist_ok=True)
-
-# Configure base step and range for each perturbation type
-perturbation_ranges = {
-    "MedianFilter":        {"param": "ksize",    "min": 3,    "max": 15,   "step": 2,    "type": int},
-    "GaussianNoise":       {"param": "std",      "min": 5,    "max": 85,   "step": 20.0,   "type": float},
-    "MultiplicativeNoise": {"param": "variance", "min": 0.05, "max": 0.35, "step": 0.100, "type": float},
-    "GaussianLowPass":     {"param": "sigma",    "min": 0.5,  "max": 5.0,  "step": 1.50,  "type": float},
-    "ZoomBlur":            {"param": "zoom_max", "min": 1.05, "max": 1.55, "step": 0.10, "type": float},
-    "ISONoise":            {"param": "intensity","min": 0.5,  "max": 4.5,  "step": 1.0,  "type": float},
-    "Brightness":          {"param": "factor",   "min": 0.5,  "max": 2.0,  "step": 0.50,  "type": float},
-    "Contrast":            {"param": "factor",   "min": 0.7,  "max": 2.2,  "step": 0.50,  "type": float},
-    "Fog":                 {"param": "intensity", "min": 0.2, "max": 1.4,  "step": 0.30,  "type": float},
-    "JPEGCompression":     {"param": "quality",  "min": 90,   "max": 30,   "step": -30.0,  "type": float},
-    "Rotate":              {"param": "angle",    "min": 36,   "max": 324,   "step": 36,   "type": int},
-    "Cutout":              {"param": "ratio",    "min": 0.1,  "max": 1,  "step": 0.1,  "type": float},
-    "CannyEdge":           {"param": "th",       "min": 100,  "max": 250,  "step": 75,   "type": int},
-    "ImpulseNoise":        {"param": "ratio",      "min": 0.01, "max": 0.15, "step":  0.02,  "type": float},
-    "ShotNoise":           {"param": "scale",      "min": 20,   "max": 100,  "step": 20.0,   "type": float},
-    "PoissonNoise":        {"param": "scale",      "min": 10,   "max": 80,   "step": 17.5,   "type": float},
-    "DefocusBlur":         {"param": "radius",     "min": 1,    "max": 9,    "step":  2,      "type": int},
-    "MotionBlur":          {"param": "ksize",      "min": 5,    "max": 25,   "step":  5,      "type": int},
-    "Saturation":          {"param": "factor",     "min": 0.0,  "max": 2.0,  "step":  0.50,  "type": float},
-    "GammaContrast":       {"param": "gamma",      "min": 0.4,  "max": 2.0,  "step":  0.40,  "type": float},
-    "Snow":                {"param": "intensity",  "min": 0.1,  "max": 1.0,  "step":  0.10,  "type": float},
-    "Frost":               {"param": "intensity",  "min": 0.1,  "max": 1.0,  "step":  0.10,  "type": float},
-    "Splatter":            {"param": "num_drops",  "min": 20,   "max": 200,  "step": 45.0,   "type": int},
-    "Pixelate":            {"param": "block_size", "min": 2,    "max": 20,   "step":  3,      "type": int},
-    "Scale":               {"param": "factor",     "min": 0.5,  "max": 1.5,  "step":  0.25,  "type": float},
-    "Shear":               {"param": "angle",      "min": -30,  "max": 30,   "step": 15.0,   "type": float},
-    "Jigsaw":              {"param": "grid_size",  "min": 2,    "max": 8,    "step":  2,      "type": int},
-    "CoarseDropout":       {"param": "hole_size",  "min": 8,    "max": 40,   "step":  8,      "type": int},
-    "AdversarialNoise":    {"param": "eps",        "min": 2,    "max": 32,   "step":  7.5,   "type": float},
-    "AdversarialPatch":    {"param": "patch_ratio","min": 0.05, "max": 0.50, "step":  0.075, "type": float},
-}
 
 # Perturbation functions
 
@@ -440,47 +398,16 @@ def apply_coarse_dropout(img, n_holes=20, hole_size=16):
     return out
  
  
-def apply_adversarial_noise(img, eps=8.0):
-    """
-    Adversarial noise sintetico (FGSM-inspired, senza rete neurale).
-    Simula il gradiente del segnale usando il gradiente dell'immagine stessa
-    (derivate di Sobel) come proxy del gradiente della loss, aggiungendo
-    perturbazione nella direzione del segno del gradiente.
- 
-    eps: ampiezza massima della perturbazione in [0,255].
- 
-    Nota: questo NON è un attacco adversariale vero (richiederebbe un modello).
-    È un proxy sintetico riproducibile che produce pattern strutturati
-    ad alta frequenza analoghi a quelli FGSM, utile per valutare la
-    robustezza percettiva senza dipendenze da PyTorch/TensorFlow.
-    """
-    eps = float(eps)
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY).astype(np.float32)
- 
-    # Gradiente Sobel as a proxy of the loss gradient
-    gx = cv2.Sobel(gray, cv2.CV_32F, 1, 0, ksize=3)
-    gy = cv2.Sobel(gray, cv2.CV_32F, 0, 1, ksize=3)
-    grad = gx + gy  # sum (not magnitude) to preserve sign and create structured patterns
- 
-    # Perturbation: eps * sign(grad), broadcast on BRG channels
-    sign_grad = np.sign(grad).astype(np.float32)
-    perturbation = eps * sign_grad
-    perturbation_bgr = np.stack([perturbation] * 3, axis=-1)
- 
-    out = img.astype(np.float32) + perturbation_bgr
-    return np.clip(out, 0, 255).astype(np.uint8)
- 
- 
 def apply_adversarial_patch(img, patch_ratio=0.15):
     """
-    Adversarial patch sintetica: sovrappone una texture strutturata ad alta
-    frequenza (scacchiera con rumore) in una zona prominente dell'immagine.
- 
-    patch_ratio: frazione dell'area immagine occupata dalla patch [0,1].
- 
-    La patch è una scacchiera ε-perturbata che massimizza la confusione
-    percettiva senza richiedere un modello: simula l'aspetto visivo delle
-    patch adversariali reali (pattern ad alta frequenza, elevato contrasto locale).
+    Adversarial patch: overlays a structured high-frequency texture 
+    (checkerboard with noise) in a prominent area of the image.
+    
+    patch_ratio: fraction of the image area occupied by the patch [0,1].
+    
+    The patch is an ε-perturbed checkerboard that maximizes perceptual confusion
+    without requiring a model: it simulates the visual appearance of real adversarial
+    patches (high-frequency pattern, strong local contrast).
     """
     h, w = img.shape[:2]
     out = img.copy()
@@ -507,13 +434,13 @@ def apply_adversarial_patch(img, patch_ratio=0.15):
     patch_gray = np.clip(checkerboard + noise, 0, 255)
     patch_bgr = np.stack([patch_gray] * 3, axis=-1).astype(np.uint8)
  
-    # Blend con alpha 0.85 per renderla visibile ma non completamente piatta
     # Blend (alpha 0.85) to make it visible but not completely flat
     roi = out[y0:y0 + ps, x0:x0 + ps].astype(np.float32)
     blended = cv2.addWeighted(roi, 0.15, patch_bgr.astype(np.float32), 0.85, 0)
     out[y0:y0 + ps, x0:x0 + ps] = np.clip(blended, 0, 255).astype(np.uint8)
  
     return out
+
 
 perturbations = {
     "MedianFilter": apply_median_filter, 
@@ -544,53 +471,5 @@ perturbations = {
     "Shear": apply_shear,
     "Jigsaw": apply_jigsaw,
     "CoarseDropout": apply_coarse_dropout,
-    "AdversarialNoise": apply_adversarial_noise,
     "AdversarialPatch": apply_adversarial_patch,
 }
-
-imgs = {}
-for f in os.listdir(IMAGES_DIR):
-    if f.endswith(".jpg") or f.endswith(".png"):
-        base_name = os.path.splitext(f)[0]
-        if '_' not in base_name:
-            imgs[base_name] = {"id": base_name, "img": cv2.imread(os.path.join(IMAGES_DIR, f))}
-
-grouped_masks = {}
-for f in os.listdir(MASKS_DIR):
-    if f.endswith('.png'):
-        img_id = f.split('_')[0] 
-        cat_category = f.split('_')[1].split('.')[0]
-        mask_data = load_binary_mask(os.path.join(MASKS_DIR, f))
-        if img_id not in grouped_masks: grouped_masks[img_id] = []
-        grouped_masks[img_id].append((cat_category, mask_data))
-
-# Perturbation generation and saving
-
-for img_id, img_data in imgs.items():
-    original_img = img_data["img"]
-    if original_img is None: continue
-    
-    for p_name, p_func in perturbations.items():
-        cfg = perturbation_ranges[p_name]
-        val = cfg["min"]
-        
-        # 'Step' cycle
-        while (cfg["step"] > 0 and val <= cfg["max"]) or (cfg["step"] < 0 and val >= cfg["max"]):
-            p_val = cfg["type"](val)
-            if p_name == "Cutout":
-                perturbed_img = p_func(original_img, p_val, grouped_masks.get(img_id, []))
-            else:
-                perturbed_img = p_func(original_img, p_val)
-
-            val = round(val, 2)
-            
-            out_filename = f"{img_id}_{p_name}_{cfg['param']}_{val}.jpg"
-            
-            out_path = os.path.join(OUT_DIR, out_filename)
-            cv2.imwrite(out_path, perturbed_img)
-            
-            val += cfg["step"]
-
-    print(f"Completata immagine: {img_id}")
-
-print("Elaborazione completata.")
