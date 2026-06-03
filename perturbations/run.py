@@ -1,8 +1,14 @@
 import os
+import sys
 import cv2
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(current_dir)
+sys.path.append(parent_dir)
+
 from new_eval import load_binary_mask
 
-# Importiamo i moduli creati sopra
+# Importiamo i moduli 
 import config
 from effects import perturbations
 

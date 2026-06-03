@@ -212,19 +212,22 @@ def apply_snow(img, intensity=0.3):
     out = img.copy().astype(np.float32)
     h, w = out.shape[:2]
     n_flakes = int(h * w * intensity * 0.02)
- 
-    for _ in range(n_flakes):
-        x = np.random.randint(0, w)
-        y = np.random.randint(0, h)
-        radius = np.random.randint(1, max(2, int(4 * intensity)))
-        alpha = np.random.uniform(0.5, 1.0) * intensity * 2
-        alpha = min(alpha, 1.0)
- 
-        # Draw a simple circular "flake" and blend it with the image
-        flake = np.zeros_like(out)
-        cv2.circle(flake, (x, y), radius, (255, 255, 255), -1)
-        out = cv2.addWeighted(out, 1.0, flake, alpha, 0)
- 
+    
+    # Generazione in blocco (vettoriale) di tutte le coordinate e parametri
+    xs = np.random.randint(0, w, n_flakes)
+    ys = np.random.randint(0, h, n_flakes)
+    radii = np.random.randint(1, max(2, int(4 * intensity)) + 1, n_flakes)
+    alphas = np.clip(np.random.uniform(0.5, 1.0, n_flakes) * intensity * 2, 0, 1.0)
+    
+    # Usiamo un solo layer vuoto
+    flake_layer = np.zeros_like(out)
+    
+    for i in range(n_flakes):
+        cv2.circle(flake_layer, (xs[i], ys[i]), radii[i], (255, 255, 255), -1)
+
+    
+    avg_alpha = np.mean(alphas)
+    out = cv2.addWeighted(out, 1.0, flake_layer, avg_alpha, 0)
     return np.clip(out, 0, 255).astype(np.uint8)
  
  
@@ -411,34 +414,29 @@ def apply_adversarial_patch(img, patch_ratio=0.15):
     """
     h, w = img.shape[:2]
     out = img.copy()
- 
-    # Square patch size
+
     patch_area = int(h * w * patch_ratio)
     ps = max(8, int(np.sqrt(patch_area)))
-    ps = min(ps, h, w)  # limit patch size to image dimensions
- 
-    # Positioning: around the center with jitter up to 10% of dimensions to avoid perfect centering
+    ps = min(ps, h, w)
+
     cy = h // 2 + np.random.randint(-h // 10, h // 10 + 1)
     cx = w // 2 + np.random.randint(-w // 10, w // 10 + 1)
     y0 = max(0, min(cy - ps // 2, h - ps))
     x0 = max(0, min(cx - ps // 2, w - ps))
- 
-    # Patch gen: gaussian noise + checkerboard pattern to create high-frequency texture
-    sq = 8  # size of checkerboard squares in pixels
-    checkerboard = np.zeros((ps, ps), dtype=np.float32)
-    for r in range(ps):
-        for c in range(ps):
-            checkerboard[r, c] = 255.0 if ((r // sq) + (c // sq)) % 2 == 0 else 0.0
- 
+
+    sq = 8 
+    # Generazione della scacchiera con grid vettoriale
+    r_idx, c_idx = np.indices((ps, ps))
+    checkerboard = (((r_idx // sq) + (c_idx // sq)) % 2 == 0).astype(np.float32) * 255.0
+
     noise = np.random.normal(0, 25, (ps, ps)).astype(np.float32)
     patch_gray = np.clip(checkerboard + noise, 0, 255)
     patch_bgr = np.stack([patch_gray] * 3, axis=-1).astype(np.uint8)
- 
-    # Blend (alpha 0.85) to make it visible but not completely flat
+
     roi = out[y0:y0 + ps, x0:x0 + ps].astype(np.float32)
     blended = cv2.addWeighted(roi, 0.15, patch_bgr.astype(np.float32), 0.85, 0)
     out[y0:y0 + ps, x0:x0 + ps] = np.clip(blended, 0, 255).astype(np.uint8)
- 
+
     return out
 
 

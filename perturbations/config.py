@@ -1,8 +1,8 @@
 import os
 
 # Configurazione dei percorsi di IO
-IMAGES_DIR = "test_phase0"
-MASKS_DIR  = "masks_experiment"
+IMAGES_DIR = "imgs"
+MASKS_DIR  = "masks"
 OUT_DIR    = "images_perturbed"
 
 # Configurazione con minimi allineati al primo step reale dell'effetto
