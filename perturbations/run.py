@@ -12,6 +12,7 @@ from new_eval import load_binary_mask
 import config
 from effects import perturbations
 
+os.makedirs(config.PERTURBED_MASKS_DIR, exist_ok=True)
 os.makedirs(config.OUT_DIR, exist_ok=True)
 
 # Image and mask loading
@@ -44,10 +45,17 @@ for img_id, img_data in imgs.items():
         
         while (cfg["step"] > 0 and val <= cfg["max"]) or (cfg["step"] < 0 and val >= cfg["max"]):
             p_val = cfg["type"](val)
-            if p_name == "Cutout":
-                perturbed_img = p_func(original_img, p_val, grouped_masks.get(img_id, []))
-            else:
-                perturbed_img = p_func(original_img, p_val)
+            match p_name:
+                case "Jigsaw" | "Rotate" | "Scale" | "Shear":
+                    perturbed_img, perturbed_masks = p_func(original_img, p_val, grouped_masks.get(img_id, []))
+                    for category, mask in perturbed_masks:
+                        mask = (mask * 255).astype('uint8')
+                        out_mask_name = f"{img_id}_{p_name}_{cfg['param']}_{round(p_val, 2)}_{category}.png"
+                        cv2.imwrite(os.path.join(config.PERTURBED_MASKS_DIR, out_mask_name), mask)
+                case "Cutout" | "AdversarialPatch":
+                    perturbed_img = p_func(original_img, p_val, grouped_masks.get(img_id, [])) # Serve la maschera per capire dove sta l'oggetto e fare i ritagli e patch
+                case _:
+                    perturbed_img = p_func(original_img, p_val)
 
             val = round(val, 2)
             
