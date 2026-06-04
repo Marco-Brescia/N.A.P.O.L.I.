@@ -4,6 +4,7 @@ import os
 IMAGES_DIR = "imgs"
 MASKS_DIR  = "masks"
 OUT_DIR    = "images_perturbed"
+PERTURBED_MASKS_DIR = "masks_perturbed"
 
 # Configurazione con minimi allineati al primo step reale dell'effetto
 perturbation_ranges = {
