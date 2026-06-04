@@ -346,15 +346,18 @@ if __name__ == "__main__":
             
             parts = name_no_ext.rsplit('_', 1) 
             
-            chiave = parts[0]     # Diventa "img01" OPPURE "img01_Jigsaw_4"
-            categoria = parts[1]  # Diventa sempre e solo la categoria (es. "dog")
-                
-            mask_path = os.path.join(cartella, filename)
-            binary_mask = load_binary_mask(mask_path)
+            if len(parts) == 2:
+                chiave = parts[0]     
+                categoria = parts[1]  
+                    
+                mask_path = os.path.join(cartella, filename)
+                binary_mask = load_binary_mask(mask_path)
 
-            print(f"[{os.path.basename(cartella)}] Caricata: {filename} -> Chiave: '{chiave}' | Categoria: '{categoria}'")
-                
-            grouped_masks[chiave].append((categoria, binary_mask))
+                print(f"[{os.path.basename(cartella)}] Caricata: {filename} -> Chiave: '{chiave}' | Categoria: '{categoria}'")
+                    
+                grouped_masks[chiave].append((categoria, binary_mask))
+            else:
+                print(f"File ignorato perché non rispetta il formato: {filename}")
 
     
 
