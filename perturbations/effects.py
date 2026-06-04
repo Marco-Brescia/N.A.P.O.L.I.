@@ -54,17 +54,26 @@ def apply_jpeg(img, quality):
     _, enc = cv2.imencode('.jpg', img, [int(cv2.IMWRITE_JPEG_QUALITY), int(quality)])
     return cv2.imdecode(enc, 1)
 
-def apply_rotate(img, angle):
+def apply_rotate(img, angle, masks_list=None):
     h, w = img.shape[:2]
     M = cv2.getRotationMatrix2D((w//2, h//2), angle, 1.0)
-    return cv2.warpAffine(img, M, (w, h))
+    rotated_img = cv2.warpAffine(img, M, (w, h))
+    
+    # Applica la stessa rotazione alle maschere, se presenti
+    if masks_list:
+        rotated_masks = []
+        for category_name, mask in masks_list:
+            rotated_mask = cv2.warpAffine(mask, M, (w, h))
+            rotated_masks.append((category_name, rotated_mask))
+    
+    return rotated_img, rotated_masks
 
 def apply_cutout(img, ratio, mask_list=None):
     h, w = img.shape[:2]
     res = img.copy()
     
     if mask_list and len(mask_list) > 0:
-        for cat, m_data in mask_list:
+        for _, m_data in mask_list:
             y_coords, x_coords = np.where(m_data > 0)
             mask_area = len(y_coords)
             
@@ -296,92 +305,174 @@ def apply_pixelate(img, block_size=8):
                        interpolation=cv2.INTER_LINEAR)
     return cv2.resize(small, (w, h), interpolation=cv2.INTER_NEAREST)
 
-def apply_scale(img, factor=1.0):
+def _get_scale_params(h, w, factor):
     """
-    scale of the image by a factor, then crop or pad to original size.
-    factor < 1 → zoom out ( black borders),
-    factor > 1 → zoom in (central crop).
+    (Privata) Calcola le nuove dimensioni e le coordinate (y0, x0) 
+    per il ritaglio o il padding, senza toccare l'immagine.
     """
-    h, w = img.shape[:2]
     new_h, new_w = int(h * factor), int(w * factor)
-    resized = cv2.resize(img, (new_w, new_h), interpolation=cv2.INTER_LINEAR)
- 
+    
     if factor < 1.0:
-        # Center pad with black borders
-        out = np.zeros_like(img)
+        # Calcolo bordi per lo zoom out
         y0 = (h - new_h) // 2
         x0 = (w - new_w) // 2
-        out[y0:y0 + new_h, x0:x0 + new_w] = resized
     else:
-        # Crop center region of the zoomed image
+        # Calcolo ritaglio per lo zoom in
         y0 = (new_h - h) // 2
         x0 = (new_w - w) // 2
-        out = resized[y0:y0 + h, x0:x0 + w]
- 
-    return out
- 
- 
-def apply_shear(img, angle=10.0):
+        
+    return new_h, new_w, y0, x0
+
+def _apply_scale_from_params(array, h, w, new_h, new_w, y0, x0, factor, is_mask=False):
     """
-    Apply a shear transformation to the image.
-    angle: sheer angle in degrees (positive = rightward, negative = leftward).
+    (Privata) Applica il ridimensionamento e il crop/pad a un singolo array 
+    usando le coordinate pre-calcolate.
+    """
+    # Interpolazione: Nearest per le maschere, Lineare per l'immagine
+    interp_method = cv2.INTER_NEAREST if is_mask else cv2.INTER_LINEAR
+    
+    resized = cv2.resize(array, (new_w, new_h), interpolation=interp_method)
+
+    if factor < 1.0:
+        # Crea la tela nera e incolla l'immagine rimpicciolita al centro
+        out = np.zeros_like(array)
+        out[y0:y0 + new_h, x0:x0 + new_w] = resized
+    else:
+        # Ritaglia il centro dell'immagine ingrandita
+        out = resized[y0:y0 + h, x0:x0 + w]
+        
+    return out
+
+def apply_scale(img, factor=1.0, masks_list=None):
+    """
+    Applica l'effetto Scale a un'immagine e alle sue maschere.
+    factor < 1 → zoom out (bordi neri aggiunti).
+    factor > 1 → zoom in (ritaglio centrale).
     """
     h, w = img.shape[:2]
+    
+    # 1. Calcoliamo la matematica una volta sola
+    new_h, new_w, y0, x0 = _get_scale_params(h, w, factor)
+    
+    # 2. Applichiamo la trasformazione all'immagine principale (is_mask=False)
+    perturbed_img = _apply_scale_from_params(img, h, w, new_h, new_w, y0, x0, factor, is_mask=False)
+    
+    # 3. Applichiamo la stessa identica trasformazione a tutte le maschere (is_mask=True)
+    perturbed_masks = []
+    if masks_list:
+        for category_name, mask_array in masks_list:
+            pert_mask = _apply_scale_from_params(mask_array, h, w, new_h, new_w, y0, x0, factor, is_mask=True)
+            perturbed_masks.append((category_name, pert_mask))
+            
+    return perturbed_img, perturbed_masks
+ 
+ 
+def apply_shear(img, angle=10.0, masks_list=None):
+    """
+    Applica una trasformazione di shear (inclinazione) all'immagine e alle sue maschere.
+    angle: angolo di shear in gradi (positivo = verso destra, negativo = verso sinistra).
+    """
+    h, w = img.shape[:2]
+    
+    # Calcolo della matrice affine M 
     shear = np.tan(np.deg2rad(angle))
     M = np.float32([
         [1, shear, -shear * h / 2],
         [0, 1,     0             ]
     ])
-    return cv2.warpAffine(img, M, (w, h), flags=cv2.INTER_LINEAR,
-                          borderMode=cv2.BORDER_CONSTANT, borderValue=0)
- 
- 
-def apply_jigsaw(img, grid_size=4):
-    """
-    Jigsaw puzzle: split the image into a grid and shuffle the patches.
-    grid_size: number of cells per dimension (e.g. 4 → 4x4 grid = 16 patches).
-    // jigsaw da tenere  per rigenerare la maschera del target.
-    """
-    h, w = img.shape[:2]
+    
+    # Elaborazione Immagine 
+    perturbed_img = cv2.warpAffine(img, M, (w, h), flags=cv2.INTER_LINEAR,
+                                   borderMode=cv2.BORDER_CONSTANT, borderValue=0)
+    
+    # Elaborazione Maschere (Interpolazione Nearest per preservare i binari 0/1)
+    perturbed_masks = []
+    
+    if masks_list:
+        for category_name, mask_array in masks_list:
+            pert_mask = cv2.warpAffine(mask_array, M, (w, h), flags=cv2.INTER_NEAREST,
+                                       borderMode=cv2.BORDER_CONSTANT, borderValue=0)
+            perturbed_masks.append((category_name, pert_mask))
+            
+    return perturbed_img, perturbed_masks
+
+def _get_jigsaw_indices(grid_size):
+    """ Genera solo l'ordine casuale dei tasselli."""
     n = max(2, int(grid_size))
+    total_patches = n * n
+    indices = list(range(total_patches))
+    np.random.shuffle(indices)
+    return indices, n
+
+def _apply_jigsaw_from_indices(img, indices, n, is_mask=False):
+    """ Applica gli indici a una singola immagine o maschera."""
+    h, w = img.shape[:2]
     out = img.copy()
- 
-    # Single cell size (last row/col may be larger if h,w are not divisible by n)
+
     cell_h = h // n
     cell_w = w // n
- 
+
     if cell_h < 1 or cell_w < 1:
-        return out  # grid too fine for image size, return original
- 
-    # build list of patches and their coordinates (used for shuffling and reassembling)
+        return out 
+
     patches = []
     coords = []
+    
     for row in range(n):
         for col in range(n):
             y1 = row * cell_h
             x1 = col * cell_w
             y2 = y1 + cell_h if row < n - 1 else h
             x2 = x1 + cell_w if col < n - 1 else w
+            
             patches.append(img[y1:y2, x1:x2].copy())
             coords.append((y1, x1, y2, x2))
- 
-    # index shuffle
-    indices = list(range(len(patches)))
-    np.random.shuffle(indices)
- 
-    # Replace each cell with the shuffled patch, resizing if necessary to fit the destination cell.
-    # Border cells may have different sizes, so we resize the patch to fit the destination cell.
+
+    interp_method = cv2.INTER_NEAREST if is_mask else cv2.INTER_LINEAR
+
     for dst_idx, src_idx in enumerate(indices):
         y1, x1, y2, x2 = coords[dst_idx]
         dst_h = y2 - y1
         dst_w = x2 - x1
+        
         src_patch = patches[src_idx]
         if src_patch.shape[:2] != (dst_h, dst_w):
-            src_patch = cv2.resize(src_patch, (dst_w, dst_h),
-                                   interpolation=cv2.INTER_LINEAR)
+            src_patch = cv2.resize(src_patch, (dst_w, dst_h), interpolation=interp_method)
+            
         out[y1:y2, x1:x2] = src_patch
- 
+
     return out
+
+
+def apply_jigsaw(img, grid_size=4, masks_list=None):
+    """
+    Applica l'effetto Jigsaw a un'immagine e alle sue maschere, garantendo 
+    che tutte subiscano esattamente la stessa permutazione spaziale.
+    
+    Parametri:
+    - img: L'immagine originale (numpy array)
+    - masks_list: Lista di tuple nel formato [(nome_categoria, array_maschera), ...]
+    - grid_size: Numero di celle per lato (es. 4 per una griglia 4x4)
+    
+    Ritorna:
+    - perturbed_img: L'immagine a puzzle
+    - perturbed_masks: Lista di tuple aggiornata [(nome_categoria, maschera_puzzle), ...]
+    """
+    
+    # Generiamo il rimescolamento una sola volta
+    indices, n = _get_jigsaw_indices(grid_size)
+    
+    # Perturbiamo l'immagine principale
+    perturbed_img = _apply_jigsaw_from_indices(img, indices, n, is_mask=False)
+    
+    # Applichiamo lo stesso rimescolamento a tutte le maschere
+    perturbed_masks = []
+    if masks_list is not None:
+        for category_name, mask_array in masks_list:
+            pert_mask = _apply_jigsaw_from_indices(mask_array, indices, n, is_mask=True)
+            perturbed_masks.append((category_name, pert_mask))
+        
+    return perturbed_img, perturbed_masks
 
 def apply_coarse_dropout(img, n_holes=20, hole_size=16):
     """
@@ -401,42 +492,64 @@ def apply_coarse_dropout(img, n_holes=20, hole_size=16):
     return out
  
  
-def apply_adversarial_patch(img, patch_ratio=0.15):
-    """
-    Adversarial patch: overlays a structured high-frequency texture 
-    (checkerboard with noise) in a prominent area of the image.
-    
-    patch_ratio: fraction of the image area occupied by the patch [0,1].
-    
-    The patch is an ε-perturbed checkerboard that maximizes perceptual confusion
-    without requiring a model: it simulates the visual appearance of real adversarial
-    patches (high-frequency pattern, strong local contrast).
-    """
+def apply_adversarial_patch(img, patch_ratio=0.15, mask_list=None):
+    if not mask_list:
+        raise ValueError("Errore critico: mask_list vuota o None.")
+
     h, w = img.shape[:2]
-    out = img.copy()
+    
+    out = img.copy() 
+    
+    patches_to_draw = []
 
-    patch_area = int(h * w * patch_ratio)
-    ps = max(8, int(np.sqrt(patch_area)))
-    ps = min(ps, h, w)
+    # Scorriamo TUTTE le maschere per trovare i 3, 4 o 5 punti in cui disegnare
+    for _, m_data in mask_list:
+        y_coords, x_coords = np.where(m_data > 0)
+        mask_area = len(y_coords)
+        
+        if mask_area > 0:
+            ps = int(np.sqrt(mask_area * patch_ratio))
+            ps = max(8, ps)
+            ps = min(ps, h, w)
+            
+            cy_exact = int(np.mean(y_coords))
+            cx_exact = int(np.mean(x_coords))
+            
+            obj_h = np.max(y_coords) - np.min(y_coords)
+            obj_w = np.max(x_coords) - np.min(x_coords)
+            
+            limit_y = max(1, int(obj_h * 0.15))
+            limit_x = max(1, int(obj_w * 0.15))
+            
+            offset_y = np.random.randint(-limit_y, limit_y + 1)
+            offset_x = np.random.randint(-limit_x, limit_x + 1)
+            
+            cy = cy_exact + offset_y
+            cx = cx_exact + offset_x
 
-    cy = h // 2 + np.random.randint(-h // 10, h // 10 + 1)
-    cx = w // 2 + np.random.randint(-w // 10, w // 10 + 1)
-    y0 = max(0, min(cy - ps // 2, h - ps))
-    x0 = max(0, min(cx - ps // 2, w - ps))
+            y0 = max(0, min(cy - ps // 2, h - ps))
+            x0 = max(0, min(cx - ps // 2, w - ps))
+            
+            # Aggiungiamo le coordinate alla lista
+            patches_to_draw.append((y0, x0, ps))
 
-    sq = 8 
-    # Generazione della scacchiera con grid vettoriale
-    r_idx, c_idx = np.indices((ps, ps))
-    checkerboard = (((r_idx // sq) + (c_idx // sq)) % 2 == 0).astype(np.float32) * 255.0
+    # Applichiamo TUTTE le patch calcolate sulla STESSA immagine "out"
+    for y0, x0, ps in patches_to_draw:
+        sq = max(4, ps // 8) 
+        
+        r_idx, c_idx = np.indices((ps, ps))
+        checkerboard = (((r_idx // sq) + (c_idx // sq)) % 2 == 0).astype(np.float32) * 255.0
+        
+        noise = np.random.normal(0, 25, (ps, ps)).astype(np.float32)
+        patch_gray = np.clip(checkerboard + noise, 0, 255)
+        patch_bgr = np.stack([patch_gray] * 3, axis=-1).astype(np.uint8)
+        
+        # Ritagliamo il pezzo della tela "out", lo misceliamo e lo RI-INCOLLIAMO su "out"
+        roi = out[y0:y0 + ps, x0:x0 + ps].astype(np.float32)
+        blended = cv2.addWeighted(roi, 0.15, patch_bgr.astype(np.float32), 0.85, 0)
+        out[y0:y0 + ps, x0:x0 + ps] = np.clip(blended, 0, 255).astype(np.uint8)
 
-    noise = np.random.normal(0, 25, (ps, ps)).astype(np.float32)
-    patch_gray = np.clip(checkerboard + noise, 0, 255)
-    patch_bgr = np.stack([patch_gray] * 3, axis=-1).astype(np.uint8)
-
-    roi = out[y0:y0 + ps, x0:x0 + ps].astype(np.float32)
-    blended = cv2.addWeighted(roi, 0.15, patch_bgr.astype(np.float32), 0.85, 0)
-    out[y0:y0 + ps, x0:x0 + ps] = np.clip(blended, 0, 255).astype(np.uint8)
-
+    # Restituiamo la singola tela con tutte le patch applicate
     return out
 
 
