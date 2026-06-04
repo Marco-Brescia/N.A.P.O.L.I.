@@ -135,7 +135,7 @@ def apply_impulse_noise(img, ratio=0.05):
     h, w = out.shape[:2]
     n_pixels = int(h * w * ratio)
  
-    # Withe pixel (salt), coordinates random
+    # White pixel (salt), random coordinates
     ys = np.random.randint(0, h, n_pixels)
     xs = np.random.randint(0, w, n_pixels)
     out[ys, xs] = 255
