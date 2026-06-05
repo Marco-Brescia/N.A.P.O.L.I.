@@ -1,10 +1,17 @@
 import logging
 import os
+import sys
 import time
+
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(current_dir)
+sys.path.append(parent_dir)
+
 
 from config import Config
 from image_loader import build_task_queue
 from mask_loader import load_all_masks
+
 from new_eval import MODEL_NAME, _check_norm, load_model
 from runner import PipelineRunner
 

@@ -3,7 +3,7 @@ from typing import List
 
 
 # Perturbations that spatially displace objects and therefore require dedicated (per-image)
-STRONG_PERTURBATIONS: List[str] = ["Jigsaw", "Rotate", "Scale", "Shear", "Cutout"]
+STRONG_PERTURBATIONS: List[str] = ["Jigsaw", "Rotate", "Scale", "Shear"]
 
 
 @dataclass(frozen=True)
