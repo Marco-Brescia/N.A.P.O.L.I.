@@ -12,6 +12,8 @@ from pathlib import Path
 from collections import defaultdict
 from PIL import Image, ImageDraw, ImageFont
 
+PERTURBAZIONI_FORTI = ["Jigsaw", "Rotate", "Scale", "Shear", "Cutout"]  # Queste perturbazioni richiedono un trattamento speciale per le maschere
+
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 from tam import TAM
@@ -147,34 +149,19 @@ def _make_layer_grid_in_memory(layer_images, token_label, out_path, cols=8, pad=
 
 def run_inference_thread(image_task: dict): 
     image_id = image_task['id']
-    target_masks = grouped_masks.get(image_id, [])
+    target_masks = grouped_masks.get(image_task['mask_key'], [])
     
     if not target_masks:
         with print_lock:
-            print(f"Immagine ID: {image_id} - Cartella: {image_task['folder']} - Zero maschere trovate. Skippata.\n{'-'*60}")
+            print(f"Immagine ID: {image_id} - Cartella: {image_task['folder']} - Zero maschere trovate. Skippata.\n{'-'*60}, Chiave di maschera: '{image_task['mask_key']}'")
         return
         
     image_output_dir = os.path.join(OUT_DIR, image_task['folder'], image_id)
     heatmaps_output_dir = os.path.join(image_output_dir, HEAT_DIR)
     os.makedirs(heatmaps_output_dir, exist_ok=True)
 
-    processed_target_masks = []
     for category_name, original_binary_mask in target_masks:
         binary_mask = original_binary_mask.copy()
-        
-        if image_task['perturbation'] == "Rotate":
-            try:
-                rotation_angle = float(image_task['param_str'].replace('angle_', ''))
-                h_mask, w_mask = binary_mask.shape[:2]
-                rotation_matrix = cv2.getRotationMatrix2D((w_mask//2, h_mask//2), rotation_angle, 1.0)
-                binary_mask = cv2.warpAffine(binary_mask, rotation_matrix, (w_mask, h_mask), flags=cv2.INTER_NEAREST)
-                binary_mask = (binary_mask > 0).astype(np.uint8)
-            except Exception as e:
-                with print_lock:
-                    print(f"Errore pre-rotazione maschera '{category_name}': {e}")
-                    
-        # Salviamo la maschera definitiva (ruotata o meno) pronta per l'uso
-        processed_target_masks.append((category_name, binary_mask))
         
     attempt = 1
     
@@ -200,7 +187,7 @@ def run_inference_thread(image_task: dict):
             total_layers = inference_context["n_layers"]
 
             # Processamento per singola maschera (oggetto)
-            for category_name, binary_mask in processed_target_masks:
+            for category_name, binary_mask in target_masks:
                 global_heatmap_accumulator = np.zeros(inference_context["vision_shape"], dtype=np.float32)
                 thread_logs.append(f"Valutazione maschera: {category_name} per immagine {image_id}")
                 
@@ -329,30 +316,50 @@ def run_inference_thread(image_task: dict):
 if __name__ == "__main__":
     start_process_time = time.time()
 
-    IMAGES_DIR = "imgs"
+    IMAGES_DIR = "images_perturbed"
     MASKS_DIR  = "masks"
-    OUT_DIR    = "out_example"
+    OUT_DIR    = "output"
     HEAT_DIR   = "heatmaps"
+    PERTURBED_MASKS_DIR = "masks_perturbed"
     PROMPT     = "Describe this image in detail, use simple terms"
 
     os.makedirs(OUT_DIR, exist_ok=True)
-    os.makedirs(MASKS_DIR, exist_ok=True)
 
     print_lock = threading.Lock()
     inference_lock = threading.Lock()
 
     # --- Caricamento maschere ---
     grouped_masks = defaultdict(list)
-    for filename in os.listdir(MASKS_DIR):
-        if filename.endswith('.png'):
-            img_id = filename.split('_')[0] 
-            category_name = filename.split('_')[1].split('.')[0]
+    cartelle_da_leggere = [MASKS_DIR, PERTURBED_MASKS_DIR]
+    print(f"Caricamento maschere da '{MASKS_DIR}' e '{PERTURBED_MASKS_DIR}'...")
+
+    for cartella in cartelle_da_leggere:
+        # Se una cartella non esiste
+        if not os.path.exists(cartella): 
+            continue
             
-            mask_path = os.path.join(MASKS_DIR, filename)
-            binary_mask_data = load_binary_mask(mask_path)
+        for filename in os.listdir(cartella):
+            if not filename.endswith('.png'):
+                continue
+                
+            name_no_ext = os.path.splitext(filename)[0]
             
-            print(f"Caricata maschera: {filename} per immagine: {img_id} con categoria: {category_name}")
-            grouped_masks[img_id].append((category_name, binary_mask_data))
+            parts = name_no_ext.rsplit('_', 1) 
+            
+            if len(parts) == 2:
+                chiave = parts[0]     
+                categoria = parts[1]  
+                    
+                mask_path = os.path.join(cartella, filename)
+                binary_mask = load_binary_mask(mask_path)
+
+                print(f"[{os.path.basename(cartella)}] Caricata: {filename} -> Chiave: '{chiave}' | Categoria: '{categoria}'")
+                    
+                grouped_masks[chiave].append((categoria, binary_mask))
+            else:
+                print(f"File ignorato perché non rispetta il formato: {filename}")
+
+    
 
     # --- Caricamento immagini e Checkpoint Logic ---
     image_tasks_queue = []
@@ -360,10 +367,10 @@ if __name__ == "__main__":
         if not (filename.endswith('.jpg') or filename.endswith('.png')):
             continue
             
+        # SPLIT ESATTO COME LO VOLEVI TU
         base_name = os.path.splitext(filename)[0]
         perturbation_type = ""
         
-        # Estrazione metadati dal nome file
         if '_' in base_name:
             img_id, suffix = base_name.split('_', 1)
             perturbation_type, perturbation_param = suffix.split('_', 1) if '_' in suffix else (suffix, 'Normale')
@@ -371,19 +378,27 @@ if __name__ == "__main__":
             img_id = base_name
             perturbation_param = 'Normale'
             
+        # LOGICA DELLA CHIAVE PER LE MASCHERE
+        # Se sposta gli oggetti -> usiamo il nome completo (es. "img01_Jigsaw_4")
+        # Altrimenti -> usiamo solo l'ID (es. "img01")
+        if perturbation_type in PERTURBAZIONI_FORTI:
+            chiave_maschera = base_name
+        else:
+            chiave_maschera = img_id
+
         full_folder_path = f"{perturbation_type}/{perturbation_param}" if (perturbation_type and perturbation_type != perturbation_param) else perturbation_param
         full_folder_path = full_folder_path.strip('/')
         
-        # Controllo Checkpoint (salto se già elaborata)
         image_checkpoint_dir = os.path.join(OUT_DIR, full_folder_path, img_id)
         tokens_checkpoint_file = os.path.join(image_checkpoint_dir, f"{img_id}_tokens.txt")
         results_checkpoint_dir = os.path.join(image_checkpoint_dir, HEAT_DIR)
         
-        required_targets = [target[0].lower() for target in grouped_masks.get(img_id, [])]
+        
         is_already_completed = False
         
         if os.path.isdir(image_checkpoint_dir) and os.path.exists(tokens_checkpoint_file):
             try:
+                required_targets = [target[0].lower() for target in grouped_masks.get(chiave_maschera, [])]
                 with open(tokens_checkpoint_file, "r", encoding="utf-8") as f_tok:
                     raw_tokens_list = ast.literal_eval(f_tok.read())
                 
@@ -409,6 +424,7 @@ if __name__ == "__main__":
             
         image_tasks_queue.append({
             "id": img_id, 
+            "mask_key": chiave_maschera,
             "path": os.path.join(IMAGES_DIR, filename), 
             "folder": full_folder_path, 
             "perturbation": perturbation_type,
