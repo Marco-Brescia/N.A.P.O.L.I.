@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000144114,"Describe this image in detail, use simple terms","The image shows two airplanes flying in the sky. The airplane on the left is red and white, with the letters ""G-AWGN"" on its tail. The airplane on the right is also red and white, with the letters ""G-AWGN"" on its tail. Both airplanes have propellers on their wings. The sky is cloudy, and the airplanes are flying at a high altitude.",11,airplane,0.2012,0.3444,0.3839

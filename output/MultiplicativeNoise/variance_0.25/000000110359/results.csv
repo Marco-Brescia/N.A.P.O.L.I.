@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows an airplane flying in the sky. The airplane is seen from an aerial perspective, with its wings spread out and its body visible. The sky is blue with some white clouds, and the airplane is the main focus of the image. The image appears to be grainy or pixelated, giving it a textured look.",4,airplane,0.0,1.0,0.0,0.0,0.0,0.0

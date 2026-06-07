@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a dark background with a small, bright object on the left side. This object appears to be a moon. On the right side of the image, there is a large clock face with Roman numerals. The clock face has a checkered pattern in the center, which is not a typical feature of a clock face. The overall scene is dark, with the moon and the clock face being the only visible elements.",37,clock,0.2724,0.351,0.2252

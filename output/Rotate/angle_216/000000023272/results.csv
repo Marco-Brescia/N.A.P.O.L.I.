@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000023272,"Describe this image in detail, use simple terms","The image shows two cats sitting on the hood of a car. The car has a Mercedes-Benz logo on the front. The cats are sitting close to each other, and the car is parked on a driveway. There is a fence and some greenery visible in the background. The scene appears to be outdoors, possibly in a residential area.",11,car,0.3263,0.7393,0.4527,0.3263,0.7701,0.0803

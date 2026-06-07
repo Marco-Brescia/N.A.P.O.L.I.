@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a desk with a phone on it. The phone is a Philips model, and it has a banana attached to it. The banana is hanging off the phone's receiver, which is connected to the phone's cord. The desk has a few other items on it, including a piece of paper with some writing on it. The background is somewhat blurred, but it appears to be a room with a desk and some other objects.",22,banana,0.2725,0.4245,0.8903

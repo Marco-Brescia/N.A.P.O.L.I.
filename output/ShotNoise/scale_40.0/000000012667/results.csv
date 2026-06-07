@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a desk with a phone on it. The phone is black and has a keypad with numbers and buttons. There is a banana placed on the phone's receiver, which is connected to the phone's cord. The desk has some papers and a stapler on it. The background appears to be a room with a window.",27,banana,0.3864,0.645,1.0499

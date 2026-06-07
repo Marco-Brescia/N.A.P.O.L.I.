@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000372902,"Describe this image in detail, use simple terms","This image shows a close-up of some plants growing in a garden or outdoor area. The plants have green leaves and appear to be young, with some taller and some shorter. The background is mostly black, which might be a wall or a fence, and there is some white and grey ground visible. The plants are growing in a sandy or gravelly area.",57,ground,0.0975,0.1815,0.1463

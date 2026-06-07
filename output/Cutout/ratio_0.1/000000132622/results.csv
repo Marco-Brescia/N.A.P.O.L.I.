@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear in a grassy field. The bear has a thick, brown coat and is looking directly at the camera. The bear's face is mostly visible, with its eyes, nose, and mouth clearly shown. The bear appears to be in a natural environment, possibly a forest or a grassy meadow. The background is green and blurred, indicating that the bear is in a grassy area.",4,bear,0.1686,0.8841,0.2832,0.1686,0.966,0.0422

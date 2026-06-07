@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a bird's eye view of an airplane flying in the sky. The airplane is silhouetted against a blue sky filled with tiny, white specks. These specks are likely small particles or dust, creating a starry effect in the sky. The airplane appears to be in the middle of the sky, with its wings spread out and its body visible. The overall effect is a beautiful and surreal sight.",10,airplane,0.0,0.0,0.0

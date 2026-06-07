@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a white toilet with a dark, textured background. The toilet is in a natural setting, possibly outdoors, with grass and trees visible in the background. The toilet appears to be made of a smooth, white material and has a curved design. The background has a dark, textured appearance, which could be a tree or some kind of natural element.",5,toilet,0.383,0.8645,0.5309,0.383,0.6481,0.3937

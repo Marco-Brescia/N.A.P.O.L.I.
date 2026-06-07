@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000023272,"Describe this image in detail, use simple terms","The image shows a car with a black and white checkered pattern on the hood. The car is parked in front of a building with a fence and some greenery. There is a dog sitting on the hood of the car, looking towards the camera. The dog appears to be resting or looking out of the window. The overall scene suggests a relaxed and casual atmosphere.",4,car,0.1913,0.8573,0.0782

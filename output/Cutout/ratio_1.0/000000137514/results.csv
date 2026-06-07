@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a surface, with a microwave oven behind it. The cat has its head and ears visible, and it appears to be looking at something in front of it. The microwave has a white exterior with a grid pattern on the door. The cat is mostly in the foreground, with the microwave taking up a significant portion of the background.",4,cat,0.1652,0.8333,0.2758,0.1652,0.466,0.2962

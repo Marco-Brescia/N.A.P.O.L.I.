@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear. It has a thick, furry coat and is standing on grass. The bear's face is visible, and it appears to be looking straight ahead. The background is blurred, making it difficult to see details, but it seems to be a natural setting.",4,bear,0.1653,0.9571,0.0616

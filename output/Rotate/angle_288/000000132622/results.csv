@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear lying down in the grass. The bear has a fluffy, light brown coat with darker brown patches. It has large, round ears and a bushy tail. The bear is looking up at the camera with a calm and relaxed expression. The background is blurred, making it difficult to see details, but it appears to be a natural environment with green grass and some plants.",4,bear,0.155,0.8382,0.2617,0.155,0.7301,0.0643

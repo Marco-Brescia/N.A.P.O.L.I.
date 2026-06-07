@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a building with a clock tower. The building is made of red bricks and has a large clock on the side of it. The clock tower is tall and has a decorative design around it. The sky in the background is clear and blue. The image appears to be taken with a camera that was moved around quickly, creating a blurred effect.",7,clock,0.294,0.9275,0.4464,0.294,0.304,0.6021

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on the ground. The cat has a mix of colors, including brown, black, and white. The background appears to be a brick wall, and the cat is looking to the side. The image has a grainy, pixelated quality to it.",4,cat,0.2793,0.8232,0.4171,0.2793,0.5623,0.2217

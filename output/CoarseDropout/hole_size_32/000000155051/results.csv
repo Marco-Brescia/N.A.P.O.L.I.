@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a night scene with a clock and the moon. The clock is on the right side of the image, with the time displayed as 10:15. The clock has Roman numerals on the face, and the hands of the clock are visible. The moon is on the left side of the image, appearing as a bright, white orb in the dark sky. The overall scene is set against a black background, which makes the clock and moon stand out.",8,clock,0.153,0.4508,0.6068

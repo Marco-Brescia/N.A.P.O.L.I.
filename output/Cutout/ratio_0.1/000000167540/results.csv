@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","The image shows a small airplane flying in the sky. The airplane has two wings and four engines. The wings are spread out, and the engines are attached to the wings. The sky is blue with some white clouds. The airplane is flying at a moderate altitude.",5,airplane,0.1866,0.8377,0.3052,0.1866,0.2203,0.2811

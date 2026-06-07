@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on top of a hill. The hill is covered with rocks and dirt, and the sheep is facing away from the camera. The background is a blurred view of a blue sky with some clouds. The overall scene has a natural, outdoor feel.",4,sheep,0.3654,0.3668,0.8851

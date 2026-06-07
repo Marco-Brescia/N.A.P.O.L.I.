@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000077595,"Describe this image in detail, use simple terms","This image is a collage of several small pictures, arranged in a grid pattern. Each picture shows a cat with a checkered shirt. The cat is looking at the camera, and the shirt has a plaid pattern. The background appears to be indoors, possibly a room with a window or a desk. The collage is made up of several smaller images, each showing the same cat and shirt.",20,cat,0.1887,0.3318,0.0676

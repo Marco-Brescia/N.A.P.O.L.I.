@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear in a grassy area. The bear appears to be in motion, as the background is blurred, giving it a sense of speed or movement. The bear's fur is light-colored, possibly white or gray, and it has a dark nose and eyes. The grass around the bear is green and appears to be wet, suggesting it might have rained recently. The overall scene gives a sense of a wild, natural environment.",4,bear,0.1486,0.7605,0.0563

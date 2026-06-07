@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","The image shows a black cat standing next to a bottle of wine. The cat is looking up at the bottle, and the bottle has a label that says ""NUTRO"" on it. The cat's eyes are wide open, and it appears to be looking at something interesting. The background is blurry, but it seems to be an outdoor setting with some buildings and trees visible. The overall scene has a playful and curious vibe.",5,cat,0.1536,0.4296,0.0948

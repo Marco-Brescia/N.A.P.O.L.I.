@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a toilet that is surrounded by a lot of dirt or gravel. The toilet is white and has a bowl that is slightly curved at the top. The ground around the toilet is covered with small, dark, and uneven stones or dirt. There are also some green plants or bushes visible in the background.",4,toilet,0.1872,0.3265,0.3787

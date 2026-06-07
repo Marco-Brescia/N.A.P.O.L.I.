@@ -1,0 +1,3 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000023272,"Describe this image in detail, use simple terms",The image shows a cat sitting on the hood of a car. The car has a Mercedes-Benz logo on the front. The cat is looking down and appears to be grooming itself. The background includes some greenery and a fence. The car is parked in a driveway or garage area.,11,car,0.2882,0.7784,0.038
+000000023272,"Describe this image in detail, use simple terms",The image shows a cat sitting on the hood of a car. The car has a Mercedes-Benz logo on the front. The cat is looking down and appears to be grooming itself. The background includes some greenery and a fence. The car is parked in a driveway or garage area.,4,cat,0.4024,0.4896,1.1131

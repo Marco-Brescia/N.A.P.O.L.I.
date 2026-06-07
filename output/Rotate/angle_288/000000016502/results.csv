@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on top of a rocky cliff. The sky is clear with a few clouds, and the sheep is looking down at the ground. The cliff is made of large, rough rocks, and there is some green grass growing on the rocks.",4,sheep,0.0,1.0,0.0,0.0,0.0,0.0

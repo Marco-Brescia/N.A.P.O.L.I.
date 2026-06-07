@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","This image is a collage of several small pictures, arranged in a grid pattern. Each picture shows a sheep standing on a rocky surface, with a blue sky and some clouds in the background. The sheep are white and appear to be grazing or resting on the rocks. The overall scene is serene and natural.",20,sheep,0.2329,0.265,0.7597

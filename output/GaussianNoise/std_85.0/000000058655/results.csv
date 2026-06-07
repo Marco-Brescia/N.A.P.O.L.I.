@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a tall building with a clock on top. The building has a classic architectural style with a large clock face on the front. The clock is black and white, and it appears to be part of the building's facade. The building has several floors and a large entrance with steps leading up to it. The sky in the background is clear and blue.",8,clock,0.2661,0.9101,0.4118,0.2661,0.275,0.7908

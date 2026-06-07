@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a red fire hydrant in a grassy area. The hydrant is surrounded by green grass and some trees in the background. The scene appears to be outdoors, possibly in a residential area. The image has a blurred effect, giving it a dreamy or abstract look.","[5, 6, 7]",fire hydrant,0.1547,0.8145,0.2601,0.1547,0.2671,0.2112

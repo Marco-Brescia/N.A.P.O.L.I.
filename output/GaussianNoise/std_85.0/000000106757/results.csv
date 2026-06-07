@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000106757,"Describe this image in detail, use simple terms","The image shows an elephant. It has a large, wrinkled body and a long trunk. The elephant is standing on a flat surface, and there are some trees in the background. The image appears to be grainy or pixelated, which might be due to the quality of the photo or the setting.",4,elephant,0.3562,0.6522,0.4608,0.3562,0.6128,0.0665

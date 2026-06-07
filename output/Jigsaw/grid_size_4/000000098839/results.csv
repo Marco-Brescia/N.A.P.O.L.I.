@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000098839,"Describe this image in detail, use simple terms","This image is a collage of several pictures showing a cat. The cat is sitting on a table, and there are various objects around it, including a computer monitor, a book, and a remote control. The cat appears to be looking at something on the table. The collage is arranged in a grid format, with each picture showing a different angle or perspective of the cat and its surroundings.",10,cat,0.2324,0.6946,0.2563

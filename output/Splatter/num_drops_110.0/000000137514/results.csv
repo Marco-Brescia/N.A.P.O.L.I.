@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a table. The cat has a white and gray coat with brown markings. It is looking directly at the camera with a calm expression. In the background, there is a microwave oven. The microwave has a screen with a pattern of small, white dots, which gives the impression of raindrops falling. The overall scene has a whimsical and playful feel.",4,cat,0.413,0.8239,0.2246

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","This image shows a cat sitting on a black background. The cat has white fur with brown patches, and it appears to be playing with a toy. The toy looks like a small, round object with a string attached to it. The overall scene is dark, with the cat and the toy being the only visible elements.",4,cat,0.1084,0.4593,0.1999

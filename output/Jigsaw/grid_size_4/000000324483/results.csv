@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000324483,"Describe this image in detail, use simple terms","The image is a collage of pictures featuring a cat. The cat is in different positions and angles, with its face and ears visible. The cat appears to be in a room with a white wall and some furniture in the background. The cat's fur is long and white, and it has a brown and white patch on its face. The collage is arranged in a grid of nine pictures, each showing a different angle of the cat.",9,cat,0.2382,0.7416,0.0784

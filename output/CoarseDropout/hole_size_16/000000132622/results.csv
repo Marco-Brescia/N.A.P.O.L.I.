@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear in a grassy field. The bear has a thick, fluffy coat and is looking directly at the camera. There are several small black dots scattered across the bear's face, which could be markers or annotations used in a computer vision or machine learning application. The background is green and grassy, indicating that the bear is in a natural habitat.",4,bear,0.1504,0.8526,0.0516

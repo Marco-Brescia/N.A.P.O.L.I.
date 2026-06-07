@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is dark in color, and it is flying at a high altitude. In the background, there is a bright, orange-colored object that appears to be a sun or a bright light source. The sky is blue with some clouds, and the plane is flying above the bright object.",4,plane,0.0,1.0,0.0,0.0,0.0,0.0

@@ -1,0 +1,3 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000138115,"Describe this image in detail, use simple terms","The image shows a person holding an orange. The person has a bald head and is wearing a dark-colored shirt. The orange is bright and round, and the person is holding it in their hand. The background is blurred, making it difficult to see details.",7,orange,0.3584,0.7038,0.5136
+000000138115,"Describe this image in detail, use simple terms","The image shows a person holding an orange. The person has a bald head and is wearing a dark-colored shirt. The orange is bright and round, and the person is holding it in their hand. The background is blurred, making it difficult to see details.",4,person,0.074,0.7255,0.0392

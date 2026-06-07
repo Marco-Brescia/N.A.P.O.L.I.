@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a blue sky with a few white dots scattered throughout. In the sky, there is a large, orange object that looks like a balloon or a large ball. Above this object, there is a plane flying in the sky. The plane is dark-colored, and its wings are spread out. The plane is flying at a higher altitude than the orange object.",42,plane,0.0,0.0,0.0

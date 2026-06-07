@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000106757,"Describe this image in detail, use simple terms","This image is a close-up of a statue or sculpture of an elephant. The statue is made of stone or a similar material and has a detailed face with large eyes and a trunk. The background shows a natural setting with trees and a clear blue sky. The image is pixelated, making it difficult to see the details clearly.",13,elephant,0.3977,0.5867,0.0524

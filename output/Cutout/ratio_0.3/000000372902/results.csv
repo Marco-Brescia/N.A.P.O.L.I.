@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000372902,"Describe this image in detail, use simple terms","The image shows a car parked on the side of a road. There are two small plants growing near the car. The plants have green leaves and are growing in a patch of dirt near the car. The car has a black bumper and a black hood. The road is made of asphalt, and there are some white lines painted on it.",4,car,0.2372,0.887,0.3743,0.2372,0.7548,0.1762

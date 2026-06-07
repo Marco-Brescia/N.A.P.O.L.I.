@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a toilet that is mounted on the side of a tree trunk. The tree trunk is large and has a rough, textured bark. The toilet is white and appears to be made of porcelain or ceramic. The background shows a garden or backyard setting with some plants and a wooden structure. The overall scene is somewhat unusual and quirky.",4,toilet,0.2508,0.8414,0.3864,0.2508,0.4345,0.3582

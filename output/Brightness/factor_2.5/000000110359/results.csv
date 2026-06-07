@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows an airplane flying in the sky. The airplane is seen from a low angle, looking up at it. The sky is clear and blue, with no clouds visible. The airplane is dark-colored, possibly blue or black, and it has wings and a tail. The perspective makes the airplane appear large and imposing against the bright sky.",4,airplane,0.0,0.0,0.0

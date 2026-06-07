@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","The image shows a cat lying on a carpet. The cat has a mix of brown and white fur. It has green eyes and is looking directly at the camera. The cat's front paws are stretched out, and it appears to be resting or lounging. There is a small object, possibly a toy or a piece of furniture, on the carpet next to the cat. The carpet has a textured appearance.",4,cat,0.2304,0.5155,0.1195

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a tall brick building with a clock on a pole in front of it. The clock is round and has a decorative frame. The building has many windows, and there are two flags hanging from the building. The sky is clear and blue.",9,clock,0.0,1.0,0.0,0.0,0.0,0.0

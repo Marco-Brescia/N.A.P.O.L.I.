@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on a surface, possibly a floor or a ledge. The cat has a striped pattern with brown and white fur. It appears to be in a relaxed position, with its front paws on the ground and its back legs bent. The background includes a brick wall, suggesting that the cat is outdoors near a building. The lighting in the image is natural, indicating it might be daytime.",4,cat,0.3018,0.6109,0.282

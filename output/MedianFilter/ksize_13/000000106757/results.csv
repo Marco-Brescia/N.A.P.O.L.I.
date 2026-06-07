@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000106757,"Describe this image in detail, use simple terms","The image shows a person standing behind a fence, looking at a large animal. The animal appears to be a cow or a similar large mammal, and it is behind the fence. The person is wearing a light-colored shirt and has short, light-colored hair. The background shows green trees and a clear sky. The overall image is blurry, making it difficult to see details clearly.",4,person,0.1057,0.9536,0.1904,0.1057,0.7796,0.5844

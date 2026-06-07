@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a countertop next to a microwave. The cat has a mix of white, brown, and black fur. The microwave has a black and white checkered pattern on its door. The cat is looking directly at the camera, and there are two small squares with a black and white checkered pattern on the countertop in front of the cat.",4,cat,0.3253,0.7341,0.2033

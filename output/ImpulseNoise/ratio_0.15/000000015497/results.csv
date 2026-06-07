@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","This image shows a cat. The cat has a white and brown coat. The cat is sitting on a dark surface, and there are many small dots or pixels around the cat, which might be a result of a low-resolution or pixelated image.",4,cat,0.088,0.3802,0.1836

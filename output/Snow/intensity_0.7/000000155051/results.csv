@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","This image shows a night sky filled with stars. In the center, there is a large clock with a gold face and black numbers. The clock is surrounded by a lot of stars, making it look like a small, bright dot in the sky. The stars are scattered throughout the image, creating a sense of depth and distance.",18,clock,0.4516,0.8906,0.3498

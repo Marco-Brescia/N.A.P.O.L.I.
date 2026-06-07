@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on the ground. The cat has a striped coat with shades of gray and white. It is looking to the side, and its tail is curled up. The background appears to be indoors, with a wall and possibly a floor. The overall image has a grainy texture, giving it a slightly pixelated look.",4,cat,0.3246,0.8261,0.466,0.3246,0.6077,0.2357

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000138492,"Describe this image in detail, use simple terms","The image shows a dog in motion, captured with a blurred effect. The dog appears to be jumping or leaping, with its front paws raised and its body tilted. The background is a blurred green field, indicating that the dog is in an outdoor setting. The overall effect gives the impression of the dog being in mid-air or performing a jump.",4,dog,0.1407,0.8493,0.2414,0.1407,0.4,0.1503

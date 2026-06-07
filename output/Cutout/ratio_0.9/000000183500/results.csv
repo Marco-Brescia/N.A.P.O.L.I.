@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000183500,"Describe this image in detail, use simple terms","The image shows a biplane flying in the sky. The plane has two sets of wings, one on each side, and it has a single propeller at the front. The plane is painted in a red and white color scheme. The sky in the background is cloudy, and the plane appears to be in mid-flight.",5,plane,0.0993,0.8812,0.1785,0.0993,0.2263,0.3078

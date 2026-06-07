@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on a hill. The sheep is in motion, as indicated by the blurred effect, giving it a sense of movement. The hill is rocky and covered with grass, and the sky above is clear with some clouds. The overall effect of the image is a bit surreal, as if the sheep is floating or moving through the air.",4,sheep,0.304,0.9145,0.4563,0.304,0.3137,0.8609

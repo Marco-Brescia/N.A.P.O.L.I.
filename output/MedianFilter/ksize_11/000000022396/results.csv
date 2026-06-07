@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is in the middle of the frame, and it's flying against a clear blue sky. In the foreground, there is a large, round object that looks like the moon. The moon is partially illuminated, and it's positioned to the left of the plane. The plane is flying above the moon, and the two objects are close to each other.",4,plane,0.1535,0.9058,0.2625,0.1535,0.1827,1.11

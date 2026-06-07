@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000372902,"Describe this image in detail, use simple terms","The image shows a car parked on the side of a road. In front of the car, there are two small plants with green leaves. The plants are in front of the car, and the car's bumper is visible. The plants are in front of the car, and the car's bumper is visible.",4,car,0.2297,0.7364,0.1542

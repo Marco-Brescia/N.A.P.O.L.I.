@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on top of a rocky hill. The sky is blue with some clouds, and there are small, white, glowing dots scattered throughout the sky. The sheep is standing on a flat rock, and the background is mostly dark rocks.",4,sheep,0.288,0.3619,1.3452

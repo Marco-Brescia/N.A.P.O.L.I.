@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000144114,"Describe this image in detail, use simple terms","The image shows a small airplane flying in the sky. The airplane has a red and white color scheme with a black box in the middle of the image. The box appears to be a placeholder or a graphic element. The airplane has wings and a tail, and it is flying at a moderate altitude. The sky in the background is partly cloudy, with some white clouds visible.",5,airplane,0.0,1.0,0.0,0.0,0.0,0.0

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows an airplane flying through the sky. The airplane is seen from below, with its wings spread wide and its body visible. The sky is blue with a few white dots, which could be snowflakes or small particles. The airplane appears to be in the middle of its flight path, with its wings spread out and its body facing the viewer.",4,airplane,0.0,0.0,0.0

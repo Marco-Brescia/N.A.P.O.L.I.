@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear walking through a grassy area. The bear has a thick, fluffy coat that is a mix of brown and white. Its eyes are dark, and it has a black nose. The bear appears to be moving through the grass, and there are some green plants in the background. The bear's fur looks wet, suggesting it might have been in the water or has been recently exposed to rain.",4,bear,0.2156,0.9277,0.0401

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a surface, possibly a table or floor. The cat has a mix of white and brown fur. In the background, there is a microwave oven. The microwave has a screen and buttons on the front. The overall image has a grainy, pixelated effect, giving it a somewhat blurry appearance.",4,cat,0.2736,0.8803,0.4174,0.2736,0.819,0.2983

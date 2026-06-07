@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock with Roman numerals on it, indicating the time. The clock is on a wall, and the hands of the clock are pointing towards the number 12. In the background, there is a full moon visible in the dark sky. The moon is positioned to the left of the clock, and it appears to be quite bright against the dark background.",4,clock,0.2329,0.3956,0.3838

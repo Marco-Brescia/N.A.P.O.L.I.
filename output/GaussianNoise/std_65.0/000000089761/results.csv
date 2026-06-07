@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a toilet sitting under a tree. The toilet is white and appears to be made of concrete or a similar material. The tree is large and has a thick trunk, and it is partially obscured by the toilet. The ground around the toilet is covered with dirt and some grass. The overall scene has a somewhat unusual and unexpected feel to it.",4,toilet,0.3874,0.8261,0.5274,0.3874,0.5618,0.2607

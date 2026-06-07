@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000183500,"Describe this image in detail, use simple terms","The image shows a biplane flying in the sky. The plane has a red and white color scheme with a checkered pattern in the middle. The propeller is spinning, and the plane is in mid-flight. The background is a cloudy sky.",5,plane,0.2744,0.3949,0.2063

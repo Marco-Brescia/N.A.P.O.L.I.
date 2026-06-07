@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a surface. The cat has a white and brown coat and is looking to the side. The background appears to be a room with a checkered pattern on the wall and some furniture, possibly a couch or a bed. The cat is wearing a white collar.",4,cat,0.3558,0.525,0.1868

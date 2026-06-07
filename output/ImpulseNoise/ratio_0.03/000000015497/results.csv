@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","The image shows a cat sitting on a black background. The cat has a white and brown coat with green eyes. It is holding a piece of food, which looks like a piece of bread or a piece of cake. The cat's paws are wrapped around the food, and there is a string or cord connected to the food. The background is completely black, making the cat and the food stand out.",4,cat,0.1906,0.6621,0.1596

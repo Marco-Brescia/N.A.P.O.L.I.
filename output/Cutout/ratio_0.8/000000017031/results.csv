@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe with its head and neck sticking out from behind a black square. The giraffe is surrounded by green trees and bushes, indicating it is in a natural, outdoor setting. The black square in the middle of the image covers the giraffe's face, making it difficult to see its features.","[4, 5]",giraffe,0.0979,0.7917,0.1743,0.0979,0.1791,0.242

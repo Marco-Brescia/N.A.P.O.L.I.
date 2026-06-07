@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on top of a rocky hill. The sky is clear with a few clouds, and the sheep is facing the camera, looking down at the ground. The hill has a rough, rocky surface with some patches of green grass growing on it. The sheep appears to be standing on one leg, with its body facing the camera.",4,sheep,0.1544,0.9274,0.2647,0.1544,0.1898,1.1078

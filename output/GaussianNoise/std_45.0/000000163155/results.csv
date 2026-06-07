@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on a ledge or a step. The cat has a mix of brown and white fur, with some stripes. It has a short, bushy tail and is looking to the side. The background appears to be a brick wall, suggesting that the cat is outdoors near a building. The lighting is dim, giving the image a slightly grainy texture.",4,cat,0.2267,0.858,0.3586,0.2267,0.5489,0.2897

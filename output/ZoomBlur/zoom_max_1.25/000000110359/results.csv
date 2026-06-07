@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is captured from a low angle, making it appear as if it's flying directly above the viewer. The sky is a light blue color, and the plane is mostly black with some brownish accents on its wings and tail. The image has a blurred effect, giving it a dreamy or abstract appearance.",4,plane,0.2275,0.8957,0.3628,0.2275,0.2725,0.7843

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a tall building with a clock on top. The clock is round and has a decorative frame around it. The building has a brick facade and several windows. There is a flag on the building, and a street lamp with a clock on top is also visible. The sky is blue, and the building appears to be in a city or town.",8,clock,0.2211,0.9275,0.3571,0.2211,0.2456,0.5706

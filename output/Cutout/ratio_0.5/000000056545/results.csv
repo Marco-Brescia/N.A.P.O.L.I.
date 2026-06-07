@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000056545,"Describe this image in detail, use simple terms","The image shows a bird perched on a branch. The bird has a grayish-brown plumage and appears to be in a tree. The background is blurred with green foliage, making the bird the main focus of the image. The bird has a black square cut out over its face, which might be a filter or a design effect.",4,bird,0.1506,0.814,0.2542,0.1506,0.3346,0.1747

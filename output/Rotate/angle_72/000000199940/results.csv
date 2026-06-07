@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","In this image, there is a black cat sitting on a chair. The cat is holding a green bottle of wine. The bottle has a label with a red flower design and the word ""NOTRO"" written on it. The cat is looking at the camera with a curious expression. The background shows a part of a room with a chair and some furniture.",8,cat,0.1624,0.6838,0.2625,0.1624,0.3052,0.0976

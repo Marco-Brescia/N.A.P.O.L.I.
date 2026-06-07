@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","The image shows a cat lying down on a dark surface. The cat's paws are resting on a small, rectangular object that has a checkered pattern. The pattern on the object is black and white, and it appears to be a piece of fabric or a similar material. The cat's fur is visible, and it seems to be resting comfortably. The background is dark, which makes the cat and the object stand out.",4,cat,0.1908,0.6595,0.1411

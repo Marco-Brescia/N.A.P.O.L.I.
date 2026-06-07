@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a collage of photos of an airplane flying in the sky. The airplane is in the foreground, and the background features a bright, full moon. The moon is partially illuminated by the airplane's lights, creating a dramatic effect. The collage includes multiple views of the airplane from different angles, giving a sense of depth and movement.",9,airplane,0.0,0.0,0.0

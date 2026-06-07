@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","The image shows a collage of airplane wings against a blue sky background. The wings are arranged in a grid pattern, with each wing occupying a different section of the image. The sky is clear with a few clouds, and the overall color palette is dominated by shades of blue. The wings appear to be from different airplanes, each with its own unique design and color scheme.",6,airplane,0.143,0.2391,0.394

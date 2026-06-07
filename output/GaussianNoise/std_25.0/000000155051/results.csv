@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock and the moon in the night sky. The clock is on the right side of the image, and it has Roman numerals on its face. The clock hands are pointing towards the number 10. The moon is on the left side of the image, and it appears to be a full moon. The sky is dark, indicating it is nighttime.",4,clock,0.167,0.9054,0.2819,0.167,0.4888,0.5039

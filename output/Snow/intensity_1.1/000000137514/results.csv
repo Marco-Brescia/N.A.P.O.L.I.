@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a surface. The cat has a mix of white and brown fur. The background appears to be a window with a patterned design, possibly a curtain or a screen. There are also some white dots or specks scattered throughout the image, which might be snow or a similar substance.",4,cat,0.255,0.6527,0.2639

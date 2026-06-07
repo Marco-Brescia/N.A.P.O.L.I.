@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is tilted slightly, and its wings are spread out. The plane is in the foreground, and the background is a clear blue sky with no clouds. The plane's body is dark, and its wings have a pattern that looks like a checkered design.",4,plane,0.0,0.0,0.0

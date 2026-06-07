@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image shows a ripe orange sitting on the ground in a parking lot. The orange is round and has a bright orange color with some dark spots on it. The background includes several cars parked in the lot, and there are trees and a cloudy sky in the background. The orange is the main focus of the image, and the cars and trees provide context for the location being a parking area.",5,orange,0.2717,0.5762,0.4417

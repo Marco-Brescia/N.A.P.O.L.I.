@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat lying down on the ground. The cat has a striped pattern with shades of gray and white. The background appears to be an outdoor setting with some blurred elements, possibly a brick wall or a fence. The overall image is blurry, giving it a dreamy or abstract appearance.",4,cat,0.3314,0.7333,0.4565,0.3314,0.4707,0.1692

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","This image shows a plane flying in the sky with a moon visible below it. The moon appears to be partially visible, with some of its surface illuminated by the light from the plane. The plane is flying at a relatively low altitude, and the moon is positioned in the lower left corner of the image. The sky is clear with a few scattered clouds.",4,plane,0.194,0.2259,0.925

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe's head and neck. The giraffe is in focus, with its head and neck clearly visible. The background is blurred, showing green foliage, suggesting that the giraffe is in a natural, outdoor setting, possibly a forest or a park. The giraffe appears to be looking towards the camera, and its long neck and distinctive patterned coat are clearly visible.","[4, 5]",giraffe,0.1972,0.3906,0.2918

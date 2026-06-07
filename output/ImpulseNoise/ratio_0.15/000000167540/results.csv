@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is surrounded by a lot of small, black dots that make it look like it's surrounded by a cloud of dust or small particles. The dots are scattered throughout the sky, giving the impression that the plane is flying through a cloud of dust. The plane itself is dark-colored, and its wings and body are clearly visible against the blue sky.",4,plane,0.2618,0.2699,0.1903

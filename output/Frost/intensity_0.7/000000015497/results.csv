@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","This image shows a cat lying on a carpet. The cat has a gray and white fur pattern, and it appears to be looking directly at the camera. The carpet is a dark color, and there are some small, blurry objects on the carpet, possibly debris or dust.",4,cat,0.1546,0.4953,0.143

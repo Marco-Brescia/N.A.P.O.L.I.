@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000056545,"Describe this image in detail, use simple terms","The image shows a bird hanging from a tree branch. The bird has a grayish-brown plumage with a slightly darker head and neck. Its beak is short and pointed, and it has a small, round eye. The bird appears to be resting or hanging upside down, with its body hanging from the branch. The background is filled with green leaves, indicating that the bird is in a tree.",4,bird,0.3805,0.7657,0.5084,0.3805,0.6197,0.1355

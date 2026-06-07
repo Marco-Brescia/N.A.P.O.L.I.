@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a red fire hydrant in a grassy area. The hydrant is positioned on the ground and has a black top and black caps on the sides. Behind the hydrant, there is a house with a white roof and purple flowers on the roof. The grass around the hydrant is green and well-maintained. There are also some trees and bushes in the background.","[5, 6, 7]",fire hydrant,0.2028,0.8609,0.3283,0.2028,0.404,0.2964

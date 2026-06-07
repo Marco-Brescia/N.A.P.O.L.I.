@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000372902,"Describe this image in detail, use simple terms","The image shows a car parked on the side of a road. There are two small plants growing near the car, one on the left and one on the right. The plants have green leaves and are surrounded by a concrete sidewalk. The car has a black and white checkered pattern on its side, which is visible through the plants. The background shows a clear sky and some other vehicles parked in the distance.",4,car,0.2699,0.6587,0.1286

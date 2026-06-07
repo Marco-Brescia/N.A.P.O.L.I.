@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000183500,"Describe this image in detail, use simple terms","The image shows a biplane flying in the sky. The plane has two sets of wings, one above the other, and it has a single propeller at the front. The wings are red and white, and the plane is flying against a cloudy sky. The image has a black box in the center, which covers part of the plane. The plane appears to be in mid-flight, and the propeller is spinning.",5,plane,0.1245,0.913,0.2191,0.1245,0.3274,0.3786

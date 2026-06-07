@@ -1,0 +1,3 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000138492,"Describe this image in detail, use simple terms","The image shows a dog in mid-air, jumping to catch a frisbee. The dog is black and white, with a fluffy coat. The frisbee is purple and has some design on it. The background is a grassy field.",4,dog,0.1545,0.8899,0.2633,0.1545,0.5478,0.1848
+000000138492,"Describe this image in detail, use simple terms","The image shows a dog in mid-air, jumping to catch a frisbee. The dog is black and white, with a fluffy coat. The frisbee is purple and has some design on it. The background is a grassy field.","[13, 14, 15]",frisbee,0.0,1.0,0.0,0.0,0.0,0.0

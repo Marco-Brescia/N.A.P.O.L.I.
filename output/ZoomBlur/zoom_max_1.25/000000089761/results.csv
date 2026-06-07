@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a toilet with a white seat and lid. The toilet is placed on a grassy surface, and there is a dark, textured background that appears to be a peacock feather. The peacock feather has a pattern of dark lines and curves, giving it a unique and artistic appearance. The overall scene has a surreal and artistic feel.",4,toilet,0.3374,0.867,0.4858,0.3374,0.5758,0.3363

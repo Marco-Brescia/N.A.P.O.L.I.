@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a fire hydrant in a yard. The hydrant is red with black and white checkered patterns on it. The background includes a house with a roof and some trees. There are also some flowers and greenery in the yard. The hydrant is placed on the grass, and there are some dandelions in the foreground.","[4, 5, 6]",fire hydrant,0.0446,0.1402,0.4311

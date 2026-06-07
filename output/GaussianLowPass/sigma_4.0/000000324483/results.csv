@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000324483,"Describe this image in detail, use simple terms","The image shows a cat with a fluffy coat. The cat has a mix of brown, black, and white fur. It is sitting inside a green blanket or fabric, and the background is blurred, making it difficult to see details. The cat appears to be looking forward with a curious expression.",4,cat,0.3406,0.6194,0.0656

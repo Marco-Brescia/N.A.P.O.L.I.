@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is in the upper right corner of the image, and it appears to be a commercial jet. The sky in the background is clear with a few clouds. In the foreground, there is a large, bright moon that is partially covered by the plane. The moon is in the shape of a crescent, and it is positioned in the lower left corner of the image.",4,plane,0.0,1.0,0.0,0.0,0.0,0.0

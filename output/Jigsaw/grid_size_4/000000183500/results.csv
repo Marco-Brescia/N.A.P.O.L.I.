@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000183500,"Describe this image in detail, use simple terms","The image is a collage of pictures showing a biplane. The biplane has two wings, one on each side of the plane. The wings are red with white stripes and have propellers at the front. The plane is flying in the sky, and the background shows a cloudy sky. The collage is made up of several smaller pictures, each showing a different angle or part of the plane.",10,plane,0.2024,0.2351,0.0754

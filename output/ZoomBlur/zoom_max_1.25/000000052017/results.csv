@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000052017,"Describe this image in detail, use simple terms","The image shows a small, colorful airplane flying in the sky. The airplane has a yellow body with red and blue accents. The wings are long and pointed, and there are propellers on the front. The airplane appears to be in motion, as indicated by the blurred lines around it. The background is a plain, light-colored sky, which makes the airplane stand out.",7,airplane,0.2298,0.7797,0.355,0.2298,0.2959,0.1556

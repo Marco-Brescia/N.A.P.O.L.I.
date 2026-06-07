@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000052017,"Describe this image in detail, use simple terms","The image is a collage of pictures showing different angles of a small, yellow airplane. The airplane has a single propeller at the front and is flying in the sky. The propeller is red and black. The airplane is in various positions, with some angles showing the wings and tail, and others showing the front and side. The background is a plain, light-colored sky.",15,airplane,0.1907,0.2678,0.1238

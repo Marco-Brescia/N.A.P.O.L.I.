@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000144114,"Describe this image in detail, use simple terms","The image shows a plane in flight. The plane is moving quickly, creating a sense of motion blur. The plane has a red and white color scheme with some text on it. The background is a clear sky with some clouds. The overall effect is that the plane is moving very fast, almost as if it's flying through a dream or a blur.",4,plane,0.105,0.915,0.1883,0.105,0.2438,0.4488

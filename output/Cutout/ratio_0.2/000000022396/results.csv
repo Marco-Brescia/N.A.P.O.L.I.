@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is in the middle of the image, and it's flying at a high altitude. The sky is clear with a blue color, and there is a bright, round object in the lower left corner of the image. This object is the moon. The plane is flying above the moon, and the two objects are close to each other.",4,plane,0.0,1.0,0.0,0.0,0.0,0.0

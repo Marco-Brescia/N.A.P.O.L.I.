@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000023272,"Describe this image in detail, use simple terms","The image shows a car parked in front of a building. The car has a black exterior with a silver grille and a chrome bumper. There is a dog sitting on the hood of the car, looking towards the camera. The dog appears to be wearing a collar. The background includes some greenery and a building with windows. The overall image has a grainy, pixelated effect.",4,car,0.151,0.8291,0.2555,0.151,0.7101,0.0934

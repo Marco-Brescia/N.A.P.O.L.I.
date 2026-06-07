@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","The image shows a cat sitting on a dark surface. The cat has a white and brown coat with black markings. It appears to be playing with two toys, which are also on the dark surface. The toys look like small, round objects with a textured surface. The overall scene is dark, with the cat and toys being the only visible elements.",4,cat,0.1578,0.8747,0.2674,0.1578,0.5617,0.1392

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000056545,"Describe this image in detail, use simple terms","This image is a collage of nine small, close-up photos of a bird perched on a branch. The bird has a grayish-brown plumage with some darker markings on its wings and tail. The background is a blurred green, suggesting it is perched in a tree. The bird appears to be looking straight ahead, and its beak is slightly open.",14,bird,0.1027,0.3344,0.2062

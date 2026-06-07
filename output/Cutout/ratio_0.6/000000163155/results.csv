@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on a wooden surface. The cat has a striped coat with brown and white patches. It is looking to the side, and its tail is hanging down. In the background, there is a brick wall, and the surface on which the cat is sitting appears to be made of wood. The overall scene is outdoors, and the cat seems to be in a relaxed position.",4,cat,0.2606,0.8145,0.3948,0.2606,0.5232,0.2345

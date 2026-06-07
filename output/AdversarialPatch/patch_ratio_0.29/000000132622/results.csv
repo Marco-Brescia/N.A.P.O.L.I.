@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear standing in a grassy field. The bear has a fluffy coat and is looking forward. There is a checkered pattern overlay on the bear's face, making it look like the bear is wearing a mask. The background is green and appears to be a grassy area.",4,bear,0.2806,0.895,0.0312

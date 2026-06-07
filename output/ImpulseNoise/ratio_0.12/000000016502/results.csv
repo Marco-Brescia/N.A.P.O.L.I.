@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","This image shows a sheep standing on top of a hill. The hill is covered with rocks and grass. The sky is blue with some clouds, and the sheep is standing on a small patch of grass. The image has a pixelated effect, giving it a grainy appearance.",4,sheep,0.2843,0.3197,1.0411

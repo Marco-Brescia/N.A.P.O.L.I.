@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a banana placed on a desk. The banana is lying on the phone cord of a telephone, which is black and has a keypad on the right side. The phone is on a desk, and there are some papers and a stapler in the background. The desk appears to be made of a light-colored material.",4,banana,0.3399,0.558,1.2007

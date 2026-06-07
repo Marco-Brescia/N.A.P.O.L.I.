@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a building with a clock tower. The clock tower is made of brick and has a decorative design around the top. The building has a large entrance with steps leading up to it. The sky is clear, and the overall image has a blurred effect, giving it a dreamy or abstract appearance.",7,clock,0.3779,0.9333,0.538,0.3779,0.3779,0.7487

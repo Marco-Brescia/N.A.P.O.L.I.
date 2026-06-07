@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000324483,"Describe this image in detail, use simple terms","The image shows a close-up of a suitcase. The suitcase is green and has a zipper that is partially open. There are some white lines or scratches on the suitcase, possibly from previous use or damage. In the background, there is a blurred image of a room with a white curtain and some yellow flowers.",8,suitcase,0.1634,0.913,0.2771,0.1634,0.7154,0.2295

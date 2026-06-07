@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows an airplane flying in the sky. The airplane is seen from an overhead angle, with its wings and tail visible. The background is a blurred, textured surface, possibly a body of water or a large wall. The airplane appears to be in mid-flight, with its wings spread out and its tail pointing downward.",4,airplane,0.166,0.1891,0.5138

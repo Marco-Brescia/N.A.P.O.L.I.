@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear walking on grass. The bear has a light-colored fur coat and appears to be in motion, possibly running or walking quickly. The grass around the bear is green and appears to be wet, suggesting it might have rained recently. The bear's face is close to the camera, and its eyes are looking forward. The overall scene gives a sense of movement and activity.",4,bear,0.2006,0.8774,0.0415

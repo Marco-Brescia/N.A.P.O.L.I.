@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock with a checkered pattern on it. The clock is on the right side of the image, and it has Roman numerals on the face. The background is dark, and there is a small, bright object on the left side of the image, which appears to be the moon. The moon is shining brightly against the dark background.",4,clock,0.2027,0.3256,0.2671

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000052017,"Describe this image in detail, use simple terms","The image shows three different views of a small, yellow airplane in the sky. The airplane has a single propeller on the front and is flying at a low altitude. The propeller is spinning, and the airplane is moving from left to right. The sky is overcast, with a grayish-blue color, and there are no other objects or landmarks visible in the background.",11,airplane,0.1031,0.1943,0.2117

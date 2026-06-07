@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear in a grassy field. The bear is wet, possibly from recent rain, and has a fluffy, wet coat. It appears to be walking through the grass, and its eyes are focused forward. The background is blurred, making it difficult to see details, but it seems to be a natural, outdoor setting.",4,bear,0.205,0.8213,0.3281,0.205,0.9196,0.0397

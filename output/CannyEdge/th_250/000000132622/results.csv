@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear walking through a grassy field. The bear has a white and brown fur coat, and it appears to be wet, as there are droplets of water on its fur. The bear's face is close to the camera, and it looks determined and focused. The background is blurred, making the bear the main focus of the image.",4,bear,0.2191,0.7874,0.3428,0.2191,0.7989,0.041

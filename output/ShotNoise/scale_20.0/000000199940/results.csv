@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","In the image, there is a black cat standing next to a bottle. The cat is looking at the bottle, which has a label that says ""NOTRO."" The bottle is green with a floral design on it. The background appears to be indoors, with some furniture and decorations visible.",8,cat,0.2768,0.7381,0.0803

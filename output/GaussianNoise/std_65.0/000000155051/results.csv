@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows two objects against a dark background. On the left side, there is a small, round object that appears to be a planet or a small moon. On the right side, there is a large, circular object that looks like a clock face. The clock face is illuminated, showing the time. The dark background makes the objects stand out clearly.",49,clock,0.1481,0.9309,0.2555,0.1481,0.5029,0.5113

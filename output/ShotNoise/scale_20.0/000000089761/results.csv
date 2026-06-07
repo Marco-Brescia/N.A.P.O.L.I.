@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a toilet that is placed in the grass next to a tree. The toilet is made of concrete and has a white color. The tree behind the toilet has a rough, textured bark, and it appears to be a large tree with thick branches. The ground around the toilet is covered with leaves and grass. The overall scene looks like it might be in a garden or a backyard.",4,toilet,0.1846,0.3986,0.3566

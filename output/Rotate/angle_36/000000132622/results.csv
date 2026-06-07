@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear. The bear has a thick, fluffy coat that is a mix of white and brown. It is lying down on the ground, and its eyes are open, looking straight ahead. The bear is surrounded by green grass, and there are some small plants nearby. The bear appears to be in a natural environment, possibly a forest or a grassy area.",4,bear,0.1146,0.8889,0.203,0.1146,0.7,0.102

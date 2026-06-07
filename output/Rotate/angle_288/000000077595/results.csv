@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000077595,"Describe this image in detail, use simple terms","The image shows a cat sitting on a chair. The cat has a brown and black coat with green eyes. The chair has a plaid pattern with red, white, and blue colors. In the background, there is a computer monitor showing a blue and white screen with some text and graphics. The chair and the monitor are in a room with a white wall.",4,cat,0.3685,0.6725,0.4761,0.3685,0.4358,0.159

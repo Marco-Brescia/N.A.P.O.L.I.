@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000106757,"Describe this image in detail, use simple terms","The image shows an elephant standing in a fenced area. The elephant has its trunk raised, possibly reaching for something or interacting with something in its environment. The background includes some greenery, possibly trees or bushes, and the sky is visible above. The image has a grainy, pixelated effect, giving it a somewhat vintage or old-fashioned look.",4,elephant,0.3786,0.6609,0.4814,0.3786,0.6528,0.0658

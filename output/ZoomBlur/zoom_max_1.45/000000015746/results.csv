@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a fire hydrant in a grassy area. The hydrant is painted in a bright red color and has a black top. The hydrant is surrounded by green grass and some bushes. In the background, there is a building with a brick facade and some trees. The image has a blurred effect, giving it a dreamy or abstract appearance.","[4, 5, 6]",fire hydrant,0.1172,0.9304,0.2081,0.1172,0.4133,0.5391

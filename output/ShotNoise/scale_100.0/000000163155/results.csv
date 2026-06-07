@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on a ledge or a step. The cat has a striped coat with shades of gray, white, and a hint of orange. It has a relaxed posture, with its front paws tucked under its body and its tail hanging down. The background consists of a brick wall, and the cat appears to be looking to its left. The overall scene suggests a quiet, indoor setting.",4,cat,0.3292,0.4858,0.1517

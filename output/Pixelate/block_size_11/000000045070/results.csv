@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","The image shows a person sitting on a purple mat outdoors. The person has short hair and is wearing a pink shirt with white patterns. The background is green, suggesting it might be a garden or a park.",4,person,0.0906,0.427,0.3072

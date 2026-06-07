@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear in a grassy field. The bear has a white and brown coat, and it appears to be walking through the grass. The bear's face is visible, and it has a black nose and dark eyes. The bear's fur is slightly wet, suggesting it might have been in the water or has been exposed to rain. The background is green, indicating a grassy area.",4,bear,0.1477,0.8478,0.2515,0.1477,0.727,0.0522

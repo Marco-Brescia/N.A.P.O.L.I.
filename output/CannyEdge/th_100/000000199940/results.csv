@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","In the image, there is a black cat standing next to a bottle. The bottle is tall and green, with a label that says ""NOTRO."" The cat has a curious expression and is looking at the bottle. The background shows a kitchen setting with various items, including a refrigerator and some other kitchen appliances.",8,cat,0.1663,0.9103,0.2813,0.1663,0.7072,0.14

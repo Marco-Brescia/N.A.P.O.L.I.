@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000000650,"Describe this image in detail, use simple terms","The image shows a cat. The cat has a striped pattern with gray and white fur. It appears to be walking or moving, as indicated by the motion blur around its body. The background is blurred, making it difficult to see details, but it seems to be an outdoor setting with some greenery. The cat's eyes are closed, and it looks relaxed.",4,cat,0.1442,0.8667,0.2472,0.1442,0.3345,0.2343

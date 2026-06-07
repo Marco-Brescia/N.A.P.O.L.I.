@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is captured from a low angle, making it appear as if it's flying directly above the viewer. The sky is clear and blue, with no clouds visible. The plane's wings are spread out, and its tail is visible at the bottom of the image. The overall scene gives a sense of freedom and movement.",4,plane,0.2996,0.356,0.7352

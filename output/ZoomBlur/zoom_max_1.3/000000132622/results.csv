@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear. The bear has a light brown or grayish fur coat and is looking directly at the camera. The bear's eyes are closed, and its mouth is slightly open, as if it is snuffling or smelling something. The background is blurred, making it difficult to see details, but it appears to be a natural setting with greenery. The bear's fur looks soft and smooth.",4,bear,0.1448,0.8192,0.062

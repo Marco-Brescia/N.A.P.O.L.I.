@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000023272,"Describe this image in detail, use simple terms","The image shows a black car with a Mercedes-Benz logo on the front. The car is parked in front of a building with a green fence and some plants. The car has a black grille and a black hood. The building has a window with a white frame and a glass door. The overall scene appears to be outdoors, possibly in a residential area.",5,car,0.2355,0.7308,0.3563,0.2355,0.7254,0.0603

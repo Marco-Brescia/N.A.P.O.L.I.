@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on a wooden surface. The cat has a striped coat with shades of brown and black. The background features a brick wall, and the cat appears to be looking towards the camera. The overall scene has a simple, natural setting.",4,cat,0.1881,0.8087,0.3051,0.1881,0.3982,0.2296

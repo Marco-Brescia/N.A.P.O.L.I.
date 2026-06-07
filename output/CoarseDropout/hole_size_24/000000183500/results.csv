@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000183500,"Describe this image in detail, use simple terms","The image shows a biplane flying in the sky. The plane has two sets of wings, one above the other, and it has two sets of propellers. The plane is painted in red and white, with some black accents. There are also some black dots scattered around the image, possibly representing points of interest or markings. The plane appears to be in mid-flight, with its wings spread out.",5,plane,0.2098,0.2833,0.1658

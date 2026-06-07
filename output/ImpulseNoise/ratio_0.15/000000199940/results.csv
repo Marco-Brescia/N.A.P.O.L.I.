@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","The image shows a black cat standing on its hind legs. The cat is holding a green bottle with a red label and a red flower on it. The bottle is tilted, and the cat seems to be drinking from it. The background is blurred, making it difficult to see details, but it appears to be an indoor setting with some furniture and possibly a wall.",5,cat,0.2732,0.506,0.0603

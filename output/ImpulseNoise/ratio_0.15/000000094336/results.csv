@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000094336,"Describe this image in detail, use simple terms","The image shows a cat sitting on a plate. The cat has a brown and black coat with some white markings. The plate is white and has a brown rim. The cat appears to be resting or looking down. The image has a grainy, pixelated effect, giving it a vintage or old-fashioned look.",4,cat,0.2816,0.5711,0.1943

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a tall brick building with a clock on top. The clock is large and round, and it's mounted on a pole. The building has many windows, and the sky is clear and blue. The overall effect of the image is blurred, giving it a dreamy or artistic appearance.",9,clock,0.2951,0.913,0.4461,0.2951,0.3021,0.8086

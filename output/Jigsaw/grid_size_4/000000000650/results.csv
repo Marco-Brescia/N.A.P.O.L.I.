@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000000650,"Describe this image in detail, use simple terms","This image is a collage of pictures featuring cats. There are several cats in different positions and angles, including some that are looking out of a car window. The cats have different fur patterns and colors, and they are all in various poses, such as sitting or lying down. The collage is arranged in a grid format, with each picture taking up a small section of the image.",28,car,0.2028,0.8563,0.2191

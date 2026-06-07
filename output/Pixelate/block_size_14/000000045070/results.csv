@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","The image shows a person sitting on a chair. The person has dark hair and is wearing a pink shirt with a white cross on it. The background is green, possibly a hedge or a wall. The chair is purple.",4,person,0.0611,0.5966,0.7587

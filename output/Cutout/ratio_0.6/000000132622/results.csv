@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear in a grassy field. The bear is facing away from the camera, and its back is mostly visible. The bear has a fluffy, white fur coat with some brown patches. The background is green grass, and there are some small, white specks that could be raindrops. The bear appears to be in a natural setting, possibly a forest or a meadow.",4,bear,0.3235,0.756,0.4531,0.3235,0.9464,0.0253

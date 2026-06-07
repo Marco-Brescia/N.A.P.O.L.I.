@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000372902,"Describe this image in detail, use simple terms","The image shows a close-up view of some plants growing near the ground. The plants have green leaves and appear to be small and slender. The ground is covered with small rocks and pebbles. In the background, there is a black object, possibly a piece of machinery or equipment, partially visible. The overall scene suggests a natural environment, possibly near a construction site or a garden.",13,ground,0.1423,0.2961,0.1519

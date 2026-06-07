@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000009378,"Describe this image in detail, use simple terms","The image shows a person playing tennis. The person is wearing a black shirt and a blue headband. They are holding a tennis ball in their hand and appear to be in the middle of a serve or a shot. The background is dark, and there are several people watching the game. The overall setting looks like a tennis court or a similar sports venue.",4,person,0.0375,0.9456,0.0721,0.0375,0.2866,0.2659

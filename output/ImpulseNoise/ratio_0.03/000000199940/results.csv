@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","The image shows a black cat standing on a window sill. The cat is looking out of the window, and there are raindrops on the window. The cat is holding a green bottle with a label that says ""Mastro."" The label has a red flower design. The background outside the window shows some buildings and a street.",5,cat,0.0899,1.0,0.2924

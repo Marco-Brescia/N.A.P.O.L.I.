@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000183500,"Describe this image in detail, use simple terms","The image shows a small, vintage airplane in flight. The airplane has a white body with red accents on the wings and tail. It has two propellers, one on each wing. The airplane is flying in the sky, with a cloudy background. The overall image has a painterly, artistic quality to it.",7,airplane,0.2199,0.7942,0.3444,0.2199,0.3319,0.1898

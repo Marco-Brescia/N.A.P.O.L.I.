@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000179285,"Describe this image in detail, use simple terms","The image shows a close-up of a tennis racket. The racket has a blue frame with a grid pattern, indicating it is a badminton racket. The handle is black, and the brand name ""HEAD"" is visible on the top of the frame. The background is blurred, focusing attention on the racket.",9,racket,0.2241,0.7304,0.343,0.2241,0.7169,0.0331

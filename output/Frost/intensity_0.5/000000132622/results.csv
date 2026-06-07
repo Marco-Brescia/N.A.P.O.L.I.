@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear walking through grass. The bear has a thick, furry coat with a mix of brown and gray colors. Its eyes are closed, and it appears to be looking straight ahead. The bear's face is covered in a layer of fur, and its nose is black. The grass around the bear is green and appears to be dry. The bear's paws are not visible in the image.",4,bear,0.2156,0.8404,0.0372

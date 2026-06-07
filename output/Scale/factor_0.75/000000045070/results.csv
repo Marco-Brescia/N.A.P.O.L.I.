@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","The image shows a young girl sitting on a horse. She is wearing a black helmet, a pink and white checkered shirt, and blue jeans. The girl is also wearing a brown boot. The horse has a purple saddle blanket. The background shows a forest with green trees. The girl appears to be enjoying her time on the horse.",9,horse,0.2398,0.4227,0.4224

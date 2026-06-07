@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a mountain with a sheep on top. The sheep is standing on a rocky outcrop, and there is a mist or cloud around it, giving it a mystical appearance. The sky is clear with some clouds, and the overall scene has a dreamy, ethereal quality.",7,sheep,0.2803,0.2811,0.745

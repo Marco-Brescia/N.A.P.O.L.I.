@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000056545,"Describe this image in detail, use simple terms","This image shows a bird perched on a branch. The bird has a light gray or white body with darker gray or black markings on its wings and tail. The background is blurred, but it appears to be a tree with green leaves. The bird seems to be looking up, possibly observing its surroundings.",4,bird,0.2713,0.7319,0.3958,0.2713,0.4462,0.1414

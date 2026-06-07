@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000106757,"Describe this image in detail, use simple terms","The image shows a close-up of an elephant's leg. The elephant is standing on a dirt ground, and there is a rope or cable running across the ground near its feet. The background appears to be a natural setting with some trees and bushes. The sky is clear and blue.",8,elephant,0.3874,0.7014,0.4992,0.3874,0.7182,0.0622

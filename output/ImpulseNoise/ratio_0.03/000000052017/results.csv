@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000052017,"Describe this image in detail, use simple terms","The image shows a small, yellow airplane with the letters ""SP-AWF"" on the side. The airplane has a red tail and a blue engine. It is flying in the sky, surrounded by a lot of small, white dots, which could be snow or rain. The airplane appears to be in the middle of a flight, with its wings spread out.",7,airplane,0.0,0.0,0.0

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock with a dark background. The clock face is illuminated, displaying the time. The numbers on the clock are Roman numerals, and the hands of the clock are black. The clock reads approximately 10:15.",4,clock,0.0283,0.8465,0.0547,0.0283,0.055,0.3572

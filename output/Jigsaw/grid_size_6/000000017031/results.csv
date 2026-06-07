@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","This image is a collage of several pictures of giraffes. The giraffes are standing and looking in different directions. The pictures are arranged in a grid pattern, with each picture showing a different angle or part of the giraffe. The background is a mix of green and brown, which is typical for a giraffe's natural habitat.","[45, 46]",giraffe,0.1896,0.2663,0.0517

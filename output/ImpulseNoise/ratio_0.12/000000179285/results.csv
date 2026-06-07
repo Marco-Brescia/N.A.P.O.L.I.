@@ -1,0 +1,3 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000179285,"Describe this image in detail, use simple terms","The image shows a tennis racket with a green tennis ball on it. The racket is blue and has a grid pattern on the frame. The ball is resting on the grid, and the image is taken from an overhead angle, showing the racket and the ball clearly.",10,ball,0.3112,0.3265,0.3578
+000000179285,"Describe this image in detail, use simple terms","The image shows a tennis racket with a green tennis ball on it. The racket is blue and has a grid pattern on the frame. The ball is resting on the grid, and the image is taken from an overhead angle, showing the racket and the ball clearly.",5,racket,0.3149,0.8455,0.0194

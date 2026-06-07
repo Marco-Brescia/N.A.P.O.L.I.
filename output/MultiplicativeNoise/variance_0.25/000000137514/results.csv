@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a surface next to a microwave. The cat has a mix of white and gray fur, with some brown patches. The microwave is white and has a glass door. The cat appears to be resting or looking at something in front of it. The surface on which the cat is sitting is not clearly visible, but it seems to be a flat, smooth surface.",4,cat,0.2445,0.8846,0.3831,0.2445,0.7711,0.3128

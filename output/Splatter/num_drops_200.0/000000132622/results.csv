@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear in a grassy area. The bear appears to be wet, possibly from rain, and has a wet, fluffy coat. The background is blurred, making the bear the main focus. The bear's eyes are closed, and it looks calm and peaceful. The overall scene gives a sense of a rainy day in a natural setting.",4,bear,0.1208,0.9084,0.0639

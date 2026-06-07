@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000324483,"Describe this image in detail, use simple terms","The image shows a cat with a striped pattern. The cat has a white face and ears, and its fur is brown with some white patches. The cat is looking to the side, and its eyes are wide open. The background is blurred, making it difficult to see any details. The overall image has a grainy texture, giving it a slightly pixelated appearance.",4,cat,0.1963,0.8638,0.3199,0.1963,0.6746,0.1083

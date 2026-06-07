@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe. It has long neck and legs, and its body is covered with brown spots. The giraffe is looking directly at the camera, and its ears are large and pointed. The background is blurred, but it appears to be a natural setting with greenery.","[4, 5]",giraffe,0.2409,0.8843,0.3787,0.2409,0.6079,0.4213

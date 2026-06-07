@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000033759,"Describe this image in detail, use simple terms","The image shows a young boy playing baseball. He is wearing a helmet, a jersey, and a baseball glove. He is holding a baseball bat and appears to be standing in a baseball field. The background includes a chain-link fence and some greenery. The boy is holding a large, blank rectangular object in front of him, which could be a sign or a piece of equipment.",28,bat,0.0,1.0,0.0,0.0,0.0,0.0

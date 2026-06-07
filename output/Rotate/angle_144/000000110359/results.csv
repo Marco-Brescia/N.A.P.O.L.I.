@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is in the middle of the frame, with its wings spread out and its tail pointing upwards. The sky is clear and blue, indicating good weather. The plane appears to be a commercial jet, with its wings and tail visible. The perspective of the image is from below, looking up at the plane.",4,plane,0.1002,0.8232,0.1787,0.1002,0.1141,0.45

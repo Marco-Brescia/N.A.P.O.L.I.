@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000183500,"Describe this image in detail, use simple terms","The image shows a biplane flying in the sky. The plane has two sets of wings, one above the other, and it has a red and white color scheme. The wings are spread out, and the plane is in mid-flight. The sky is cloudy, and the plane appears to be moving at a moderate speed.",5,plane,0.1088,0.8522,0.193,0.1088,0.2133,0.2433

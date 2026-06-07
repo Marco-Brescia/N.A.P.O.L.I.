@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","The image shows a small airplane flying in the sky. The airplane has two wings and four engines. The sky is filled with small, white dots, which could be snow or a type of artificial snow effect. The airplane is flying at a low altitude, and the background is a clear blue sky with no clouds. The image has a watermark in the bottom right corner that says ""Daniele Niccolucci.""",5,airplane,0.0,0.0,0.0

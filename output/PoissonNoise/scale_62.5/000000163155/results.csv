@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on a ledge or a small platform. The cat has a striped coat with shades of gray, white, and black. It has a white face and ears, and its tail is long and striped. The background consists of a brick wall, and the cat appears to be looking to its left. The overall scene is simple and natural.",4,cat,0.3269,0.572,0.1962

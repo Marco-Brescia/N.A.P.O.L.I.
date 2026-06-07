@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","The image shows a cat sitting on a dark surface. The cat has a mix of brown, white, and black fur. It appears to be resting or lounging. In front of the cat, there is a microphone with a stand, suggesting that the cat might be in a recording studio or a similar environment. The overall lighting is dim, and the focus of the image is not sharp.",4,cat,0.2067,0.8389,0.3316,0.2067,0.6061,0.1412

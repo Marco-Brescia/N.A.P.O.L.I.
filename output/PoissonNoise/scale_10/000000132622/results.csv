@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear in a grassy area. The bear has a thick, fluffy coat and is looking directly at the camera. The bear's face is somewhat furry, and it appears to be eating or holding something in its mouth. The background is green, suggesting it might be in a forest or a grassy field.",4,bear,0.2393,0.8909,0.0375

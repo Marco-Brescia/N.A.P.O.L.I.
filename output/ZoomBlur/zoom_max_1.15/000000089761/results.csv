@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a toilet with a white seat and lid. The toilet is in a bathroom setting, and the background appears to be outdoors, with some greenery and sunlight. The toilet is surrounded by a blurred, abstract pattern that gives the impression of movement or energy. The overall effect is somewhat surreal and artistic.",4,toilet,0.3817,0.8363,0.5242,0.3817,0.5569,0.2583

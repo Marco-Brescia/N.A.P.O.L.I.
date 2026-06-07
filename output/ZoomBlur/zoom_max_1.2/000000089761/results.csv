@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a white toilet with a lid that is closed. The toilet is placed on a grassy surface, and there are some trees and bushes in the background. The toilet appears to be in a natural outdoor setting, possibly a backyard or garden. The overall scene has a somewhat abstract or artistic quality due to the way the image is composed.",5,toilet,0.3172,0.5268,0.2904

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","The image shows a cat lying down on a dark surface. The cat has a mix of brown and white fur. It is looking directly at the camera with a curious expression. Next to the cat, there is a toy, which appears to be a small, round object with a string attached to it. The toy is also on a dark surface. The overall scene is dark, with the cat and the toy being the main focus.",4,cat,0.1542,0.8414,0.2606,0.1542,0.4743,0.157

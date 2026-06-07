@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a table. The cat has a mix of white and brown fur. It is looking to the side, and its eyes are closed. The table has a white edge, and there is a microwave oven behind the cat. The image has a grainy, pixelated effect, giving it a vintage or old-fashioned look.",4,cat,0.4029,0.8419,0.545,0.4029,0.9629,0.239

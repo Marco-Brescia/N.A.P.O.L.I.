@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000056545,"Describe this image in detail, use simple terms","This image shows a bird perched on a branch. The bird has a speckled gray and white plumage, with a small, pointed beak. The background is blurred with green foliage, giving the impression that the bird is in a forest or a tree. The bird appears to be in motion, possibly chirping or singing.",4,bird,0.1437,0.785,0.243,0.1437,0.2999,0.1812

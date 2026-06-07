@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","This image shows a giraffe's shadow on a textured surface. The shadow is blurry and not very clear, but you can see the outline of the giraffe's head and neck. The background appears to be a rough, speckled surface, possibly a wall or a piece of furniture. The giraffe's shadow is cast on the surface, creating a silhouette effect.","[4, 5]",giraffe,0.2,0.4106,0.2847

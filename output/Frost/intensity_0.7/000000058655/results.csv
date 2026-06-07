@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","This image shows a tall building with a clock on top. The building appears to be made of brick and has several windows. The clock is large and has a decorative design around it. The sky in the background is cloudy, and the overall image has a slightly blurred effect, giving it a dreamy or artistic appearance.",8,clock,0.2114,0.2185,0.6812

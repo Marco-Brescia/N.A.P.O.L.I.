@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying through the sky, with the moon visible below it. The moon appears to be partially covered by the plane's wings, creating a silhouette effect. The sky is filled with small, white, glowing spots that resemble stars or perhaps some kind of artificial light. The overall scene is quite dramatic and visually striking.",4,plane,0.0,0.0,0.0

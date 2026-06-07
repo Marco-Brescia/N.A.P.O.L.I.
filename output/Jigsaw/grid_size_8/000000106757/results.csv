@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000106757,"Describe this image in detail, use simple terms","This image is a collage of pictures featuring elephants. The collage is arranged in a grid pattern, with each picture showing a different angle or perspective of an elephant. The elephants appear to be in various positions, some standing and some lying down. The background shows different scenes, including trees and possibly a fence or barrier. The overall theme is of elephants in their natural habitat.",30,elephant,0.175,0.5104,0.0273

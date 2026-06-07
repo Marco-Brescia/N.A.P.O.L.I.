@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a surface next to a microwave. The cat has a mix of white, gray, and brown fur. The microwave has a light-colored exterior and a black grille. The cat appears to be looking at the camera with a calm expression. The background is blurred, making it difficult to see more details.",4,cat,0.3657,0.8272,0.2257

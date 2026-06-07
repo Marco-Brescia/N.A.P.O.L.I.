@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat lying on a microwave. The cat has a mix of white, gray, and brown fur. It's lying on its side, with its head resting on the microwave door. The microwave has a white exterior and a black interior. The cat appears to be looking directly at the camera.",4,cat,0.1008,0.5897,0.1721,0.1008,0.166,0.1729

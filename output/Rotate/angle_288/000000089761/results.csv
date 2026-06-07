@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a white toilet sitting on top of a large, brown, crumbly substance. The toilet is upside down, and the base is resting on the substance. The background includes some greenery and a wooden structure.",5,toilet,0.3954,0.8312,0.5359,0.3954,0.5774,0.3471

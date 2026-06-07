@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000372902,"Describe this image in detail, use simple terms","The image shows a car parked on the side of the road. There are some plants in the foreground, and they appear to be moving or shaking, creating a blurred effect. The car's wheels and part of the car body are visible, but the rest of the car is not in the frame. The overall scene gives the impression of a dynamic, possibly windy environment.",4,car,0.2982,0.8783,0.4452,0.2982,0.8264,0.2005

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is in the foreground, and it's flying in a straight line. The sky is blue, and there are many small, black dots scattered across it. These dots are not part of the plane or the sky; they are just random points of light. The plane appears to be a commercial jet, and it's flying at a relatively low altitude.",4,plane,0.0,0.0,0.0

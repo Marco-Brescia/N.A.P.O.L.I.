@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000138115,"Describe this image in detail, use simple terms",The image shows a person with a bald head and a wrinkled face. They are wearing a black shirt and are making a funny face with their eyes wide open and their mouth slightly open. The background is plain and light-colored.,4,person,0.1287,0.8778,0.2246,0.1287,0.897,0.0248

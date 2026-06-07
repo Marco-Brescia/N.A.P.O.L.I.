@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image is a collage of pictures showing a giraffe. The giraffe is surrounded by green trees and bushes, and it appears to be in a natural setting. The collage is made up of several smaller pictures, each showing a different angle or part of the giraffe. The giraffe has long necks and a distinctive pattern of brown spots on its body.","[9, 10]",giraffe,0.1477,0.2927,0.1388

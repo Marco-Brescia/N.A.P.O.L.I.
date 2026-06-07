@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a night sky with a large clock and a moon. The clock is on the right side of the image and has Roman numerals on its face. The clock reads ""1902"" and has a black and gold color scheme. The moon is on the left side of the image and is partially visible, with its light shining through the darkness. The sky is filled with stars, creating a starry background.",9,clock,0.2515,0.4667,0.2952

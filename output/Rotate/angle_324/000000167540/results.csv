@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","The image shows a small airplane flying in the sky. The airplane has two wings, each with a target-like design on the top. The wings are blue with white stripes and have two engines mounted under each wing. The airplane is flying against a clear blue sky with some white clouds. The perspective of the photo is from below, looking up at the airplane.",5,airplane,0.0,1.0,0.0,0.0,0.0,0.0

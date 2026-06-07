@@ -1,0 +1,3 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000324483,"Describe this image in detail, use simple terms","The image shows a cat sitting inside a suitcase. The suitcase is green and has a zipper on the front. The cat has long, white fur with some gray markings. The background is blurred, making it difficult to see what is behind the cat.",4,cat,0.2033,0.9215,0.1089
+000000324483,"Describe this image in detail, use simple terms","The image shows a cat sitting inside a suitcase. The suitcase is green and has a zipper on the front. The cat has long, white fur with some gray markings. The background is blurred, making it difficult to see what is behind the cat.",8,suitcase,0.3242,0.9537,0.1534

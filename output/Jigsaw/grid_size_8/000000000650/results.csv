@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000000650,"Describe this image in detail, use simple terms","This image is a collage of several small pictures, each showing a cat's face peeking out from behind a window. The cats are mostly gray and white, and they are looking out of the window. The collage is arranged in a grid pattern, with each picture being a square. The background is blurred, making it difficult to see the details of the surroundings.",13,cat,0.2633,0.4589,0.0727

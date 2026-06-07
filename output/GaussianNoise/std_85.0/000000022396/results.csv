@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is in the middle of the picture, and it's flying at a relatively low altitude. The sky is filled with a lot of small, colorful dots, which give the image a grainy or pixelated appearance. In the bottom left corner, there is a bright, yellowish light that looks like the sun.",4,plane,0.0,1.0,0.0,0.0,0.0,0.0

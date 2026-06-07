@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a red fire hydrant in a grassy area. The hydrant is positioned in front of a house with a white exterior and a window. There are some flowers and trees in the background, and the grass around the hydrant is green and lush. The hydrant has black caps and is surrounded by some dandelions.","[5, 6, 7]",fire hydrant,0.0511,0.9014,0.0967,0.0511,0.1447,0.3567

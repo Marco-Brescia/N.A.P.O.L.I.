@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a fire hydrant in a grassy area. The hydrant is red with black accents and has a black top. It is surrounded by green grass and some flowers, including dandelions. In the background, there is a house with a roof and some trees. The sky is clear, and the overall scene is bright and sunny.","[4, 5, 6]",fire hydrant,0.0847,0.1687,0.2459

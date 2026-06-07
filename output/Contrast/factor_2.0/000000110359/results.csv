@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is in silhouette, meaning it's not clearly visible due to the angle and lighting. The plane is flying against a bright blue sky, which suggests it's daytime. The plane's wings are spread out, and it appears to be in the middle of its flight path.",4,plane,0.0,0.0,0.0

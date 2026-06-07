@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000179285,"Describe this image in detail, use simple terms",This image shows a tennis racket with a checkered pattern on the head. The checkered pattern is a square with alternating black and white squares. The racket is blue with a grid pattern around it.,5,racket,0.3164,0.7211,0.0233

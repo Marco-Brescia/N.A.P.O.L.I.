@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000106757,"Describe this image in detail, use simple terms","The image shows two elephants. One elephant is standing on top of the other, and they are both in a natural setting with trees in the background. The elephants appear to be interacting with each other, possibly playing or engaging in a playful activity. The image has a grainy, pixelated effect, giving it a vintage or old-fashioned look.",7,elephant,0.2646,0.6145,0.3699,0.2646,0.4662,0.0604

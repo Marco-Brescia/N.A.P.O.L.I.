@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000138115,"Describe this image in detail, use simple terms","The image shows a person holding a yellow object, which appears to be a piece of fruit, possibly a mango or a similar type of fruit. The person is making a funny face, with their mouth open and eyes wide, as if they are trying to bite or eat the fruit. The background is a plain, light-colored wall.",4,person,0.0907,0.8688,0.2173

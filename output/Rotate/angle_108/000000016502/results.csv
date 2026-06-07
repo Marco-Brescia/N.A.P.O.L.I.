@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on the edge of a steep cliff. The sky is clear with a few clouds, and the cliff is made of large, dark rocks. The sheep is looking down at the ground, and its body is angled as if it's trying to climb down the cliff. The scene is dramatic and somewhat surreal, with the sheep appearing to be in a precarious position.",4,sheep,0.0,1.0,0.0,0.0,0.0,0.0

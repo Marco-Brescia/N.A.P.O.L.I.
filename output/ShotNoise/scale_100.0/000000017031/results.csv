@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe. It has long necks and a long, straight tail. The giraffe has a brown and white pattern on its body, with darker spots. It has two large ears and a long, curved nose. The background is green and blurred, indicating it might be in a forest or a zoo.","[4, 5]",giraffe,0.2502,0.4919,0.323

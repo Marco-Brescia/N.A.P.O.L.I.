@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a desk with a telephone on it. The telephone is black and has a large banana attached to it, which is used as a receiver. The phone has a keypad on the right side, and there are some buttons on the left side. The desk has a red cord running across it, and there are some papers and a stapler on the left side of the desk. The background shows a wall and some other items.",19,banana,0.391,0.8897,1.7709

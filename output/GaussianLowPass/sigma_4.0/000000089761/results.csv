@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a toilet that is placed in front of a large tree. The tree has a thick trunk and appears to be covered in a thick, brown, fuzzy substance, possibly moss or a type of growth. The toilet is white and has a lid that is closed. The background shows some greenery, indicating that the toilet is outdoors.",4,toilet,0.4532,0.6191,0.2291

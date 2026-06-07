@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000372902,"Describe this image in detail, use simple terms","The image shows a small patch of ground with some green plants growing. There is a black object, possibly a vehicle, behind the plants. The plants have long, narrow leaves and appear to be some type of weed. The ground is covered with some white substance, possibly dirt or a type of soil.",7,ground,0.0896,0.8609,0.1624,0.0896,0.2033,0.1704

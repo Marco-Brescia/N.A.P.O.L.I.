@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on a surface, possibly a porch or a ledge. The cat has a striped coat with a mix of brown and white fur. It appears to be looking to the side, possibly at something or someone outside. The background includes a brick wall, suggesting that the cat is in an outdoor setting, possibly a backyard or a patio. The cat's tail is visible, and it seems to be in a relaxed position.",4,cat,0.2932,0.6323,0.2722

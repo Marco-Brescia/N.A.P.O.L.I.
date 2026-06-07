@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","This image is a collage of pictures of cats. The cats are lying down and looking at the camera. The pictures are arranged in a grid pattern, with each cat occupying a different square. The cats have different colors and patterns, and they are all in different positions. The background is dark, which makes the cats stand out.",32,cat,0.1881,0.4029,0.0465

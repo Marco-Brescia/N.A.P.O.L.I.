@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a dark scene with a clock in the background. The clock is illuminated, showing the time, but the details are not clear due to the low light. The background is mostly black, and there are faint light spots that resemble the moon, creating a bokeh effect. The clock has Roman numerals and appears to be hanging from a structure, possibly a building or a tower.",8,clock,0.31,0.6365,0.3974

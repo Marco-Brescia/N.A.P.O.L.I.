@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","The image shows a bottle of wine with a label that has a green and red design. The bottle is placed on a surface, and there is a black cat in the foreground, appearing to be in motion or flying. The cat's shadow is visible on the surface, and the background is blurred, making it difficult to see any specific details. The overall effect is a creative and artistic composition.",31,cat,0.0993,0.3856,0.1382

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000138115,"Describe this image in detail, use simple terms","The image shows two photos side by side. The top photo shows a person holding two oranges. The person is wearing a black jacket and has a serious expression on their face. The bottom photo shows the same person with a funny expression, making a funny face.",14,person,0.0502,0.7913,0.0767

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","The image shows a cat lying down on a dark surface. The cat has a white body with brown and black patches. It is holding onto a string or cord, which is connected to a toy or scratching post. The toy is also on the dark surface. The cat appears to be relaxed and enjoying its time.",4,cat,0.245,0.7494,0.3692,0.245,0.4936,0.1049

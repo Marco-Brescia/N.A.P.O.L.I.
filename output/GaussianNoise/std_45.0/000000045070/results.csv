@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","The image shows a young child riding a horse. The child is wearing a black helmet and a pink and white checkered shirt. The horse is sitting on a saddle, which is made of leather and has straps. The background shows a green, leafy tree and some grass. The child appears to be enjoying the ride.",8,horse,0.1208,0.8861,0.2126,0.1208,0.3256,0.4434

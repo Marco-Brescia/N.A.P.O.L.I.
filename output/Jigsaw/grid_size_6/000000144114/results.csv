@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000144114,"Describe this image in detail, use simple terms","The image shows a collage of several photos of a small airplane. The airplane has a red and white color scheme with the letters ""AWGN"" on the side. The photos are taken from different angles and show the airplane in flight against a cloudy sky. The airplane appears to be in motion, with its wings spread out and its tail pointing upwards.",11,airplane,0.1397,0.2333,0.1626

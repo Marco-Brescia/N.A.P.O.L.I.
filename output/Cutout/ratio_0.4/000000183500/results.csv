@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000183500,"Describe this image in detail, use simple terms","The image shows a small, vintage airplane flying in the sky. The airplane has two sets of wings, one on each side, and two propellers. The wings are red with white stripes, and the airplane has a white body with red accents. The propellers are yellow. The sky is gray, and the airplane is flying at a moderate altitude.",7,airplane,0.1429,0.8145,0.2431,0.1429,0.2301,0.1844

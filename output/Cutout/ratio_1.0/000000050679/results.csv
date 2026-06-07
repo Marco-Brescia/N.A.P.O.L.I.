@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image shows a street scene with a few cars parked along the side of the road. There is a large orange ball in the foreground, slightly tilted, and it appears to be on the ground. The background shows a cloudy sky and some trees, indicating it might be a fall or autumn day. The cars are parked in a row, and the street is clean and well-maintained.",22,orange,0.2932,0.8435,0.4351,0.2932,0.4346,0.3142

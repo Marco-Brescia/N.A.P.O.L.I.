@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on the ground. The cat has a mix of gray and white fur. The background is blurred, but it appears to be an outdoor setting with a brick wall and some other objects. The cat seems to be looking in one direction.",4,cat,0.2685,0.8725,0.4106,0.2685,0.6632,0.3156

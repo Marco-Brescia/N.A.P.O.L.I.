@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000056545,"Describe this image in detail, use simple terms","This image shows a bird perched on a branch. The bird has a grayish-brown plumage with some darker markings on its wings and tail. Its beak is short and pointed, and it has a small, rounded head. The bird appears to be in a tree with green leaves in the background. The bird's eyes are small and dark, and it has a slightly open beak, which it uses to make sounds.",4,bird,0.3249,0.756,0.4545,0.3249,0.5427,0.1417

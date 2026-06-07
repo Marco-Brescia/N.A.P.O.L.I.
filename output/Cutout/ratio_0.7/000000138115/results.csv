@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000138115,"Describe this image in detail, use simple terms",The image shows a person with a bald head and a beard. The person is wearing a dark shirt. The background appears to be a plain wall.,4,person,0.0784,0.9233,0.1445,0.0784,0.8135,0.039

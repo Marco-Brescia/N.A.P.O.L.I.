@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","The image shows a young child sitting on a horse. The child is wearing a pink plaid shirt, a black helmet, and a black saddle blanket. The child is also wearing a brown boot and has a bracelet on their wrist. The horse is sitting on a purple saddle blanket. The background shows trees and a clear sky.",9,horse,0.0875,0.853,0.1587,0.0875,0.2221,0.6475

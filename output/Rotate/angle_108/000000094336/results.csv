@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000094336,"Describe this image in detail, use simple terms","The image shows a cat inside a toilet. The cat has a calico coat, which means it has three different colored fur patterns: orange, black, and white. The cat is looking up at the camera with its eyes wide open. The toilet is white and has a silver handle on the side. The cat appears to be in a relaxed state, possibly enjoying the experience of being in the toilet.",4,cat,0.4109,0.6759,0.5111,0.4109,0.578,0.1394

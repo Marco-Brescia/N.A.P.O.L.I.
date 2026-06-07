@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","The image shows a black cat with white spots. The cat is standing on a green object, which could be a bottle or a vase. The background is blurred, making it difficult to see details, but it appears to be a room with some furniture and decorations. The overall effect of the image is somewhat abstract and artistic.",5,cat,0.1439,0.6619,0.1411

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear in a grassy area. The bear has a thick, fluffy coat and is looking directly at the camera. There are small black dots scattered across the image, possibly indicating areas of interest or features that the bear is showing. The bear is surrounded by green grass, and there is a plant with small purple flowers in the foreground.",4,bear,0.297,0.842,0.0343

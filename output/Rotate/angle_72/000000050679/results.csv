@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image shows an orange lying on the side of a road. The orange is slightly tilted, and its skin has some blemishes and spots. In the background, there are some trees and a few cars parked along the road. The sky appears to be overcast, with clouds covering most of the scene.",4,orange,0.1673,0.9507,0.2846,0.1673,0.6251,0.9717

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","This image shows a close-up of a textured surface, possibly a wall or a piece of fabric. The surface has a grainy texture with shades of gray and brown. In the upper right corner, there is a circle with a clock face inside it. The clock face is blurry, making it difficult to read the time. The overall scene gives the impression of a simple, unadorned background.",46,clock,0.3456,0.9417,0.374

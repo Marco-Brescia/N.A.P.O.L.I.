@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000052017,"Describe this image in detail, use simple terms","The image shows a small, single-engine airplane flying in the sky. The airplane has a yellow and orange color scheme with black accents. It has two propellers, one on each wing. The airplane is in the air, and the background is a cloudy sky.",8,airplane,0.1703,0.317,0.2617

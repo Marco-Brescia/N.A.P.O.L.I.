@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear. The bear is lying down on its side, and its head is tilted slightly to the side. The bear has a fluffy, light brown coat with darker brown patches. It appears to be in a grassy area, and there are some small plants and grasses around it. The bear's eyes are open, and it looks up towards the camera.",4,bear,0.1086,0.9034,0.1938,0.1086,0.7155,0.0844

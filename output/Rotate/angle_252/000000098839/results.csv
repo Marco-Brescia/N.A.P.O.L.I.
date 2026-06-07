@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000098839,"Describe this image in detail, use simple terms","The image shows a cat looking into a mirror. The cat has a striped pattern, and it appears to be curious about the reflection. The mirror is placed on a surface, and there are some electronic devices and a box on the left side of the mirror. The reflection in the mirror shows a room with a window and some furniture.",4,cat,0.5966,0.8721,0.7085,0.5966,0.8809,0.2197

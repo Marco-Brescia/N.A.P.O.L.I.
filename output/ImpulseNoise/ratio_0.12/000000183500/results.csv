@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000183500,"Describe this image in detail, use simple terms","The image shows a small, vintage airplane. It has two wings, a single propeller at the front, and four wheels. The airplane is painted in a light color, possibly beige or light brown, and has red accents on the wings and propeller. The background is a textured, speckled gray, giving the impression of an old photograph or a painting.",7,airplane,0.2605,0.3026,0.1222

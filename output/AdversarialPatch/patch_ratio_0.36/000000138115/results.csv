@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000138115,"Describe this image in detail, use simple terms","The image shows a person holding a checkerboard pattern in front of their face. The checkerboard is black and white, and the person is holding it with both hands. The background is a plain, light-colored wall.",4,person,0.0645,0.752,0.0758

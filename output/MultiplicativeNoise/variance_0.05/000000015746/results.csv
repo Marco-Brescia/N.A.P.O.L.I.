@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a red fire hydrant in a grassy area. The hydrant is old and has some rust on it. Behind the hydrant, there is a white house with a roof that has a small balcony. The house has a flower garden with purple flowers. There are also some trees and bushes around the house. The grass is green and the sky is overcast.","[5, 6, 7]",fire hydrant,0.0814,0.8812,0.149,0.0814,0.1998,0.3356

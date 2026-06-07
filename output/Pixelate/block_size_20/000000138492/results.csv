@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000138492,"Describe this image in detail, use simple terms","This image is a pixelated drawing of a dog. The dog has a black and white coat, with a white face and paws. It has a purple muzzle and a black tail. The background is green, and the dog is standing on two legs.",9,dog,0.1178,0.7618,0.1888

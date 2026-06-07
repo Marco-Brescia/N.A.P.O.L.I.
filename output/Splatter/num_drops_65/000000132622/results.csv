@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear standing in a grassy area. The bear has a thick, fluffy coat and is looking directly at the camera. The background is blurred, making the bear the main focus of the image. There are small, green specks scattered around the bear, possibly representing raindrops or small insects. The overall scene gives a sense of a rainy day in a natural setting.",4,bear,0.1678,0.9042,0.043

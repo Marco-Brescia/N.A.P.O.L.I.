@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000023272,"Describe this image in detail, use simple terms","The image shows a car with a dog sitting on top of it. The dog is brown and appears to be resting or looking out of the window. The car has a black exterior with a white grill and a windshield wiper. The background includes some greenery and a building with windows. The overall image has a pixelated effect, giving it a grainy appearance.",4,car,0.113,0.9666,0.1052

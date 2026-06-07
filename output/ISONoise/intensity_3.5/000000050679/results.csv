@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image shows an orange sitting on the ground in the middle of a parking lot. The parking lot is paved with asphalt, and there are several cars parked in the background. The sky appears to be overcast, and there are trees in the distance. The orange is the main focus of the image, and it looks like it has been placed there intentionally.",4,orange,0.5991,0.8812,0.7133,0.5991,0.8221,0.3335

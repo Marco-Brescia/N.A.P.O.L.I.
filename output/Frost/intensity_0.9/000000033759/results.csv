@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000033759,"Describe this image in detail, use simple terms","This image appears to be a blurry and distorted photo of a person standing on a surface. The person is wearing a uniform, which suggests they might be a soldier or a police officer. The background is a textured surface, possibly a field or a road, with a grid-like pattern. The overall quality of the image is poor, making it difficult to see any clear details.",12,person,0.3327,0.5957,0.357

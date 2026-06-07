@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a toilet in a garden or outdoor setting. The toilet is white and has a pedestal base. The background is slightly blurred, but it appears to be a natural environment with some greenery and trees. The overall image has a grainy or pixelated quality.",4,toilet,0.285,0.821,0.4232,0.285,0.4298,0.2385

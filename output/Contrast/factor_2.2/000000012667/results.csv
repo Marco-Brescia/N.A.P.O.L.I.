@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a desk with a phone on it. The phone is black and has a large, yellow banana attached to the handset. The phone is a Philips model, as indicated by the brand name on the side. The desk has a white surface, and there are some papers and a stapler on it. The banana is hanging down from the phone, and the phone cord is coiled around it.",21,banana,0.3572,0.9642,0.5212,0.3572,0.6297,1.1801

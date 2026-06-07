@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image shows an orange lying on the ground next to a road. The orange is on the left side of the image and is surrounded by a white line that marks the edge of the road. In the background, there are several cars parked along the road, and the sky is cloudy. The orange has a few small white specks on it, which could be snow or frost.",4,orange,0.1887,0.361,0.3948

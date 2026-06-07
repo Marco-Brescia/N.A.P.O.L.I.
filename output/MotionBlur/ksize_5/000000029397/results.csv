@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000029397,"Describe this image in detail, use simple terms","The image shows a wooden bench with a sign on it. The sign is blue and white and says, ""NEINER You've Got To Be St+agmen."" The bench is made of wood and has two wooden legs. The background is a concrete wall with some graffiti on it. The ground is made of red bricks.",5,bench,0.2069,0.3674,0.0774

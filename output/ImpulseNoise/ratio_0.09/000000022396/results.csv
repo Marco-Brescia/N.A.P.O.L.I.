@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","This image shows a plane flying in the sky. The plane is in the middle of the picture, and it's flying at a moderate altitude. The sky is blue with some clouds, and there's a bright, round object in the lower left corner of the image. This object appears to be a sun or a moon, but it's not clear because it's very bright and there are many small dots in the sky that make it difficult to see clearly.",4,plane,0.0,0.0,0.0

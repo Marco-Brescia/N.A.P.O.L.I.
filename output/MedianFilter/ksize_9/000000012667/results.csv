@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a banana placed on a desk. The banana is yellow and has a black cord attached to it, which is connected to a phone. The phone has a black display screen and a keypad with numbers and buttons. The background includes a white desk and some other objects, but they are not the main focus of the image.",4,banana,0.3334,0.9693,0.4962,0.3334,0.622,1.4173

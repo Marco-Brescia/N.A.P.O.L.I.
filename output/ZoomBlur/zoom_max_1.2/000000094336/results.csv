@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000094336,"Describe this image in detail, use simple terms","The image shows a cat sitting inside a bowl. The cat has a calico pattern, which means it has fur in different colors, including orange, black, and white. The bowl is white and has a circular shape. The cat is looking directly at the camera, and the image has a blurry effect, giving it a dreamy or artistic look.",4,cat,0.4864,0.8657,0.1335

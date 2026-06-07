@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000056545,"Describe this image in detail, use simple terms","The image shows a bird perched on a tree branch. The bird has a grayish-brown plumage with some white markings on its wings and back. Its head is small and pointed, with a dark beak. The bird appears to be resting or observing its surroundings. The background is blurred, but it seems to be a lush green tree with leaves.",4,bird,0.3885,0.814,0.526,0.3885,0.7135,0.2097

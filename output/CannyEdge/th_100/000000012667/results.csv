@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a desk with a black telephone on it. The telephone has a yellow banana attached to its receiver. The desk has some papers and a stapler on it. The banana is placed on the phone, and the wires of the phone are visible.",17,banana,0.3805,0.9719,0.5468,0.3805,0.8839,1.4568

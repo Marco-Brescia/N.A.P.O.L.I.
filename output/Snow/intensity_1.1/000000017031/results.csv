@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe's head and neck. The giraffe is surrounded by a lot of small, white dots, which makes it look like the giraffe is covered in snow or frost. The background is blurry, and it's difficult to see any details of the giraffe or the surroundings.","[4, 5]",giraffe,0.2052,0.3269,0.2094

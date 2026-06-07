@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","The image shows a cat lying down on a dark surface. The cat has a mix of brown, white, and black fur. It has green eyes and appears to be resting or sleeping. To the right of the cat, there is a white object that looks like a remote control or a small device. The background is dark, making the cat and the object stand out.",4,cat,0.3173,0.5879,0.0801

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a desk with a phone on it. The phone is black and has a cord attached to it. There is also a banana placed on the phone. The desk has some other items on it, including a stapler and a box. The phone is a Philips model.",27,banana,0.3895,0.9668,0.5553,0.3895,0.7812,1.1784

@@ -1,0 +1,3 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000138492,"Describe this image in detail, use simple terms","In the image, there is a dog that is jumping in the air. The dog has a black and white coat. It is holding a purple frisbee in its mouth. The dog is on a grassy field, and the background is green.",7,dog,0.0888,0.9072,0.1618,0.0888,0.3787,0.1917
+000000138492,"Describe this image in detail, use simple terms","In the image, there is a dog that is jumping in the air. The dog has a black and white coat. It is holding a purple frisbee in its mouth. The dog is on a grassy field, and the background is green.","[29, 30, 31]",frisbee,0.0,1.0,0.0,0.0,0.0,0.0

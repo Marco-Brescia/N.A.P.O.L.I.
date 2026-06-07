@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000098839,"Describe this image in detail, use simple terms","The image shows a collage of four pictures. In the top left picture, there is a cat sitting on a table. In the top right picture, there is another cat sitting on a table. In the bottom left picture, there is a cat sitting on a table. In the bottom right picture, there is a cat sitting on a table. The cats are all looking at the camera.",18,cat,0.2753,0.5767,0.3253

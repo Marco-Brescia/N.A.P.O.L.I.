@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000056545,"Describe this image in detail, use simple terms","This image shows a bird perched on a branch. The bird has a light gray or white plumage with some darker markings on its wings and tail. The background is blurred with green and white bokeh effects, suggesting it is set in a natural, possibly forested area. The bird appears to be looking up, possibly observing its surroundings.",4,bird,0.1843,0.8841,0.305,0.1843,0.5778,0.2697

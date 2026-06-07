@@ -1,0 +1,3 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","The image shows a person riding a horse. The person is wearing a black helmet and a pink shirt. They are sitting on a saddle, which is purple and has some decorative patterns. The background shows a forest with trees.",7,horse,0.1272,0.8737,0.2221,0.1272,0.3171,0.6127
+000000045070,"Describe this image in detail, use simple terms","The image shows a person riding a horse. The person is wearing a black helmet and a pink shirt. They are sitting on a saddle, which is purple and has some decorative patterns. The background shows a forest with trees.",4,person,0.2114,0.9068,0.3429,0.2114,0.5742,0.2189

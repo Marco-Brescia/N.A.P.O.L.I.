@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","In the image, there is a black cat standing next to a bottle of wine. The cat is looking directly at the camera, and the bottle has a label that says ""NOTRO"" and ""Extra Sandvineuse Richard."" The background shows a kitchen setting with various items, including a stove and some bottles. The cat appears to be curious about the wine bottle.",8,cat,0.1743,0.8932,0.2916,0.1743,0.7407,0.1536

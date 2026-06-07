@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a toilet sitting under a large tree. The tree has a rough, textured bark and appears to be quite old. The toilet is white and has a simple design, with a lid that is closed. The ground around the toilet is covered with leaves and grass, and there is a wooden bench or structure to the right of the toilet. The overall scene seems to be outdoors, possibly in a garden or park.",4,toilet,0.2232,0.3473,0.2443

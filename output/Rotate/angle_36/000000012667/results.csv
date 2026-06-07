@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a banana hanging off the phone cord of a telephone. The phone is a Philips model, and it's placed on a desk. There are some papers and a stapler on the desk as well.",4,banana,0.6281,0.9591,0.7591,0.6281,0.8358,1.1539

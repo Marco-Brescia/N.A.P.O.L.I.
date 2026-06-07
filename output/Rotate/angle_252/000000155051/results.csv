@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock with a dark background. The clock face is illuminated, displaying the time. The numbers on the clock are Roman numerals, starting from I (1) to XII (12). The hands of the clock are also visible, indicating the time.",4,clock,0.0,1.0,0.0,0.0,0.0,0.0

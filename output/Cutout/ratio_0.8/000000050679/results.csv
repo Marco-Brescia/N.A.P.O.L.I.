@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image shows a ball on the ground in the middle of a parking lot. The ball is orange and appears to be made of rubber or a similar material. In the background, there are several cars parked in rows, and the sky is cloudy. The parking lot is clean and well-maintained.",19,orange,0.3732,0.8551,0.5196,0.3732,0.5454,0.3381

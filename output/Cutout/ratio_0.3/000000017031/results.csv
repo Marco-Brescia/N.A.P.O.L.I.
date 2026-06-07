@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe with its head and neck visible. The giraffe has a brown and white pattern on its skin, which is typical for giraffes. The background is filled with green trees and foliage, indicating that the giraffe is in a forested area. The giraffe's ears are large and pointed, and it appears to be looking towards the camera.","[4, 5]",giraffe,0.2176,0.8519,0.3467,0.2176,0.5163,0.403

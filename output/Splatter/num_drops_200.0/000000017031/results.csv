@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe standing in the rain. The giraffe has its head raised and is looking directly at the camera. The background is filled with trees and greenery, and there are raindrops falling around the giraffe. The giraffe has a brown and white coat, and its ears are pointed up.","[4, 5]",giraffe,0.1447,0.2393,0.1899

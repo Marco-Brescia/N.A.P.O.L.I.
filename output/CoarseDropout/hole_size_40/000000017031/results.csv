@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe with its head and part of its body visible. The giraffe is surrounded by greenery, including trees and leaves. The background is blurred, making it difficult to see specific details, but it appears to be a natural setting, possibly a zoo or a wildlife park. The giraffe has a long neck and a distinctive pattern of spots on its body.","[4, 5]",giraffe,0.1676,0.2396,0.1623

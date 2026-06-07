@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on top of a rocky hill. The sky is clear with a few clouds, and the sheep has a fluffy white coat with a black face and legs. The hill is covered with rocks and has some green patches of grass growing on it.",4,sheep,0.2318,0.2506,0.5991

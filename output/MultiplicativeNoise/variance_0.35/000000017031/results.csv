@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe. It has long neck and legs, and its head is tilted slightly to the side. The giraffe is surrounded by greenery, which includes leaves and branches. The image has a grainy, pixelated effect, giving it a somewhat artistic or stylized appearance.","[4, 5]",giraffe,0.1909,0.8056,0.3087,0.1909,0.3407,0.2385

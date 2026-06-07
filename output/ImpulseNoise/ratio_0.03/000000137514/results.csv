@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a surface, possibly a table or countertop. The cat has a white and gray coat with some black markings. It appears to be looking at something in front of it, possibly a screen or a window. In the background, there is a microwave oven. The surface on which the cat is sitting has a speckled pattern, and the overall lighting in the image is dim.",4,cat,0.3738,0.7756,0.185

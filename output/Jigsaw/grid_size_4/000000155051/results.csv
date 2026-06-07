@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a close-up of a clock face with the time displayed as 10:10. The clock has Roman numerals on the outer edge of the dial, and the hands of the clock are pointing towards the numbers 10 and 10. The background is dark, making the clock face stand out. In the bottom left corner of the image, there is a small, bright moon visible in the sky.",8,clock,0.1744,0.2792,0.1353

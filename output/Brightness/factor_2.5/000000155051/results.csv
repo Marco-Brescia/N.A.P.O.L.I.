@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock with a black background. The clock face is gold-colored and has Roman numerals around the edges. The time on the clock is approximately 10:10. There is a small white circle in the bottom left corner of the image, which appears to be a moon or a similar celestial body. The overall scene is dark, with the clock and the moon being the only illuminated objects.",4,clock,0.102,0.2945,0.4926

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on a ledge or a surface. The cat has a striped coat with shades of gray and white. The background appears to be a brick wall, and there is a blurred effect that gives the image a dreamy or artistic look. The overall scene has a soft, dreamy quality to it.",4,cat,0.5306,0.711,0.1542

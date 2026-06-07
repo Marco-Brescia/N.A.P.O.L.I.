@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is seen from above, with its wings spread wide and its tail pointing downwards. The sky is filled with stars, creating a beautiful and serene background. The plane appears to be a commercial jet, with its large wings and engines visible. The overall scene is peaceful and calm, with the plane and the stars creating a sense of tranquility.",4,plane,0.0,0.0,0.0

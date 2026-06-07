@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear walking through a grassy area. The bear has a thick, fluffy coat and is looking directly at the camera. The bear's fur appears to be wet, suggesting it has been in the water or has been recently active. The grass around the bear is green and tall, indicating it might be in a forested or grassy area.",4,bear,0.2645,0.8068,0.3984,0.2645,0.9785,0.0365

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock with a dark background. The clock face is visible, but the numbers and hands are not clearly visible due to the darkness. There is also a small, bright light source in the bottom left corner of the image, which appears to be a moon or a similar celestial body. The overall scene is dark, with the clock being the only source of light.",4,clock,0.3163,0.9079,0.4691,0.3163,0.8057,0.3701

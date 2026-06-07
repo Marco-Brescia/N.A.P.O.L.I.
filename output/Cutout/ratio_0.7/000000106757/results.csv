@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000106757,"Describe this image in detail, use simple terms","The image shows a large elephant standing in a fenced area. The elephant has a wrinkled skin and is surrounded by a rope, which is likely used for training or control. In the background, there are trees and some people, possibly visitors or caretakers. The sky is clear, indicating it might be a sunny day.",5,elephant,0.3337,0.713,0.4546,0.3337,0.6745,0.079

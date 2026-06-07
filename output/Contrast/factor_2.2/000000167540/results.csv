@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","The image shows a small airplane flying in the sky. The airplane has two wings and four engines. The wings are wide and spread out, and the engines are mounted under the wings. The airplane is flying against a clear blue sky with some clouds. The image has a watermark in the bottom right corner that says ""Daniele Nicolucci.""",5,airplane,0.0,1.0,0.0,0.0,0.0,0.0

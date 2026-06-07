@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe standing in a grassy area. The giraffe has a long neck and a distinctive pattern of spots on its body. The background is green, suggesting it might be in a grassy field or savannah. The giraffe appears to be looking directly at the camera, with its head slightly tilted.","[4, 5]",giraffe,0.1762,0.7222,0.2832,0.1762,0.2681,0.2092

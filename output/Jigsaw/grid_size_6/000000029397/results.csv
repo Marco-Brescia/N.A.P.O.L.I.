@@ -1,0 +1,3 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000029397,"Describe this image in detail, use simple terms","This image is a collage of several small, square pictures. Each picture shows a person's feet wearing shoes, standing on a wooden bench. The person is wearing a red outfit and has their feet positioned on the bench. The background appears to be a brick wall.",26,bench,0.221,0.3829,0.0359
+000000029397,"Describe this image in detail, use simple terms","This image is a collage of several small, square pictures. Each picture shows a person's feet wearing shoes, standing on a wooden bench. The person is wearing a red outfit and has their feet positioned on the bench. The background appears to be a brick wall.",16,person,0.1773,0.4054,0.1846

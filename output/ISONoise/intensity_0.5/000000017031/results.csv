@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe. It has long neck and legs, and its head is tilted slightly to the side. The giraffe has brown and white spots on its body, and its ears are large and pointed. The background is filled with green trees and bushes, suggesting that the giraffe is in a natural habitat, possibly a zoo or a wildlife reserve.","[4, 5]",giraffe,0.2347,0.8889,0.3714,0.2347,0.5489,0.3313

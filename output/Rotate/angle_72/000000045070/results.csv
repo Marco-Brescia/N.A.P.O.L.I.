@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","The image shows a young child wearing a black helmet and a plaid shirt. The child is sitting on a saddle, which is part of a horse's saddle. The saddle has a purple blanket on it. The child appears to be adjusting something on the saddle, possibly the stirrup or the saddle itself. The background shows green trees and a clear sky.",29,horse,0.0426,0.9503,0.0816,0.0426,0.1881,0.5472

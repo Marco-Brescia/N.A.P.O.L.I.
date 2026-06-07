@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a fire hydrant in a grassy area. The hydrant is red with a black top and has a black hose connected to it. There are some green leaves and flowers in the background, and the sky appears to be overcast. The hydrant is surrounded by some trees and bushes.","[4, 5, 6]",fire hydrant,0.0,0.0,0.0

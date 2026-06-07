@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a tall brick building with a clock on top. The clock is round and has Roman numerals on the face. The building has many windows, and there are two flags hanging from the building. One flag is red and white, and the other is blue and white. There is a bench outside the building, and the sky is clear with a few clouds.",9,clock,0.1738,0.2298,0.9972

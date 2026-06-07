@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear walking through a grassy area. The bear has a thick, white fur coat and appears to be moving forward. The background is blurred, making it difficult to see details, but it seems to be a natural environment with green grass.",4,bear,0.2964,0.8652,0.0276

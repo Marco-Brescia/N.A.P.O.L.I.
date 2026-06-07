@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock with Roman numerals on the face. The clock is set to approximately 10:10. In the background, there is a full moon shining brightly against a dark sky. The moon is positioned to the right of the clock, and it appears to be the only source of light in the scene.",4,clock,0.0004,0.6726,0.0008,0.0004,0.0006,0.3268

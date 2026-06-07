@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear in a grassy area. The bear has a thick, fluffy coat and is looking directly at the camera. The bear's face is close to the camera, and its mouth is open, showing its teeth. The background is green, indicating a grassy field. The bear appears to be in a natural setting, possibly a forest or a meadow.",4,bear,0.1581,0.8309,0.2656,0.1581,0.6919,0.0526

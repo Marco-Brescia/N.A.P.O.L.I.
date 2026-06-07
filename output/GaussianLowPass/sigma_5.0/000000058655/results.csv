@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a building with a clock on a pole in front of it. The building is made of brick and has a classic architectural style. The clock on the pole is black with gold trim and has a white face. The sky in the background is clear and blue, suggesting it is daytime. The overall scene gives a sense of a historical or older building in a town or city.",7,clock,0.3745,0.9333,0.5345,0.3745,0.396,1.1298

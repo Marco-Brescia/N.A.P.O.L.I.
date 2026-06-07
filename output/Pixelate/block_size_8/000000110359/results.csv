@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is seen from above, with its wings spread out and its body visible. The plane is in the middle of the frame, and the background is a gradient of blue, suggesting it is daytime. The plane appears to be a commercial jet, and the image has a pixelated effect, giving it a retro or vintage look.",4,plane,0.0,0.0,0.0

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is dark-colored, possibly black or dark blue, and it has two engines on its wings. The sky is filled with small, white, glowing spots that resemble stars or lights. The plane is moving through the sky, and the background is a dark blue color. The image has a watermark in the bottom right corner that says ""Daniele Nicolucci.""",4,plane,0.2168,0.3858,0.5445

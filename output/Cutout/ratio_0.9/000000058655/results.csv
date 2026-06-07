@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a tall brick building with a clock tower. The building has many windows and is made of red bricks. There is a clock on the tower, and the sky is clear with a few clouds. There are two flags hanging from the building, one of which is an American flag. The building has a large entrance with steps leading up to it. There is a bench outside the entrance.",9,clock,0.0,1.0,0.0,0.0,0.0,0.0

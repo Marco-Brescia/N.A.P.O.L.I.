@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000009378,"Describe this image in detail, use simple terms","This image is a collage made up of several small, square pictures. Each square shows a person's face, but the faces are cut off or distorted in some way, making it difficult to see their full features. The pictures are arranged in a grid pattern, creating a mosaic effect. The overall color scheme is dark, with shades of black and gray dominating the scene.",18,person,0.0712,0.4202,0.0979

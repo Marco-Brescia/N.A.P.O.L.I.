@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000372902,"Describe this image in detail, use simple terms","The image shows a small cat sitting on the side of a road. The cat is peeking out from behind some green plants. The plants are tall and have long, narrow leaves. The cat is sitting on a concrete surface, and there is a tire visible in the background. The overall scene appears to be outdoors, possibly in a city or suburban area.",5,cat,0.0,1.0,0.0,0.0,0.0,0.0

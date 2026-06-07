@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","The image shows a young girl sitting on a horse. She is wearing a black helmet, a pink and white checkered shirt, and blue jeans. The girl is holding onto the reins of the horse with both hands. The horse is wearing a purple saddle blanket. The background shows green trees and a clear sky.",9,horse,0.1306,0.8282,0.2256,0.1306,0.2844,0.4755

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a banana sitting on a desk next to a telephone. The banana is hanging off the phone's cord, which is coiled and connected to the phone. The phone is a black landline phone with a keypad and a screen on the top right corner. The desk has some papers and a stapler on it. The background includes a white wall and some office equipment.",4,banana,0.4612,0.9616,0.6234,0.4612,0.7226,1.1173

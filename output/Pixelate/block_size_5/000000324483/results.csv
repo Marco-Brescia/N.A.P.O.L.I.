@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000324483,"Describe this image in detail, use simple terms","The image shows a cat sitting inside a green sweater. The cat has a fluffy coat with patches of white and brown. The sweater is dark green and appears to be made of a soft material. The cat is looking slightly to the side, and the background is blurred, making it difficult to see details.",4,cat,0.4034,0.738,0.0648

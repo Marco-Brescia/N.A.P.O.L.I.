@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a tall building with many windows. The building has a clock on top of it, which is attached to a tall pole. The clock is round and has a decorative design around it. The sky in the background is clear and blue. The building appears to be made of brick and has a classic architectural style.",14,clock,0.2587,0.9275,0.4046,0.2587,0.2711,0.7201

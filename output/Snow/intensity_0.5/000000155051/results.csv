@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","This image shows a night sky filled with stars. In the center, there is a large clock with Roman numerals. The clock is surrounded by a star field, and the moon is visible in the lower left corner. The stars are small and scattered, creating a dark, starry background.",18,clock,0.2136,0.4938,0.308

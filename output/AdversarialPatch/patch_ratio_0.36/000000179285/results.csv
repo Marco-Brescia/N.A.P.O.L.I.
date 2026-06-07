@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000179285,"Describe this image in detail, use simple terms","This image shows a tennis racket with a checkerboard pattern on it. The pattern is a square with black and white squares arranged in a checkerboard pattern. The racket has a blue frame with a grid pattern, and the background is green, which might be a court or a grassy area.",5,racket,0.3507,0.7253,0.0224

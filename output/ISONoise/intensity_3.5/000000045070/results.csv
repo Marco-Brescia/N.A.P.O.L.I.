@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","The image shows a young child riding a horse. The child is wearing a black helmet and a pink and white plaid shirt. The horse is sitting on a saddle, and the child is holding onto the reins. The background features green trees, suggesting that the scene is taking place in a forested area.",8,horse,0.3007,0.6563,0.4124,0.3007,0.3821,0.2528

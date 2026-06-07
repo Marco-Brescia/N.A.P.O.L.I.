@@ -1,0 +1,3 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000138115,"Describe this image in detail, use simple terms","The image shows a person holding an orange. The person's face is blurred, making it difficult to see their features clearly. The orange is bright yellow and appears to be in focus. The background is a plain, light-colored wall.",7,orange,0.3542,0.5787,0.2753
+000000138115,"Describe this image in detail, use simple terms","The image shows a person holding an orange. The person's face is blurred, making it difficult to see their features clearly. The orange is bright yellow and appears to be in focus. The background is a plain, light-colored wall.",4,person,0.0554,0.5788,0.0619

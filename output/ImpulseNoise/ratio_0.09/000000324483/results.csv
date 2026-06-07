@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000324483,"Describe this image in detail, use simple terms","The image shows a cat sitting behind a fence. The cat has a white and brown fur coat, with yellow eyes. The fence is made of metal and has a green color. The background is blurred, making it difficult to see what is behind the fence. The overall image has a grainy texture, giving it a slightly blurry appearance.",4,cat,0.2124,0.9959,0.1095

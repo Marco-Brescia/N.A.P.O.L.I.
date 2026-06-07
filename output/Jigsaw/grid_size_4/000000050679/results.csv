@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","This image is a collage of nine different pictures. Each picture shows a different scene, but they all have a common theme of an orange. The orange is prominently displayed in the foreground of each picture, and the background varies from a parking lot to a street with cars and trees. The collage creates a sense of continuity and connection between the different scenes.",26,orange,0.1803,0.3428,0.17

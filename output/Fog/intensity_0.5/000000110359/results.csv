@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is seen from below, with its wings spread wide and its tail pointing upwards. The sky is clear and blue, and there are no other objects or features visible in the image. The plane appears to be a commercial jet, and its wings are long and narrow, typical of modern aircraft.",4,plane,0.0,1.0,0.0,0.0,0.0,0.0

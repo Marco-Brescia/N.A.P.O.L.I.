@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image shows an orange lying on the ground in a parking lot. The orange is mostly orange with some dark spots, and it's sitting on the pavement. In the background, there are several cars parked in the lot, and some trees with green leaves are visible. The sky appears to be overcast, and the overall lighting is bright.",4,orange,0.2858,0.691,0.5625

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms",The image shows a tall building with a clock on top. The building has a brick facade with windows and a door. There is an American flag flying on a flagpole attached to the building. The clock is round and has a decorative design around the edge. The sky is clear and blue.,8,clock,0.2882,0.913,0.4382,0.2882,0.2925,0.5851

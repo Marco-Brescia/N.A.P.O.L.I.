@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","This image is a collage of several pictures, each showing a close-up of an orange. The oranges are placed on a surface, possibly a road or a parking lot. The background shows some trees and a cloudy sky. The collage is arranged in a grid pattern, with each orange occupying a different square. The oranges appear to be ripe and are the main focus of the collage.",16,orange,0.1826,0.3955,0.1249

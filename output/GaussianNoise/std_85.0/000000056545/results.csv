@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
+000000056545,"Describe this image in detail, use simple terms","This image shows a bird perched on a branch. The bird has a grayish-brown body with a slightly lighter grayish-brown head. The background is filled with green leaves and branches, creating a natural and somewhat blurred effect. The bird appears to be in a tree, and the overall image has a grainy texture, giving it a somewhat pixelated appearance.",4,bird,0.2223,0.7802,0.346,0.2223,0.4271,0.1642
