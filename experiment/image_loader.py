@@ -65,8 +65,12 @@ def _is_completed(
     checkpoint_dir = os.path.join(cfg.output_dir, task_folder, img_id)
     tokens_file = os.path.join(checkpoint_dir, f"{img_id}_tokens.txt")
     heatmaps_dir = os.path.join(checkpoint_dir, cfg.heatmaps_subdir)
+    results_csv = os.path.join(checkpoint_dir, "results.csv")
+    has_results = os.path.exists(results_csv)
 
-    if not (os.path.isdir(checkpoint_dir) and os.path.exists(tokens_file)):
+
+    if not (os.path.isdir(checkpoint_dir) and os.path.exists(tokens_file)) or \
+   (os.path.exists(heatmaps_dir) and len(os.listdir(heatmaps_dir)) > 0 and not has_results):
         return False
 
     try:
@@ -82,10 +86,14 @@ def _is_completed(
     for entry in mask_entries:
         target = entry.category.lower()
         if target not in generated_tokens:
-            # Model did not generate this token last time; must reprocess.
+            # Model did not generate this token last time
+            continue
+        if not has_results:
+            # Model generated the token, but we don't have results.csv — likely a previous run was interrupted after generating heatmaps
             return False
         if not os.path.isdir(heatmaps_dir):
             return False
+        
         existing = os.listdir(heatmaps_dir)
         if not any(f"_{target}_heatmap" in fname.lower() for fname in existing):
             return False
