@@ -88,7 +88,6 @@ def _x_labels(sub_df: pd.DataFrame, x_values: List[float]) -> List[str]:
 
 
 def _metric_axes(fig_width: float = 15.0, fig_height: float = 4.5):
-    """Return (fig, axes) with one subplot per metric."""
     fig, axes = plt.subplots(
         1, len(METRICS),
         figsize=(fig_width, fig_height),
@@ -108,7 +107,6 @@ def _metric_axes(fig_width: float = 15.0, fig_height: float = 4.5):
 
 
 def _apply_x_axis(ax, x_values: List[float], labels: List[str]) -> None:
-    """Set x-ticks, rotated labels, and a vertical baseline reference line."""
     ax.set_xticks(range(len(x_values)))
     ax.set_xticklabels(labels, rotation=30, ha="right", fontsize=8)
 
@@ -123,10 +121,6 @@ def _apply_x_axis(ax, x_values: List[float], labels: List[str]) -> None:
 
 
 def _mark_missing(ax, x_pos: int, metric: str) -> None:
-    """
-    Draw a grey ✗ at the bottom of the subplot to signal that the model
-    did not generate the target token for this perturbation level.
-    """
     lo, _ = _METRIC_YLIM.get(metric, (0.0, 1.0))
     ax.plot(x_pos, lo + 0.02, marker="x", color="lightgrey",
             markersize=8, markeredgewidth=1.5, zorder=5)
@@ -141,7 +135,6 @@ def _mark_missing(ax, x_pos: int, metric: str) -> None:
 
 
 def _add_legend(axes, ncol: int = 4) -> None:
-    """Place a shared legend to the right of the last axis."""
     handles, labels = [], []
     for ax in axes:
         h, l = ax.get_legend_handles_labels()
@@ -443,6 +436,20 @@ _METRIC_DIRECTION = {
 def _relative_degradation(
     value: float, baseline: float, direction: str, eps: float = 1e-9
 ) -> float:
+    if direction == "higher_better":
+        return (baseline - value) / (abs(baseline) + eps)
+    return (value - baseline) / (abs(baseline) + eps)
+
+
+def detect_breaking_point(
+    obj_iou_means: np.ndarray,
+    io_ratio_means: np.ndarray,
+    wdp_means: np.ndarray,
+    baseline_vals: Dict[str, float],
+    threshold: float = 0.40,
+    wdp_arbiter_min: float = 0.0,
+    min_consecutive: int = 1,
+) -> Optional[int]:
     n = len(obj_iou_means)
     run_start: Optional[int] = None
     run_len = 0
@@ -494,7 +501,7 @@ def plot_breaking_point_profile(
     out_dir: str,
     perturbation_types: Optional[List[str]] = None,
     image_ids: Optional[List[str]] = None,
-    degradation_threshold: float = 0.44,
+    degradation_threshold: float = 0.20,
     wdp_arbiter_min: float = 0.0,
     min_consecutive: int = 1,
 ) -> None:
