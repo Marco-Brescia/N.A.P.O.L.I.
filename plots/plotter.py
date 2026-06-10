@@ -25,12 +25,14 @@ _METRIC_LABELS = {
 _METRIC_YLIM = {
     "obj_iou": (0.0, 1.0),
     "io_ratio": (0.0, 1.0),
-    "wdp":     (0.0, 1.0),
+    "wdp":     (0.0, None),
 }
 
 _FIGURE_DPI  = 150
 _PALETTE     = plt.rcParams["axes.prop_cycle"].by_key()["color"]
 _BASELINE_X    = 0.0          # param_value assigned to "Normale"
+WDP_PENALTY_NO_HEATMAP = 5.0
+WDP_PENALTY_NO_TOKEN = 5.0
 _BASELINE_TYPE = "Normale"    # perturbation_type label for baseline rows
 
 
@@ -98,7 +100,7 @@ def _metric_axes(fig_width: float = 15.0, fig_height: float = 4.5):
         ax.set_ylabel(_METRIC_LABELS.get(metric, metric))
         ax.set_title(_METRIC_LABELS.get(metric, metric))
         lo, hi = _METRIC_YLIM.get(metric, (None, None))
-        if lo is not None:
+        if lo is not None and hi is not None:
             ax.set_ylim(lo, hi)
         ax.yaxis.set_minor_locator(ticker.AutoMinorLocator())
         ax.grid(axis="y", linewidth=0.4, alpha=0.6)
@@ -160,9 +162,19 @@ def _series_for_category(
     y = []
     for x in x_values:
         vals = cat_df.loc[cat_df["param_value"] == x, metric].dropna()
-        y.append(vals.mean() if len(vals) else np.nan)
+        
+        if len(vals) > 0:
+            val = vals.mean()
+            # First case: token generated but heatmap empty (TAM < 20%) 
+            if metric == "wdp" and val == 0.0:
+                y.append(WDP_PENALTY_NO_HEATMAP)
+            else:
+                y.append(val)
+        else:
+            # Second case: token lost (NaN in CSV)
+            y.append(0.0 if metric in ["obj_iou", "io_ratio"] else WDP_PENALTY_NO_TOKEN)
+            
     return np.array(y, dtype=float)
-
 
 # ---------------------------------------------------------------------------
 # 1 – Overview: one figure per perturbation type
@@ -196,32 +208,51 @@ def plot_perturbation_overview(
 
             for ax, metric in zip(axes, METRICS):
                 means, stds = [], []
+                missing_mask = []  # points where token is completely missing across ALL perturbation levels for this category
+                
                 for x in x_values:
                     vals = cat_df.loc[cat_df["param_value"] == x, metric].dropna()
-                    means.append(vals.mean() if len(vals) else np.nan)
-                    stds.append(vals.std()  if len(vals) > 1 else 0.0)
+                    
+                    if len(vals) > 0:
+                        val = vals.mean()
+                        missing_mask.append(False)
+                        # First case: token generated but heatmap empty (TAM < 20%)
+                        if metric == "wdp" and val == 0.0:
+                            means.append(WDP_PENALTY_NO_HEATMAP)
+                            stds.append(0.0) 
+                        else:
+                            means.append(val)
+                            stds.append(vals.std() if len(vals) > 1 else 0.0)
+                    else:
+                        missing_mask.append(True)
+                        # Second case: token lost (NaN in CSV)
+                        means.append(0.0 if metric in ["obj_iou", "io_ratio"] else WDP_PENALTY_NO_TOKEN)
+                        stds.append(0.0)
 
                 means = np.array(means, dtype=float)
                 stds  = np.array(stds,  dtype=float)
 
-                # Skip entirely-missing categories
-                if np.all(np.isnan(means)):
-                    logger.debug("overview [%s/%s] all values missing — skipped.", ptype, category)
-                    continue
-
+                # skip entire line if token is completely missing across all perturbation levels (e.g., token not generated for this category at all)
+                if np.all(missing_mask):
+                     continue
+                     
                 x_pos = list(range(len(x_values)))
+                
+                # Principal line with mean values
                 ax.plot(x_pos, means, marker="o", markersize=4,
                         label=category, color=color, linewidth=1.4)
+                
+                # draw "X" markers for points where the token is completely missing (NaN across all perturbation levels for this category)
+                for i, is_missing in enumerate(missing_mask):
+                    if is_missing:
+                        ax.plot(x_pos[i], means[i], marker="X", color="red", markersize=6, zorder=4)
+                
+                # std shading, clipped to valid metric range
                 ax.fill_between(x_pos,
-                                np.where(np.isnan(means - stds), np.nan, means - stds),
-                                np.where(np.isnan(means + stds), np.nan, means + stds),
+                                np.where(np.isnan(means), np.nan, np.clip(means - stds, 0.0, None if metric == "wdp" else 1.0)),
+                                np.where(np.isnan(means), np.nan, np.clip(means + stds, 0.0, None if metric == "wdp" else 1.0)),
                                 alpha=0.15, color=color)
-
-                # Mark missing individual points
-                for i, (x, y) in enumerate(zip(x_values, means)):
-                    if np.isnan(y):
-                        _mark_missing(ax, i, metric)
-
+                
                 _apply_x_axis(ax, x_values, x_labels)
 
         _add_legend(axes)
@@ -448,7 +479,7 @@ def detect_breaking_point(
     baseline_vals: Dict[str, float],
     threshold: float = 0.40,
     wdp_arbiter_min: float = 0.0,
-    min_consecutive: int = 1,
+    min_consecutive: int = 2,
 ) -> Optional[int]:
     n = len(obj_iou_means)
     run_start: Optional[int] = None
@@ -457,6 +488,10 @@ def detect_breaking_point(
     bv_obj = baseline_vals.get("obj_iou", np.nan)
     bv_io  = baseline_vals.get("io_ratio", np.nan)
     bv_wdp = baseline_vals.get("wdp", np.nan)
+
+    # If the baseline is missing or already at the worst possible value, we cannot detect a break (since we have no reference or room to degrade), so we return 0 to indicate an immediate break at the first perturbation level.
+    if (not np.isnan(bv_obj) and bv_obj == 0.0) or (not np.isnan(bv_io) and bv_io == 0.0):
+        return 0
 
     for i in range(1, n):
         # --- primary: composite of obj_iou + io_ratio ---
@@ -501,11 +536,11 @@ def plot_breaking_point_profile(
     out_dir: str,
     perturbation_types: Optional[List[str]] = None,
     image_ids: Optional[List[str]] = None,
-    degradation_threshold: float = 0.20,
+    degradation_threshold: float = 0.40,
     wdp_arbiter_min: float = 0.0,
-    min_consecutive: int = 1,
+    min_consecutive: int = 2,
 ) -> None:
-    save_dir = Path(out_dir) / "breaking_point"
+    save_dir = Path(out_dir) / "breaking_point_per_token"
     _ensure_dir(save_dir)
 
     types = perturbation_types or sorted(df["perturbation_type"].unique())
@@ -529,146 +564,140 @@ def plot_breaking_point_profile(
                 continue
 
             categories = sorted(img_df["category"].unique())
+            n_cats = len(categories)
 
-            fig, axes = _metric_axes(fig_width=15.0, fig_height=5.5)
+            # Create a grid of subplots: one row per category, one column per metric
+            fig, axes_2d = plt.subplots(
+                n_cats, len(METRICS), 
+                figsize=(15.0, 4.5 * n_cats), 
+                constrained_layout=True
+            )
+            
+            # If there's only one category, axes_2d will be 1D; we need to make it 2D for consistent indexing
+            if n_cats == 1:
+                axes_2d = np.array([axes_2d])
+                
             fig.suptitle(
-                f"Breaking Point  |  image {img_id}  —  {ptype}"
-                f"  (primary threshold: {degradation_threshold*100:.0f} %,"
-                f"  wdp arbiter ≥ {wdp_arbiter_min*100:.0f} %)",
-                fontsize=11, fontweight="bold",
+                f"Per-Token Breaking Point | image {img_id} — {ptype}\n"
+                f"(threshold: {degradation_threshold*100:.0f}%, min_consecutive: {min_consecutive})",
+                fontsize=14, fontweight="bold",
             )
 
-            # ----------------------------------------------------------------
-            # Build mean series for every metric
-            # ----------------------------------------------------------------
-            mean_series: Dict[str, np.ndarray] = {}
-            baseline_vals: Dict[str, float]    = {}
-
-            for metric in METRICS:
+            # For each category, plot the metric lines and detect the breaking point based on the defined criteria
+            for row_idx, category in enumerate(categories):
+                axes = axes_2d[row_idx]
+                color = _PALETTE[row_idx % len(_PALETTE)]
+                cat_df = img_df[img_df["category"] == category]
+                
                 cat_series: Dict[str, np.ndarray] = {}
-                for category in categories:
-                    cat_df = img_df[img_df["category"] == category]
-                    y = _series_for_category(cat_df, x_values, metric)
-                    if not np.all(np.isnan(y)):
-                        cat_series[category] = y
+                baseline_vals: Dict[str, float] = {}
+                token_missing_mask = {} # to track if token is completely missing (NaN) for each metric across all perturbation levels for this category
 
-                if cat_series:
-                    with np.errstate(all="ignore"):
-                        means = np.nanmean(np.vstack(list(cat_series.values())), axis=0)
-                    mean_series[metric]   = means
-                    baseline_vals[metric] = means[0] if not np.isnan(means[0]) else np.nan
+                for metric in METRICS:
+                    y = []
+                    missing_mask = []
+                    
+                    for x in x_values:
+                        vals = cat_df.loc[cat_df["param_value"] == x, metric].dropna()
+                        if len(vals) > 0:
+                            val = vals.mean()
+                            missing_mask.append(False)
+                            if metric == "wdp" and val == 0.0:
+                                y.append(WDP_PENALTY_NO_HEATMAP)
+                            else:
+                                y.append(val)
+                        else:
+                            # Token not generated
+                            missing_mask.append(True)
+                            y.append(0.0 if metric in ["obj_iou", "io_ratio"] else WDP_PENALTY_NO_TOKEN)
+                            
+                    y = np.array(y, dtype=float)
+                    cat_series[metric] = y
+                    baseline_vals[metric] = y[0]
+                    token_missing_mask[metric] = missing_mask
 
-            # ----------------------------------------------------------------
-            # Detect the single breaking point
-            # ----------------------------------------------------------------
-            _empty = np.full(len(x_values), np.nan)
-            bp_idx = detect_breaking_point(
-                obj_iou_means  = mean_series.get("obj_iou",  _empty),
-                io_ratio_means = mean_series.get("io_ratio", _empty),
-                wdp_means      = mean_series.get("wdp",      _empty),
-                baseline_vals  = baseline_vals,
-                threshold      = degradation_threshold,
-                wdp_arbiter_min= wdp_arbiter_min,
-                min_consecutive= min_consecutive,
-            )
-
-            if bp_idx is not None:
-                logger.debug(
-                    "[%s/%s] breaking point at index %d ('%s')",
-                    ptype, img_id, bp_idx, x_labels[bp_idx],
+                # Detect breaking point for this category using the defined criteria
+                bp_idx = detect_breaking_point(
+                    obj_iou_means  = cat_series["obj_iou"],
+                    io_ratio_means = cat_series["io_ratio"],
+                    wdp_means      = cat_series["wdp"],
+                    baseline_vals  = baseline_vals,
+                    threshold      = degradation_threshold,
+                    wdp_arbiter_min= wdp_arbiter_min,
+                    min_consecutive= min_consecutive,
                 )
 
-            # ----------------------------------------------------------------
-            # Draw metric subplots
-            # ----------------------------------------------------------------
-            for ax, metric in zip(axes, METRICS):
-                direction = _METRIC_DIRECTION[metric]
+                # Plot the metric lines, baseline, and annotate the breaking point if detected
+                for col_idx, metric in enumerate(METRICS):
+                    ax = axes[col_idx]
+                    direction = _METRIC_DIRECTION[metric]
+                    y = cat_series[metric]
+                    missing = token_missing_mask[metric]
 
-                # Per-category thin lines
-                for cat_idx, category in enumerate(categories):
-                    color  = _PALETTE[cat_idx % len(_PALETTE)]
-                    cat_df = img_df[img_df["category"] == category]
-                    y = _series_for_category(cat_df, x_values, metric)
-                    if np.all(np.isnan(y)):
-                        continue
-                    ax.plot(x_pos, y, marker="o", markersize=4, linewidth=1.2,
-                            color=color, alpha=0.55, label=category, zorder=2)
-                    for i, v in enumerate(y):
-                        if np.isnan(v):
-                            _mark_missing(ax, i, metric)
+                    # line plot for this category and metric
+                    ax.plot(x_pos, y, marker="o", markersize=6, linewidth=2.0,
+                            color=color, label=f"{category}", zorder=3)
+                            
+                    # mark points where the token is completely missing across all perturbation levels for this category (NaN in CSV) with a red "X" and annotation for WDP
+                    for i, is_missing in enumerate(missing):
+                        if is_missing:
+                            ax.plot(x_pos[i], y[i], marker="X", color="red", 
+                                    markersize=10, zorder=4)
+                            if metric == "wdp":
+                                ax.annotate("TOKEN PERSO", xy=(i, y[i]), xytext=(0, 10),
+                                            textcoords="offset points", ha="center", 
+                                            fontsize=7, color="red", fontweight="bold")
 
-                # Bold mean line
-                if metric in mean_series:
-                    means = mean_series[metric]
-                    ax.plot(x_pos, means, marker="D", markersize=5,
-                            linewidth=2.0, color="black", linestyle="--",
-                            label="mean", zorder=3)
-
-                    # Horizontal baseline reference
+                    # Baseline
                     bv = baseline_vals.get(metric, np.nan)
                     if not np.isnan(bv):
-                        ax.axhline(bv, color="steelblue", linewidth=0.9,
-                                   linestyle=":", alpha=0.8,
+                        ax.axhline(bv, color="grey", linewidth=1.2, linestyle=":", alpha=0.8,
                                    label=f"baseline ({bv:.2f})", zorder=1)
 
-                lo, hi = _METRIC_YLIM.get(metric, (0.0, 1.0))
-
-                # ---- Single breaking point marked on every subplot ----
-                if bp_idx is not None:
-                    ax.axvline(bp_idx, color="red", linewidth=1.6,
-                               linestyle="--", alpha=0.85, zorder=4)
-                    ax.axvspan(bp_idx, len(x_pos) - 1,
-                               color="red", alpha=0.07, zorder=0)
-
-                    if metric in mean_series:
-                        bp_val = mean_series[metric][bp_idx]
-                        bv     = baseline_vals.get(metric, np.nan)
-
-                        if not np.isnan(bp_val) and not np.isnan(bv):
-                            deg_pct = _relative_degradation(bp_val, bv, direction) * 100
-
-                            # On wdp subplot: clarify its arbiter role
-                            if metric == "wdp":
-                                label = (f"Δ wdp = {deg_pct:+.1f} %"
-                                         f"\n(arbiter {'✓ confirmed' if deg_pct >= wdp_arbiter_min*100 else '– not triggered'})")
+                    # breaking point annotation
+                    if bp_idx is not None:
+                        ax.axvline(bp_idx, color="red", linewidth=1.6, linestyle="--", alpha=0.85, zorder=2)
+                        
+                        if bp_idx == 0:
+                            ax.text(0.05, 0.90, "Rotto in\nBaseline", transform=ax.transAxes,
+                                    fontsize=8, color="darkred", fontweight="bold",
+                                    bbox=dict(boxstyle="round,pad=0.25", fc="lightpink", ec="darkred", alpha=0.85), zorder=5)
+                        else:
+                            ax.axvspan(bp_idx, len(x_pos) - 1, color="red", alpha=0.07, zorder=0)
+                            bp_val = y[bp_idx]
+                            
+                            if not missing[bp_idx]: # Se il token c'è, calcoliamo la percentuale
+                                deg_pct = _relative_degradation(bp_val, bv, direction) * 100
+                                label = f"Δ = {deg_pct:+.1f} %" if metric != "wdp" else f"Δ wdp = {deg_pct:+.1f} %"
                             else:
-                                label = f"Δ = {deg_pct:+.1f} %"
-
+                                label = "CROLLO TOTALE"
+                                
+                            current_lo, current_hi = ax.get_ylim()
                             ax.annotate(
-                                label,
-                                xy=(bp_idx, bp_val),
-                                xytext=(min(bp_idx + 0.4, len(x_pos) - 1.5),
-                                        lo + (hi - lo) * 0.88),
-                                fontsize=6.5, color="darkred", fontweight="bold",
-                                arrowprops=dict(arrowstyle="->", color="darkred", lw=0.9),
-                                bbox=dict(boxstyle="round,pad=0.25", fc="lightyellow",
-                                          ec="darkred", alpha=0.85),
-                                zorder=5,
+                                label, xy=(bp_idx, bp_val),
+                                xytext=(min(bp_idx + 0.4, len(x_pos) - 1.5), current_lo + (current_hi - current_lo) * 0.88),
+                                fontsize=7.5, color="darkred", fontweight="bold",
+                                arrowprops=dict(arrowstyle="->", color="darkred", lw=1.2),
+                                bbox=dict(boxstyle="round,pad=0.25", fc="lightyellow", ec="darkred", alpha=0.9), zorder=5,
                             )
-                else:
-                    ax.text(
-                        0.97, 0.05, "No break detected",
-                        transform=ax.transAxes,
-                        ha="right", va="bottom",
-                        fontsize=7, color="grey", fontstyle="italic",
-                    )
 
-                ax.set_title(
-                    _METRIC_LABELS.get(metric, metric)
-                    + (" ← primary" if metric in ("obj_iou", "io_ratio") else " ← arbiter"),
-                    fontsize=9,
-                )
-                ax.set_xlabel("Perturbation strength")
-                ax.set_ylabel(_METRIC_LABELS.get(metric, metric))
-                if lo is not None:
-                    ax.set_ylim(lo, hi)
-                ax.yaxis.set_minor_locator(ticker.AutoMinorLocator())
-                ax.grid(axis="y", linewidth=0.4, alpha=0.6)
-                _apply_x_axis(ax, x_values, x_labels)
-
-            _add_legend(axes)
+                    # titles, labels, limits, grid
+                    ax.set_title(f"{category} | {_METRIC_LABELS.get(metric, metric)}", fontsize=10, fontweight="bold")
+                    ax.set_xlabel("Perturbation strength")
+                    ax.set_ylabel(_METRIC_LABELS.get(metric, metric))
+                    
+                    lo, hi = _METRIC_YLIM.get(metric, (0.0, 1.0))
+                    if lo is not None and hi is not None:
+                        ax.set_ylim(lo, hi)
+                    elif lo is not None:
+                        ax.set_ylim(bottom=lo)
+                        
+                    ax.yaxis.set_minor_locator(ticker.AutoMinorLocator())
+                    ax.grid(axis="y", linewidth=0.4, alpha=0.6)
+                    _apply_x_axis(ax, x_values, x_labels)
+                    ax.legend(loc="best", fontsize=8)
 
             save_path = ptype_dir / f"{_safe_filename(str(img_id))}.png"
             fig.savefig(save_path, dpi=_FIGURE_DPI, bbox_inches="tight")
             plt.close(fig)
-            logger.info("Saved breaking point profile: %s", save_path)
+            logger.info("Saved per-token breaking point profile: %s", save_path)
