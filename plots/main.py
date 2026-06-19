@@ -124,44 +124,65 @@ def main() -> None:
     )
 
     # -----------------------------------------------------------------------
-    # Parallel plot generation
+    # Parallel plot generation (Ottimizzata per Immagine)
     # -----------------------------------------------------------------------
     
-    # max_workers=None will use os.cpu_count() by default, which is usually a good choice for CPU-bound tasks.
+    # extract unique image IDs for filtering
+    all_img_ids = df["img_id"].unique().tolist()
+    
+    # Use ProcessPoolExecutor to parallelize plot generation across multiple processes
     with ProcessPoolExecutor() as executor:
         futures_map = {}
         
-        # Schedule plot generation tasks
         for plot_type in args.plots:
-            logger.info("Scheduling '%s' plots...", plot_type)
-
             kwargs = dict(
                 df=df,
                 out_dir=args.plots_dir,
                 perturbation_types=args.perturbations,
             )
+            
             if plot_type in _IMAGE_FILTERED:
-                kwargs["image_ids"] = args.images
-            if plot_type == "breaking_point":
-                kwargs["degradation_threshold"] = args.degradation_threshold
-                kwargs["wdp_arbiter_min"]       = args.wdp_arbiter_min
-                kwargs["min_consecutive"]       = args.min_consecutive
+                # if user specified images, filter to those; otherwise, use all unique image IDs
+                target_ids = args.images if args.images else all_img_ids
+                
+                if plot_type == "breaking_point":
+                    kwargs["degradation_threshold"] = args.degradation_threshold
+                    kwargs["wdp_arbiter_min"]       = args.wdp_arbiter_min
+                    kwargs["min_consecutive"]       = args.min_consecutive
 
-            # Submit the plot function to the executor
-            future = executor.submit(_PLOT_REGISTRY[plot_type], **kwargs)
-            futures_map[future] = plot_type
+                logger.info("Scheduling %d tasks for '%s'...", len(target_ids), plot_type)
+                
+                for img_id in target_ids:
+                    # create a copy of kwargs for each image to avoid shared state issues
+                    kwargs_single = kwargs.copy()
+                    kwargs_single["image_ids"] = [img_id]
+                    
+                    future = executor.submit(_PLOT_REGISTRY[plot_type], **kwargs_single)
+                    futures_map[future] = f"{plot_type} (img: {img_id})"
+                    
+            else:
+                # For plots that are not image-specific, we can schedule a single task
+                logger.info("Scheduling 1 task for '%s'...", plot_type)
+                future = executor.submit(_PLOT_REGISTRY[plot_type], **kwargs)
+                futures_map[future] = plot_type
 
-        # Results
+        # Results as they complete
+        completed_count = 0
+        total_tasks = len(futures_map)
+        
         for future in as_completed(futures_map):
-            plot_type = futures_map[future]
+            task_name = futures_map[future]
+            completed_count += 1
             try:
                 future.result() # Exceptions will be raised here
-                logger.info("Successfully completed '%s' plots.", plot_type)
+                
+                # Log progress every 50 tasks or when all tasks are completed
+                if completed_count % 50 == 0 or completed_count == total_tasks:
+                    logger.info("Progress: [%d/%d] tasks completed.", completed_count, total_tasks)
             except Exception as exc:
-                logger.error("Failed to generate '%s' plots: %s", plot_type, exc, exc_info=True)
+                logger.error("Failed task '%s': %s", task_name, exc, exc_info=True)
 
     logger.info("Done. All plots saved to: %s", Path(args.plots_dir).resolve())
-
 
 if __name__ == "__main__":
     main()

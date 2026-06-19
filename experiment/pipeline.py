@@ -1,6 +1,7 @@
 import csv
 import logging
 import os
+import threading
 from pathlib import Path
 from typing import Dict, List
 
@@ -56,6 +57,7 @@ def process_image(
     processor,
     model_type: str,
     cfg: Config,
+    inference_lock: threading.Lock
 ) -> None:
     """
     Run the full analysis pipeline for one image.
@@ -64,8 +66,9 @@ def process_image(
     heatmaps_dir = os.path.join(image_out_dir, cfg.heatmaps_subdir)
     os.makedirs(heatmaps_dir, exist_ok=True)
 
+    with inference_lock:
     # Inference
-    ctx = run_inference(model, processor, task.image_path, cfg.prompt, model_type)
+        ctx = run_inference(model, processor, task.image_path, cfg.prompt, model_type)
 
     # Attach the original BGR array to context so heatmap.py can build overlays
     ctx["orig_bgr"] = task.image_array
@@ -96,14 +99,15 @@ def process_image(
         logger.debug("[%s] Token %r matched at position(s) %s.", task.image_id, entry.category, token_ids)
 
         # Heatmap generation
-        global_heatmap, layer_images = build_global_heatmap(
-            inference_context=ctx,
-            token_ids=token_ids,
-            processor=processor,
-            model=model,
-            binary_mask=entry.mask,
-            layer_relevance_threshold=cfg.layer_relevance_threshold,
-        )
+        with inference_lock:
+            global_heatmap, layer_images = build_global_heatmap(
+                inference_context=ctx,
+                token_ids=token_ids,
+                processor=processor,
+                model=model,
+                binary_mask=entry.mask,
+                layer_relevance_threshold=cfg.layer_relevance_threshold,
+            )
 
         # Layer grid 
         grid_path = os.path.join(heatmaps_dir, f"{task.image_id}_{entry.category}_heatmap.png")

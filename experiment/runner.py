@@ -42,14 +42,14 @@ class PipelineRunner:
                 attempt, self.cfg.max_retries,
             )
             try:
-                with self._inference_lock:
-                    process_image(
+                process_image(
                         task=task,
                         masks=masks,
                         model=self.model,
                         processor=self.processor,
                         model_type=self.model_type,
                         cfg=self.cfg,
+                        inference_lock=self._inference_lock,
                     )
 
                 logger.info("[%s] Completed successfully.", task.image_id)
