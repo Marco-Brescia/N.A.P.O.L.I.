@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000012667,"Describe this image in detail, use simple terms","The image shows a banana hanging from a phone cord that is attached to a wall. The phone is a traditional landline phone with a keypad and a screen at the bottom. The background includes some office equipment, such as a stapler and a wall socket.",4,banana,0.0,1.0,0.0,0.0,0.0,0.0
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a banana hanging from a phone cord that is attached to a wall. The phone is a traditional landline phone with a keypad and a screen at the bottom. The background includes some office equipment, such as a stapler and a wall socket.",4,banana,0.3523,0.3939,0.6096

@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000324483,"Describe this image in detail, use simple terms","The image shows a close-up of a suitcase. The suitcase is green and has black zippers. There are some white and yellow objects, possibly feathers or hair, sticking out of the suitcase. The background is blurred, but it appears to be a room with a white wall and some decorative elements.",8,suitcase,0.4254,0.8406,0.5649,0.4254,0.847,0.1216

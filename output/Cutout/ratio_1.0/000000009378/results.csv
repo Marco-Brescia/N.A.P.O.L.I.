@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000009378,"Describe this image in detail, use simple terms","The image shows a person standing in front of a crowd. The person has curly hair and is wearing a headband. The background is dark, and the crowd appears to be watching the person. The overall atmosphere seems to be a performance or event.",4,person,0.0987,0.9354,0.1786,0.0987,0.5435,0.1989

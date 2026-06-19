@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000179285,"Describe this image in detail, use simple terms","The image shows a badminton racket. The racket has a blue and black color scheme with a grid pattern on the frame. The brand name ""OVERSIZE"" is visible on the top of the racket. The handle is black, and the strings are visible, indicating that the racket is ready to be used.",7,racket,0.1154,0.8435,0.2031,0.1154,0.6518,0.0494

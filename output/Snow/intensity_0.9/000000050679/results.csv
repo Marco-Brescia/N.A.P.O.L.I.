@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
-000000050679,"Describe this image in detail, use simple terms","The image shows a ball on the ground, but it looks like it's been covered in tiny white dots. The ball is orange and appears to be made of some kind of material, possibly plastic or rubber. The background shows a parking lot with cars and some trees, but the focus is on the ball and the white dots.",25,orange,0.2039,0.5057,0.433

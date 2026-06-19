@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000199940,"Describe this image in detail, use simple terms","The image shows a black cat standing in front of a bottle. The cat has a green bottle with a red and green label in front of it. The background is blurry, making it difficult to see details.",5,cat,0.2352,0.6325,0.3429,0.2352,0.4063,0.0537

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image shows a large, round object that looks like an orange. It's sitting on a road, surrounded by a lot of small, white dots that look like snowflakes. The background shows some trees and cars, but they are not the main focus of the image. The overall scene gives the impression of a winter or cold weather setting.",12,orange,0.4049,0.7461,0.3623

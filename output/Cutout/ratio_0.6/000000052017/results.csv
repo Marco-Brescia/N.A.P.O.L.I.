@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000052017,"Describe this image in detail, use simple terms","The image shows a small, single-engine airplane flying in the sky. The airplane has a yellow body with red and blue accents. It has a single propeller on the front and two wings. The propeller is spinning, and the airplane is in mid-flight. The background is a cloudy sky.",8,airplane,0.076,0.9478,0.1408,0.076,0.2485,0.4803

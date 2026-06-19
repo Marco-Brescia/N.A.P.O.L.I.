@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000023272,"Describe this image in detail, use simple terms","The image shows a car with a blurred effect, making it difficult to see the details clearly. The car appears to be parked in a driveway or garage. There is a plant with green leaves in the background, and the car's hood is visible. The overall effect gives the image a sense of motion or speed.",4,car,0.1811,0.812,0.2961,0.1811,0.7119,0.054

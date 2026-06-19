@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000155051,"Describe this image in detail, use simple terms","The image shows a clock with Roman numerals on it. The clock is illuminated by a light source, which is causing the clock hands to be visible. The background is dark, making the clock stand out. There is also a small, blurry light in the bottom left corner of the image, which could be a reflection or a light source in the environment.",4,clock,0.2744,0.8721,0.4174,0.2744,0.5701,0.4011

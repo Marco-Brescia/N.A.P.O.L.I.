@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
-000000155051,"Describe this image in detail, use simple terms","The image shows a dark background with a few objects. On the right side, there is a clock with Roman numerals. The clock face is illuminated, showing the time. On the left side, there is a small, bright object that appears to be the moon. The moon is partially visible, and it is set against a dark background.",19,clock,0.1959,0.4496,0.385

@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000155051,"Describe this image in detail, use simple terms","The image shows a clock and a moon. The clock is on the right side of the image and has Roman numerals on its face. The clock reads ""1902"" at the top. The moon is on the left side of the image and is partially visible. The background is a gradient of gray, suggesting it might be taken during the night or in a dimly lit environment.",4,clock,0.2265,0.8005,0.353,0.2265,0.371,0.267

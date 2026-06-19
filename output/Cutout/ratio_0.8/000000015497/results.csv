@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000015497,"Describe this image in detail, use simple terms","The image shows a cat's tail and part of its body. The cat has a striped pattern with a mix of brown and white fur. The tail is visible, and it appears to be in a relaxed position. The background is dark, making it difficult to see any additional details.",4,cat,0.1246,0.8261,0.2165,0.1246,0.378,0.1499

@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000029397,"Describe this image in detail, use simple terms",The image shows a person standing in a room. The person is wearing a white shirt and has short hair. The room has a wooden floor and a wall with a picture hanging on it. The person appears to be looking down and might be engaged in some activity or conversation.,4,person,0.1924,0.6168,0.2933,0.1924,0.2021,0.1975

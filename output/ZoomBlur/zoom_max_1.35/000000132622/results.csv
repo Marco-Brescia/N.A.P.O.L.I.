@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000132622,"Describe this image in detail, use simple terms","The image shows a bear. The bear has a light-colored fur, possibly white or light brown. It appears to be in a grassy area, and the background is blurred, giving the image a dreamy or artistic effect. The bear's eyes are closed, and it seems to be resting or sleeping.",4,bear,0.1488,0.8744,0.2544,0.1488,0.8452,0.0598

@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on a wooden surface, possibly a porch or a deck. The cat has a striped coat with a mix of brown and white fur. It has a short, bushy tail and is looking to its left with a curious expression. The background features a brick wall, suggesting that the cat is outdoors near a building. The lighting is natural, indicating it might be daytime.",4,cat,0.2783,0.8667,0.4213,0.2783,0.6845,0.3136

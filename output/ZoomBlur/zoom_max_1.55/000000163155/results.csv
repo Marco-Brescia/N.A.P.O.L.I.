@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on a surface. The cat has a striped coat with shades of gray and brown. The background appears to be a brick wall, and the lighting creates a blurred effect, giving the image a dreamy or abstract quality.",4,cat,0.251,0.8696,0.3895,0.251,0.62,0.2585

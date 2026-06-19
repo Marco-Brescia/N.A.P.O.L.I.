@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000052017,"Describe this image in detail, use simple terms","The image shows a small, yellow airplane with red accents. The airplane has two propellers, one on each wing. The propellers are red and black. The airplane is flying in the sky, and the background is a clear, light-colored sky. The airplane has the letters ""SP-AWF"" on the side.",7,airplane,0.2422,0.8232,0.3742,0.2422,0.3654,0.2795
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000052017,"Describe this image in detail, use simple terms","The image shows a small, yellow airplane with red accents. The airplane has two propellers, one on each wing. The propellers are red and black. The airplane is flying in the sky, and the background is a clear, light-colored sky. The airplane has the letters ""SP-AWF"" on the side.",7,airplane,0.2227,0.305,0.2516

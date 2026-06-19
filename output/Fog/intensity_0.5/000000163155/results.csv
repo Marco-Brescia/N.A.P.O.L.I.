@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on a concrete surface. The cat has a mix of gray and white fur, with darker stripes on its back and lighter stripes on its belly. The cat's tail is long and bushy, and it appears to be looking to the side. The background consists of a brick wall, and the overall lighting in the image is soft and natural.",4,cat,0.4097,0.8406,0.5509,0.4097,0.7808,0.2553

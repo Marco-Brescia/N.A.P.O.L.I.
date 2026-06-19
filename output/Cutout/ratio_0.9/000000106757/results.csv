@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000106757,"Describe this image in detail, use simple terms","The image shows a close-up of an elephant's face. The elephant appears to be in a zoo or a controlled environment, as there are ropes or barriers around it. The background shows some trees and a clear sky. The elephant has a large, wrinkled skin and is standing on a sandy ground.",8,elephant,0.409,0.6406,0.4993,0.409,0.6845,0.0625
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000106757,"Describe this image in detail, use simple terms","The image shows two elephants. One elephant is partially visible on the left side, and the other elephant is on the right side. Both elephants are in a fenced area, and there are ropes or cables attached to them. The background includes trees and a clear sky.",7,elephant,0.3699,0.6094,0.0613

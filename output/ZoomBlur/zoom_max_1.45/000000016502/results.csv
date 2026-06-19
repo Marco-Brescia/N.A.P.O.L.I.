@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000016502,"Describe this image in detail, use simple terms","The image shows a mountain with a sheep on top. The sheep is white and appears to be in motion, as if it's running or jumping. The mountain has a rough, rocky surface with patches of green grass. The sky is clear with a few clouds, and the overall scene has a dreamy, almost surreal quality.",7,sheep,0.0,1.0,0.0,0.0,0.0,0.0

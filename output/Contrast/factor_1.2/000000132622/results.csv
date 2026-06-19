@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000132622,"Describe this image in detail, use simple terms","The image shows a bear in a grassy field. The bear has a thick, fluffy coat and is looking directly at the camera. The grass around the bear is green and some of it is wet, suggesting it might have rained recently. The bear appears to be in a natural habitat, possibly a forest or a grassland.",4,bear,0.2619,0.7923,0.3937,0.2619,0.8866,0.0328

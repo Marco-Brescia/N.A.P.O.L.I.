@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000012667,"Describe this image in detail, use simple terms","The image shows a desk with a telephone on it. The telephone has a cord attached to it, and there is a banana placed on the phone. The desk also has some papers and a stapler on it. The background includes a piece of furniture, possibly a desk or a table.",24,banana,0.1809,0.9488,0.3039,0.1809,0.3047,0.7679
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a desk with a few items on it. There is a black telephone with a cord hanging down, and a banana is placed on the phone. The telephone is a Philips model. In the background, there is a piece of paper with some writing on it, and a stapler is also visible. The desk appears to be cluttered with various items.",25,banana,0.3558,0.8496,1.6616

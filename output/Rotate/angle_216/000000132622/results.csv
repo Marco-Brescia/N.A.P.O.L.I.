@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000132622,"Describe this image in detail, use simple terms","The image shows a bear. The bear is looking up and appears to be in a forested area. The bear has a thick, fluffy coat and is surrounded by green foliage. The bear's eyes are open, and it seems to be looking at something above its head. The bear's ears are perked up, and it has a relaxed posture.",4,bear,0.1455,0.8744,0.2495,0.1455,0.7228,0.083
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear. The bear is looking up and appears to be in a forested area. The bear has a thick, fluffy coat and is surrounded by green foliage. The bear's eyes are open, and it seems to be looking at something above its head. The bear's ears are perked up, and it has a relaxed posture.",4,bear,0.1455,0.7228,0.0831

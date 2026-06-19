@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000015746,"Describe this image in detail, use simple terms","The image shows a red fire hydrant in a grassy area. Behind the hydrant, there is a house with a white roof and a large window. The house has a purple flower bush in front of it. The hydrant has a black square covering it, making it look like a blank or empty sign. The grass around the hydrant is green and well-maintained.","[5, 6, 7]",fire hydrant,0.2104,0.9072,0.3416,0.2104,0.5832,0.4254

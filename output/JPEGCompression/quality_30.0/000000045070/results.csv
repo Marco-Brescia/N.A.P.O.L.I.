@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000045070,"Describe this image in detail, use simple terms","The image shows a young girl sitting on a horse. She is wearing a pink and white checkered shirt, blue jeans, and a black riding helmet. The girl is also wearing a bracelet on her left wrist. The horse has a purple saddle blanket under it. The background features green trees and a clear sky.",9,horse,0.1959,0.7578,0.3113,0.1959,0.322,0.3695
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","The image shows a young girl sitting on a horse. She is wearing a pink and white checkered shirt, blue jeans, and a black riding helmet. The girl is also wearing a bracelet on her left wrist. The horse has a purple saddle blanket under it. The background features green trees and a clear sky.",9,horse,0.1959,0.322,0.3695

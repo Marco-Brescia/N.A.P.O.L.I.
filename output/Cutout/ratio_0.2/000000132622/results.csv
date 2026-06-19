@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000132622,"Describe this image in detail, use simple terms","The image shows a bear in a grassy field. The bear has a thick, fluffy coat and is eating grass. The bear's face is covered by a black square, making it difficult to see its features. The background is green and appears to be a grassy area.",4,bear,0.2081,0.8575,0.335,0.2081,0.974,0.0364

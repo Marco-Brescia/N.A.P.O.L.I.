@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000009378,"Describe this image in detail, use simple terms","The image shows a person lying down on a bed. The person is wearing a dark-colored shirt and has their head resting on a pillow. The bed has a green blanket on it. The person appears to be in a relaxed state, possibly sleeping or resting. The overall scene has a dreamy or surreal quality due to the motion blur and the way the image is captured.",4,person,0.051,0.9354,0.0967,0.051,0.2877,0.2984

@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000199940,"Describe this image in detail, use simple terms","In the image, there is a black cat standing next to a bottle. The cat is holding the bottle with its front paws, and the bottle has a green label with some text on it. The cat appears to be curious about the bottle, and the background is a bit blurry, making it difficult to see more details.",8,cat,0.1641,0.8462,0.2749,0.1641,0.5054,0.1018
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","In the image, there is a black cat standing next to a bottle. The cat is holding the bottle with its front paws, and the bottle has a label that says ""NOTRO."" The cat appears to be curious about the bottle, and the background is blurry, making it difficult to see any details.",8,cat,0.2295,0.7338,0.0983

@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000029397,"Describe this image in detail, use simple terms","The image shows a wooden bench with a sign on it. The sign has text on it, but the text is not clearly legible. The bench is made of wood and is placed on a brick surface. In the background, there is a wall with some graffiti on it. The overall scene appears to be outdoors, possibly in a public area.",5,bench,0.2533,0.837,0.3889,0.2533,0.6111,0.1222

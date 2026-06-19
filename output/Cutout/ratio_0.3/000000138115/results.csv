@@ -1,3 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000138115,"Describe this image in detail, use simple terms","The image shows a person with a bald head and a beard. They are holding a piece of fruit, possibly an orange, in their hand. The person is wearing a dark jacket. The background is plain and light-colored.",23,orange,0.1699,0.929,0.2873,0.1699,0.3635,0.5822
-000000138115,"Describe this image in detail, use simple terms","The image shows a person with a bald head and a beard. They are holding a piece of fruit, possibly an orange, in their hand. The person is wearing a dark jacket. The background is plain and light-colored.",4,person,0.0596,0.929,0.112,0.0596,0.6507,0.0427
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000138115,"Describe this image in detail, use simple terms",The image shows a person holding a black object in front of their face. The person is wearing a dark jacket and has a surprised or shocked expression on their face. The background is plain and light-colored.,4,person,0.0697,0.6427,0.0441

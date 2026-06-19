@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000033759,"Describe this image in detail, use simple terms","The image shows a young person standing in a baseball field. The person is wearing a baseball cap, a baseball glove, and a baseball uniform. The person is holding a large, black square block in front of their face, covering their eyes. The background includes a chain-link fence and some greenery.",5,person,0.0743,0.9647,0.1379,0.0743,0.3671,0.6629

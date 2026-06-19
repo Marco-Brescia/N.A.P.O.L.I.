@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe with its head and neck sticking out from behind a black square. The giraffe is surrounded by green trees and bushes, indicating it might be in a zoo or a wildlife park. The giraffe's head is slightly tilted, and it appears to be looking at something in front of it.","[4, 5]",giraffe,0.1559,0.7361,0.2573,0.1559,0.2426,0.1955

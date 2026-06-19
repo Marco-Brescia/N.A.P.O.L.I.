@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000023272,"Describe this image in detail, use simple terms","The image shows a car parked in front of a building. The car is black and has a grill and headlights visible. There is a fence with green plants and flowers behind the car, and the building has a brick facade. The fence is made of wire mesh and has some plants growing through it.",4,car,0.1205,0.859,0.2114,0.1205,0.7143,0.085

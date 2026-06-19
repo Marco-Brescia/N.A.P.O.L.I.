@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000056545,"Describe this image in detail, use simple terms","The image shows a blurry, abstract pattern that resembles a bird or a tree branch. The colors are muted, and the details are not clear. The overall effect is like looking through a distorted lens or through a pinwheel. The background is out of focus, with green and white colors, which might be leaves or branches.",11,bird,0.1473,0.8696,0.252,0.1473,0.4301,0.2194

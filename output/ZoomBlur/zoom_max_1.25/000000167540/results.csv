@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000167540,"Describe this image in detail, use simple terms","The image shows a small airplane flying in the sky. The airplane has two wings and is painted in a blue and yellow color scheme. The wings are spread out, and the airplane is moving at a high speed, creating a blurred effect. The background is a clear blue sky with some clouds. The photo appears to be taken from below, looking up at the airplane.",5,airplane,0.1867,0.8406,0.3056,0.1867,0.2375,0.3711

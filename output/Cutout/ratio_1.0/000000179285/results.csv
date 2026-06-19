@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000179285,"Describe this image in detail, use simple terms","The image shows a close-up of a tennis racket. The racket has a blue frame with a white netting. The handle is black, and the brand name ""Constant Beam"" is visible on the top of the racket. The background is blurred, making it difficult to see any details.",9,racket,0.1526,0.8319,0.2578,0.1526,0.7541,0.0456

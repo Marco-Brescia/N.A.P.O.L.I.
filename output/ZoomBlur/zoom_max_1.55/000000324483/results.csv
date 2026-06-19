@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000324483,"Describe this image in detail, use simple terms","The image shows a cat with long, white whiskers. The cat's face is blurred, giving it a dreamy or ethereal appearance. The background is out of focus, with some green and yellow colors visible, suggesting it might be in a room with plants or a garden. The overall effect is like looking through a window with a soft, dreamy filter.",4,cat,0.315,0.7884,0.4502,0.315,0.6797,0.0691

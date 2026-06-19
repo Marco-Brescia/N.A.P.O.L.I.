@@ -1,2 +1,2 @@
 img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
-000000138115,"Describe this image in detail, use simple terms","The image shows a person holding up a checkerboard pattern. The checkerboard is made up of black and white squares, and the person is holding it in front of their face. The person has a surprised or shocked expression on their face.",4,person,0.0422,0.6009,0.0805
+000000138115,"Describe this image in detail, use simple terms","The image shows a person holding up a chessboard. The chessboard is black and white, with a checkered pattern. The person is holding the chessboard in front of their face, making it appear as if they are playing chess.",4,person,0.0701,0.8375,0.0489

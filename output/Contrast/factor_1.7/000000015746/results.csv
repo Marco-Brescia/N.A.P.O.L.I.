@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000015746,"Describe this image in detail, use simple terms","The image shows a red fire hydrant in a grassy area. The hydrant is tall and has a black top and black caps on the sides. It's surrounded by green grass and some flowers. In the background, there is a white house with a roof and some trees. The sky is not visible in the image.","[5, 6, 7]",fire hydrant,0.0378,0.8783,0.0725,0.0378,0.0974,0.326

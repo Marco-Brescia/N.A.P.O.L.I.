@@ -1,2 +1,2 @@
 img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
-000000045070,"Describe this image in detail, use simple terms","The image shows a young girl riding a horse. She is wearing a pink and white plaid shirt, a black helmet, and jeans. She is sitting on a saddle, which has a decorative pattern. The background shows trees and a clear sky. The girl appears to be focused on something in front of her.",8,horse,0.0,0.0,0.0
+000000045070,"Describe this image in detail, use simple terms","The image shows a young girl riding a horse. She is wearing a pink and white checkered shirt, jeans, and a black helmet. The horse is purple, and the girl is sitting on its back. The background shows trees and a clear sky.",8,horse,0.1206,0.2469,0.5521

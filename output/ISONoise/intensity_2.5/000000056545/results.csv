@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000056545,"Describe this image in detail, use simple terms","This image shows a bird perched on a branch. The bird has a greyish-brown plumage with some darker markings on its head and neck. Its eyes are small and dark, and it has a short beak. The bird is sitting on a branch with some green leaves in the background. The overall scene is natural and serene.",4,bird,0.2261,0.6763,0.3389,0.2261,0.3521,0.1249
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000056545,"Describe this image in detail, use simple terms","This is a picture of a bird perched on a branch. The bird has a greyish-brown plumage with some darker markings on its wings and tail. It has a short beak and sharp eyes. The background is blurred, showing green foliage, which suggests that the bird is in a forest or a tree area.",6,bird,0.2688,0.4426,0.1386

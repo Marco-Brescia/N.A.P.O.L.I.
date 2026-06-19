@@ -1,2 +1,2 @@
 img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
-000000132622,"Describe this image in detail, use simple terms","The image shows a bear with a snowy background. The bear has a fluffy, white coat and is surrounded by small, white dots that give it a snowy appearance. The background is green, suggesting it might be a grassy area.",4,bear,0.1023,0.6438,0.0625
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear with a wet, snowy appearance. The bear has a fluffy, wet coat and is surrounded by a layer of snow or frost. The background is green, suggesting it might be a grassy area. The bear's fur is wet and shiny, and there are small, white dots scattered around it, giving it a snowy look.",4,bear,0.1567,0.7253,0.0412

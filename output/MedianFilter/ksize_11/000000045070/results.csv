@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000045070,"Describe this image in detail, use simple terms","The image shows a child riding a horse. The child is wearing a pink and white checkered shirt and a black helmet. The horse is sitting on a saddle, and the child is holding onto the reins. The background is blurred, but it appears to be a forest or a park with green trees.",7,horse,0.2929,0.735,0.4189,0.2929,0.4227,0.311
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","The image shows a child riding a horse. The child is wearing a pink and white checkered shirt and a black helmet. The horse is sitting on a saddle, and the child is holding onto the reins. The background is blurred, but it appears to be a forest or a park with green trees.",7,horse,0.2929,0.4227,0.311

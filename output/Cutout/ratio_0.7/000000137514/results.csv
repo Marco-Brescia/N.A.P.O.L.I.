@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000137514,"Describe this image in detail, use simple terms","The image shows a microwave on a countertop. There is a cat sitting on the microwave, looking out from behind it. The cat has a mix of brown, black, and white fur. The microwave has a glass door, and the buttons on the front are visible. The countertop is light-colored, and there is a dark-colored object in the foreground that is not clearly visible.",13,cat,0.293,0.765,0.4237,0.293,0.5891,0.2174
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat lying on a surface. The cat has a striped pattern with brown and white fur. In the background, there is a microwave oven with a glass door. The microwave has a black screen on the front, and the cat is positioned in front of it.",4,cat,0.2412,0.7179,0.2962

@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000179285,"Describe this image in detail, use simple terms","The image shows a tennis racket. The racket has a blue and black color scheme with the brand ""HEAD"" visible on the side. The strings are visible, and the racket appears to be in use, as if someone is holding it. The background is blurred, focusing attention on the racket.",5,racket,0.1407,0.7884,0.2388,0.1407,0.5868,0.0396
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000179285,"Describe this image in detail, use simple terms","The image shows a close-up of a tennis racket. The racket has a blue frame with the brand ""HEAD"" written on it. The strings are visible, and the racket appears to be in use, as if someone is holding it. The background is blurred, focusing attention on the racket.",9,racket,0.1503,0.6469,0.0403

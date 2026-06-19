@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000372902,"Describe this image in detail, use simple terms","The image shows a car parked on the side of the road. There are some plants growing near the car, and the car's bumper is visible. The plants are green and appear to be small bushes or weeds. The car's rear end is slightly out of focus, making it difficult to see all the details.",4,car,0.4087,0.8522,0.5524,0.4087,0.9486,0.1324
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000372902,"Describe this image in detail, use simple terms","The image shows a car parked on the side of the road. There are some plants growing near the car, and the car's bumper is visible. The plants are green and appear to be small bushes or weeds. The car's rear end is slightly out of focus, making it difficult to see all the details.",4,car,0.4087,0.9486,0.1324

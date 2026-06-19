@@ -1,2 +1,2 @@
 img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
-000000015497,"Describe this image in detail, use simple terms","This image shows a cat with a white and brown coat. The cat is looking to the side, and there are white dots or specks scattered around it, giving the impression that the cat is surrounded by a cloud of dust or snow. The background is black, which makes the cat and the white dots stand out more.",4,cat,0.2815,0.6899,0.1108
+000000015497,"Describe this image in detail, use simple terms","This image shows a cat with a white and brown coat. The cat is surrounded by a lot of small, white dots, which could be snow or a similar substance. The background is black, making the cat and the dots stand out.",4,cat,0.1909,0.7477,0.134

@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
-000000009378,"Describe this image in detail, use simple terms","This image appears to be a close-up of a textured surface, possibly a wall or a piece of fabric. The texture looks like a mix of small, irregular shapes and patterns, giving it a somewhat abstract appearance. There is a faint outline of a person or a figure, but it is not clear or detailed. The overall color scheme is a mix of neutral tones, with shades of gray and brown dominating the scene.",50,person,0.1935,0.8533,0.1436

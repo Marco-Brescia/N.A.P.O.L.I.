@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000167540,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is tilted slightly, and its wings are spread out. The sky is clear and blue, and the plane appears to be moving quickly, as indicated by the motion blur. The photographer's name, Daniele Nicolucci, is visible in the bottom right corner of the image.",4,plane,0.2619,0.9014,0.4059,0.2619,0.3634,0.384

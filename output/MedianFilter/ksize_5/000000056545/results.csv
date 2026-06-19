@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000056545,"Describe this image in detail, use simple terms","This is a picture of a bird perched on a branch. The bird has a light gray or white body with some darker markings on its wings and tail. The background is blurred, showing green foliage, indicating that the bird is in a tree. The bird appears to be looking straight ahead.",6,bird,0.2276,0.7633,0.3506,0.2276,0.411,0.1566
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000056545,"Describe this image in detail, use simple terms","This is a picture of a bird perched on a branch. The bird has a light gray or white body with some darker markings on its wings and tail. The background is blurred, showing green foliage, indicating that the bird is in a tree. The bird appears to be looking straight ahead.",6,bird,0.2276,0.411,0.1566

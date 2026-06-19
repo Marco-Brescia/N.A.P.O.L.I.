@@ -1,2 +1,2 @@
 img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
-000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on a rocky hill. The sky is blue with some clouds, and there are small, white dots scattered throughout the sky, giving it a snowy appearance. The sheep is white and appears to be looking up at the sky.",4,sheep,0.0,0.0,0.0
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on top of a rocky hill. The sky is blue with some white clouds, and there are small white dots scattered throughout the image, giving it a snowy appearance. The sheep is facing the camera, and it appears to be standing on a flat rock.",4,sheep,0.2406,0.2702,0.9992

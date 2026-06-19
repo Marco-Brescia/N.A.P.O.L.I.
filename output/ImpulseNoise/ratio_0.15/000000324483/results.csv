@@ -1,2 +1,2 @@
 img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
-000000324483,"Describe this image in detail, use simple terms","This image shows a cat with a mix of brown, black, and white fur. The cat has two ears, a nose, and whiskers. The background appears to be outdoors, with some greenery and possibly a fence or barrier. The image has a grainy, pixelated effect, giving it a vintage or old-fashioned look.",4,cat,0.3152,0.7446,0.0711
+000000324483,"Describe this image in detail, use simple terms","This image shows a cat sitting on a chair. The cat has a mix of brown and white fur. The chair is green, and there is a yellow flower on it. The image has a grainy, pixelated effect, giving it a vintage or old-fashioned look.",4,cat,0.2966,0.7677,0.0859

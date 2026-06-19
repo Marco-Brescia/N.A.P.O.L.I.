@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000132622,"Describe this image in detail, use simple terms","This image shows a bear in a grassy area. The bear has a fluffy coat and is looking directly at the camera. The background is green, suggesting it might be a grassy field or meadow. The bear appears to be in motion, possibly walking or running.",4,bear,0.1258,0.8913,0.2204,0.1258,0.8608,0.0698
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear in a grassy area. The bear has a thick, furry coat and is looking forward with its mouth open, possibly eating something. The bear's face is detailed, with visible wrinkles and a small, black nose. The background is green, indicating a grassy field. The bear appears to be in a natural setting, possibly a forest or a meadow.",4,bear,0.1538,0.8,0.0507

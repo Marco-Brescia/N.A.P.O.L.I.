@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000012667,"Describe this image in detail, use simple terms","The image shows a banana lying on a desk. The banana is yellow and has a long, curved shape. The desk appears to be made of a light-colored material, possibly wood or a similar material. In the background, there are some blurred objects that look like stacks of papers or documents. The overall scene has a blurred effect, giving it a dreamy or abstract appearance.",4,banana,0.3213,0.954,0.4807,0.3213,0.4695,0.7153

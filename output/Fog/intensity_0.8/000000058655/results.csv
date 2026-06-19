@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000058655,"Describe this image in detail, use simple terms","The image shows a tall building with a clock on a pole in front of it. The clock is round and has a white face with black numbers and hands. The building has multiple floors and is made of brick. There are flags hanging from the building, and the sky is clear. The clock is located on the right side of the building.",8,clock,0.2284,0.8986,0.3642,0.2284,0.2337,0.4272

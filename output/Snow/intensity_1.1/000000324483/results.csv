@@ -1,2 +1,2 @@
 img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
-000000324483,"Describe this image in detail, use simple terms","This image shows a cat with a white and brown fur pattern. The cat is surrounded by a lot of small, white dots, which give the impression that the cat is covered in snow. The background is blurred, making it difficult to see any details.",4,cat,0.2374,0.775,0.1351
+000000324483,"Describe this image in detail, use simple terms","The image shows a cat with a white and brown striped fur. The cat is looking to the side, and there are white dots or specks scattered around it, giving the impression that the cat is surrounded by a snowstorm. The background is blurred, making it difficult to see any details.",4,cat,0.2101,0.8317,0.0814

@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000138115,"Describe this image in detail, use simple terms","The image shows a person with a surprised or shocked expression. The person has a bald head and is looking directly at the camera. The background is blurred, making it difficult to see any details.",4,person,0.0729,0.9119,0.1351,0.0729,0.6547,0.0463
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000138115,"Describe this image in detail, use simple terms",The image shows a person with a bald head and a beard. The person is standing in front of a plain background.,4,person,0.056,0.4238,0.0456

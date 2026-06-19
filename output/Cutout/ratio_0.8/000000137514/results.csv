@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000137514,"Describe this image in detail, use simple terms","The image shows a microwave oven with its grill and buttons visible. There is also a cat lying on a surface next to the microwave. The cat is mostly in the foreground, with only its paw and part of its body visible. The background is mostly dark, making it difficult to see any additional details.",17,cat,0.22,0.7308,0.3382,0.22,0.403,0.2037

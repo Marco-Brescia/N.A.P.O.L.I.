@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000050679,"Describe this image in detail, use simple terms","The image shows a close-up of an orange on a road. The orange is slightly blurred, giving it a dreamy, abstract appearance. In the background, there are blurred images of cars parked in a row, suggesting that the orange might be in a parking lot or a similar setting. The overall scene has a soft, dreamy quality to it.",8,orange,0.2717,0.8783,0.415,0.2717,0.447,0.2058

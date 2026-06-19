@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000167540,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane has two wings and two engines. The wings are long and narrow, and the plane is painted in a dark color with some lighter accents. The sky in the background is blue with some white clouds. The plane appears to be in flight, and the image is slightly blurred, making it difficult to see all the details clearly.",4,plane,0.1962,0.7884,0.3142,0.1962,0.219,0.2485

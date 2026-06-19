@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000144114,"Describe this image in detail, use simple terms","The image shows a red and white airplane flying in the sky. The airplane has wings and a tail with a striped pattern. The sky is cloudy, and the airplane is moving at a high altitude.",7,airplane,0.142,0.8333,0.2427,0.142,0.2139,0.319

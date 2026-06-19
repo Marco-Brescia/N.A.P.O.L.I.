@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
-000000167540,"Describe this image in detail, use simple terms","The image is a collage of airplane wings and tail fins. The wings and tail fins are arranged in a grid pattern, with each wing or tail fin occupying a specific position in the grid. The background is a blue sky with some clouds. The collage appears to be a creative way to display the details of airplane wings and tail fins.",6,airplane,0.1679,0.2152,0.2117

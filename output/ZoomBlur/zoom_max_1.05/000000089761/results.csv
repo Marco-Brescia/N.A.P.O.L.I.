@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000089761,"Describe this image in detail, use simple terms","The image shows a white toilet with a lid that is closed. The toilet is surrounded by a blurred, textured background that appears to be grass or a similar type of plant material. The background is out of focus, making it difficult to see any specific details. The overall effect is that the toilet is surrounded by a dynamic, almost abstract pattern.",5,toilet,0.3819,0.8491,0.5268,0.3819,0.5841,0.2537

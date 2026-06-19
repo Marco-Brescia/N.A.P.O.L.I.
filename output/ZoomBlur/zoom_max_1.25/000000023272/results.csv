@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000023272,"Describe this image in detail, use simple terms","The image shows a car with a blurred effect, making it difficult to see the details clearly. The car appears to be moving, as indicated by the motion blur. The background is also blurred, but it seems to be a green area, possibly a garden or a park. The overall effect gives the impression of the car being in motion, possibly on a road or a street.",4,car,0.1947,0.8034,0.3135,0.1947,0.7241,0.0704

@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000012667,"Describe this image in detail, use simple terms","The image shows a desk with a few items on it. There is a black telephone with a yellow banana resting on it. The phone has a black screen and buttons, and it is connected to a cord. In the background, there is a white stapler and a white box. The desk has a white surface.",20,banana,0.1599,0.9642,0.2742,0.1599,0.3252,1.5681

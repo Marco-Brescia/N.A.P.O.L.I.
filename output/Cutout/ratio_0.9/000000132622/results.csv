@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000132622,"Describe this image in detail, use simple terms","The image shows a bear walking through a grassy field. The bear is mostly in the background, with its fur visible against the green grass. The bear appears to be moving forward, and its fur is a mix of white and brown. The background is blurred, making it difficult to see any specific details, but it seems to be a natural, outdoor setting.",4,bear,0.1765,0.8333,0.2913,0.1765,0.8387,0.0492

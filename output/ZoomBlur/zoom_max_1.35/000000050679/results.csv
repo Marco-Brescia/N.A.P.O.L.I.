@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000050679,"Describe this image in detail, use simple terms","The image shows a ball rolling on the ground. The ball is orange and appears to be in motion, creating a blurred effect. The background is out of focus, but you can see some trees and a cloudy sky. The ball is on a paved surface, and there are white lines on the ground, possibly indicating a path or road.",13,orange,0.2099,0.9101,0.3411,0.2099,0.4576,0.3987

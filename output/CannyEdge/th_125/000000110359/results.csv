@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is viewed from above, and you can see its wings and tail. The plane is dark-colored, possibly black or dark blue, and it appears to be a commercial jet. The sky is clear and blue, with no clouds visible. The plane is flying at a relatively high altitude, as indicated by the clear blue sky and the lack of any visible ground or other objects.",4,plane,0.1426,0.2094,1.2021

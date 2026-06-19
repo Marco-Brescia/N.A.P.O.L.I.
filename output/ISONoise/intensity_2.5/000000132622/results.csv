@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000132622,"Describe this image in detail, use simple terms","The image shows a bear walking through a grassy area. The bear has a thick, furry coat and is looking directly at the camera. The grass around the bear is green and appears to be tall. The bear's fur is light brown or gray, and it has a black nose and mouth. The bear's ears are pointed and its eyes are dark.",4,bear,0.2555,0.7778,0.3847,0.2555,0.8341,0.0399
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear walking through a grassy area. The bear has a thick, fluffy coat and is looking directly at the camera. The grass around the bear is green and appears to be tall. The bear's fur is light brown with some darker patches.",4,bear,0.1701,0.953,0.0543

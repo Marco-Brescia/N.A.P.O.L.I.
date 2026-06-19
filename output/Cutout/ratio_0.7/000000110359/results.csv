@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is in the middle of the frame, and it's flying against a clear blue sky. The plane has wings and a tail, and it appears to be a commercial jet. The plane's body is dark, and the wings are spread out, showing the plane's structure.",4,plane,0.0,1.0,0.0,0.0,0.0,0.0
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is in the middle of the frame, and it's flying against a clear blue sky. The plane has a dark body and wings, and it appears to be a commercial jet. The image is taken from below, so the plane is looking up at the sky.",4,plane,0.0,0.0,0.0

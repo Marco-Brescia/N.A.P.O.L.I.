@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000372902,"Describe this image in detail, use simple terms","The image shows a car parked on a street. There is a small green plant growing near the car, and another plant is visible in the foreground. The car is black, and the street is paved with concrete.",4,car,0.1746,0.9101,0.293,0.1746,0.7112,0.2804

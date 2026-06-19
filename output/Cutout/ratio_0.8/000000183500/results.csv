@@ -1,3 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000183500,"Describe this image in detail, use simple terms","The image shows a small airplane flying in the sky. The airplane has two wings and four landing gears. The wings are red with white stripes, and the plane has a white body with red accents. The sky in the background is cloudy.",5,airplane,0.0,1.0,0.0,0.0,0.0,0.0
-000000183500,"Describe this image in detail, use simple terms","The image shows a small airplane flying in the sky. The airplane has two wings and four landing gears. The wings are red with white stripes, and the plane has a white body with red accents. The sky in the background is cloudy.",31,plane,0.1252,0.8754,0.219,0.1252,0.2535,0.2348

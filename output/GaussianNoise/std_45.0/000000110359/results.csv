@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is seen from an overhead angle, with its wings spread out and its tail pointing downwards. The sky is a clear blue color, and the plane appears to be in motion, as indicated by the slight blur around its edges. The image has a grainy texture, giving it a somewhat pixelated appearance.",4,plane,0.0,1.0,0.0,0.0,0.0,0.0
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows an airplane flying in the sky. The airplane is seen from a low angle, looking up at it. The sky is blue with some clouds, and the airplane is dark against the blue background. The image has a grainy texture, giving it a slightly pixelated appearance.",4,airplane,0.0,0.0,0.0

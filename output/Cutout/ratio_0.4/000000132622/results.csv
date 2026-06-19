@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000132622,"Describe this image in detail, use simple terms","The image shows a bear standing in a grassy field. The bear is facing away from the camera, and its back is mostly visible. The bear has a thick, fluffy coat and is standing on all four legs. The background is green, indicating a grassy area.",4,bear,0.2292,0.8188,0.3582,0.2292,0.9295,0.0317

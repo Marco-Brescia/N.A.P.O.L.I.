@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000155051,"Describe this image in detail, use simple terms","The image shows a night sky with a large clock face and a small moon. The clock face is illuminated, showing the time. The moon is visible in the lower left corner of the image. The sky is dark, indicating it is nighttime.",9,clock,0.2109,0.8772,0.34,0.2109,0.4896,0.3902
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock and a moon in the night sky. The clock is on the right side of the image, and it has Roman numerals on its face. The moon is on the left side, appearing as a small, bright light in the darkness. The sky is dark, indicating it is nighttime.",4,clock,0.1509,0.4529,0.4495

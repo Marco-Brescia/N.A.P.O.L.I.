@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000132622,"Describe this image in detail, use simple terms","The image shows a bear in a grassy field. The bear has a white fur coat and is looking directly at the camera. The background is blurred, making it difficult to see details, but it appears to be a natural setting with green grass. The bear's fur looks wet, suggesting it might have been in the water or has been recently active.",4,bear,0.2509,0.756,0.3767,0.2509,0.7814,0.0423

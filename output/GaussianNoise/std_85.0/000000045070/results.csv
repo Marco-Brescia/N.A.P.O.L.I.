@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000045070,"Describe this image in detail, use simple terms","The image shows a person sitting on a saddle. The saddle is made of leather and has a purple seat. The person is wearing a plaid shirt and jeans. The background appears to be a green, leafy area, possibly a park or a garden.",4,person,0.1684,0.9151,0.2844,0.1684,0.5286,0.212
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","The image shows a person sitting on a saddle. The saddle is made of leather and has a brown color. The person is wearing a pink and white checkered shirt and blue jeans. The background appears to be a green outdoor setting, possibly a park or a field.",4,person,0.1158,0.3773,0.2081

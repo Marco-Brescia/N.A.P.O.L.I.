@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000155051,"Describe this image in detail, use simple terms","The image shows a clock and a moon in the night sky. The clock has a yellow face with black Roman numerals and black hands. The clock reads ""1902"" at the top. The moon is visible in the top right corner of the image, appearing as a bright, white orb against the dark night sky.",4,clock,0.0091,0.821,0.0179,0.0091,0.019,0.5588
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock and a moon in the night sky. The clock has a yellow face with black Roman numerals and black hands. The clock reads ""1902"" at the top. The moon is visible in the top right corner of the image, appearing as a bright, white orb against the dark night sky.",4,clock,0.0,0.0,0.0

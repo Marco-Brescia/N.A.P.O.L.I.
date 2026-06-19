@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000012667,"Describe this image in detail, use simple terms","The image shows a banana placed on a desk. The banana is yellow and appears to be ripe. The desk has some papers and a calculator on it. The background is blurred, making it difficult to see the details of the surroundings.",4,banana,0.3548,0.9642,0.5187,0.3548,0.6455,1.0729

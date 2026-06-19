@@ -1,3 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000138115,"Describe this image in detail, use simple terms","The image shows a person holding an orange. The person's face is blurred, making it difficult to see their features clearly. The orange is bright yellow and appears to be fresh. The person is wearing a dark jacket.",7,orange,0.315,0.946,0.4726,0.315,0.6957,0.4618
-000000138115,"Describe this image in detail, use simple terms","The image shows a person holding an orange. The person's face is blurred, making it difficult to see their features clearly. The orange is bright yellow and appears to be fresh. The person is wearing a dark jacket.",4,person,0.057,0.8977,0.1072,0.057,0.5677,0.072

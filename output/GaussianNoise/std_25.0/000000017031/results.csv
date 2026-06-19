@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe with its head and neck visible. The giraffe has long, straight horns on its head and a long neck. Its ears are large and pointed, and it has a brown and white pattern on its body. The background is blurred, but it appears to be a natural setting with greenery, possibly a forest or a park.","[4, 5]",giraffe,0.2454,0.912,0.3867,0.2454,0.706,0.4444
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe. It has long neck and legs, and its head is tilted slightly to the side. The giraffe has brown spots on its body and a long, curved neck. The background is green and blurred, indicating it might be in a forest or a zoo.","[4, 5]",giraffe,0.1828,0.336,0.2386

@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000132622,"Describe this image in detail, use simple terms","The image shows a close-up of a bear's back and tail. The bear appears to be in a grassy area, and the background is blurred, making it difficult to see details. The bear's fur is light-colored, possibly gray or white, and it has a fluffy tail. The image is taken in a natural setting, likely a forest or a grassy field.",8,bear,0.0943,0.8744,0.1703,0.0943,0.5656,0.0602

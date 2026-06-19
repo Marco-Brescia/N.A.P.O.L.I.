@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe with its head and neck visible. The giraffe has long, straight horns on its head and a long neck. It is surrounded by green trees and bushes, suggesting it is in a natural habitat, possibly a zoo or a wildlife reserve. The giraffe's eyes are open, and it appears to be looking directly at the camera.","[4, 5]",giraffe,0.2371,0.912,0.3764,0.2371,0.6702,0.4308

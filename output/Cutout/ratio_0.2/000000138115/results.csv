@@ -1,3 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000138115,"Describe this image in detail, use simple terms","The image shows a person holding an orange. The person has a surprised or shocked expression on their face, with wide eyes and a slightly open mouth. The background is plain and light-colored.",7,orange,0.2356,0.9261,0.3757,0.2356,0.4745,0.4848
-000000138115,"Describe this image in detail, use simple terms","The image shows a person holding an orange. The person has a surprised or shocked expression on their face, with wide eyes and a slightly open mouth. The background is plain and light-colored.",4,person,0.1225,0.8977,0.2157,0.1225,0.9902,0.0311

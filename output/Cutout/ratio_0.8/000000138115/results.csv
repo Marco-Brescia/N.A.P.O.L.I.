@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000138115,"Describe this image in detail, use simple terms","The image shows a person with a bald head and a wrinkled face. The person is making a funny face, with their eyes wide open and eyebrows raised. The background is plain and light-colored.",4,person,0.0484,0.9432,0.0921,0.0484,0.7662,0.0681

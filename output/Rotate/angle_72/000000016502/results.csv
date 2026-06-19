@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on the edge of a steep cliff. The sky is clear with a few clouds, and the cliff is made of dark rocks. The sheep is standing on one leg, with its body facing the sky. The scene is quite dramatic and unusual.",4,sheep,0.1308,0.953,0.23,0.1308,0.1752,1.2764
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on the edge of a steep cliff. The sky is clear with a few clouds, and the cliff is made of dark rocks. The sheep is standing on one leg, with its body facing the sky. The scene is quite dramatic and unusual.",4,sheep,0.0,0.0,0.0

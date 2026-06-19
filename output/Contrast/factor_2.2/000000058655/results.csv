@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000058655,"Describe this image in detail, use simple terms","The image shows a tall brick building with a clock tower. The clock tower has a large, ornate clock face with Roman numerals. The building has many windows, and there is an American flag hanging from one of the windows. The sky is clear and blue, indicating it is daytime. The building appears to be an old, historic structure, possibly a government or municipal building.",9,clock,0.0,1.0,0.0,0.0,0.0,0.0

@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000132622,"Describe this image in detail, use simple terms","The image shows a bear standing in a grassy field. The bear is mostly white with some brown patches on its fur. The bear's head is turned to the side, and it appears to be looking down or towards the ground. The background is green, indicating a grassy area.",4,bear,0.1976,0.843,0.3202,0.1976,0.9491,0.0387
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear in a grassy field. The bear is facing away from the camera, and its face is mostly obscured by a black square. The bear has a fluffy, white fur coat with some darker markings on its back and legs. The background is green and blurred, indicating that the bear is in a natural, outdoor setting.",4,bear,0.308,0.9398,0.0267

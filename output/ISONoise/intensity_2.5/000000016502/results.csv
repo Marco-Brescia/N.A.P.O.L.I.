@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on top of a rocky hill. The sky is blue with some white clouds, and the sheep has a white coat with a black face and legs. The hill is covered with grass and rocks.",4,sheep,0.2574,0.9231,0.4026,0.2574,0.2811,0.9667
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on top of a rocky hill. The sky is blue with some white clouds, and the sheep has a white woolly coat. The hill is covered with grass and rocks.",4,sheep,0.2219,0.2329,0.9409

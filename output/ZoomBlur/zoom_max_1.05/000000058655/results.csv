@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000058655,"Describe this image in detail, use simple terms",The image shows a tall brick building with a clock on a pole in front of it. The clock is round and has Roman numerals. The building has several windows and a flagpole with a flag flying at half-mast. The sky is clear and blue. The overall scene appears to be taken during the day.,9,clock,0.2183,0.8928,0.3508,0.2183,0.2183,0.4344

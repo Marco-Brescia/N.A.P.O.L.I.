@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000012667,"Describe this image in detail, use simple terms","The image shows a desk with a few items on it. There is a black telephone with a cord hanging down, and a banana is placed on the phone. The phone has a Philips brand name on it. In the background, there is a white object that looks like a stapler or a similar device. The desk has a white surface, and there are some papers or notes on it.",25,banana,0.1853,0.913,0.3081,0.1853,0.2474,0.8001

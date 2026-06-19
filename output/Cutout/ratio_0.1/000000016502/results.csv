@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on top of a rocky hill. The sky is blue with some white clouds, and the sheep is facing the camera. The sheep has a black marking on its face, which is typical for some breeds. The hill is rocky and has some grass on it.",4,sheep,0.0,1.0,0.0,0.0,0.0,0.0
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on top of a rocky hill. The sky is blue with some white clouds, and the sheep is facing the camera. The sheep has a black face and is standing on a rock. The hill is rocky and there are some grassy patches at the bottom.",4,sheep,0.0,0.0,0.0

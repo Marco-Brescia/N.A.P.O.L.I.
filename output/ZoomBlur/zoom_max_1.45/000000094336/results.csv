@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000094336,"Describe this image in detail, use simple terms","The image shows a cat sitting in a bowl. The cat has a brown and white fur pattern and is looking directly at the camera. The bowl is circular and has concentric circles on it. The background is blurred, making it difficult to see any specific details. The overall effect of the image is a bit blurry and dreamy.",4,cat,0.4563,0.8657,0.5976,0.4563,0.9273,0.1075

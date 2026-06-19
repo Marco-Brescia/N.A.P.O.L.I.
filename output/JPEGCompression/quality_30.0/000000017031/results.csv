@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe with its head and neck visible. The giraffe has a long neck and a distinctive spotted pattern on its body. The background is blurred, but it appears to be a natural setting with greenery, suggesting the giraffe might be in a zoo or a wildlife park.","[4, 5]",giraffe,0.1706,0.8009,0.2813,0.1706,0.2971,0.2088
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe with its head and neck visible. The giraffe has a long neck and a distinctive spotted pattern on its body. The background is blurred, but it appears to be a natural setting with greenery, suggesting the giraffe might be in a zoo or a wildlife park.","[4, 5]",giraffe,0.1706,0.2971,0.2088

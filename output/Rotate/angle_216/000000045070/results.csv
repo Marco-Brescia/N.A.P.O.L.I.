@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000045070,"Describe this image in detail, use simple terms","The image shows a person wearing a pink and white plaid shirt and blue jeans. They are sitting on a saddle, which is a piece of equipment used for riding horses. The person is also wearing a black helmet and has a bracelet on their wrist. The background shows a green outdoor setting with trees.",4,person,0.1112,0.9607,0.1993,0.1112,0.6582,0.3159
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","The image shows a person wearing a pink and white plaid shirt and blue jeans. They are sitting on a saddle, which is a piece of equipment used for riding horses. The person is also wearing a black helmet and has a bracelet on their wrist. The background shows a green outdoor setting with trees.",4,person,0.1245,0.5789,0.2307

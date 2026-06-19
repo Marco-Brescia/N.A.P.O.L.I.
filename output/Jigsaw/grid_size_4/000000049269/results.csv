@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
-000000049269,"Describe this image in detail, use simple terms","The image is a collage of pictures featuring different animals. There are several horses and a dog. The horses are in various positions, some standing and some lying down. The dog is also in different poses, some lying down and others standing. The background shows grass and some trees, indicating that the animals are in a natural setting, possibly a field or a meadow.",17,dog,0.128,0.2984,0.1398

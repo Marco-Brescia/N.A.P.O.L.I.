@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000183500,"Describe this image in detail, use simple terms","The image shows a vintage biplane flying in the sky. The plane has two sets of wings, one on each side of the fuselage. The wings are painted in red and white, with a white tail fin and a red and white tail fin. The plane has two propellers, one on each wing. There are two people inside the plane, one on each side. The sky in the background is cloudy.",6,plane,0.327,0.8261,0.4685,0.327,0.4703,0.1891

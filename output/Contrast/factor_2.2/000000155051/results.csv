@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000155051,"Describe this image in detail, use simple terms","The image shows a clock with a black background. The clock face is gold-colored and has Roman numerals around the edge. The time on the clock is approximately 10:10. There is a small white dot on the left side of the image, which could be a moon or a light source.",4,clock,0.2255,0.8465,0.3562,0.2255,0.4259,0.3619

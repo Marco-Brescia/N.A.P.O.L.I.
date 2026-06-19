@@ -1,3 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000138115,"Describe this image in detail, use simple terms","The image shows a person holding an orange. The person has gray hair and is wearing a black jacket. The orange is bright and round, and the person is making a funny face with their mouth open and eyes wide.",7,orange,0.3534,0.9148,0.5098,0.3534,0.5824,0.2624
-000000138115,"Describe this image in detail, use simple terms","The image shows a person holding an orange. The person has gray hair and is wearing a black jacket. The orange is bright and round, and the person is making a funny face with their mouth open and eyes wide.",4,person,0.0858,0.8892,0.1565,0.0858,0.8358,0.0403

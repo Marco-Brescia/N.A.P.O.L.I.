@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
-000000022396,"Describe this image in detail, use simple terms","This image is a collage of several small, square images. The background is a blue sky with some clouds. In the sky, there are several large, white shapes that resemble airplanes. The shapes are arranged in a grid pattern, with each square representing a different airplane. The airplanes are flying in the sky, and the collage gives the impression of a busy sky with many planes.",52,airplane,0.0,0.0,0.0

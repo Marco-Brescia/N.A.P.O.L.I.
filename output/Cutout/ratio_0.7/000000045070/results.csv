@@ -1,3 +1,3 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000045070,"Describe this image in detail, use simple terms",The image shows a person sitting on a horse. The person is wearing a black helmet and has their foot on the stirrup of the saddle. The horse is wearing a purple saddle blanket. The background shows a forested area with trees.,8,horse,0.0744,0.8737,0.1371,0.0744,0.2048,0.6386
-000000045070,"Describe this image in detail, use simple terms",The image shows a person sitting on a horse. The person is wearing a black helmet and has their foot on the stirrup of the saddle. The horse is wearing a purple saddle blanket. The background shows a forested area with trees.,4,person,0.1943,0.9193,0.3207,0.1943,0.6302,0.288
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms",The image shows a person riding a horse. The person is wearing a black hat and jeans. The horse is purple and has a saddle on it. The background shows trees and a fence.,7,horse,0.1242,0.3084,0.5625
+000000045070,"Describe this image in detail, use simple terms",The image shows a person riding a horse. The person is wearing a black hat and jeans. The horse is purple and has a saddle on it. The background shows trees and a fence.,4,person,0.2203,0.5946,0.2239

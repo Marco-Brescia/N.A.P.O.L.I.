@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is white with some blue and red markings on its tail. The sky is mostly blue with some white clouds. The plane appears to be in the middle of a flight, and the clouds are scattered around it.",4,plane,0.0,1.0,0.0,0.0,0.0,0.0
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is white with some blue and red markings on its tail. The sky is mostly blue with some white clouds. The plane appears to be in the middle of a flight, and the clouds are scattered around it.",4,plane,0.0,0.0,0.0

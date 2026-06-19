@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000029397,"Describe this image in detail, use simple terms","The image shows a wooden bench with a sign on it. The sign is blue and white and says, ""WE'RE GOING TO BE STRONG."" The background is a concrete wall with some graffiti on it. The bench is placed on a brick surface.",5,bench,0.2307,0.7826,0.3563,0.2307,0.4707,0.105

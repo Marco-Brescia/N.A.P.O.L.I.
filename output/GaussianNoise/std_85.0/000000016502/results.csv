@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on top of a hill. The hill is covered with green grass, and the sky above is blue with some clouds. The sheep is white with a black face and legs, and it appears to be looking towards the camera. The overall scene is peaceful and serene.",4,sheep,0.1595,0.9615,0.2737,0.1595,0.2166,1.2779
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on top of a hill. The hill is covered with green grass, and the sky above is blue with some white clouds. The sheep is white and appears to be looking towards the camera. The overall image has a grainy, pixelated effect, giving it a vintage or artistic look.",4,sheep,0.1959,0.2092,0.8487

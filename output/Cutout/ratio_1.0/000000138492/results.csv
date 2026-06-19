@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000138492,"Describe this image in detail, use simple terms","The image shows a dog standing on its hind legs in a grassy field. The dog has a black and white coat and is looking up at something in the distance. The dog's front paws are on the ground, and its back legs are raised, giving the impression that it is balancing or playing. The background is a grassy field, and the dog appears to be in a playful or energetic mood.",4,dog,0.2102,0.8551,0.3375,0.2102,0.5763,0.1569

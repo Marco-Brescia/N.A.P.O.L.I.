@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is seen from below, with its wings spread wide and its tail fin visible. The sky is blue with some clouds, and the plane appears to be in mid-flight.",4,plane,0.2076,0.9159,0.3385,0.2076,0.2735,0.8979
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is seen from below, with its wings and tail visible. The sky is blue, and the plane appears to be in flight, moving across the sky. The image has a grainy texture, giving it a slightly pixelated appearance.",4,plane,0.0,0.0,0.0

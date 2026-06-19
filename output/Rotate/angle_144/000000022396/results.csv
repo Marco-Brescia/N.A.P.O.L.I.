@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is in the foreground, and the moon is visible in the background. The plane is flying towards the left side of the image, and the moon is on the right side. The sky is clear with a light blue color, and the moon appears to be in the middle of the image.",4,plane,0.0,1.0,0.0,0.0,0.0,0.0
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is in the foreground, and the moon is visible in the background. The plane is flying towards the left side of the image, and the moon is on the right side. The sky is clear with a light blue color, and the moon appears to be in the middle of the image.",4,plane,0.2307,0.2351,0.8804

@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000050679,"Describe this image in detail, use simple terms","The image shows a single orange sitting on the ground in the middle of a parking lot. The orange is round and has a rough, textured surface with some spots of brown. In the background, there are several cars parked along the street. The sky is overcast, and the overall scene appears to be outdoors during the day.",5,orange,0.2494,0.8812,0.3888,0.2494,0.451,0.3568

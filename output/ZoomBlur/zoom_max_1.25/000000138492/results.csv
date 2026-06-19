@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000138492,"Describe this image in detail, use simple terms","The image shows a dog in motion, captured with a blurred effect. The dog appears to be jumping or running on a grassy field. The background is green, suggesting it might be a park or a field. The dog's fur is black and white, and it seems to be in a playful or energetic pose. The overall effect of the image is that of motion and movement.",4,dog,0.1817,0.8406,0.2987,0.1817,0.4831,0.1429

@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe with its head and neck visible. The giraffe has a long neck and a distinctive pattern of brown and white patches on its body. Its ears are large and pointed, and it has a long, curved tongue. The background is blurred, but it appears to be a natural setting with green foliage, suggesting that the giraffe is in a forest or a zoo.","[4, 5]",giraffe,0.182,0.8287,0.2984,0.182,0.3281,0.2406

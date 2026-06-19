@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000199940,"Describe this image in detail, use simple terms","The image shows a black cat sitting on a surface. The cat is partially obscured by a green bottle with a label that has some text and a design on it. The background appears to be a blurred, abstract pattern, possibly a window or a wall with some light and shadow effects. The overall scene has a surreal or artistic quality.",5,cat,0.1139,0.8889,0.202,0.1139,0.5067,0.1521

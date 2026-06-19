@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000199940,"Describe this image in detail, use simple terms","The image shows a bottle of wine with a green label. The label has some text and a picture of a plant on it. The bottle is placed in front of a black cat that has its wings spread out, creating a surreal and artistic effect. The background appears to be a blurred view of a cityscape with buildings and lights. The overall image has a dreamy and artistic quality.",35,cat,0.1405,0.8761,0.2421,0.1405,0.5552,0.1408

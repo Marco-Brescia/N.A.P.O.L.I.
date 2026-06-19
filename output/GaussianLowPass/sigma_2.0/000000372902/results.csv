@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000372902,"Describe this image in detail, use simple terms","The image shows a car parked on the side of a road. There are two small plants growing near the car, one on the left and one on the right. The car has a black bumper and a black tailgate. The plants are green and appear to be growing out of the concrete sidewalk.",4,car,0.3662,0.8232,0.5069,0.3662,0.7657,0.1262
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000372902,"Describe this image in detail, use simple terms","The image shows a car parked on the side of a road. There are two small plants growing near the car, one on the left and one on the right. The car has a black bumper and a black tailgate. The plants are green and appear to be growing out of the concrete sidewalk.",4,car,0.3662,0.7657,0.1262

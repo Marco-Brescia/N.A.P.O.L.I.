@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe with its head and neck visible. The giraffe has a long neck and a distinctive pattern of spots on its body. The background is filled with green trees and foliage, suggesting that the giraffe is in a natural or zoo-like setting. The giraffe's head is tilted slightly, and it appears to be looking directly at the camera.","[4, 5]",giraffe,0.1654,0.7685,0.2722,0.1654,0.267,0.1904

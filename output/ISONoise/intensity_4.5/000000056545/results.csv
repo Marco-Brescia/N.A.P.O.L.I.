@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000056545,"Describe this image in detail, use simple terms","This is a picture of a bird. It has a greyish-brown body with some darker markings on its wings and tail. The bird is perched on a branch, and the background is blurred with green foliage, indicating it is in a forest or wooded area.",6,bird,0.1776,0.7681,0.2886,0.1776,0.3339,0.1507
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000056545,"Describe this image in detail, use simple terms","This is a picture of a bird. The bird has a greyish-brown body with a slightly lighter grey head. It has a short beak and small eyes. The bird is perched on a branch, and the background is filled with green leaves, indicating it is in a tree.",6,bird,0.1939,0.3571,0.1555

@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
-000000012667,"Describe this image in detail, use simple terms","The image shows a banana placed on a desk. The banana is yellow and has a long, coiled black cord attached to it. The desk appears to be made of a light-colored material, possibly plastic or a similar material. In the background, there is a white object that looks like a piece of paper or a piece of cloth. The overall scene has a somewhat unusual and quirky feel to it.",4,banana,0.4418,0.5519,0.7569

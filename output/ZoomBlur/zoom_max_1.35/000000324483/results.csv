@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000324483,"Describe this image in detail, use simple terms","The image shows a cat with long, fluffy fur. The cat has a mix of brown and white fur, and its eyes are wide open, looking slightly to the side. The cat's fur is slightly out of focus, giving it a dreamy or blurred appearance. The background is blurred as well, making it difficult to see any specific details.",4,cat,0.238,0.9014,0.3766,0.238,0.9322,0.1099

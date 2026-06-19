@@ -1,2 +1,2 @@
 img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
-000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on top of a rocky hill. The sky is blue with some white clouds, and the sheep has a checkered pattern on its back. The hill is covered with rocks and grass.",4,sheep,0.0,0.0,0.0
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on top of a rocky hill. The sky is blue with some white clouds, and the sheep has a black and white checkered pattern on its back. The hill is covered with large rocks and grass.",4,sheep,0.0,0.0,0.0

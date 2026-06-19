@@ -1,2 +1,2 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a table next to a microwave. The cat has a mix of white, gray, and brown fur. The microwave has a white exterior with a blue glass door. The cat appears to be looking at the microwave, and the table is light-colored.",4,cat,0.3949,0.8376,0.5367,0.3949,0.8984,0.2149
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a table next to a microwave. The cat has a mix of white, gray, and brown fur. The microwave has a white exterior with a blue glass door. The cat appears to be looking at the microwave, and the table is light-colored.",4,cat,0.3949,0.8984,0.2149

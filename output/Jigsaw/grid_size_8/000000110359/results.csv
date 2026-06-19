@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","This image is a collage of several small, square pictures. Each square shows a part of a plane, with the planes flying in different directions and at different angles. The planes are mostly in the sky, with some visible wings and tail fins. The collage is made up of many small, blue squares, creating a mosaic effect.",19,plane,0.0,0.0,0.0

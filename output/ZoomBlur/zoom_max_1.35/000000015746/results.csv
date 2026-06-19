@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000015746,"Describe this image in detail, use simple terms","The image shows a red fire hydrant in a grassy area. The hydrant is in the foreground, and it appears to be in motion, as indicated by the blurred effect. The background includes some greenery, including trees and bushes, and there is a building with a stone facade in the distance. The overall effect of the image is somewhat abstract and artistic.","[5, 6, 7]",fire hydrant,0.1089,0.8319,0.1926,0.1089,0.2196,0.2848

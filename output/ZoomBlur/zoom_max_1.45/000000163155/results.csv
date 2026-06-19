@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000163155,"Describe this image in detail, use simple terms","The image shows a cat lying down. The cat has a striped pattern with shades of gray and white. The cat's body is curled up, and its head is resting on its paws. The background is blurred, making it difficult to see any specific details. The cat appears to be in a relaxed state, possibly sleeping or resting.",4,cat,0.2285,0.8986,0.3643,0.2285,0.7196,0.307

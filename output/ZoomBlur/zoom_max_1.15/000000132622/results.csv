@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000132622,"Describe this image in detail, use simple terms","The image shows a bear cub. The bear is in a grassy area, and the background is blurred, making it difficult to see the details of the surroundings. The bear has a fluffy coat and is looking forward with its eyes closed. The bear's face is close to the camera, and its nose is black.",4,bear,0.1596,0.8527,0.2688,0.1596,0.7763,0.0515

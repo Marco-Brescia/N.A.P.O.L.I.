@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000144114,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane has a red and white color scheme with a black box in the middle. The plane has wings and a tail with a red stripe. The sky is cloudy, and the plane appears to be performing some sort of maneuver.",4,plane,0.1938,0.8537,0.3159,0.1938,0.2796,0.1833

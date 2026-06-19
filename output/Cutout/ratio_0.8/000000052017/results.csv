@@ -1,2 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,func_iou,f1_iou,iou_hard,io_ratio,wdp
-000000052017,"Describe this image in detail, use simple terms","The image shows a small, single-engine airplane flying in the sky. The airplane is painted in bright colors, primarily yellow with red accents. It has a single propeller on the front and a tail fin. The sky appears to be overcast, with a grayish hue. The airplane is in mid-flight, with its wings spread out and its nose pointing slightly downward.",8,airplane,0.0844,0.9449,0.155,0.0844,0.265,0.457
