@@ -9,9 +9,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from data_loader import load_results
 from plotter import (
     plot_breaking_point_profile,
-    plot_image_profile,
     plot_metric_heatmap,
-    plot_perturbation_overview,
 )
 
 # ---------------------------------------------------------------------------
@@ -30,9 +28,7 @@ logger = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 
 _PLOT_REGISTRY = {
-    "overview":       plot_perturbation_overview,
     "heatmap":        plot_metric_heatmap,
-    "image_profile":  plot_image_profile,
     "breaking_point": plot_breaking_point_profile,
 }
 
@@ -149,6 +145,7 @@ def main() -> None:
                     kwargs["degradation_threshold"] = args.degradation_threshold
                     kwargs["wdp_arbiter_min"]       = args.wdp_arbiter_min
                     kwargs["min_consecutive"]       = args.min_consecutive
+                    kwargs["base_results_dir"]      = args.output_dir  # Pass the base results directory for breaking_point plots
 
                 logger.info("Scheduling %d tasks for '%s'...", len(target_ids), plot_type)
                 
