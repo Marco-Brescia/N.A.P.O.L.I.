@@ -292,11 +292,16 @@ def detect_breaking_point(
         wdp_confirms = np.isnan(wdp_deg) or (wdp_deg >= wdp_arbiter_min)
 
         if primary_deg >= threshold and wdp_confirms:
+            
             if run_start is None:
                 run_start = i
             run_len += 1
+            
             if run_len >= min_consecutive:
                 return run_start
+            
+            if i == n - 1:
+                return run_start    # if we reach the end and are still in a run, consider it a breaking point
         else:
             run_start, run_len = None, 0
 
