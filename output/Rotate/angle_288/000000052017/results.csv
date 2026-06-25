@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000052017,"Describe this image in detail, use simple terms","The image shows a small, yellow airplane with red accents. The airplane has the letters ""SP-AWF"" painted on it. It is flying in the air, and you can see the propeller at the front. The background is a plain, light-colored sky.",7,airplane,0.2535,0.3154,0.2699

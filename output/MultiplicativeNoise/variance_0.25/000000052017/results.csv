@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000052017,"Describe this image in detail, use simple terms","The image shows a small, yellow airplane with red and blue accents. The airplane has the letters ""SP-AWF"" on its tail. It is flying in the sky, and the background is a mix of blue and white colors. The airplane has two wings and a single propeller at the front.",7,airplane,0.1709,0.2288,0.1711

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms",The image shows a small airplane flying in the sky. The airplane has two wings and is painted in a dark color. The wings have a checkered pattern with alternating black and white squares. The airplane is also marked with red circles on the wings and tail. The sky in the background is blue with some white clouds.,5,airplane,0.1953,0.2389,0.319

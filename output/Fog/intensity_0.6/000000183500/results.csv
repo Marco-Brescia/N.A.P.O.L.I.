@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000183500,"Describe this image in detail, use simple terms","The image shows a vintage biplane flying in the sky. The plane has two sets of wings, one on each side of the fuselage. The wings are red with white stripes and have propellers at the front. The plane has two seats, one in each wing. The plane is marked with the letters ""C"" and ""D"" on the tail. The sky is overcast, and the plane appears to be in motion, with its wings spread out.",6,plane,0.3755,0.5851,0.2295

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","The image shows a cat lying down on a dark surface. The cat has a white and brown coat with green eyes. The cat's body is stretched out, and its head is turned to the side. The cat's eyes are open, and there are some light reflections on its face, creating a blurred effect. The background is dark, making the cat and its reflection stand out more prominently.",4,cat,0.0767,0.334,0.1992

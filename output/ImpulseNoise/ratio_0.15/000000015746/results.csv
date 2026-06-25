@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a fire hydrant in a yard. The hydrant is painted red and has a black top. It is surrounded by green grass and some bushes. In the background, there is a white house with a roof that appears to be made of shingles. There is also a tree with green leaves. The image has a pixelated effect, giving it a grainy appearance.","[4, 5, 6]",fire hydrant,0.184,0.489,0.4009

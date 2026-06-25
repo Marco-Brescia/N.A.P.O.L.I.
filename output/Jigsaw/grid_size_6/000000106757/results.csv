@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000106757,"Describe this image in detail, use simple terms","The image is a collage of several pictures of elephants. Each picture shows an elephant in different positions and angles, with some of the elephants being close-up shots and others showing them from a distance. The elephants appear to be in a natural setting, possibly a zoo or a wildlife park. The collage is arranged in a grid pattern, with each picture occupying a specific section of the image.",15,elephant,0.2481,0.4554,0.0227

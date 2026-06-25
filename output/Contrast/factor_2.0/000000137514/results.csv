@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms",The image shows a cat sitting on a table next to a microwave. The cat has a white and brown coat with black markings on its face and ears. The microwave has a blue and white color scheme and has a few buttons on its front. The cat appears to be resting or looking at something in front of it.,4,cat,0.3302,0.6363,0.2043

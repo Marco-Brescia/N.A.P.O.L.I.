@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is seen from a low angle, so its wings and tail are visible. The sky is clear and blue, and the plane appears to be in the middle of a flight path. The plane's silhouette against the sky creates a striking contrast, highlighting its shape and design.",4,plane,0.1861,0.2418,0.7186

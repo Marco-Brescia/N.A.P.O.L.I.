@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a banana placed on top of a telephone. The banana is hanging off the phone's receiver, which is connected to the phone's cord. The phone is black and has a keypad with numbers and letters on it. The background appears to be a desk or table with some other objects, but they are not clearly visible.",4,banana,0.3586,0.7842,1.775

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000094336,"Describe this image in detail, use simple terms","The image shows a cat looking down at its reflection in a mirror. The cat has a brown and black coat with white markings. The mirror is mounted on a ceiling light fixture, which is turned on. The cat appears to be curious and is looking directly at its reflection. The background includes a wooden surface, possibly a table or a shelf.",4,cat,0.398,0.879,0.1954

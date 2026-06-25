@@ -1,0 +1,3 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000138115,"Describe this image in detail, use simple terms","The image shows a person holding an orange. The person has a beard and is wearing a dark shirt. The orange is bright yellow and has a smooth, glossy surface. The background is plain and light-colored.",7,orange,0.4171,0.7632,0.3991
+000000138115,"Describe this image in detail, use simple terms","The image shows a person holding an orange. The person has a beard and is wearing a dark shirt. The orange is bright yellow and has a smooth, glossy surface. The background is plain and light-colored.",4,person,0.1041,0.8739,0.0433

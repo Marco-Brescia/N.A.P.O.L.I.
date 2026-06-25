@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a red fire hydrant in a grassy area. The hydrant has black caps on its top and bottom, and there are several black dots scattered around it, possibly indicating points of interest or annotations. In the background, there is a house with a roof covered in purple flowers, and some greenery around the hydrant. The scene appears to be outdoors, possibly in a residential area.","[5, 6, 7]",fire hydrant,0.1272,0.2685,0.2999

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows an airplane flying in the sky. The airplane is seen from a low angle, so it appears to be flying high up in the sky. The sky is blue with some clouds, and the airplane is the main focus of the image. The airplane has wings and a tail, and it is flying in a straight line.",4,airplane,0.0,0.0,0.0

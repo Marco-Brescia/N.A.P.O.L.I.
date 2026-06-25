@@ -43,6 +43,6 @@ perturbation_ranges = {
     "Cutout":              {"param": "ratio",       "min": 0.1,   "max": 0.9,    "step": 0.2,   "type": float},
     "CoarseDropout":       {"param": "hole_size",   "min": 8,     "max": 40,   "step": 8,     "type": int},
     # edge-based
-    "CannyEdge":           {"param": "th",          "min": 75,    "max": 250,  "step": 75,    "type": int},
+    "CannyEdge":           {"param": "th",          "min": 75,    "max": 250,  "step": 25,    "type": int},
     "AdversarialPatch":    {"param": "patch_ratio", "min": 0.075, "max": 0.50, "step": 0.075, "type": float},
 }

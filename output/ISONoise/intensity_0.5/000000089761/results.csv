@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a toilet sitting in front of a tree. The tree has a rough, textured bark and appears to be quite old. The toilet is white and has a lid that is closed. The ground around the toilet is covered with grass and some leaves. There is a wooden fence or barrier behind the tree.",4,toilet,0.2072,0.3823,0.3691

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a silhouette of an airplane flying in the sky. The airplane is oriented vertically, with its wings and tail visible. The background is a clear blue sky, and the airplane appears to be at a moderate altitude. The image is taken from below, looking up at the airplane.",7,airplane,0.0,0.0,0.0

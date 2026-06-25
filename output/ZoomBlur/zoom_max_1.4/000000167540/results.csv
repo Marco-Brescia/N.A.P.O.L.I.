@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is captured in a way that makes it look like it's moving quickly, with its wings and body appearing blurred. The background is a clear blue sky with some clouds. The plane has a dark body with some red and white markings on the wings. The photographer's name, Daniele Nicolucci, is visible in the bottom right corner of the image.",4,plane,0.2053,0.4095,0.7156

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying through a sky filled with many small, white dots. These dots are likely balloons or some kind of floating objects. The plane is flying at a relatively low altitude, and the sky is clear with no visible clouds. The plane appears to be in the middle of the sky, and the white dots are scattered throughout the image, creating a somewhat chaotic and busy appearance.",4,plane,0.2019,0.2103,0.5957

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image shows a ripe orange sitting on the ground in the rain. The orange is large and round, with a smooth, shiny surface. It is placed on a wet street, and there are raindrops falling around it. In the background, there are several cars parked along the street, and the sky is overcast with gray clouds. The scene gives a sense of a rainy day in an urban area.",5,orange,0.243,0.5213,0.3407

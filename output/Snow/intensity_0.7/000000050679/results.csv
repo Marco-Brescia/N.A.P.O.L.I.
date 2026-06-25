@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image shows a single orange on a road. The orange is lying on its side, and there are small, white dots scattered around it, giving it a speckled appearance. In the background, there are several cars parked in a row, and some trees are visible. The sky appears to be overcast, and there is a lot of snow or frost on the ground.",5,orange,0.2404,0.4531,0.3334

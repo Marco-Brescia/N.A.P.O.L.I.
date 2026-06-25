@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000183500,"Describe this image in detail, use simple terms","The image shows a biplane flying in the air. The plane has two sets of wings, one on each side. The wings are red with white stripes and have propellers at the front. The plane has a white body with red accents and a red tail. The propellers are spinning, and the plane is in a steep angle, suggesting it is performing an aerial maneuver. The background is a cloudy sky.",5,plane,0.2322,0.3682,0.2339

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000106757,"Describe this image in detail, use simple terms","The image shows two elephants. One elephant is standing in the foreground, and the other elephant is behind it. The elephants are close to each other, and they appear to be interacting with each other. The background shows some greenery, possibly trees, and the sky is visible above them. The image has a grainy texture, which might be due to the quality of the photo or the lighting conditions.",7,elephant,0.2037,0.409,0.0738

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000029397,"Describe this image in detail, use simple terms","The image shows a person standing on a concrete surface. The person is wearing orange pants and blue shoes. They are standing on a wooden beam that is attached to a brick wall. There is a piece of paper with Chinese characters on it attached to the beam. The person appears to be balancing on the beam, and the brick wall behind them is red.",4,person,0.2101,0.6004,0.3837

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a banana placed on a telephone. The telephone is a landline model, and it has a black dialing pad with numbers and buttons. The banana is hanging off the cord of the telephone, which is coiled and connected to the phone. The background appears to be a table or desk with some papers and possibly some tools or equipment.",4,banana,0.3586,0.647,1.2516

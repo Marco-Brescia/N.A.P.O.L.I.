@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a surface. The cat has a white and brown coat with some black markings. It appears to be looking at something in front of it, possibly a computer monitor or a screen. The background is blurred, making it difficult to see any details. The cat seems to be in a relaxed position, with its paws on the surface.",4,cat,0.2206,0.615,0.3224

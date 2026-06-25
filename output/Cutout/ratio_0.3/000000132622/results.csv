@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear in a grassy field. The bear is mostly white with some brown patches. It has a square black box over its face, making it difficult to see its eyes. The bear appears to be looking down and is surrounded by green grass.",4,bear,0.3296,0.9747,0.0252

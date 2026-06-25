@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a red fire hydrant in a grassy area. The hydrant has a black top and is surrounded by green grass. In the background, there is a house with a white exterior and a purple flower bush. The sky is visible in the top part of the image, and there are some trees and bushes around the house. The overall scene appears to be outdoors, possibly in a residential area.","[5, 6, 7]",fire hydrant,0.1711,0.2989,0.2371

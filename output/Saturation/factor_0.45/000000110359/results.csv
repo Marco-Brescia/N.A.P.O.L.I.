@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is seen from below, and it is flying at a slight angle. The sky is clear with no clouds, and the plane appears to be in good condition. The plane has two wings and a tail fin, and it is flying at a relatively low altitude.",4,plane,0.0,0.0,0.0

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane has two wings and two engines. The wings are spread out, and the plane is flying at a moderate altitude. The sky in the background is blue with some white clouds. The plane appears to be a small, single-engine aircraft, possibly used for training or recreational purposes.",4,plane,0.235,0.2714,0.2917

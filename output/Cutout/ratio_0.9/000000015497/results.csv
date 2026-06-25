@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","The image shows a close-up of a cat's paw. The cat's paw is white and appears to be resting on a surface. The background is dark, making it difficult to see any details beyond the cat's paw. The cat's paw is in contact with a white cord or cable, which is connected to an electrical outlet. The overall scene suggests that the cat might be using the electrical outlet to charge something.",8,cat,0.0901,0.2407,0.1245

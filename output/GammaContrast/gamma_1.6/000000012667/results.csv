@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a desk with a telephone on it. The telephone has a black dial pad with numbers and buttons, and it is connected to a cord. There is a banana placed on the phone, hanging down the cord. In the background, there is a stapler and some papers on the desk. The desk appears to be made of a light-colored material.",34,banana,0.3081,0.4981,1.0822

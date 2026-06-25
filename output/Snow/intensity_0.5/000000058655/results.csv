@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a tall brick building with a clock on top. The clock is black and white, and it's mounted on a pole. The building has many windows, and there are flags hanging from the building. The sky is clear with a few clouds. The clock is the main focus of the image.",9,clock,0.2647,0.2948,0.6401

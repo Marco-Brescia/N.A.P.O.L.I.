@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear walking through a grassy area. The bear has a thick, fluffy coat and is looking forward. The background is blurred, making it difficult to see details, but there are some green and yellow specks scattered around, possibly indicating rain or a similar effect. The bear appears to be in a natural setting, possibly a forest or a meadow.",4,bear,0.0693,0.7659,0.0901

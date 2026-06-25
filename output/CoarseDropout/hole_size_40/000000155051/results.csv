@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock and the moon in the night sky. The clock has Roman numerals on it and is labeled ""1902."" The clock is on the right side of the image, and the moon is on the left. The moon is visible in the dark sky, and the clock is illuminated by the moon's light. The image is taken during the night.",4,clock,0.0814,0.3454,0.753

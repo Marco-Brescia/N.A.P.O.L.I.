@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000094336,"Describe this image in detail, use simple terms","The image shows a cat sitting in a bathtub. The cat has a brown and black coat, and it appears to be enjoying a bath. The bathtub is filled with water, and the cat is surrounded by bubbles. The image has a sparkly, glowing effect, giving it a magical or whimsical appearance.",4,cat,0.2606,0.7183,0.2568

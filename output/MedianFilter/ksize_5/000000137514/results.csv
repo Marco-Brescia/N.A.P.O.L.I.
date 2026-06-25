@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a countertop. The cat has a mix of white, gray, and brown fur. It's looking directly at the camera with a calm expression. In the background, there is a white microwave with a glass door. The microwave has a black screen on the door. The countertop appears to be made of a light-colored material, possibly wood or laminate.",4,cat,0.2781,0.7302,0.2528

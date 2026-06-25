@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000052017,"Describe this image in detail, use simple terms","The image shows a small, yellow airplane flying in the sky. The airplane has a blue propeller and is surrounded by snowflakes. The airplane has the word ""STATE"" written on it. The background is a gray sky with snowflakes falling.",7,airplane,0.0,0.0,0.0

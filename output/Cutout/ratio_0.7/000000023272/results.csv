@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000023272,"Describe this image in detail, use simple terms","The image shows a car parked on the street. The car has a grill and a windshield wiper. There is a fence behind the car, and some greenery is visible through the fence. The background includes a building with windows and a door. The car appears to be parked in a residential area.",4,car,0.1428,0.7597,0.0632

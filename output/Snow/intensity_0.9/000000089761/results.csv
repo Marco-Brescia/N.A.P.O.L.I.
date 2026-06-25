@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a toilet in a garden setting. The toilet is white and has a lid that is closed. The background is filled with a lot of small, white dots, which gives the impression that the toilet is surrounded by a cloud of dust or pollen. The garden area around the toilet is not very clear, but there are some plants and trees visible in the background.",4,toilet,0.3145,0.5003,0.2957

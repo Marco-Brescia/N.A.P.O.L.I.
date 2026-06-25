@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear in a grassy field. The bear has a light brown coat with some darker patches. It appears to be eating something small, possibly grass or leaves. The bear's face is close to the camera, and it has a black square shape covering its eyes, making it difficult to see its eyes clearly. The background is green and grassy, indicating a natural setting.",4,bear,0.1409,0.969,0.0502

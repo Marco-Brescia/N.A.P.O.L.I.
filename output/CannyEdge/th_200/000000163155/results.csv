@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on a concrete surface. The cat has a mix of brown and white fur, with some patches of darker fur. The cat's tail is long and bushy, and it appears to be looking to the side. The background consists of a brick wall, and the overall scene is outdoors.",4,cat,0.2224,0.3743,0.203

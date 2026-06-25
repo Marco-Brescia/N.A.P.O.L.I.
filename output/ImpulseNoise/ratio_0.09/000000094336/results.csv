@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000094336,"Describe this image in detail, use simple terms",The image shows a cat sitting on a white plate. The cat has a brown and black coat with some white markings. It has a red tag or sticker on its head. The background appears to be a kitchen or dining area with some wooden elements.,4,cat,0.3719,0.7258,0.1734

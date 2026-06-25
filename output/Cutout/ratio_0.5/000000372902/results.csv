@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000372902,"Describe this image in detail, use simple terms",The image shows a car parked on the side of a road. There are two small plants growing near the car. The plants have green leaves and are growing out of the concrete sidewalk. The car has a black bumper and a black rear end. The background shows a parking lot with some other vehicles and a road.,4,car,0.3035,0.7554,0.119

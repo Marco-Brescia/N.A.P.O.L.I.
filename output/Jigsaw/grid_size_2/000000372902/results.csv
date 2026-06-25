@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000372902,"Describe this image in detail, use simple terms","The image shows four different pictures of a car's rear end. In the first picture, the car is parked on the street. In the second picture, the car is parked on a sidewalk. In the third picture, the car is parked on a road. In the fourth picture, the car is parked on a sidewalk.",8,car,0.3799,0.7469,0.0701

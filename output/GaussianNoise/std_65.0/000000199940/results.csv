@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","The image shows a black cat standing upright next to a bottle. The cat is holding the bottle with its front paws, as if it's balancing or playing with it. The bottle has a green label with some text on it. The cat appears to be in a playful or curious mood, and the background looks like a kitchen or a similar indoor setting.",5,cat,0.1936,0.4719,0.0808

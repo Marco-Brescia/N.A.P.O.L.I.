@@ -225,5 +225,8 @@ images_perturbed/
 extracted_heatmaps/
 *.pt
 *.pth
-output/
+output/**/*
+!output/**/
+!output/**/*.csv
 masks_perturbed/
+plots/output/

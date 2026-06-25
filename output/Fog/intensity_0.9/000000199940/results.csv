@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","The image shows a bottle of wine with a cat standing behind it. The cat is looking directly at the camera, and the bottle has a label that reads ""NOTRO."" The background is blurred, making it difficult to see any specific details, but it appears to be an indoor setting with some furniture and items in the background.",9,cat,0.2075,0.6994,0.1134

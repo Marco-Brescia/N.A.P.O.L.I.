@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on a rocky hill. The sky is filled with light blue streaks that resemble raindrops, creating a surreal and dreamy effect. The sheep is standing on a flat rock, and the background features a cloudy sky with some clouds. The overall scene has a dreamy and whimsical atmosphere.",4,sheep,0.0,0.0,0.0

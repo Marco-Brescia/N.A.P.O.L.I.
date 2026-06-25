@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000324483,"Describe this image in detail, use simple terms","The image shows a cat with a surprised or curious expression. The cat has long, fluffy fur and is looking up, possibly at something out of the frame. The background is blurred, making it difficult to see details, but it appears to be a snowy or snowy-like scene with snowflakes or small particles floating around. The overall effect gives the impression of the cat being in a snowy environment.",4,cat,0.1464,0.749,0.1504

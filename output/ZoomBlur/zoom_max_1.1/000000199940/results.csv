@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","The image shows a black cat standing next to a bottle. The cat has a greenish hue, and its eyes are wide open, giving it a curious or alert expression. The bottle is green with a label that has a red flower design on it. The background is blurred, making it difficult to see details, but it appears to be an indoor setting with some furniture and possibly a window.",5,cat,0.1655,0.4586,0.0977

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear in a grassy field. The bear has a white and brown fur coat, and it appears to be walking through the grass. The background is blurred, making the bear the main focus of the image. The bear's eyes are looking straight ahead, and its mouth is slightly open, showing its teeth. The overall scene gives a sense of the bear being in its natural habitat.",4,bear,0.302,0.8144,0.0314

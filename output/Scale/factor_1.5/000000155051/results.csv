@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock with a black background. The clock face is white and has Roman numerals from I to XII. The time on the clock is approximately 10:10. The clock has a black hands and numbers, and there is a small number ""1902"" at the top right corner of the clock face. The clock is set against a dark background, making it difficult to see any details other than the clock face.",4,clock,0.1487,0.3057,0.395

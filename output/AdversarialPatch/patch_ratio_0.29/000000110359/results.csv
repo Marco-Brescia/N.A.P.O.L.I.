@@ -1,0 +1,3 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is tilted slightly, and it has a checkered pattern on its body, which is unusual for an airplane. The sky is clear and blue, and there are no other objects or landmarks visible in the image.",32,airplane,0.0,0.0,0.0
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is tilted slightly, and it has a checkered pattern on its body, which is unusual for an airplane. The sky is clear and blue, and there are no other objects or landmarks visible in the image.",4,plane,0.0,0.0,0.0

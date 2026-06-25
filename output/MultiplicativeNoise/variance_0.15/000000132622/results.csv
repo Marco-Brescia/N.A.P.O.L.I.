@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","This image shows a bear in a grassy area. The bear has a thick, furry coat and is looking directly at the camera. The background is green, suggesting it might be a field or a meadow. The bear appears to be in a relaxed state, possibly grazing or walking.",4,bear,0.1078,0.8746,0.0755

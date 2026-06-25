@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","The image shows a black cat standing in a kitchen. The cat is holding a large bottle of Notro wine. The bottle is green with a floral design on it. The cat appears to be holding the bottle with its front paws, and the bottle is positioned in front of the cat's face. The kitchen has a white color scheme, and there are some kitchen appliances and cabinets visible in the background.",5,cat,0.1555,0.4705,0.1027

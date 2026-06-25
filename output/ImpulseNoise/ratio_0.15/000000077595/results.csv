@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000077595,"Describe this image in detail, use simple terms","The image shows a cat sitting inside a basket. The cat has a brown and orange fur coat and is looking directly at the camera. The basket is made of a brown material and has a plaid pattern on it. The background appears to be indoors, with a blue wall and some other objects that are not clearly visible. The overall scene has a cozy and homey feel.",4,cat,0.3045,0.81,0.3393

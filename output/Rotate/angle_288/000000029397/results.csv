@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000029397,"Describe this image in detail, use simple terms","The image shows a person standing on a wooden beam. The person is wearing red pants and yellow and blue shoes. The wooden beam is made of wood and has a rectangular shape. The person is standing on the beam, and there is a piece of paper attached to the beam with some text written on it. The background includes a brick wall and a concrete surface.",4,person,0.1453,0.3097,0.611

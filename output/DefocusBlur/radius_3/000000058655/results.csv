@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a tall brick building with a clock tower. The clock tower has a large, round clock face with Roman numerals. The building has several windows, some of which have flags hanging from them. The sky is clear and blue, suggesting it is daytime. There is a street lamp with a black pole and a black and gold clock face in the foreground. The overall scene appears to be in an urban setting.",9,clock,0.2735,0.3028,0.7899

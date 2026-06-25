@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000009378,"Describe this image in detail, use simple terms","The image shows a person wearing a dark-colored outfit, possibly a suit or a coat. The person is holding a child, who is also dressed in dark clothing. The child appears to be holding a yellow object, which could be a toy or a piece of clothing. The background is dark and blurred, making it difficult to discern any specific details.",4,person,0.1759,0.7279,0.1886

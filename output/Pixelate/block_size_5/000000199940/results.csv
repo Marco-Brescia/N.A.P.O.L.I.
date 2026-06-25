@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","In the image, there is a black cat standing next to a tall, green bottle. The cat is looking up at the bottle, and it seems to be posing for the picture. The bottle has a dark label with some text and images on it. The background appears to be indoors, possibly in a kitchen or a similar setting.",8,cat,0.1835,0.468,0.0872

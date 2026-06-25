@@ -1,0 +1,3 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000077595,"Describe this image in detail, use simple terms",The image shows a cat sitting on a bed. The cat has a brown coat with some white markings. The bed is covered with a white blanket. The background appears to be a blue wall. The cat is looking towards the camera.,8,bed,0.1383,0.3371,0.2167
+000000077595,"Describe this image in detail, use simple terms",The image shows a cat sitting on a bed. The cat has a brown coat with some white markings. The bed is covered with a white blanket. The background appears to be a blue wall. The cat is looking towards the camera.,4,cat,0.1409,0.6164,0.4589

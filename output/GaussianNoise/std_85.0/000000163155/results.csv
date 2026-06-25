@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on a surface. The cat has a mix of colors, including brown, white, and black, with some areas of the fur appearing darker. The background is a brick wall, and the cat is positioned against the wall, facing away from the camera. The overall image has a grainy, pixelated quality.",4,cat,0.4624,0.7552,0.17

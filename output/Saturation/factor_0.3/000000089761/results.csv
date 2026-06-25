@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a toilet sitting on the ground next to a large tree trunk. The toilet is white and appears to be old or worn out. The tree trunk is textured and has a rough, bark-like appearance. The ground around the toilet is covered with grass and some small plants. In the background, there are some other objects, but they are not the main focus of the image.",4,toilet,0.2439,0.4077,0.323

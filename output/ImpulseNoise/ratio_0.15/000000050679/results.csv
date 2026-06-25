@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image shows a large, round object on the ground. It looks like an orange or a similar fruit. The ground is dark, and there are white lines on it, possibly indicating a parking area or a road. In the background, there are trees and some parked cars. The sky is overcast, and the overall scene appears to be outdoors.",16,orange,0.2257,0.5247,0.4964

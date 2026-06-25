@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image shows a checkered orange sitting on the ground in the middle of a parking lot. There are several cars parked in the background, and the sky is cloudy. The orange has a unique checkered pattern on it.",6,orange,0.1784,0.3806,0.3887

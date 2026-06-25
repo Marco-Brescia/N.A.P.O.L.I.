@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","This image is a collage of several photos of airplanes flying in the sky. The airplanes are in different positions and orientations, and they are all flying at different altitudes. The background shows a clear blue sky with a large, bright moon visible in the top right corner. The collage is made up of several smaller images, each showing a different airplane.",68,airplane,0.0,0.0,0.0

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a table. The cat has a mix of white and brown fur. It is looking slightly to the side and appears to be resting or looking at something out of the frame. In the background, there is a microwave oven. The microwave has a dark screen and is white in color. The table on which the cat is sitting is light-colored, possibly beige or light brown.",4,cat,0.32,0.7015,0.1799

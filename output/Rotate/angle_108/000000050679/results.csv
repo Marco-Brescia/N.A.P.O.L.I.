@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image shows an orange lying on the side of a road. The orange is round and has a slightly wrinkled surface, with some spots of brown and black. In the background, there are some trees and a road with vehicles, including a bus. The sky is cloudy.",4,orange,0.4993,0.8173,0.3827

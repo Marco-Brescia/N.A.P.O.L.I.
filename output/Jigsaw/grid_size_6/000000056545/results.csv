@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000056545,"Describe this image in detail, use simple terms","This image is a collage of several small, close-up photos of a bird perched on a branch. The bird has a long beak and is surrounded by green leaves and branches. The photos are arranged in a grid pattern, with each photo showing a different angle or part of the bird. The overall scene is natural and serene, with the bird appearing to be at ease in its environment.",14,bird,0.083,0.2334,0.0917

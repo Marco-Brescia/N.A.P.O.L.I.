@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear in a grassy field. The bear has a thick, fluffy coat that is light brown with some darker patches. Its eyes are dark, and it has a black nose. The bear appears to be walking through the grass, and there are some green plants in the foreground. The background is blurred, making it difficult to see details, but it seems to be a natural, outdoor setting.",4,bear,0.1304,0.8232,0.0602

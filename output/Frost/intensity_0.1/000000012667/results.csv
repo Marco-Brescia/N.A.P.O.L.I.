@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a desk with a few items on it. There is a yellow banana lying on the phone, which is a landline phone. The phone has a black dial pad with numbers and buttons, and it is connected to a cord. In the background, there is a stapler and a piece of paper with some writing on it. The desk appears to be made of a light-colored material, possibly plastic or laminate.",16,banana,0.213,0.3192,0.9424

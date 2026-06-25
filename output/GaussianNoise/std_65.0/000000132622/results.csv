@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear walking through a grassy area. The bear has a thick, furry coat and is looking forward with its mouth open, possibly snarling or growling. The background is green, suggesting it might be in a forest or a grassy field. The bear appears to be in motion, as if it's walking or running.",4,bear,0.1825,0.7699,0.0411

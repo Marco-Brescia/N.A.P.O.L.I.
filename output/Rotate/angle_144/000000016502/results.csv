@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep hanging off the side of a steep, rocky cliff. The sky is clear with a few clouds, and the sheep is hanging by its front legs, with its back legs hanging off the edge of the cliff. The cliff is covered in moss and has a rough texture.",4,sheep,0.2023,0.2272,0.8242

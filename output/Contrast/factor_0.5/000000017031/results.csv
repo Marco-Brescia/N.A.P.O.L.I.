@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe with its head and neck visible. The giraffe has long, straight horns on its head and a long, curved neck. Its eyes are small and dark, and it has a brownish coat with white spots. The background is blurred, but it appears to be a natural setting with greenery, possibly a forest or a park.","[4, 5]",giraffe,0.2492,0.3692,0.1984

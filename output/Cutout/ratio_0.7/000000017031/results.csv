@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe with its head and neck sticking out from behind a black square. The giraffe is surrounded by green trees and bushes, indicating it might be in a forest or a zoo. The giraffe's ears are visible, and it appears to be looking towards the camera. The black square in the image could be a sign or a piece of paper.","[4, 5]",giraffe,0.1543,0.2588,0.2357

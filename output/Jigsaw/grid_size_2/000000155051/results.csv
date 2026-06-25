@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a dark night sky with a bright moon in the upper left corner. Below the moon, there are two large clock faces. The clock on the right side of the image has Roman numerals on its face, indicating it is from the 1902 model. The clock on the left side is slightly smaller and has a different design. The background is completely black, emphasizing the moon and the clocks.",25,clock,0.0,0.0,0.0

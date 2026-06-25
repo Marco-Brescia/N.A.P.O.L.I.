@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000077595,"Describe this image in detail, use simple terms","The image shows a cat sitting on a blanket. The cat has a brown and black coat and is looking directly at the camera. The blanket is white with red and black stripes. The background appears to be indoors, possibly a room with a window or a door. The overall image has a grainy, pixelated effect.",4,cat,0.4099,0.768,0.2979

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a tall building with a clock on top. The building has a red brick facade with decorative elements. There are several windows on the building, some of which have flags hanging from them. The clock on the building is large and round, with a white face and black hands. The clock is mounted on a black pole with a decorative base. The sky in the background is clear and blue.",8,clock,0.2776,0.2981,0.7412

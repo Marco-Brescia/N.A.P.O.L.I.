@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","The image shows a black cat standing on its hind legs next to a green bottle. The cat is holding the bottle with its front paws, and the bottle has a red flower on it. The background is a speckled, textured surface, possibly a wall or a piece of furniture.",5,cat,0.1709,0.4846,0.0992

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a desk with a few items on it. There is a black telephone with a screen displaying a black screen, and a banana is placed on the phone. The phone has a cord attached to it. In the background, there is a white object that appears to be a stapler. The desk has a white surface, and there is a piece of paper with some writing on it.",27,banana,0.1465,0.2162,1.0455

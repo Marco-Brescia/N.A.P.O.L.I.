@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","This image is a pixelated picture of a sheep. It's like a game or a digital art piece where the details are very small and the colors are very muted. The sheep is standing on top of a hill, and the sky is blue with some white clouds.",9,sheep,0.0,0.0,0.0

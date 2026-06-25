@@ -1,0 +1,3 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000138492,"Describe this image in detail, use simple terms","The image shows a dog in mid-air, catching a purple frisbee. The dog is black and white, and it's jumping up to catch the frisbee. The background is green grass, and the dog appears to be in a park or a field.",4,dog,0.2389,0.7007,0.107
+000000138492,"Describe this image in detail, use simple terms","The image shows a dog in mid-air, catching a purple frisbee. The dog is black and white, and it's jumping up to catch the frisbee. The background is green grass, and the dog appears to be in a park or a field.","[12, 13, 14]",frisbee,0.0,0.0,0.0
