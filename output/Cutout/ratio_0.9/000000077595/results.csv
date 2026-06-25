@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000077595,"Describe this image in detail, use simple terms","The image shows a person sitting on a bed. The person is wearing a white shirt with a plaid pattern. The bed has a wooden headboard and a white sheet. There is a computer monitor in the background, which appears to be turned on. The screen shows a document or a webpage with text and possibly some images or icons. The person seems to be engaged with the content on the monitor.",8,bed,0.191,0.7333,0.1741

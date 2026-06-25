@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","This image shows a Minecraft airplane. It's a pixelated version of a real airplane, created using the game's graphics engine. The airplane is flying in the sky, and it has a simple design with wings, a tail, and a fuselage. The colors are limited to shades of blue and gray, typical of the game's color scheme. The airplane appears to be in mid-flight, with its wings spread out and its tail pointing upwards.",5,airplane,0.1872,0.2333,0.788

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane has a red and blue tail, and it is flying in the middle of the frame. In the background, there is a large, bright moon that is partially covered by the plane. The sky is clear and blue, and there are no clouds visible. The plane appears to be in the middle of its flight path, and the moon is positioned behind it.",4,plane,0.0,0.0,0.0

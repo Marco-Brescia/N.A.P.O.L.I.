@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000324483,"Describe this image in detail, use simple terms","The image shows a cat with a long, white mustache and a brown and white fur pattern. The cat appears to be looking slightly to the side, with its eyes closed. The background is blurred, creating a dreamy effect. The overall image has a soft, ethereal quality.",4,cat,0.3667,0.849,0.0679

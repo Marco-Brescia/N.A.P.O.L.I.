@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000033759,"Describe this image in detail, use simple terms","The image shows a young boy playing baseball. He is wearing a green shirt, white pants, and a black helmet. He is holding a baseball bat and appears to be swinging it. The boy is standing on a baseball field, and there is a chain-link fence behind him. The background shows some trees and greenery. The boy is trying to hit a baseball that is flying towards him.",29,bat,0.0,0.0,0.0

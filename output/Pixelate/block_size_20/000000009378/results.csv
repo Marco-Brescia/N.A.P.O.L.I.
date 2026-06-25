@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000009378,"Describe this image in detail, use simple terms","The image shows a person wearing a green outfit. The outfit appears to be a long-sleeved shirt or jacket, and the person is standing with their back to the camera. The background is dark, making it difficult to see any details about the setting.",4,person,0.0508,0.2573,0.2979

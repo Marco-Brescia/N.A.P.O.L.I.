@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","The image shows a cat sitting on a surface. The cat has a mix of white and brown fur. It has green eyes and is looking directly at the camera. The cat is holding a white object, which appears to be a piece of paper or a small piece of paper. The background is dark, making the cat and the object stand out.",4,cat,0.1179,0.3486,0.1458

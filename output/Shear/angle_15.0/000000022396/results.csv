@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows an airplane flying in the sky. The airplane is in the middle of the frame, and it's flying in a straight line. The moon is visible in the lower left corner of the image. The moon appears to be in the process of setting, with its light appearing orange or yellow. The sky is clear and blue, and there are no clouds visible.",4,airplane,0.278,0.3171,0.8431

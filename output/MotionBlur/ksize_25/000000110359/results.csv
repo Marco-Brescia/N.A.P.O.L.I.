@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is in motion, creating a blurred effect, which makes it difficult to see the details of its wings and body. The background is a clear blue sky, and the plane is positioned in the center of the image. The overall effect is that the plane is moving quickly, creating a sense of motion and speed.",4,plane,0.1896,0.2625,1.0432

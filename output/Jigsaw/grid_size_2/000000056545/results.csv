@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000056545,"Describe this image in detail, use simple terms","The image shows two birds perched on the same branch. The bird on the left is facing away from the camera, and its back is turned to the viewer. The bird on the right is facing the camera and appears to be chirping or making a sound. Both birds have grey feathers and are perched on a branch with green leaves in the background.",13,bird,0.5154,0.7206,0.0974

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000094336,"Describe this image in detail, use simple terms","The image shows two cats sitting in a sink. The cats are brown and black, and they are close together, almost hugging each other. The sink is white and the cats are in the middle of it. The image is pixelated, which means it has been edited to look like a mosaic of small squares.",8,sink,0.1881,0.5413,0.1065

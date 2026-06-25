@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","This image shows a cat with a blurry, abstract effect. The cat appears to be sitting or lying down, and its fur is not clearly defined. The background is also blurry, making it difficult to see any specific details. The overall effect gives the image a dreamy or surreal appearance.",4,cat,0.2555,0.6385,0.1297

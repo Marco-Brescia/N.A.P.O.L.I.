@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000106757,"Describe this image in detail, use simple terms","This image appears to be a close-up of a person's face, but it's been heavily pixelated or blurred. The person is wearing a dark-colored outfit, possibly a jacket or coat. The background looks like it's outdoors, with some greenery and possibly a blue sky. The overall effect is that the image is very abstract and difficult to discern.",10,person,0.0811,0.3372,0.4457

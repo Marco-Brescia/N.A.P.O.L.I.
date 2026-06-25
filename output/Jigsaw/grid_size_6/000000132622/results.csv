@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","This image is a collage of several pictures of bears. The bears are in different positions and angles, and they are surrounded by green grass. The collage is arranged in a grid pattern, with each bear occupying a square in the grid. The bears appear to be in a natural setting, possibly in a field or forest.",39,bear,0.11,0.5473,0.03

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000324483,"Describe this image in detail, use simple terms","The image shows a cat with a striped pattern. The cat has a white face and chest, with brown and black stripes on its body. It has long, white whiskers and is looking to the side. The cat is surrounded by some greenery, possibly leaves or branches, and there is a green object behind it. The overall image has a grainy, pixelated effect.",4,cat,0.3536,0.8602,0.0754

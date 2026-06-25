@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a toilet sitting under a large tree. The tree has a thick trunk and a rough, textured bark. The toilet is white and appears to be made of concrete or a similar material. The ground around the toilet is covered with leaves and grass, and there are some plants and bushes in the background. The overall scene has a somewhat unusual and unexpected combination of elements.",4,toilet,0.3796,0.5426,0.2555

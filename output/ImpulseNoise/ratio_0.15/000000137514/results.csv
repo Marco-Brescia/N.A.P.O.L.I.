@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a surface. The cat has a white and brown coat, and it appears to be looking at something in front of it. The background includes a microwave oven, which is partially visible. The surface on which the cat is sitting is not clearly visible, but it seems to be a flat, smooth surface. The overall image has a grainy, pixelated effect, giving it a somewhat blurry appearance.",4,cat,0.2623,0.8838,0.4011

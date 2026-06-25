@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a toilet that is covered in a textured, moss-like substance. The toilet is white and has a round seat and a lid. The background appears to be an outdoor setting with some grass and a tree trunk in the foreground. The overall effect is that the toilet is partially hidden or obscured by the moss.",4,toilet,0.1627,0.2667,0.2892

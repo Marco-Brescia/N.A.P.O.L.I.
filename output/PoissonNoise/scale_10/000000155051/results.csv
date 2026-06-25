@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock and a small light source in the dark. The clock has Roman numerals and is on a black background. The light source is a small, bright spot that appears to be a moon or a star. The clock is positioned on the right side of the image, and the light source is on the left. The overall scene is dark, with the clock and light source being the only sources of light in the image.",4,clock,0.1195,0.3107,0.3449

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a toilet sitting in the grass next to a large tree. The toilet is white and has a lid that is closed. The tree has a rough, textured bark and appears to be quite large, covering most of the image. The grass around the toilet is dry and brown, and there are some leaves and twigs scattered on the ground. The background shows some greenery, but it is not very clear.",4,toilet,0.2792,0.4157,0.2563

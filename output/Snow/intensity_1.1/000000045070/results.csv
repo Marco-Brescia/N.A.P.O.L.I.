@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","The image shows a person sitting on a wooden bench. The person is wearing a pink and white checkered shirt and blue jeans. The background is green, and there are white dots scattered throughout the image, giving it a slightly abstract appearance.",4,person,0.0754,0.6286,0.5287

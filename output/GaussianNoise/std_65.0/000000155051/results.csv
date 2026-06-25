@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","This image shows a small, round object on the left side and a large, circular object on the right side. The small object has a white, speckled appearance, while the large object has a dark, almost black background with some light spots. The large object has a clock face with numbers and hands, and it appears to be spinning or moving. The overall image has a grainy, pixelated quality.",56,clock,0.2135,0.5766,0.3842

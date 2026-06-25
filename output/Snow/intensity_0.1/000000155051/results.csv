@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a night sky with a large clock on the right side. The clock has a gold or light brown face with Roman numerals and black hands. The clock is positioned against a dark background filled with stars. In the bottom left corner, there is a small, bright moon. The overall scene gives the impression of a peaceful and quiet night, with the clock and moon providing a sense of time and nature.",9,clock,0.1944,0.3992,0.3014

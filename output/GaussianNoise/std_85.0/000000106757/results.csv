@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000106757,"Describe this image in detail, use simple terms","The image shows an elephant. It has large ears, a long trunk, and a large body. The elephant is standing in a natural setting, possibly a forest or a park. The background includes trees and greenery.",4,elephant,0.373,0.6728,0.0654

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000052017,"Describe this image in detail, use simple terms","The image shows a small, colorful airplane flying in the sky. The airplane is mostly yellow with some red and blue accents. It has two wings and a single propeller at the front. The propeller is blue, and the wings are slightly curved. The airplane appears to be in motion, as it is blurred, giving it a dynamic feel. The background is a plain, light-colored sky, which helps to highlight the airplane.",7,airplane,0.2856,0.4304,0.2697

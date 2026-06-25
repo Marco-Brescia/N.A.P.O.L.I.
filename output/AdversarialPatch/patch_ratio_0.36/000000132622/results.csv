@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear standing in a grassy field. The bear has a fluffy, white coat and is looking down at something in its hands. In front of the bear, there is a square checkerboard pattern. The bear's fur appears to be slightly wet, suggesting it might have been in the water or has been in a grassy area with water nearby. The background is a green, grassy field with some patches of taller grass.",4,bear,0.2059,0.9467,0.0425

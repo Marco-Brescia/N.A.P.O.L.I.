@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear standing in a grassy field. The bear has a fluffy, white coat and is looking down at something in its hands. In front of the bear, there is a checkered pattern, which appears to be a piece of paper or a piece of fabric. The background is a blurred grassy area, suggesting that the bear is in a natural setting.",4,bear,0.158,0.8991,0.0566

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image shows a ball on the ground. The ball is orange and appears to be made of a material that reflects light, giving it a shiny appearance. The ground around the ball is gray and appears to be made of concrete or a similar material. In the background, there are some trees and a building, but they are not the main focus of the image. The overall scene suggests a simple, outdoor setting.",12,orange,0.6144,0.8571,0.2835

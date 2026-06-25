@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","The image shows a cat lying on a dark surface. The cat has a white and brown coat with green eyes. It is lying on its side with its front paws stretched out in front of it. There is a small, round object, possibly a toy or a piece of food, next to the cat's front paws. The background is dark, making the cat and the object stand out.",4,cat,0.1239,0.4048,0.1676

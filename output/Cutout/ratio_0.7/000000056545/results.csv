@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000056545,"Describe this image in detail, use simple terms","The image shows a bird perched on a branch. The bird has a grayish-brown plumage with a slightly darker head and neck. It appears to be a small bird, possibly a type of finch or sparrow. The background is blurred with green foliage, indicating that the bird is in a tree. The bird's beak is open, and it seems to be in a resting or vocalizing position.",4,bird,0.1465,0.3677,0.2014

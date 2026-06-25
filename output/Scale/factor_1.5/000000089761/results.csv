@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a white toilet sitting in front of a large tree trunk. The tree trunk is very thick and has a rough, textured bark. The toilet is dirty and has some dirt and grime on it. The ground around the toilet is covered with leaves and grass.",5,toilet,0.5137,0.7528,0.1723

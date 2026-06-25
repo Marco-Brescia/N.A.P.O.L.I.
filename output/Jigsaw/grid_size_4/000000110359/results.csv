@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a collage of airplane wings. The wings are arranged in a grid pattern, with each wing occupying a different section of the image. The background is a plain, light blue color, and the wings are in various positions, some are closer to the top and others are closer to the bottom. The collage gives the impression of a collection of airplane wings in different angles and perspectives.",6,airplane,0.0,0.0,0.0

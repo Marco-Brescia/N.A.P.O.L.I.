@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000106757,"Describe this image in detail, use simple terms","The image shows two elephants. One elephant is standing behind the other, and they are both inside a fenced area. The elephants appear to be interacting with each other, possibly playing or grooming. The background shows some greenery, suggesting they are in a zoo or a similar setting. The image has a grainy, pixelated effect, giving it a vintage or old-fashioned look.",7,elephant,0.3293,0.5189,0.0592

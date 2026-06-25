@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","This image is a collage of pictures featuring cats. The cats are in different positions and sizes, and they are all looking at the camera. The collage is made up of several small pictures, each showing a different cat. The cats are mostly black and white, and they appear to be sitting or lying down. The background is a mix of different colors and textures, creating a busy and colorful scene.",42,cat,0.194,0.3593,0.0433

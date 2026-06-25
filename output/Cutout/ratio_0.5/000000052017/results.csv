@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000052017,"Describe this image in detail, use simple terms","The image shows a small, single-engine airplane flying in the sky. The airplane has a yellow body with red accents on the wings and tail. It has a single propeller on the front and a small canopy for the pilot. The airplane is in mid-flight, with its wings spread out and its nose pointing slightly downward. The background is a cloudy sky.",8,airplane,0.0797,0.2538,0.4774

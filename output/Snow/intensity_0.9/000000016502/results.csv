@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on top of a hill. The sky is blue with some white clouds, and there are many small white dots scattered throughout the image, giving it a snowy or dotted appearance. The hill is covered with dark rocks or gravel.",4,sheep,0.3228,0.3581,1.1363

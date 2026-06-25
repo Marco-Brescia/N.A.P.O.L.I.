@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a desk with a black telephone on it. The telephone has a yellow banana peel stuck to it, making it look like it's holding the phone. The desk is white and has some other objects on it, but they are not clearly visible. The banana peel is the main focus of the image.",17,banana,0.3404,0.9522,1.7226

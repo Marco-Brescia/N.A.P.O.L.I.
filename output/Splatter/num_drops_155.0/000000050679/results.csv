@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image shows a ripe orange sitting on the ground in a parking lot. The sky is overcast, and there are raindrops falling. In the background, there are several cars parked along the street. The orange is the main focus of the image, and it appears to be the only fruit present. The raindrops add a touch of realism to the scene.",5,orange,0.1837,0.4334,0.379

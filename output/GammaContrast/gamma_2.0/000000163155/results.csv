@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on a ledge or a small platform. The cat has a striped coat with shades of gray and white. It is looking to the side, possibly observing something in that direction. The background consists of a brick wall, suggesting that the cat is in an outdoor or semi-outdoor setting, possibly a porch or a patio. The lighting is natural, indicating it might be daytime.",4,cat,0.2989,0.6022,0.2067

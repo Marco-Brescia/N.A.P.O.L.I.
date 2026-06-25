@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a microwave oven on a countertop. The microwave has a large, rectangular glass door with a grid pattern on the front. Inside the microwave, there is a cat sitting on the countertop. The cat is mostly visible on the right side of the image, with its body and tail visible. The microwave appears to be turned on, as there is a light reflection on the glass door.",35,cat,0.327,0.7902,0.2329

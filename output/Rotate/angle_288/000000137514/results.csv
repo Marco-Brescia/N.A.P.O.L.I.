@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat lying down on a surface. The cat has a white and brown coat with some black markings. It is looking up at the camera with a curious expression. The cat is next to a white appliance, which appears to be a microwave. The background includes a beige surface, possibly a couch or a chair.",4,cat,0.3371,0.6267,0.2324

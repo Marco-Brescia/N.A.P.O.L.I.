@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe standing in a forested area. The giraffe has a long neck and a distinctive pattern of spots on its body. It is looking directly at the camera with its head tilted slightly to the side. The background is filled with green trees and foliage, indicating a natural habitat.","[4, 5]",giraffe,0.1587,0.2828,0.2653

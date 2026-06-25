@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on a surface. The cat has a mix of brown and white fur, with some darker spots. It has a striped pattern on its body. The cat is looking to the side, and its ears are perked up. The background consists of a brick wall, and the surface on which the cat is sitting appears to be concrete or a similar material. The overall scene is outdoors, possibly in a backyard or a similar setting.",4,cat,0.1935,0.4132,0.2272

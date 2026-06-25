@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe with its head and neck visible. The giraffe has long, straight horns on its head and a long neck. The background is filled with green foliage, suggesting that the giraffe is in a forest or a park with trees. The giraffe appears to be looking up, possibly at something in the distance.","[4, 5]",giraffe,0.2011,0.5619,0.3903

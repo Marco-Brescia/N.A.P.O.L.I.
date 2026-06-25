@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","In this image, there is a black cat lying down on a surface. The cat is looking directly at the camera with a curious expression. On the cat's head, there is a bottle of wine. The bottle has a label that says ""NOTRO"" and features a red flower design. The background appears to be a room with some furniture and items in the background.",8,cat,0.2383,0.4877,0.0929

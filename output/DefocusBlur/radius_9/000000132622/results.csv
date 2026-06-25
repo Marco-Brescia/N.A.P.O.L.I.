@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear in a natural setting. The bear is in focus, and you can see its face clearly. The bear has a light brown coat with some darker markings on its face and paws. The background is blurred, making it difficult to see details, but it appears to be a grassy area with some greenery. The bear looks alert and is walking forward.",4,bear,0.1936,0.8949,0.0469

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on top of a rocky hill. The sky is blue with some white clouds, and the sheep is facing away from the camera, looking towards the left side of the image. The hill is rocky and has a rough texture.",4,sheep,0.0,0.0,0.0

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on the ground. The cat has a striped coat with a mix of brown and gray colors. It appears to be looking to the side, possibly at something or someone outside of the frame. The background is a bit blurry, but it seems to be an indoor setting with a wall and possibly some furniture or objects. The overall image has a grainy texture, giving it a slightly pixelated appearance.",4,cat,0.3174,0.6194,0.2339

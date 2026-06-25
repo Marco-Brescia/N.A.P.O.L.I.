@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a table. The cat has a white and gray striped coat with some black markings. It appears to be looking at something in front of it, possibly a computer screen. The background includes a computer monitor and a microwave oven. The image is blurry, making it difficult to see the details clearly.",4,cat,0.3488,0.6468,0.1962

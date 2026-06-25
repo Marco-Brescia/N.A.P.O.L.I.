@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000009378,"Describe this image in detail, use simple terms","The image shows a person with long, curly hair wearing a blue and white headband. The person is bending over, and there is a black square shape in front of them, obscuring their face. The background appears to be an indoor setting with a crowd of people, some of whom are standing and others sitting. The lighting is dim, and the overall atmosphere seems to be a bit dark.",4,person,0.1562,0.5903,0.1561

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","The image shows a black cat with a green bottle of wine. The cat is standing on its hind legs, and the bottle is placed in front of it. The cat has a surprised or shocked expression, with its mouth open and eyes wide. The background is blurred, making it difficult to see details, but it appears to be an indoor setting with some light sources. The overall effect of the image is somewhat surreal and whimsical.",5,cat,0.1328,0.6874,0.1591

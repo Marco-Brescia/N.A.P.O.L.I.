@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is silhouetted against a blue sky, and the details are somewhat blurred, giving it a grainy or pixelated appearance. The plane appears to be a commercial jet, with wings and a tail fin visible. The overall effect is somewhat abstract and artistic.",4,plane,0.0,0.0,0.0

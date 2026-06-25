@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on the ground. The cat has a mix of brown and white fur. The background is a brick wall, and there is a lot of dust or dirt in the air, making it look like it's raining. The cat appears to be looking to the side, and the overall scene gives a sense of a rainy day.",4,cat,0.2817,0.5069,0.2123

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000106757,"Describe this image in detail, use simple terms","The image shows two elephants. One elephant is standing on the left side, and the other is standing on the right side. They are close to each other, and the right elephant is leaning down to touch the left elephant's head. The elephants are in an enclosure, and there is a fence around them. The background shows some trees and greenery.",7,elephant,0.3577,0.4984,0.0504

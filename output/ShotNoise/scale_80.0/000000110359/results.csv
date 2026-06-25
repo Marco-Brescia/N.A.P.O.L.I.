@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is seen from below, with its wings and tail visible. The sky is clear and blue, and the plane appears to be a commercial jet. The plane's wings are spread out, and it is flying at a moderate altitude. The image has a grainy texture, suggesting it might be taken with a film camera or a low-resolution digital camera.",4,plane,0.0,0.0,0.0

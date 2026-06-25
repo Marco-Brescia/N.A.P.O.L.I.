@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a tall building with a clock on top. The clock is round and has a white face with black numbers and hands. The building has several windows and a flag hanging from one of the windows. The sky is dark, and there are light spots in the background, possibly from streetlights or other sources. The building appears to be made of brick and has a classic architectural style.",8,clock,0.3264,0.3418,0.732

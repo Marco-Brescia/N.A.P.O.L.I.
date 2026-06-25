@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","The image shows a young child sitting on a horse. The child is wearing a plaid shirt and jeans. The horse is wearing a saddle, and the child is holding onto the reins. The background is green, suggesting a grassy area. The image has a slightly blurry or distorted effect, giving it a dreamy or artistic look.",9,horse,0.1994,0.3519,0.3904

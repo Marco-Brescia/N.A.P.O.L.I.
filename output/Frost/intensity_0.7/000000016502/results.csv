@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on top of a rocky hill. The sheep has a thick, woolly coat and is facing away from the camera. The background is a rough, rocky surface with a mix of gray and white colors. The overall scene has a somewhat desolate and rugged feel to it.",4,sheep,0.2107,0.216,0.6411

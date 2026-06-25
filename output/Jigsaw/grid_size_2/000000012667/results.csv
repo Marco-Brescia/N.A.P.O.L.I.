@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a desk with a telephone and a banana. The telephone is a classic model with a keypad and a handset. The banana is placed on the desk, and it appears to be a ripe banana with a yellow peel. The desk has a white surface, and there are some papers or notes on it. The background includes some office equipment, such as a computer monitor and a printer.",10,banana,0.1435,0.293,0.829

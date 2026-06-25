@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows two cats. The cat on the left is standing on a brick ledge, looking up at something. The cat on the right is sitting on the ground, facing away from the ledge. The cats have striped fur, and they are both looking in different directions. The background is a brick wall.",7,cat,0.2059,0.4397,0.1355

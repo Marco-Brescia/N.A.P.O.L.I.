@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane has two wings and a tail fin. The wings have a design that looks like they are made of cardboard or some other lightweight material. The plane is flying against a clear blue sky with some clouds. The plane is positioned in the center of the image, and the sky is the background.",4,plane,0.1666,0.2544,0.5058

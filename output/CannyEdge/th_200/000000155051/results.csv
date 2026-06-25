@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock and a moon in the night sky. The clock has a gold face with black numbers and hands. The time on the clock is approximately 10:10. The moon is visible in the lower left corner of the image, appearing as a bright, white circle against the dark sky. The contrast between the bright moon and the dark sky creates a striking visual effect.",4,clock,0.2062,0.3298,0.2959

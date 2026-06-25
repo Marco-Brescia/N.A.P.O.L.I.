@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe with its head and neck visible. The giraffe has a distinctive pattern of brown and white stripes on its body. Its ears are large and pointed, and it has a long, curved neck. The giraffe is looking directly at the camera, and its mouth is slightly open. The background is filled with green foliage, suggesting that the giraffe is in a forested area.","[4, 5]",giraffe,0.1859,0.4345,0.3349

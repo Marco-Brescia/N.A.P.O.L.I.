@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000033759,"Describe this image in detail, use simple terms","The image shows a young boy playing baseball. He is wearing a helmet, a jersey with the word ""GR"" on it, and a baseball bat in his hands. The boy is standing in a batting stance, ready to swing at a baseball that is in mid-air. The background shows a chain-link fence and some greenery, indicating that the game is taking place on a baseball field.",29,bat,0.0,0.0,0.0

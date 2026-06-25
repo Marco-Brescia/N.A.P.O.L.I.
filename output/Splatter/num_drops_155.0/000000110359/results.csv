@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is in silhouette, meaning it's not brightly lit, so it appears dark against the background. The plane is flying at a low altitude, and the sky is filled with small, light blue dots that look like snowflakes. The dots are scattered throughout the sky, giving the impression that the plane is flying through a winter or cold weather scenario.",4,plane,0.2181,0.3055,0.7942

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000324483,"Describe this image in detail, use simple terms","The image shows a cat sitting on a bed. The cat has a brown and white fur coat and is looking directly at the camera. The bed has a green and yellow blanket, and there are some green and yellow pillows behind the cat. The background is a plain wall.",4,cat,0.2062,0.7146,0.0922

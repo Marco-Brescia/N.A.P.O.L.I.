@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000106757,"Describe this image in detail, use simple terms","The image shows an elephant standing behind a fence. The elephant has its trunk raised, and it appears to be interacting with something or someone behind the fence. The elephant's skin is wrinkled, and it has large ears and a long trunk. The fence is made of metal bars, and there are trees and greenery in the background.",4,elephant,0.4545,0.6788,0.0532

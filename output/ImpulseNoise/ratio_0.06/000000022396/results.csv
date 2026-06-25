@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is in the middle of the frame, and it's flying at a relatively low altitude. Below the plane, there is a parachute. The parachute is orange and appears to be descending or landing. The sky is blue, and there are many small, white dots scattered throughout the image, which could be representing clouds or other objects in the sky.",4,plane,0.0,0.0,0.0

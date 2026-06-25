@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear walking through a grassy area. The bear has a thick, fluffy coat and is moving through the grass. The background is blurred, making it difficult to see details, but it appears to be a natural setting with green grass. The bear's face is in focus, showing its large, round eyes and a black nose.",4,bear,0.2244,0.9571,0.0375

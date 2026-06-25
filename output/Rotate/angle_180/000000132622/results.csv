@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear hanging upside down. The bear has a fluffy, white fur coat and is looking directly at the camera. The background is green, suggesting it might be in a grassy area. The bear's mouth is open, and there is a small piece of grass in its mouth.",4,bear,0.188,0.9213,0.0463

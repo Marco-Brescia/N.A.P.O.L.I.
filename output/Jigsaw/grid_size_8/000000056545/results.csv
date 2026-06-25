@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000056545,"Describe this image in detail, use simple terms","This image is a collage of several small, square pictures, arranged in a grid pattern. Each square shows a close-up of a bird's eye, with the bird's head and beak visible. The bird appears to be perched on a branch, surrounded by green foliage. The overall effect is a mosaic of bird eyes, creating a visually interesting and somewhat abstract pattern.",26,bird,0.0993,0.2491,0.0731

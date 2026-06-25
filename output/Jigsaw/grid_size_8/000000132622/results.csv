@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","This image is a collage of several small pictures, arranged in a grid pattern. Each picture shows a close-up of a bear's face, with the bear's nose and eyes clearly visible. The bears are in different positions and orientations, and the background is green, suggesting a grassy or forested area. The collage gives the impression of a collection of bear faces in various poses.",24,bear,0.1825,0.7293,0.0139

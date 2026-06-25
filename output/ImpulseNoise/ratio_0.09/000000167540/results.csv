@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","The image shows a small airplane flying in the sky. The airplane is surrounded by a lot of small, white dots, which makes it look like the airplane is surrounded by a cloud of tiny particles. The dots are scattered throughout the sky, giving the impression that the airplane is flying through a cloud of dust or smoke. The background is a clear blue sky, and the airplane is flying at a moderate altitude.",5,airplane,0.2211,0.2608,0.2592

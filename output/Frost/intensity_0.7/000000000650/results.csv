@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000000650,"Describe this image in detail, use simple terms","The image shows a cat standing on a surface. The cat has a gray and white fur pattern, and it appears to be looking directly at the camera. The background is blurred, making it difficult to see any specific details, but it seems to be an outdoor setting with some texture that could be grass or a stone wall. The overall image has a slightly grainy texture, giving it a somewhat artistic or abstract look.",4,cat,0.2042,0.4729,0.3255

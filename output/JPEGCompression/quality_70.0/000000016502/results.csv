@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on top of a rocky hill. The sky is clear with a few clouds, and the sun is shining brightly. The sheep has a thick, white wool coat and is standing on a flat rock. The hill is covered with green grass and some patches of moss. The overall scene is serene and picturesque.",4,sheep,0.1948,0.2054,0.8256

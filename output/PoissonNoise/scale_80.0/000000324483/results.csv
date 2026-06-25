@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000324483,"Describe this image in detail, use simple terms","The image shows a cat sitting inside a green backpack. The cat has a fluffy coat with a mix of white, brown, and black fur. It has long whiskers and is looking directly at the camera with a curious expression. The backpack is open, and the cat is comfortably nestled inside it. The background is slightly blurred, but it appears to be an indoor setting with some light and possibly some furniture.",4,cat,0.4713,0.7883,0.0517

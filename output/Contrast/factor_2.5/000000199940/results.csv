@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","In the image, there is a black cat standing next to a bottle of wine. The cat is looking at the bottle, and the bottle has a green label with a red flower design. The background appears to be a kitchen or dining area with some furniture and appliances.",8,cat,0.2468,0.7326,0.0864

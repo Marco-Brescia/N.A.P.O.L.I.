@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear. The bear has a thick, white fur coat and is standing on grass. The bear's face is pixelated, making it difficult to see all the details.",4,bear,0.1395,0.7585,0.0607

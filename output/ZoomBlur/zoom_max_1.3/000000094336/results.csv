@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000094336,"Describe this image in detail, use simple terms","The image shows a cat sitting inside a bowl. The cat has a brown and white coat and is looking directly at the camera. The bowl is white and has a circular shape with a rim. The background is blurred, making it difficult to see any details. The overall effect of the image is a bit blurry and dreamy.",4,cat,0.2741,0.9143,0.2048

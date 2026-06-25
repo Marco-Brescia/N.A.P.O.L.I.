@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a night sky with two prominent objects. On the left side, there is a small, round object that appears to be the moon. On the right side, there is a larger, circular object that looks like a clock face. The moon is much smaller and closer to the viewer, while the clock face is further away and more prominent. The background is dark, indicating it is nighttime.",46,clock,0.208,0.9798,1.0457
