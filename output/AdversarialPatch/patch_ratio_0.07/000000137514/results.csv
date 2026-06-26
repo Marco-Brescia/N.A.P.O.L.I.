@@ -1,3 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
-000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a counter next to a microwave. The cat has a mix of white, brown, and black fur. The microwave has a checkered pattern on its door. The cat appears to be looking at the camera with a curious expression.",4,cat,0.2846,0.7203,0.2533
-000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a counter next to a microwave. The cat has a mix of white, brown, and black fur. The microwave has a checkered pattern on its door. The cat appears to be looking at the camera with a curious expression.",8,counter,0.2072,0.5855,0.4067

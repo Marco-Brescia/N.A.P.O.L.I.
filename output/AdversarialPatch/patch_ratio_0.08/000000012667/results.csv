@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a desk with a few items on it. There is a telephone with a banana hanging off the hook. The telephone is a Philips model, and it has a black dial pad with buttons. The desk also has a stapler and a piece of paper with some writing on it. The background shows a part of a computer monitor and some other office supplies.",18,banana,0.1746,0.2101,0.6034

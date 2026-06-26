@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a tall building with a clock on a pole in front of it. The building has a classic architectural style with a large clock face on the front. There are several windows on the building, and a flag is hanging from one of the windows. The sky is clear and blue, indicating it is daytime. The clock on the pole has a checkered face, and there is a bench in front of the building.",8,clock,0.1838,0.1847,0.3778

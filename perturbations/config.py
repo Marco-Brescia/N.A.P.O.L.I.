@@ -3,8 +3,8 @@ import os
 # Configurazione dei percorsi di IO
 IMAGES_DIR = "imgs"
 MASKS_DIR  = "masks"
-OUT_DIR    = "images_perturbed"
-PERTURBED_MASKS_DIR = "masks_perturbed"
+OUT_DIR    = "images_perturbed_2"
+PERTURBED_MASKS_DIR = "masks_perturbed_2"
 
 # Configurazione con minimi allineati al primo step reale dell'effetto
 perturbation_ranges = {
@@ -44,5 +44,5 @@ perturbation_ranges = {
     "CoarseDropout":       {"param": "hole_size",   "min": 8,     "max": 40,   "step": 8,     "type": int},
     # edge-based
     "CannyEdge":           {"param": "th",          "min": 75,    "max": 250,  "step": 25,    "type": int},
-    "AdversarialPatch":    {"param": "patch_ratio", "min": 0.075, "max": 0.50, "step": 0.075, "type": float},
+    "AdversarialPatch":    {"param": "patch_ratio", "min": 0.08, "max": 0.50, "step": 0.07, "type": float},
 }

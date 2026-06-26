@@ -1,3 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
-000000049269,"Describe this image in detail, use simple terms",The image shows a horse and a dog standing in a grassy field. The horse has a brown coat and is wearing a bridle. The dog is also brown and appears to be a golden retriever. Both animals are looking at the camera. The background shows a clear sky and some trees.,7,dog,0.3178,0.5354,0.2281
-000000049269,"Describe this image in detail, use simple terms",The image shows a horse and a dog standing in a grassy field. The horse has a brown coat and is wearing a bridle. The dog is also brown and appears to be a golden retriever. Both animals are looking at the camera. The background shows a clear sky and some trees.,4,horse,0.13,0.3852,0.2044
