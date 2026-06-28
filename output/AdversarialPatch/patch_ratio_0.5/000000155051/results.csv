@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a dark background with a few objects. On the right side, there is a clock with Roman numerals. The clock face is white with black numbers and hands. On the left side, there is a small, white, round object that resembles the moon. The moon is positioned in the lower left corner of the image.",19,clock,0.2155,0.3898,0.3329

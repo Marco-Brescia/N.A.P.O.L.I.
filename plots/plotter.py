@@ -1,7 +1,7 @@
 import logging
-import os
 import re
 from pathlib import Path
+import sys
 from typing import Dict, List, Optional
 
 import matplotlib.pyplot as plt
@@ -9,9 +9,36 @@ import matplotlib.ticker as ticker
 import numpy as np
 import pandas as pd
 
+import math
+    
+sys.path.append(str(Path(__file__).resolve().parent.parent))
+from perturbations.config import perturbation_ranges
+
 from data_loader import METRICS
 
 logger = logging.getLogger(__name__)
+
+def generate_expected_params(config: dict) -> dict:
+    expected_params = {}
+    for name, cfg in config.items():
+        start = cfg["min"]
+        stop = cfg["max"]
+        step = round(cfg["step"], 2)
+
+        print(f"Generating expected params for {name}: start={start}, stop={stop}, step={step}")
+        
+        if cfg["type"] == int:
+            stop_inclusive = int(stop) + (1 if step > 0 else -1)
+            values = list(range(int(start), stop_inclusive, int(step)))
+        else:
+            raw_values = np.arange(start, stop + step * 0.01, step)
+            
+            values = [round(v, 2) for v in raw_values]
+            
+        expected_params[name] = values
+    return expected_params
+
+_EXPECTED_PARAMS = generate_expected_params(perturbation_ranges)
 
 # ---------------------------------------------------------------------------
 # Visual constants
@@ -54,18 +81,29 @@ def _ordered_x(x_values) -> List[float]:
     return sorted(set(float(x) for x in x_values))
 
 
-def _x_labels(sub_df: pd.DataFrame, x_values: List[float]) -> List[str]:
+def _x_labels(sub_df: pd.DataFrame, x_values: List[float], ptype: Optional[str] = None) -> List[str]:
     mapping: Dict[float, str] = (
         sub_df.drop_duplicates("param_value")
         .set_index("param_value")["perturbation_param"]
         .to_dict()
     )
+    
+    # try to find a common prefix for the labels (e.g., "patch_ratio_" in "patch_ratio_0.07")
+    prefix = ""
+    for val, label in mapping.items():
+        if val != _BASELINE_X and str(val) in label:
+            prefix = label.replace(str(val), "")
+            break
+            
     labels = []
     for x in x_values:
         if x == _BASELINE_X:
             labels.append("Normale")
+        elif x in mapping:
+            labels.append(mapping[x])
         else:
-            labels.append(mapping.get(x, str(x)))
+            # Se il valore è stato forzato e manca nel CSV, ricostruisci il nome
+            labels.append(f"{prefix}{x}")
     return labels
 
 
@@ -180,7 +218,15 @@ def plot_metric_heatmap(
             continue
 
         x_values = _ordered_x(sub["param_value"].unique())
-        x_labels = _x_labels(sub, x_values)
+
+        # Ensure that all expected perturbation parameter values are included in the x_values list, even if they are missing from the data. This is important for consistent plotting across different perturbation types.
+        if ptype in _EXPECTED_PARAMS:
+            for expected_val in _EXPECTED_PARAMS[ptype]:
+                if expected_val not in x_values:
+                    x_values.append(expected_val)
+            x_values = _ordered_x(set(x_values))
+
+        x_labels = _x_labels(sub, x_values, ptype)
         img_ids  = sorted(sub["img_id"].unique())
 
         for metric in METRICS:
@@ -334,7 +380,15 @@ def plot_breaking_point_profile(
         _ensure_dir(ptype_dir)
 
         x_values = _ordered_x(type_df["param_value"].unique())
-        x_labels = _x_labels(type_df, x_values)
+
+        # Ensure that all expected perturbation parameter values are included in the x_values list, even if they are missing from the data. This is important for consistent plotting across different perturbation types.
+        if ptype in _EXPECTED_PARAMS:
+            for expected_val in _EXPECTED_PARAMS[ptype]:
+                if expected_val not in x_values:
+                    x_values.append(expected_val)
+            x_values = _ordered_x(set(x_values))
+
+        x_labels = _x_labels(type_df, x_values, ptype)
         x_pos    = list(range(len(x_values)))
 
         for img_id in ids:

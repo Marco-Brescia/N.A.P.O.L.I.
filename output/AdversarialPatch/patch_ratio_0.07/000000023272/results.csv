@@ -1,3 +1,0 @@
-img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
-000000023272,"Describe this image in detail, use simple terms","The image shows a car with a cat sitting on the hood. The car has a checkered pattern on the hood. In the background, there is a building with windows and some greenery, including bushes and plants. The cat appears to be resting or looking around.",4,car,0.1849,0.6982,0.0641
-000000023272,"Describe this image in detail, use simple terms","The image shows a car with a cat sitting on the hood. The car has a checkered pattern on the hood. In the background, there is a building with windows and some greenery, including bushes and plants. The cat appears to be resting or looking around.",7,cat,0.3736,0.4143,0.6048

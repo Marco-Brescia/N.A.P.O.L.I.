@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image shows a checkered pattern on an orange ball that is sitting on the ground. The ball is placed on a road with several cars in the background. The cars are parked in a row, and the scene appears to be outdoors, possibly in a parking lot or a street. The sky is cloudy, and there are trees in the background.",9,orange,0.164,0.4748,0.4735
