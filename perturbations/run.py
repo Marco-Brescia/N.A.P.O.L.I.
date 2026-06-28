@@ -7,8 +7,6 @@ parent_dir = os.path.dirname(current_dir)
 sys.path.append(parent_dir)
 
 from new_eval import load_binary_mask
-
-# Importiamo i moduli 
 import config
 from effects import perturbations
 
@@ -53,7 +51,7 @@ for img_id, img_data in imgs.items():
                         out_mask_name = f"{img_id}_{p_name}_{cfg['param']}_{round(p_val, 2)}_{category}.png"
                         cv2.imwrite(os.path.join(config.PERTURBED_MASKS_DIR, out_mask_name), mask)
                 case "Cutout" | "AdversarialPatch":
-                    perturbed_img = p_func(original_img, p_val, grouped_masks.get(img_id, [])) # Serve la maschera per capire dove sta l'oggetto e fare i ritagli e patch
+                    perturbed_img = p_func(original_img, p_val, grouped_masks.get(img_id, [])) # masks is needed to determine where to apply the perturbation and to ensure consistency across masks
                 case _:
                     perturbed_img = p_func(original_img, p_val)
 
