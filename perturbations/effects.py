@@ -57,15 +57,19 @@ def apply_jpeg(img, quality):
 def apply_rotate(img, angle, masks_list=None):
     h, w = img.shape[:2]
     M = cv2.getRotationMatrix2D((w//2, h//2), angle, 1.0)
-    rotated_img = cv2.warpAffine(img, M, (w, h))
+    rotated_img = cv2.warpAffine(img, M, (w, h), flags=cv2.INTER_LINEAR)
     
-    # Applica la stessa rotazione alle maschere, se presenti
+    rotated_masks = []
     if masks_list:
-        rotated_masks = []
         for category_name, mask in masks_list:
-            rotated_mask = cv2.warpAffine(mask, M, (w, h))
+            rotated_mask = cv2.warpAffine(
+                mask, M, (w, h),
+                flags=cv2.INTER_NEAREST,
+                borderMode=cv2.BORDER_CONSTANT,
+                borderValue=0,
+            )
             rotated_masks.append((category_name, rotated_mask))
-    
+
     return rotated_img, rotated_masks
 
 def apply_cutout(img, ratio, mask_list=None):
