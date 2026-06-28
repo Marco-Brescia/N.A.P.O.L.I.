@@ -25,9 +25,10 @@ def collect_heatmaps_for_image(img_id):
 
             heatmaps_dir = os.path.join(root, "heatmaps")
             
-            # --- LOGICA CORRETTA ---
+             # Check if the heatmaps directory exists and is not empty
+             # If it exists, copy the PNG files; if not, copy the TXT file if it exists.
             if os.path.exists(heatmaps_dir) and os.listdir(heatmaps_dir) != []:
-                # Se la cartella heatmaps ESISTE, copia solo le PNG
+                # if the heatmaps directory exists, copy all PNG files to the output folder
                 for file in os.listdir(heatmaps_dir):
                     if file.endswith(".png"):
                         token_name = file.replace(f"{img_id}_", "").replace("_heatmap.png", "")
@@ -36,7 +37,7 @@ def collect_heatmaps_for_image(img_id):
                         shutil.copy2(os.path.join(heatmaps_dir, file), os.path.join(out_folder, new_hm_name))
                         found_count += 1
             else:
-                # Se la cartella heatmaps NON ESISTE, salva il TXT
+                # if the heatmaps directory does not exist, save the TXT file
                 txt_filename = f"{img_id}_tokens.txt"
                 if txt_filename in files:
                     new_txt_name = f"{img_id}_{perturbation}_{param}.txt"
@@ -44,7 +45,7 @@ def collect_heatmaps_for_image(img_id):
                     shutil.copy2(os.path.join(root, txt_filename), os.path.join(out_folder, new_txt_name))
                     found_count += 1
 
-    # Pulizia
+    # If no heatmaps or TXT files were found for this image, remove the output folder to avoid clutter.
     if found_count > 0 or len(os.listdir(out_folder)) > 0:
         print(f"[{img_id}] -> OK: Salvato in {out_folder}")
     else:

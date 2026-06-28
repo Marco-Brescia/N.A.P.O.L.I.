@@ -34,7 +34,7 @@ from scipy.ndimage import distance_transform_edt as _edt
 warnings.filterwarnings("ignore")
 
 def compute_threashold_pred(heatmap: np.ndarray, mask: np.ndarray, threshold: float = 0.66) -> tuple:
-    """Calcola la soglia Otsu usata dall'oggetto (serve per il func_iou)."""
+    """Calulates Otsu threshold and returns both the threshold and the binary prediction mask."""
     thr = int(255 * threshold)
     t, pred = cv2.threshold(heatmap, thr, 255, cv2.THRESH_BINARY)
     return t, pred
@@ -273,7 +273,6 @@ def metric_precision_threshold(heatmap: np.ndarray, mask: np.ndarray, threshold:
     
     total_attention = Ab.sum()
     
-    # Ritorna il rapporto
     return float(intersection) / float(total_attention + eps) if total_attention > 0 else 0.0
 
 def compute_all_metrics(heatmap: np.ndarray, mask: np.ndarray) -> dict:
