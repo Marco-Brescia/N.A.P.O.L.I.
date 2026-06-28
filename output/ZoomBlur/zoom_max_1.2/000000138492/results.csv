@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000138492,"Describe this image in detail, use simple terms","The image shows a dog in motion, captured with a technique called motion blur. The dog appears to be jumping or leaping, with its body and legs blurred due to the rapid movement. The background is a blurred green field, indicating that the dog is in a grassy area. The overall effect is that the dog is moving quickly and the image is not sharp.",4,dog,0.2888,0.5479,0.1097

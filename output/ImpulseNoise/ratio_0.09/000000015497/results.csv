@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","The image shows a cat lying down on a black background. The cat has a white and brown coat with green eyes. It appears to be playing with a toy, which is a small, round object with a string attached to it. The cat's paws are wrapped around the string, and it seems to be enjoying the activity.",4,cat,0.152,0.7855,0.2112

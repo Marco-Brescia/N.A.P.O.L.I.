@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000077595,"Describe this image in detail, use simple terms","The image shows a cat sitting on a stone surface. The cat has a spotted coat and is looking directly at the camera. The stone surface has a pattern of different shades of gray and blue, creating a textured background. The cat's reflection is visible in the stone, creating a mirrored effect. The reflection shows the cat's face and part of its body, but the details are slightly blurred.",4,cat,0.2771,0.417,0.2024

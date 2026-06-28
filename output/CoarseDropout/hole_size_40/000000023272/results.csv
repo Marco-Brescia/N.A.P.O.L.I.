@@ -1,0 +1,3 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000023272,"Describe this image in detail, use simple terms","The image shows a car with a cat sitting on the hood. The car has a grill and headlights, and there are several stickers or decals on the car. The cat is sitting on the hood, looking towards the camera. The background includes some greenery and a building.",4,car,0.211,0.7153,0.0575
+000000023272,"Describe this image in detail, use simple terms","The image shows a car with a cat sitting on the hood. The car has a grill and headlights, and there are several stickers or decals on the car. The cat is sitting on the hood, looking towards the camera. The background includes some greenery and a building.",7,cat,0.2843,0.3165,0.8205

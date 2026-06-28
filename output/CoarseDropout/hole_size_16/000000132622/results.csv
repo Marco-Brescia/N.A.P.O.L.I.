@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear standing in a grassy area. The bear has a thick, fluffy coat and is looking directly at the camera. There are small black dots around the bear, possibly indicating that it has been tagged or is part of a study. The background is green, suggesting it is in a natural setting.",4,bear,0.2393,0.8186,0.0325

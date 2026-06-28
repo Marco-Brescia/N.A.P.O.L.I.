@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a tall building with a clock on a pole in front of it. The building has many windows and is made of brick. There is a flag on the building, and a clock on a pole in front of the building. The sky is clear, and it appears to be daytime. There is a bench on the left side of the image.",8,clock,0.2321,0.2513,0.5471

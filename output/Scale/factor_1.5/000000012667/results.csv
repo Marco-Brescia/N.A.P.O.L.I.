@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a banana lying on top of a telephone. The banana is yellow and has a few brown spots, indicating it might be ripe. The telephone is a Philips model, and it has a black dialing pad with numbers and buttons. The phone is placed on a white surface, possibly a desk or table. The banana is connected to the phone by a coiled black cord, which is hanging down from the phone's base.",4,banana,0.6137,0.8736,0.7085

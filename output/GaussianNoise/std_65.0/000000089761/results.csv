@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a toilet that is placed in the grass. The toilet is white and has a pedestal base. The background includes some greenery, including a tree trunk and some leaves on the ground. The overall image has a grainy, pixelated effect.",4,toilet,0.2428,0.4523,0.3007

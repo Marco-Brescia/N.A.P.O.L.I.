@@ -1,0 +1,3 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms",The image shows a person riding a horse. The person is wearing a black hat and jeans. The horse is purple and has a saddle on it. The background shows trees and a fence.,7,horse,0.1242,0.3084,0.5625
+000000045070,"Describe this image in detail, use simple terms",The image shows a person riding a horse. The person is wearing a black hat and jeans. The horse is purple and has a saddle on it. The background shows trees and a fence.,4,person,0.2203,0.5946,0.2239

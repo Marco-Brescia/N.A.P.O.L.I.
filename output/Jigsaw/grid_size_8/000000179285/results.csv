@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000179285,"Describe this image in detail, use simple terms","This image is a collage of tennis-related items. It shows various parts of a tennis racket, including the strings, frame, and grip. The strings are green and white, and the frame is blue. There are also some green and white tennis balls in the image. The overall theme is tennis equipment.",17,racket,0.2103,0.8786,0.0142

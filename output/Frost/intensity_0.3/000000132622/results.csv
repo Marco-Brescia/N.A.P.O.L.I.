@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear standing in a grassy area. The bear has a thick, furry coat and is looking directly at the camera. It appears to be in a natural setting, possibly a field or meadow. The bear's fur is a mix of light and dark shades, and it has a few small, white spots on its face. The grass around the bear is green and appears to be dry.",4,bear,0.3252,0.8655,0.0275

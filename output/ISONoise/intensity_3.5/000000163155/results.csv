@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on a ledge or a step. The cat has a striped coat with a mix of gray and white fur. It appears to be looking to the side, possibly observing something outside. The background includes a brick wall, suggesting that the cat is in an indoor setting, possibly a house or a building. The overall scene is calm and peaceful.",4,cat,0.4578,0.5834,0.135

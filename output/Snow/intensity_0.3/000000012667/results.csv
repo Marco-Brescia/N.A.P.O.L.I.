@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a desk with a phone on it. The phone has a cord attached to it, and there is a banana hanging off the cord. The desk has some papers and a pen on it. The background is a bit blurry, but it appears to be a room with some other objects and furniture.",24,banana,0.3356,0.6066,1.3923

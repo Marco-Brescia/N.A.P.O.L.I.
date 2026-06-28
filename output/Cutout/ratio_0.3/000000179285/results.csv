@@ -1,0 +1,3 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000179285,"Describe this image in detail, use simple terms","The image shows a tennis racket with a green tennis ball attached to it. The racket has a blue frame and a white net. The background is green, likely representing a tennis court.",10,ball,0.1235,0.2683,0.8934
+000000179285,"Describe this image in detail, use simple terms","The image shows a tennis racket with a green tennis ball attached to it. The racket has a blue frame and a white net. The background is green, likely representing a tennis court.",5,racket,0.2761,0.777,0.0273

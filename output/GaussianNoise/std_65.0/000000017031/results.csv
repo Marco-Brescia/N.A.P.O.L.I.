@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe. It has long neck and legs, and its head is turned to the side. The giraffe is surrounded by greenery, which suggests it might be in a forest or a savannah. The image has a grainy, pixelated effect, giving it a somewhat artistic or stylized appearance.","[4, 5]",giraffe,0.1534,0.3733,0.355

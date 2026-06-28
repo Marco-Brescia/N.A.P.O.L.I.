@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a toilet sitting in front of a large tree. The tree has a rough, textured bark with a dark, almost black color. The toilet is white and appears to be made of porcelain or ceramic. It is placed on a patch of grass and leaves, and there is a wooden bench or platform behind it. The setting seems to be outdoors, possibly in a garden or park.",4,toilet,0.2164,0.3541,0.2991

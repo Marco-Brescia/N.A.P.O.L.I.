@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows an airplane flying in the sky. The airplane is silhouetted against a blue sky with some clouds. The image appears to be grainy or pixelated, giving it a somewhat blurry or distorted look.",4,airplane,0.0,0.0,0.0

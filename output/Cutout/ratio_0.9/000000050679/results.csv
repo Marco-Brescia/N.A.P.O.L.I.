@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image shows a street scene with several cars parked along the side of the road. There is a large orange ball in the foreground, which is placed on the ground. The background features trees and a cloudy sky. The cars are parked in a row, and the scene appears to be taken during the day.",21,orange,0.3264,0.4548,0.2997

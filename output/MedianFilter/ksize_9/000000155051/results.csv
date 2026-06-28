@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock and a moon in the night sky. The clock is on the right side of the image, with its hands pointing to the number 10. The moon is on the left side, appearing as a bright, white circle in the dark sky. The background is completely black, indicating it is nighttime.",4,clock,0.3348,0.5203,0.2664

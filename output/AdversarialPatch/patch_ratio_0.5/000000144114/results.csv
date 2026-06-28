@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000144114,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane has a red and white color scheme with a checkered pattern on its body. The plane is performing a trick, as indicated by the checkered pattern on its body. The plane is also spinning, which is a common stunt in aerobatics. The background shows a cloudy sky, and the plane is flying at a high altitude.",4,plane,0.2291,0.4061,0.3234

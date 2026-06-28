@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows an airplane flying through a sky filled with small, white dots. These dots are likely stars, and the airplane is flying through a starry night sky. The airplane is positioned in the center of the image, and its wings are spread out, showing its shape and design. The background is a deep blue color, indicating that it is nighttime.",4,airplane,0.0,0.0,0.0

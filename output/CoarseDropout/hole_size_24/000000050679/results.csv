@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image shows a ripe orange sitting on the ground in the middle of a parking lot. There are several cars parked in the background, and the sky is cloudy. The orange is the main focus of the image, and it appears to be the only fruit present. The parking lot is clean and well-maintained, with no visible litter or debris. The overall scene suggests a quiet, possibly early morning or late afternoon setting.",5,orange,0.3118,0.547,0.3865

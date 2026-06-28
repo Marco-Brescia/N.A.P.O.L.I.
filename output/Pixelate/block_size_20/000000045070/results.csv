@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","The image shows a person sitting in a lotus position, which is a traditional yoga pose. The person is wearing a white shirt with pink and blue patterns. The background is green, and the image is pixelated, making it difficult to see any specific details.",4,person,0.1477,0.4981,0.2102

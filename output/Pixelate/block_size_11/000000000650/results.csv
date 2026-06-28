@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000000650,"Describe this image in detail, use simple terms","The image shows a cat standing on a roof. The cat has a mix of gray and white fur. The background is blurred, but it appears to be an outdoor setting with some greenery and possibly a building or structure in the distance. The cat seems to be looking down or to the side.",4,cat,0.3023,0.481,0.2168

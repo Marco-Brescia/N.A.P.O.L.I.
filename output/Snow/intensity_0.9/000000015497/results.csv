@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","This image shows a cat with a white and brown coat. The cat is surrounded by a lot of small, white dots, which could be snow or a similar substance. The background is black, making the cat and the dots stand out.",4,cat,0.1909,0.7477,0.134

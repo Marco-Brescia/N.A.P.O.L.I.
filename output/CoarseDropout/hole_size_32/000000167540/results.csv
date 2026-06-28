@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane has four wings and is painted in a dark color with some white markings. The sky is blue with some clouds, and there are several small, black dots scattered across the sky, resembling stars or perhaps some kind of pattern. The plane is in the middle of the image, and the background is mostly clear with a few clouds.",4,plane,0.1959,0.3101,0.4791

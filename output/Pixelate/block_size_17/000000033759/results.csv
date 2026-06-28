@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000033759,"Describe this image in detail, use simple terms","The image shows a person walking through a forest. The person is wearing a green shirt and white pants. The forest has tall trees with green leaves, and the ground is covered with grass. The image is pixelated, making it difficult to see details clearly.",4,person,0.1335,0.455,0.8938

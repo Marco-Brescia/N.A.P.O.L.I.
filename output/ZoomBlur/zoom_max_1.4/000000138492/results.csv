@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000138492,"Describe this image in detail, use simple terms","The image shows a dog on a grassy field. The dog appears to be in motion, as the background is blurred, giving the impression that the dog is jumping or running. The dog's fur is black and white, and it seems to be in a playful or energetic pose. The grass is green and appears to be well-maintained.",4,dog,0.22,0.4206,0.1003

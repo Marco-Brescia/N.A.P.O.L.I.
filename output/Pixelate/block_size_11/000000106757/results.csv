@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000106757,"Describe this image in detail, use simple terms","The image shows a person sitting on a bench. The person is wearing a light-colored shirt and appears to be looking down at something in their hands. The background includes some greenery, possibly trees or bushes, and a clear blue sky. The image is pixelated, making it difficult to see any specific details.",4,person,0.1068,0.3708,0.4708

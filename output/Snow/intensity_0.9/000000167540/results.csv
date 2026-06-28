@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","The image shows a plane flying through a sky filled with snowflakes. The plane is in the foreground, and the snowflakes are scattered throughout the sky, creating a snowy effect. The plane appears to be a small, single-engine aircraft, and it is flying at a relatively low altitude. The snowflakes are small and white, and they are falling in a random pattern, giving the impression of a winter scene.",4,plane,0.319,0.3742,0.3465

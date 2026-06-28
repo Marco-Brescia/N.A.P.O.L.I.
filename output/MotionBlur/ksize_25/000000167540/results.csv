@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","The image shows a small airplane flying in the sky. The airplane has two wings and two engines. The wings are rectangular and have a brownish color with some red markings on them. The airplane is in motion, as indicated by the blurred effect, suggesting it is moving quickly. The background is a clear blue sky with some white clouds, and the airplane is positioned in the center of the image.",5,airplane,0.1527,0.1987,0.3853

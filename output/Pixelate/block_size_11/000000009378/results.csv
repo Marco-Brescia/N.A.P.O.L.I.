@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000009378,"Describe this image in detail, use simple terms","The image shows a person wearing a black outfit. The person is holding a yellow object, which appears to be a piece of equipment or tool. The background is dark, making it difficult to see any details.",4,person,0.0782,0.5423,0.3358

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000179285,"Describe this image in detail, use simple terms","The image shows a tennis racket. The racket has a blue frame with white strings. The brand name ""OVERSIZE"" is visible on the top of the racket. The background is blurred, making it difficult to see any details.",5,racket,0.0839,0.5171,0.0645

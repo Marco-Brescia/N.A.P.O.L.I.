@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","The image shows a cat lying down on a dark surface. The cat has a white and brown coat with some black markings. It appears to be playing with a toy, which is a small, round object with a string attached to it. The toy is located on the left side of the cat. The overall scene is dark, with the cat and the toy being the main focus.",4,cat,0.1902,0.5708,0.121

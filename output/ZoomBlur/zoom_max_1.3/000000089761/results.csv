@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a white toilet in a garden setting. The toilet is surrounded by grass and some plants, and there is a dark, textured background that appears to be a peacock feather. The toilet has a modern design with a smooth, curved seat and a clean, white finish. The overall scene has a surreal and artistic feel, with the peacock feather-like background adding a unique and intriguing element to the image.",5,toilet,0.3515,0.5387,0.311

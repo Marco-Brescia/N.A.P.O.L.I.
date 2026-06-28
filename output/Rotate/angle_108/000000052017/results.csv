@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000052017,"Describe this image in detail, use simple terms","The image shows a small, yellow airplane with a blue propeller. The airplane has a red tail and a red and white stripe on its body. The tail has the letters ""SP-AWF"" written on it. The airplane is in the air, and the propeller is spinning. The background is a clear sky.",7,airplane,0.187,0.2588,0.2923

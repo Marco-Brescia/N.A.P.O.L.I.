@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000049269,"Describe this image in detail, use simple terms","This image is a collage of pictures showing different animals. There are several horses and a dog in the pictures. The horses are grazing in tall grass, and the dog is also in the grass. The pictures are arranged in a grid pattern, with each picture showing a different angle or part of the animals. The background shows a grassy field with some trees in the distance.",17,dog,0.1003,0.2333,0.1488

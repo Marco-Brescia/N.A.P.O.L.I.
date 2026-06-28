@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a toilet that is surrounded by a lot of grass and plants. The toilet is made of a light-colored material, possibly stone or porcelain, and it has a closed lid. The background is filled with a lot of green grass and some small plants, giving the impression that the toilet is in a garden or a backyard.",4,toilet,0.2324,0.3609,0.2991

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","This image is a collage of pictures featuring a cat. The cat is sitting on a surface, possibly a table or a ledge. The cat has a striped pattern with brown and white fur. The background includes a brick wall, and the cat appears to be looking down or sniffing the ground. The collage shows different angles and perspectives of the cat, giving a sense of movement and curiosity.",9,cat,0.1831,0.3927,0.1252

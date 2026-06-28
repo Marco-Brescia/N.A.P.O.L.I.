@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000009378,"Describe this image in detail, use simple terms","The image shows a person with long, curly hair wearing a striped hat. They are holding a black object in front of their face, which is partially obscured. The background appears to be an indoor setting with a crowd of people, suggesting a performance or event. The lighting is dim, and the overall atmosphere is somewhat dramatic.",4,person,0.1222,0.5148,0.2068

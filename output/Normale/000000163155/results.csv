@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on a wooden surface, possibly a porch or a deck. The cat has a striped coat with shades of gray and white. It is looking to the side, possibly observing something in that direction. The background features a brick wall, suggesting that the setting might be outdoors near a building. The cat appears to be relaxed and comfortable in its position.",4,cat,0.1901,0.411,0.2333

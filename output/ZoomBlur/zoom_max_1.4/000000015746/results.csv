@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a red fire hydrant in a grassy area. The hydrant is in motion, creating a blurred effect, which makes it look like it's moving. The background includes some greenery and a building with a brick facade. The overall effect is a bit surreal and artistic.","[5, 6, 7]",fire hydrant,0.0054,0.0276,0.6915

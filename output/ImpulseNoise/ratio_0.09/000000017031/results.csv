@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe's head and neck. The giraffe is looking through a window or a glass barrier, and there are many tiny, round spots or specks on the glass, possibly due to rain or a dirty window. The background outside the window is green and blurred, indicating that the giraffe is in a natural, outdoor setting.","[4, 5]",giraffe,0.2987,0.4996,0.2516

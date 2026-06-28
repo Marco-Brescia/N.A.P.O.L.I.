@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on a windowsill. The cat has a white and brown coat and is looking out the window. The window has a brick frame, and there are many small, white dots scattered across the image, giving it a snowy appearance. The cat appears to be enjoying the view outside.",4,cat,0.3116,0.5589,0.2022

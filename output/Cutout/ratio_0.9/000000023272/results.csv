@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000023272,"Describe this image in detail, use simple terms","The image shows a car parked on the side of a building. The car is black and has a grill and headlights visible. There is a fence behind the car, and some greenery, including plants and flowers, is visible through the fence. The building behind the car has a brick facade.",4,car,0.1036,0.9404,0.0903

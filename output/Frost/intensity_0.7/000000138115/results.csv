@@ -1,0 +1,3 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000138115,"Describe this image in detail, use simple terms","The image shows a person holding an orange. The person's face is blurred, making it difficult to see their features clearly. The orange is round and has a yellowish skin. The background appears to be a textured surface, possibly a wall or a table.",7,orange,0.3286,0.5637,0.3802
+000000138115,"Describe this image in detail, use simple terms","The image shows a person holding an orange. The person's face is blurred, making it difficult to see their features clearly. The orange is round and has a yellowish skin. The background appears to be a textured surface, possibly a wall or a table.",4,person,0.0655,0.7067,0.036

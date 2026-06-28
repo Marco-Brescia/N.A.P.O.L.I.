@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000144114,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane has a red and white color scheme with some green and black accents. The plane is in the middle of a flight path, and the sky is clear with some clouds. The plane appears to be a commercial jet, and it is flying at a relatively high altitude.",4,plane,0.1942,0.3362,0.4424

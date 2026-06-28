@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane has a unique design with a pointed nose and a long, slender body. The sky is clear with a bright orange moon visible in the background. The plane appears to be in flight, and the moon is shining brightly, creating a striking contrast with the plane's dark silhouette.",4,plane,0.0,0.0,0.0

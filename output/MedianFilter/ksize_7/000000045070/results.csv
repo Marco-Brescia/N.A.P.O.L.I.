@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","The image shows a young child riding a horse. The child is wearing a black helmet and a pink and white checkered shirt. The child is sitting on a saddle, which is part of a horse's saddle blanket. The background features green trees, suggesting that the scene is taking place outdoors. The child appears to be focused on the activity, possibly enjoying the experience of riding a horse.",8,horse,0.2751,0.3917,0.2895

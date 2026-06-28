@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a large bear standing in a grassy field. The bear has a thick, fluffy coat and is covered in mud, indicating it has been in the water. The bear's eyes are wide open, and it appears to be looking directly at the camera. The background is green and blurred, suggesting the bear is in a natural, outdoor setting.",5,bear,0.1461,0.803,0.0511

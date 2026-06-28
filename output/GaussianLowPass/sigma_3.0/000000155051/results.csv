@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock and a moon in the night sky. The clock is on the right side of the image, with its hands pointing towards the time. The moon is on the left side, appearing as a small, bright spot against the dark sky. The overall image is blurry, making it difficult to see details clearly.",4,clock,0.1497,0.4018,0.4834

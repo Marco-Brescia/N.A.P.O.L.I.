@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows an airplane flying through a snowy sky. The airplane is silhouetted against the blue sky, with snowflakes falling around it. The snowflakes are small and white, creating a beautiful contrast with the dark silhouette of the airplane. The overall scene is serene and peaceful, with the airplane appearing to be in motion as it flies through the snow.",4,airplane,0.3053,0.4322,1.2128

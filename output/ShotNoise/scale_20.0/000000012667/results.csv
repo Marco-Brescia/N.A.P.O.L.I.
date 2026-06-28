@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a desk with a black telephone on it. The telephone has a yellow cord hanging down from it. There is also a yellow object, which appears to be a banana, resting on the phone. The desk has some other items on it, but they are not clearly visible in the image.",35,banana,0.1605,0.31,0.7862

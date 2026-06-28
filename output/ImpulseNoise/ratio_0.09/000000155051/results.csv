@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","This image shows a night sky with a large, round object in the center that looks like a clock. The clock has Roman numerals and is surrounded by a dark, starry background. To the left of the clock, there is a smaller, round object that appears to be a planet or moon. The overall scene is dark, with a lot of stars visible in the background.",19,clock,0.3302,0.6905,0.4919

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock with a black background. The clock face is white and has Roman numerals from I to XII. The clock reads ""1902."" In the sky above the clock, there is a full moon. The moon is bright and visible against the dark sky.",4,clock,0.1318,0.3014,0.4605

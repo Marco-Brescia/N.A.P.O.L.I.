@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","The image shows a young girl sitting on a horse. She is wearing a pink and white checkered shirt, a black helmet, and jeans. The girl is holding onto the reins of the horse with her left hand. The horse is wearing a saddle, and the girl is sitting on top of it. The background shows a forested area with trees.",9,horse,0.0854,0.2104,0.5687

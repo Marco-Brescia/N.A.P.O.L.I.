@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000009378,"Describe this image in detail, use simple terms","The image shows a person sitting on the ground. The person is wearing a black outfit and appears to be holding something in their hands. The background is dark, making it difficult to see any details.",4,person,0.0545,0.5274,0.4589

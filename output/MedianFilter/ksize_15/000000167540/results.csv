@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","The image shows a small airplane flying in the sky. The airplane has a simple design with a single propeller at the front. The wings are straight and the tail is pointed. The airplane is flying against a blue sky with some white clouds. The image is taken from a low angle, making the airplane appear larger and more prominent.",5,airplane,0.1717,0.2084,0.3622

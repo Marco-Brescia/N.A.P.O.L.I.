@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000077595,"Describe this image in detail, use simple terms","The image shows a cat sitting inside a basket. The cat has a brown coat with some white markings. The basket is made of a light-colored material, possibly cotton or cloth. The background appears to be indoors, with a blue wall and some furniture visible. The cat seems to be resting or looking out of the basket.",4,cat,0.1657,0.6035,0.4705

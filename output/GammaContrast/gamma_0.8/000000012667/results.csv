@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a desk with a few items on it. There is a banana hanging off the cord of a telephone. The telephone is a standard landline model with a keypad and a speakerphone. In the background, there is a stapler and a piece of paper with some text on it. The desk appears to be made of wood.",15,banana,0.2345,0.3482,0.8961

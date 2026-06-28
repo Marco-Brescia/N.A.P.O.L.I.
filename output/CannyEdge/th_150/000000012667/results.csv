@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a desk with a black telephone on it. The telephone has a large, yellow banana attached to its cord. The desk has some papers and a stapler on it. The background shows a part of a room with a wall and some furniture.",19,banana,0.5357,0.7679,0.9531

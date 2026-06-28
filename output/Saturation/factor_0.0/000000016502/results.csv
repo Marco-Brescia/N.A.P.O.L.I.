@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image is a black and white photo. It shows a sheep standing on top of a rocky hill. The sheep has a fluffy coat and is looking towards the sky. The background is mostly cloudy, and the sky is light gray. The rocks are large and uneven, and the sheep is standing on a small ledge.",12,sheep,0.0,0.0,0.0

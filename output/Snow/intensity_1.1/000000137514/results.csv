@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting inside a car. The cat is looking out the window, and there are many small, white dots scattered around the image, making it look like snow or frost. The cat appears to be comfortable and relaxed, and the car's interior is visible through the window.",4,cat,0.21,0.5476,0.245

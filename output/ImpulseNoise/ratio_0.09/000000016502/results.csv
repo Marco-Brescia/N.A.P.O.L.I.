@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","This image shows a sheep standing on top of a rock. The sky is filled with a lot of small, black dots, which look like a starry night. The sheep is white, and it's standing on the rock with its head up. The rock is dark and has some green grass on it.",4,sheep,0.2119,0.2256,0.6828

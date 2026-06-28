@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","The image shows a bottle of wine with a label that has some text and images on it. The bottle is green and has a label with red and green designs. The background of the image is blurred, making it difficult to see the details of the surroundings. There is also a black cat in the foreground, with its wings spread out, and it appears to be looking at the bottle. The cat's shadow is visible on the wall behind it.",57,cat,0.1252,0.4137,0.1142

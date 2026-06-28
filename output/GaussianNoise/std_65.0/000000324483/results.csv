@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000324483,"Describe this image in detail, use simple terms","The image shows a cat with a striped pattern. The cat has a white face and chest, and its fur is mostly gray with some white markings. The cat is wearing a green harness or collar. The background is blurred, making it difficult to see details, but it appears to be an outdoor setting with some greenery. The overall image has a grainy, pixelated effect.",4,cat,0.2496,0.7178,0.083

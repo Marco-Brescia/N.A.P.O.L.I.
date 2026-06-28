@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000052017,"Describe this image in detail, use simple terms","The image shows a small, yellow airplane flying in the sky. The airplane has a single propeller on the front and two wings. The wings are slightly curved and have a red tip. The airplane is in motion, as indicated by the blur around it. The background is a plain, light-colored sky.",7,airplane,0.232,0.3105,0.206

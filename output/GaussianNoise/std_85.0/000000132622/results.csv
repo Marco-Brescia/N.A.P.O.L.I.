@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear walking on grass. The bear has a light-colored fur, possibly white or gray, and it appears to be in a natural environment, possibly a forest or a field. The grass is green and the bear is moving forward, with its head down and its front paws on the ground. The image has a grainy, pixelated effect, giving it a somewhat vintage or artistic look.",4,bear,0.1878,0.8586,0.0442

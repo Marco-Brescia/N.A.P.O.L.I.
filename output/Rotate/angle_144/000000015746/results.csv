@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a red fire hydrant with a black top. The hydrant is attached to a green mossy wall, and there are some purple flowers and green plants around it. The hydrant is positioned in front of a building with a window and some trees in the background. The overall scene gives a sense of a garden or a backyard setting.","[5, 6, 7]",fire hydrant,0.0292,0.0913,0.4033

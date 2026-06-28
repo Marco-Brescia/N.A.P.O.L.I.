@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a countertop. The cat has a mix of white and gray fur with some brown markings. It is looking slightly to the side and appears to be resting or looking relaxed. In the background, there is a white microwave oven. The microwave has a screen that is turned off, and the overall lighting in the image is dim, giving it a slightly grainy appearance.",4,cat,0.315,0.7164,0.2261

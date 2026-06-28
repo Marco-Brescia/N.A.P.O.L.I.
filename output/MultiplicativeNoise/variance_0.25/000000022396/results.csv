@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is in the middle of the image, and it's flying at a high altitude. The sky is filled with clouds, and the plane's shadow is visible on the ground. In the foreground, there is a bright, round object that appears to be the sun. The image has a grainy, pixelated quality to it, giving it a somewhat abstract or artistic look.",4,plane,0.0,0.0,0.0

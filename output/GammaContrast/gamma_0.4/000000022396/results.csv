@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky, with the moon visible below it. The plane is dark against the blue sky, and the moon is partially illuminated, appearing as a bright orange or yellow crescent. The contrast between the plane and the moon creates a striking visual effect.",4,plane,0.0,0.0,0.0

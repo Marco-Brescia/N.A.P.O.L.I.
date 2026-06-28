@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on a ledge. The cat has a mix of brown and white fur. It's looking up and seems to be observing something outside. The background includes a brick wall, and it appears to be raining, as there are droplets on the ledge. The cat looks calm and content.",4,cat,0.156,0.4357,0.3375

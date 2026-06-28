@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on a rocky cliff. The sheep is facing away from the camera, and its body is tilted slightly, giving the impression that it is hanging off the edge of the cliff. The sky is clear with some clouds, and the rock formation is covered with moss. The perspective of the image is unusual, as it appears to be taken from below, looking up at the sheep.",4,sheep,0.0,0.0,0.0

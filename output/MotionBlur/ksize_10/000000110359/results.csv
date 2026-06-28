@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is seen from above, and it appears to be in motion, as indicated by the blurred edges. The plane has two wings and two engines, which are visible. The sky in the background is clear and blue, suggesting that the plane is flying at a high altitude.",4,plane,0.0,0.0,0.0

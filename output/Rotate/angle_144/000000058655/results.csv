@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a clock hanging from a pole on the side of a building. The clock has Roman numerals and is black with gold accents. The building is made of brick and has several windows. There are flags hanging from the building, and the sky is clear. The perspective of the image is from below, looking up at the clock and the building.",4,clock,0.1946,0.2095,0.546

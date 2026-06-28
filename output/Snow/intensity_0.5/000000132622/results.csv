@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear in a grassy area. The bear appears to be wet, possibly from rain, and has a wet, fluffy coat. The background is green, suggesting it might be a grassy field or meadow. The bear's fur is wet, and there are small, white dots scattered across the image, which could be snow or raindrops. The bear's eyes are open, and it looks alert and curious.",4,bear,0.1865,0.7508,0.0417

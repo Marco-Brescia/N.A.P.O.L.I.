@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000077595,"Describe this image in detail, use simple terms",The image shows a cat sitting on a blanket. The cat has a striped pattern on its fur and is wearing a striped shirt. The blanket is white and has a plaid pattern. The background appears to be a snowy scene with snowflakes falling. The overall scene gives a cozy and winter-like atmosphere.,4,cat,0.2442,0.9928,0.3933

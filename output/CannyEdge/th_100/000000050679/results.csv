@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image shows a large orange on the ground in the middle of a parking lot. There are several cars parked around the orange, and some trees are visible in the background. The sky is cloudy, and the ground is wet, possibly from recent rain. The orange has a rough, textured surface with a few small bumps and spots.",5,orange,0.2564,0.7024,0.4195

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a surface. The cat has a mix of white and brown fur. It is looking directly at the camera with a calm expression. Behind the cat, there is a microwave oven. The microwave has a screen and buttons on the front. The overall image has a grainy, pixelated effect.",4,cat,0.3323,0.6176,0.1968

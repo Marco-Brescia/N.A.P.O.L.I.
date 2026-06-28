@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear in the rain. The bear has a wet, fluffy coat and is walking through a grassy area. The raindrops are visible on the bear's fur, making it look wet and shiny. The bear appears to be looking forward, possibly at something in the distance. The background is blurred, focusing attention on the bear.",4,bear,0.1673,0.8553,0.0438

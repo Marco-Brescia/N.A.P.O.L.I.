@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000372902,"Describe this image in detail, use simple terms","The image shows a blurry scene with a car and some plants. The car is moving, as indicated by the motion blur. The car's rear end is visible, and it appears to be on a road. There are also some plants in the foreground, which are also blurred due to the motion of the car. The plants are green and appear to be growing near the road. The overall scene suggests that the car is passing by the plants.",8,car,0.4923,0.871,0.1208

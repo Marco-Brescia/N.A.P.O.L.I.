@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a tall brick building with a clock on a pole in front of it. The clock is round and has a gold frame with black numbers and hands. The building has multiple floors and windows, and there are flags hanging from the building. The sky is clear and blue, indicating it might be early morning or late afternoon. The clock pole is black and has a decorative design.",9,clock,0.266,0.2983,0.7178

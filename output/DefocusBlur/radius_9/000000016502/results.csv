@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on top of a rocky hill. The sheep is white and appears to be grazing or looking out over the landscape. The sky is blue with some white clouds, and the hillside is covered with green grass. The overall scene is peaceful and serene.",4,sheep,0.4331,0.5896,2.2712

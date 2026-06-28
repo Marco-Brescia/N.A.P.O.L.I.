@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000183500,"Describe this image in detail, use simple terms","The image shows a vintage biplane flying in the sky. The plane has two sets of wings, one on each side, and it has a single propeller at the front. The wings are red and white, and there are two people inside the plane. The plane has a classic design, with a small cockpit and a large wingspan. The sky is overcast, and the plane is flying at a moderate altitude.",6,plane,0.2969,0.4318,0.2018

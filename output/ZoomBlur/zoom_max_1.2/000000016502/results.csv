@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on top of a hill. The hill is covered with grass and has a rough texture. The sky above is clear with some clouds, and the overall scene has a blurred effect, giving it a dreamy or abstract appearance.",4,sheep,0.2424,0.2501,0.7993

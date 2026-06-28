@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is seen from an overhead angle, and it appears to be a commercial jet. The plane is flying at a relatively low altitude, and the sky is a clear blue color. The plane's wings are spread out, and it has a tail fin at the back. The image has a grainy or pixelated quality, giving it a somewhat blurry appearance.",4,plane,0.1823,0.2214,0.7062

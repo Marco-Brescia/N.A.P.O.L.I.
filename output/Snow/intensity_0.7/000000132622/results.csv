@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear walking through a snowy field. The bear is wet, with snowflakes falling around it. The bear has a brown and white fur coat and is looking forward. The background is blurred, making it difficult to see details, but it appears to be a snowy landscape.",4,bear,0.2426,0.8414,0.0341

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a fire hydrant in a grassy area. The hydrant is painted in a reddish-brown color and has a black top. It has two black caps on the sides, one on each side of the hydrant. The hydrant is surrounded by tall grass and some dandelions. In the background, there is a white house with a roof and some trees. The sky appears to be overcast.","[4, 5, 6]",fire hydrant,0.167,0.2655,0.2062

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe with its head and neck visible. The giraffe is facing the camera, and its head is slightly tilted. The background is filled with green trees and foliage, suggesting that the giraffe is in a forested area. The giraffe's ears are large and pointed, and it has a long neck. The image has a black square box over the giraffe's face, making it difficult to see its features.","[4, 5]",giraffe,0.1779,0.257,0.1742

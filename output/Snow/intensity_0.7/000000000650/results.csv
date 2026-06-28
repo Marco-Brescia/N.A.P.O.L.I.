@@ -1,0 +1,3 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000000650,"Describe this image in detail, use simple terms","The image shows a cat standing on the roof of a car. The cat has a gray and white coat and is looking directly at the camera. The background is blurred, but it appears to be a snowy scene with snowflakes falling. The car is parked on a road or driveway.",11,car,0.2378,0.67,0.4324
+000000000650,"Describe this image in detail, use simple terms","The image shows a cat standing on the roof of a car. The cat has a gray and white coat and is looking directly at the camera. The background is blurred, but it appears to be a snowy scene with snowflakes falling. The car is parked on a road or driveway.",4,cat,0.4275,0.7241,0.2279

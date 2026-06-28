@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is in the foreground, and it's flying against a dark background with a few small, bright lights scattered around. The lights appear to be stars or possibly some kind of artificial light. The plane is dark, and its wings and tail are visible. The sky is dark, and there are no other objects or features in the image.",4,plane,0.0,0.0,0.0

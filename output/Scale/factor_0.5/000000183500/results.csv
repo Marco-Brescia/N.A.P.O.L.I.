@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000183500,"Describe this image in detail, use simple terms","The image shows a small, vintage airplane flying in the sky. The airplane has a white body with red and black accents. It has two sets of wings, one on each side, and it has a tail fin with a red and white pattern. The airplane is in mid-flight, and the background shows a cloudy sky. The photo is credited to ""Dessousier Photo.""",7,airplane,0.0,0.0,0.0

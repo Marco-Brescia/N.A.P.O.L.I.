@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000052017,"Describe this image in detail, use simple terms","The image is a collage of airplane parts and parts of airplanes. It shows various parts of airplanes, such as wings, engines, and propellers, arranged in a grid-like pattern. The colors are mostly shades of blue, yellow, and red, with some parts appearing in different colors. The grid pattern creates a sense of repetition and symmetry.",6,airplane,0.1144,0.2246,0.1313

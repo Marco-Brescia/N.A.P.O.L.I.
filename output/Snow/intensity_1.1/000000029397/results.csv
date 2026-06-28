@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000029397,"Describe this image in detail, use simple terms","The image shows a person standing on a wooden surface. The person is wearing red pants and is standing on a piece of wood that appears to be part of a larger structure. The surface is covered with a layer of white, fluffy material that looks like snow or a similar substance. The person's feet are visible, and they are wearing shoes. The overall scene has a playful and whimsical feel to it.",4,person,0.1062,0.363,0.91

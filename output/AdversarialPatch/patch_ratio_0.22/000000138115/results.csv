@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000138115,"Describe this image in detail, use simple terms","The image shows a person holding up a checkerboard pattern. The checkerboard is black and white, with a grid of squares. The person is holding the checkerboard in front of their face, making it appear as if they are holding a piece of paper or a small board. The person has a surprised or shocked expression on their face.",4,person,0.0717,0.6691,0.0495

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","This image is a collage of several small, square pictures. Each picture shows a cat, but the cats are cut off or blurred, making it difficult to see their full faces. The cats are on a surface, and the background includes a brick wall. The collage is arranged in a grid pattern, with each picture taking up a quarter of the space.",16,cat,0.2137,0.4417,0.0928

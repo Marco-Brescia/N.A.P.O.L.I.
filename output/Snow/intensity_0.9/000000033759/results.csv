@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000033759,"Describe this image in detail, use simple terms","The image shows a young boy playing baseball. He is wearing a green shirt, beige pants, and a helmet. He is holding a baseball bat and appears to be swinging it. The background is a chain-link fence, and there are many small white dots scattered around, giving the impression that the scene is covered in snow or frost. The boy is in a batting cage, which is a enclosed area where players practice their batting skills.",28,bat,0.0,0.0,0.0

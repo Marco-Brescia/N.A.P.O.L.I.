@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","The image shows a black cat standing next to a green bottle. The cat has a playful and curious expression, with its paws on the bottle. The bottle has a label that reads ""HOTRO"" and some text that is not fully visible. The background appears to be a room with some furniture and decorations, but the focus is on the cat and the bottle. The overall scene has a whimsical and fun feel.",5,cat,0.1157,0.696,0.1753

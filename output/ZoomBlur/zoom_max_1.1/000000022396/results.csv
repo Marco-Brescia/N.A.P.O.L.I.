@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is in the foreground, and it's flying at a high altitude. In the background, there is a large, bright moon. The moon is partially covered by the plane, creating a silhouette effect. The sky is clear with a gradient of blue shades, and the plane appears to be moving quickly, as indicated by the blurred effect.",4,plane,0.0,0.0,0.0

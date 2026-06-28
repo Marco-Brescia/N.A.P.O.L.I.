@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","This image shows a cat sitting on a surface. The cat has a striped coat with shades of gray and white. The background includes a brick wall and some blurred objects, possibly other cats or birds. The cat appears to be looking up and to the side, and there are several black dots scattered around the image, which might be part of a digital effect or a filter.",4,cat,0.1917,0.5873,0.3288

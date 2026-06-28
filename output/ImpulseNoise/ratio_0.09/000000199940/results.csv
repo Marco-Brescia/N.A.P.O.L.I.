@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","The image shows a black cat standing next to a tall, green bottle. The cat is holding the bottle with its front paws, as if it's trying to drink from it. The bottle has a label with some text on it, but the details are not clear. The background is blurry, but it appears to be an indoor setting with some furniture and decorations. The overall scene has a playful and whimsical feel.",5,cat,0.1388,0.4231,0.0985

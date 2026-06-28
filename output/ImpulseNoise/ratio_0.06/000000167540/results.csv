@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane has two wings and four engines. The wings are long and narrow, and the engines are attached to the wings. The plane is flying high in the sky, surrounded by a lot of small, white dots that look like stars. The sky is blue, and the plane is the only thing in the image that is clearly visible.",4,plane,0.2214,0.2526,0.2726

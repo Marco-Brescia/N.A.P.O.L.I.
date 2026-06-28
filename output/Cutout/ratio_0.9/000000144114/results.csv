@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000144114,"Describe this image in detail, use simple terms","The image shows a red and white airplane flying in the sky. The airplane has a long, sleek body and is in mid-flight, with its wings spread wide. The sky is partly cloudy, and the airplane is moving at a high speed, creating a sense of motion. The airplane's tail is striped with red and white, and it appears to be performing some sort of aerial maneuver.",7,airplane,0.0,0.0,0.0
