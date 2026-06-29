@@ -68,11 +68,18 @@ def make_layer_grid(
     label_h: int = 22,
     bg: Tuple[int, int, int] = (0, 0, 0),
     fg: Tuple[int, int, int] = (255, 255, 255),
+    quality: int = 85,
+    subsampling: int = 2,
 ) -> None:
     """
     Build a PIL grid from a list of ``(layer_index, bgr_image)`` pairs and
     save it to *out_path*.  All compositing is done in RAM — no temporary
     files are written.
+
+    The output format follows *out_path*'s extension. For ``.jpg``/``.jpeg``
+    the grid is written directly as JPEG (quality 85, 4:2:0 by default) — much
+    smaller than PNG and visually near-identical for these photo-like
+    heatmaps — so no separate PNG-to-JPG conversion step is needed.
     """
     # Convert BGR -> RGB and wrap in PIL
     tiles: List[Tuple[int, Optional[Image.Image]]] = []
@@ -128,6 +135,12 @@ def make_layer_grid(
     draw2 = ImageDraw.Draw(out_img)
     draw2.text((pad, 7), f"token: {token_label[:70]}", fill=fg, font=font)
 
-    Path(out_path).parent.mkdir(parents=True, exist_ok=True)
-    out_img.save(str(out_path), quality=95)
+    out_path = Path(out_path)
+    out_path.parent.mkdir(parents=True, exist_ok=True)
+    if out_path.suffix.lower() in (".jpg", ".jpeg"):
+        # out_img is already RGB, so JPEG (no alpha) is safe to write directly.
+        out_img.save(str(out_path), "JPEG", quality=quality, optimize=True,
+                     subsampling=subsampling)
+    else:
+        out_img.save(str(out_path))
     logger.debug("Layer grid saved: %s", out_path)

@@ -110,7 +110,7 @@ def process_image(
             )
 
         # Layer grid 
-        grid_path = os.path.join(heatmaps_dir, f"{task.image_id}_{entry.category}_heatmap.png")
+        grid_path = os.path.join(heatmaps_dir, f"{task.image_id}_{entry.category}_heatmap.jpg")
         make_layer_grid(
             layer_images=layer_images,
             token_label=entry.category,

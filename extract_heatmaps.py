@@ -30,10 +30,11 @@ def collect_heatmaps_for_image(img_id):
             if os.path.exists(heatmaps_dir) and os.listdir(heatmaps_dir) != []:
                 # if the heatmaps directory exists, copy all PNG files to the output folder
                 for file in os.listdir(heatmaps_dir):
-                    if file.endswith(".png"):
-                        token_name = file.replace(f"{img_id}_", "").replace("_heatmap.png", "")
-                        new_hm_name = f"{perturbation}_{param}_{token_name}.png"
-                        
+                    if "_heatmap." in file:
+                        ext = os.path.splitext(file)[1]
+                        token_name = file.replace(f"{img_id}_", "").replace(f"_heatmap{ext}", "")
+                        new_hm_name = f"{perturbation}_{param}_{token_name}{ext}"
+
                         shutil.copy2(os.path.join(heatmaps_dir, file), os.path.join(out_folder, new_hm_name))
                         found_count += 1
             else:
