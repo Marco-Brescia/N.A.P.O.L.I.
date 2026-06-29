@@ -255,6 +255,25 @@ presente nell'immagine, una riga con:
 
 ---
 
+## 4. Statistiche aggregate e test di significatività
+
+```bash
+python plots/aggregate_stats.py --output-dir output --masks-dir masks
+```
+
+### Tabelle generate
+
+- **`severity_by_group.csv`** — per (perturbazione, categoria, bucket area): break rate, severità media/std, CI95%.
+- **`paired_significance.csv`** — per (perturbazione, metrica): t-test appaiato + Wilcoxon, baseline vs valore al breaking point.
+- **`level_stats.csv`** *(nuova)* — per (perturbazione, livello, metrica): tutti i token della perturbazione aggregati insieme (decine di campioni per livello).
+- **`per_token_raw.csv`** — tabella grezza per audit, una riga per token.
+
+### Figure (`figures/`, una terna per ogni perturbazione)
+
+- `degradation_curve_<Perturbazione>.png` — media±std e CI95% di ogni metrica lungo i livelli, con soglia di rottura (-40%) marcata.
+- `severity_<Perturbazione>.png` — striscia dei token rotti su asse 0→1, con media e CI.
+- `paired_significance_<Perturbazione>.png` — barre baseline vs al-breakpoint.
+
 ## Convenzioni sui nomi dei file
 
 **Immagini perturbate** (`images_perturbed/`):
@@ -358,24 +377,3 @@ rappresentativi di un degrado sistematico.
   sentinella `WDP_PENALTY_NO_HEATMAP`.
 - **Baseline già a valore nullo** → impossibile stabilire un riferimento di
   degrado; il breaking point viene dichiarato immediatamente (step 0).
-
----
-
-## 4. Statistiche aggregate e test di significatività
-
-```bash
-python plots/aggregate_stats.py --output-dir output --masks-dir masks
-```
-
-### Tabelle generate
-
-- **`severity_by_group.csv`** — per (perturbazione, categoria, bucket area): break rate, severità media/std, CI95%.
-- **`paired_significance.csv`** — per (perturbazione, metrica): t-test appaiato + Wilcoxon, baseline vs valore al breaking point.
-- **`level_stats.csv`** *(nuova)* — per (perturbazione, livello, metrica): tutti i token della perturbazione aggregati insieme (decine di campioni per livello).
-- **`per_token_raw.csv`** — tabella grezza per audit, una riga per token.
-
-### Figure (`figures/`, una terna per ogni perturbazione)
-
-- `degradation_curve_<Perturbazione>.png` — media±std e CI95% di ogni metrica lungo i livelli, con soglia di rottura (-40%) marcata.
-- `severity_<Perturbazione>.png` — striscia dei token rotti su asse 0→1, con media e CI.
-- `paired_significance_<Perturbazione>.png` — barre baseline vs al-breakpoint.
