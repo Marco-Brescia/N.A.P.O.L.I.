@@ -1,12 +1,15 @@
 import os
 
-# Configurazione dei percorsi di IO
+# Config I/O paths
 IMAGES_DIR = "imgs"
 MASKS_DIR  = "masks"
 OUT_DIR    = "images_perturbed_2"
 PERTURBED_MASKS_DIR = "masks_perturbed_2"
 
-# Configurazione con minimi allineati al primo step reale dell'effetto
+# Perturbation ranges for each perturbation type. Each entry contains:
+# - the name of the parameter to vary
+# - the minimum value of the parameter
+# - the maximum value of the parameter
 perturbation_ranges = {
     #noise
     "GaussianNoise":       {"param": "std",         "min": 5.0,  "max": 85,   "step": 20.0,  "type": float},

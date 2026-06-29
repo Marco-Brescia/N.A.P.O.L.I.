@@ -127,7 +127,7 @@ def _x_labels(sub_df: pd.DataFrame, x_values: List[float], ptype: Optional[str] 
         elif x in mapping:
             labels.append(mapping[x])
         else:
-            # Se il valore è stato forzato e manca nel CSV, ricostruisci il nome
+            # If the value was forced and is missing in the CSV, reconstruct the name
             labels.append(f"{prefix}{x}")
     return labels
 
@@ -247,7 +247,8 @@ def plot_metric_heatmap(
 
         x_values = _ordered_x(sub["param_value"].unique(), ptype)
 
-        # Ensure that all expected perturbation parameter values are included in the x_values list, even if they are missing from the data. This is important for consistent plotting across different perturbation types.
+        # Ensure that all expected perturbation parameter values are included in the x_values list, even if they are missing from the data. 
+        # This is important for consistent plotting across different perturbation types.
         if ptype in _EXPECTED_PARAMS:
             for expected_val in _EXPECTED_PARAMS[ptype]:
                 if expected_val not in x_values:
@@ -409,7 +410,8 @@ def plot_breaking_point_profile(
 
         x_values = _ordered_x(type_df["param_value"].unique(), ptype)
 
-        # Ensure that all expected perturbation parameter values are included in the x_values list, even if they are missing from the data. This is important for consistent plotting across different perturbation types.
+        # Ensure that all expected perturbation parameter values are included in the x_values list, even if they are missing from the data.
+        # This is important for consistent plotting across different perturbation types.
         if ptype in _EXPECTED_PARAMS:
             for expected_val in _EXPECTED_PARAMS[ptype]:
                 if expected_val not in x_values:
