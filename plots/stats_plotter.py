@@ -102,10 +102,11 @@ def plot_severity_per_perturbation(
     rng = np.random.default_rng(0)
 
     for ptype, g_all in token_table.groupby("perturbation_type"):
-        n_excluded = int(g_all["baseline_broken"].sum())
-        # Baseline-valid tokens only: those already failed at baseline are not
-        # a perturbation effect and are excluded from severity and break rate.
-        g = g_all[~g_all["baseline_broken"]]
+        n_baseline_broken = int(g_all["baseline_broken"].sum())
+        n_no_baseline = int(g_all["no_baseline_data"].sum())
+        # Baseline-valid tokens only: tokens already failed at baseline, or
+        # never tested at baseline, are excluded from severity and break rate.
+        g = g_all[~g_all["baseline_broken"] & ~g_all["no_baseline_data"]]
         n_total = len(g)
         sev = g.loc[g["broke_by_perturbation"], "breaking_point_level_fraction"].dropna().to_numpy()
         n_broken = len(sev)
@@ -138,8 +139,8 @@ def plot_severity_per_perturbation(
                 ax.scatter([mean], [0], marker="D", color="black", s=90, zorder=3,
                            label=f"mean = {mean:.2f}   (CI n/d, n<{min_n_for_ci})")
 
-            ax.legend(loc="upper center", bbox_to_anchor=(0.5, 1.30),
-                      fontsize=8, ncol=2, frameon=False)
+            ax.legend(loc="upper center", fontsize=8, ncol=2,
+                      frameon=True, framealpha=0.9)
         else:
             ax.text(0.5, 0, "no broken tokens", ha="center", va="center",
                     color="grey", fontsize=11, transform=ax.transData)
@@ -155,9 +156,10 @@ def plot_severity_per_perturbation(
         ax.set_title(
             f"Breaking-point severity — {ptype}\n"
             f"baseline-valid tokens = {n_total}   broken = {n_broken}   "
-            f"break rate = {break_rate*100:.0f}%   "
-            f"(excluded, failed at baseline = {n_excluded})",
-            fontsize=11, fontweight="bold",
+            f"break rate = {break_rate*100:.0f}%\n"
+            f"(excluded: failed at baseline = {n_baseline_broken}, "
+            f"no baseline data = {n_no_baseline})",
+            fontsize=10, fontweight="bold",
         )
         path = save_dir / f"severity_{_safe_filename(str(ptype))}.png"
         fig.savefig(path, dpi=_FIGURE_DPI, bbox_inches="tight")
@@ -177,6 +179,10 @@ def plot_degradation_curves(level_table: pd.DataFrame, out_dir) -> None:
     95% CI band (uncertainty of the mean). The breaking threshold (-40% from
     baseline) is drawn for the higher-is-better metrics so it is visible
     *how far* the perturbation can go before the model breaks.
+
+    The single global ``Normale`` baseline (one block in the level table) is
+    prepended as the first point of every curve, so the per-perturbation
+    levels are all read against the same reference.
     """
     save_dir = Path(out_dir)
     _ensure_dir(save_dir)
@@ -184,7 +190,22 @@ def plot_degradation_curves(level_table: pd.DataFrame, out_dir) -> None:
         logger.warning("Level table is empty — skipping degradation curves.")
         return
 
+    # Single global baseline per metric (the one "Normale" block).
+    base = level_table[level_table["perturbation_type"] == "Normale"]
+    baseline = {}
+    for metric in METRICS:
+        r = base[base["metric"] == metric]
+        if r.empty:
+            baseline[metric] = (np.nan, np.nan, np.nan, np.nan)
+        else:
+            r0 = r.iloc[0]
+            baseline[metric] = (float(r0["mean"]), float(r0["std"]),
+                                float(r0["ci95_low"]), float(r0["ci95_high"]))
+
     for ptype, g in level_table.groupby("perturbation_type"):
+        if ptype == "Normale":
+            continue
+
         fig, axes = plt.subplots(
             1, len(METRICS),
             figsize=(6.0 * len(METRICS), 5.0), constrained_layout=True,
@@ -196,35 +217,43 @@ def plot_degradation_curves(level_table: pd.DataFrame, out_dir) -> None:
 
         for ax, metric in zip(axes, METRICS):
             sub = g[g["metric"] == metric].sort_values("level_index")
-            x = sub["level_index"].to_numpy()
-            mean = sub["mean"].to_numpy(dtype=float)
-            std = sub["std"].to_numpy(dtype=float)
-            ci_lo = sub["ci95_low"].to_numpy(dtype=float)
-            ci_hi = sub["ci95_high"].to_numpy(dtype=float)
+            bmean, bstd, bci_lo, bci_hi = baseline[metric]
+
+            # Prepend the global baseline as the first ("Normale") point.
+            mean  = np.concatenate(([bmean],  sub["mean"].to_numpy(dtype=float)))
+            std   = np.concatenate(([bstd],   sub["std"].to_numpy(dtype=float)))
+            ci_lo = np.concatenate(([bci_lo], sub["ci95_low"].to_numpy(dtype=float)))
+            ci_hi = np.concatenate(([bci_hi], sub["ci95_high"].to_numpy(dtype=float)))
+            labels = ["Normale"] + list(sub["param_label"])
+            x = np.arange(len(mean))
             color = _PALETTE[METRICS.index(metric) % len(_PALETTE)]
 
-            # +/- std band (data spread)
             std_filled = np.nan_to_num(std, nan=0.0)
             ax.fill_between(x, mean - std_filled, mean + std_filled,
                             color=color, alpha=0.18, label="± std", zorder=1)
-            # 95% CI band (uncertainty of the mean), nested inside the std band
             ax.fill_between(x, ci_lo, ci_hi, color=color, alpha=0.40,
                             label="95% CI", zorder=2)
-            # mean line
             ax.plot(x, mean, marker="o", markersize=5, linewidth=2.0,
                     color=color, zorder=3)
 
-            # baseline reference + breaking threshold
-            if len(mean) and not np.isnan(mean[0]):
-                bv = mean[0]
-                ax.axhline(bv, color="grey", linestyle=":", linewidth=1.1,
-                           alpha=0.8, label=f"baseline ({bv:.2f})", zorder=1)
+            # annotate each perturbation level with its % change vs baseline
+            pct = sub["pct_vs_baseline"].to_numpy(dtype=float)
+            for xi, yi, pv in zip(x[1:], mean[1:], pct):
+                if np.isnan(yi) or np.isnan(pv):
+                    continue
+                ax.annotate(f"{pv:+.0f}%", xy=(xi, yi), xytext=(0, 8),
+                            textcoords="offset points", ha="center",
+                            fontsize=6.5, color=color, fontweight="bold", zorder=4)
+
+            if not np.isnan(bmean):
+                ax.axhline(bmean, color="grey", linestyle=":", linewidth=1.1,
+                           alpha=0.8, label=f"baseline ({bmean:.2f})", zorder=1)
                 if metric in ("obj_iou", "io_ratio"):
-                    ax.axhline(bv * 0.6, color="red", linestyle="--", linewidth=1.1,
+                    ax.axhline(bmean * 0.6, color="red", linestyle="--", linewidth=1.1,
                                alpha=0.7, label="break thr (-40%)", zorder=1)
 
             ax.set_xticks(x)
-            ax.set_xticklabels(sub["param_label"], rotation=30, ha="right", fontsize=7)
+            ax.set_xticklabels(labels, rotation=30, ha="right", fontsize=7)
             ax.set_xlabel("Perturbation level")
             ax.set_ylabel(_METRIC_LABELS.get(metric, metric))
             ax.set_title(_METRIC_LABELS.get(metric, metric), fontsize=11, fontweight="bold")

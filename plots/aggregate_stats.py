@@ -58,6 +58,7 @@ from plotter import (
     WDP_PENALTY_NO_HEATMAP,
     WDP_PENALTY_NO_TOKEN,
     _BASELINE_X,
+    _BASELINE_TYPE,
     _METRIC_DIRECTION,
     _relative_degradation,
     _with_baseline,
@@ -210,11 +211,13 @@ def _build_token_record(
     """Build one row of the long-format per-token table."""
     series: Dict[str, np.ndarray] = {}
     baseline_vals: Dict[str, float] = {}
+    baseline_missing: Dict[str, bool] = {}
 
     for metric in METRICS:
-        y, _ = _series_with_sentinels(cat_df, x_values, metric)
+        y, missing = _series_with_sentinels(cat_df, x_values, metric)
         series[metric] = y
         baseline_vals[metric] = y[0]
+        baseline_missing[metric] = missing[0]
 
     bp_idx = detect_breaking_point(
         obj_iou_means=series["obj_iou"],
@@ -233,29 +236,27 @@ def _build_token_record(
     # paired test instead of only the fragile ones.
     compare_idx = bp_idx if broke else (n_levels - 1)
 
-    # Normalised severity fraction: 0 = broke at the earliest possible
-    # opportunity, 1 = broke only at the most extreme level tested.
-    #
-    # bp_idx == 0 is a distinct sentinel value returned by
-    # detect_breaking_point() meaning "already at the worst possible
-    # metric value before any real margin could be observed" (e.g. the
-    # baseline obj_iou/io_ratio is already 0). That is the most extreme
-    # case of fragility, so it must map to fraction 0.0 directly — running
-    # it through the general formula below would produce a negative value,
-    # since bp_idx - 1 < 0 in that case.
-    if not broke:
-        severity_fraction = np.nan
-    elif bp_idx == 0:
-        severity_fraction = 0.0
-    else:
-        severity_fraction = (bp_idx - 1) / max(n_levels - 2, 1)
-
-    # A token "broken at baseline" (bp_idx == 0) already failed without any
-    # perturbation: it is not a perturbation effect, so it is flagged and
-    # excluded from the severity / break-rate analysis downstream. Only
+    # Distinguish two different reasons a token can have a "broken at
+    # baseline" sentinel (bp_idx == 0):
+    #   * no_baseline_data — the token never appears in the Normale set, so
+    #     its baseline value is a missing-data sentinel (0), NOT a real
+    #     measurement. The whole degradation analysis is undefined for it.
+    #   * baseline_broken — the token WAS tested at baseline and genuinely
+    #     scored 0 (the model fails on it even unperturbed).
+    # Both are excluded from severity / break-rate downstream, but counted
+    # separately so the two situations stay transparent. Only
     # ``broke_by_perturbation`` (bp_idx > 0) counts as a genuine break.
-    baseline_broken = broke and bp_idx == 0
-    broke_by_perturbation = broke and bp_idx is not None and bp_idx > 0
+    no_baseline_data = baseline_missing["obj_iou"] and baseline_missing["io_ratio"]
+    baseline_broken = broke and bp_idx == 0 and not no_baseline_data
+    broke_by_perturbation = bp_idx is not None and bp_idx > 0
+
+    # Normalised severity fraction (0 = broke at the first perturbation level,
+    # 1 = broke only at the most extreme level). Defined only for genuine
+    # perturbation breaks; NaN for baseline failures and missing-data tokens.
+    if broke_by_perturbation:
+        severity_fraction = (bp_idx - 1) / max(n_levels - 2, 1)
+    else:
+        severity_fraction = np.nan
 
     record = {
         "perturbation_type": ptype,
@@ -264,6 +265,7 @@ def _build_token_record(
         "n_levels": n_levels,
         "broke": broke,
         "baseline_broken": baseline_broken,
+        "no_baseline_data": no_baseline_data,
         "broke_by_perturbation": broke_by_perturbation,
         "breaking_point_level_index": bp_idx if broke else np.nan,
         "breaking_point_param_value": x_values[bp_idx] if broke else np.nan,
@@ -333,36 +335,85 @@ def build_token_table(
 # Table C — per-level stats (all tokens pooled, by perturbation × level)
 # ---------------------------------------------------------------------------
 
+def _mean_std_ci(values, min_n_for_ci: int = 2) -> Tuple[float, float, float, float, int]:
+    """
+    Return (mean, std, ci95_low, ci95_high, n) for an unbounded quantity,
+    using a t-distribution CI. Unlike ``_mean_ci95`` (used for the bounded
+    severity fraction) the bounds are NOT clipped to [0, 1], since the raw
+    metrics (especially wdp) are not bounded.
+    """
+    arr = np.asarray(list(values), dtype=float)
+    arr = arr[~np.isnan(arr)]
+    n = len(arr)
+    if n == 0:
+        return np.nan, np.nan, np.nan, np.nan, 0
+    mean = float(arr.mean())
+    if n < 2:
+        return mean, np.nan, np.nan, np.nan, n
+    std = float(arr.std(ddof=1))
+    if n < min_n_for_ci:
+        return mean, std, np.nan, np.nan, n
+    sem = std / np.sqrt(n)
+    t_crit = stats.t.ppf(0.975, df=n - 1)
+    return mean, std, mean - t_crit * sem, mean + t_crit * sem, n
+
+
 def build_level_stats_table(
     df: pd.DataFrame,
     perturbation_types: Optional[List[str]] = None,
 ) -> pd.DataFrame:
     """
-    Aggregate each metric at every perturbation LEVEL, pooling all tokens
-    (every image/category) of a perturbation type together.
+    Degradation profile of each metric as the perturbation grows.
 
-    Rationale
-    ---------
-    The per-(category, area) groups in ``severity_by_group.csv`` are tiny,
-    so a confidence interval there is meaningless. Pooling all tokens at a
-    given level instead yields a large sample (tens of tokens), making the
-    mean / std / 95% CI statistically informative. The resulting table is a
-    degradation profile: how each metric behaves as the perturbation grows,
-    i.e. *how far* the model holds before it breaks.
+    Layout
+    ------
+    - A SINGLE ``Normale`` block (one row per metric) holds the global
+      baseline: mean / std / 95% CI of each metric over the 58 baseline
+      tokens. This is the one reference value shared by every perturbation
+      (no more a slightly different "Normale" repeated per perturbation).
+    - For each perturbation, one row per (real level, metric) — the baseline
+      level is NOT repeated. Two extra columns, ``delta_vs_baseline`` and
+      ``pct_vs_baseline``, report how far that level's mean sits from the
+      single global baseline (absolute and relative %).
+
+    Tokens that never appear in the Normale set (``no_baseline_data``) are
+    excluded from the per-perturbation means: they have no real baseline, so
+    they cannot be compared to it and would only pollute the average with
+    missing-data sentinels.
 
     The same sentinel treatment as the breaking-point plots is applied
-    (``_series_with_sentinels``), so a lost token contributes 0 for
-    obj_iou/io_ratio and the WDP penalty for wdp — consistent with the
-    breaking-point definition. Because every token gets a value at every
-    level, ``n_tokens`` is constant across levels within a perturbation.
-
-    Returns one row per (perturbation_type, level, metric).
+    (``_series_with_sentinels``): a lost token contributes 0 for
+    obj_iou/io_ratio and the WDP penalty for wdp.
     """
     types = perturbation_types or sorted(
-        t for t in df["perturbation_type"].unique() if t != "Normale"
+        t for t in df["perturbation_type"].unique() if t != _BASELINE_TYPE
     )
     rows = []
 
+    # --- single global baseline over the Normale tokens --------------------
+    base_df = df[df["perturbation_type"] == _BASELINE_TYPE].copy()
+    base_df["param_value"] = _BASELINE_X
+    global_baseline: Dict[str, Tuple[float, float, float, float, int]] = {}
+    for metric in METRICS:
+        token_vals = [
+            _series_with_sentinels(g, [_BASELINE_X], metric)[0][0]
+            for _, g in base_df.groupby(["img_id", "category"])
+        ]
+        global_baseline[metric] = _mean_std_ci(token_vals)
+        m, s, lo, hi, n = global_baseline[metric]
+        rows.append({
+            "perturbation_type": _BASELINE_TYPE,
+            "level_index": 0,
+            "param_value": _BASELINE_X,
+            "param_label": _BASELINE_TYPE,
+            "metric": metric,
+            "n_tokens": n,
+            "mean": m, "std": s, "ci95_low": lo, "ci95_high": hi,
+            "delta_vs_baseline": 0.0,
+            "pct_vs_baseline": 0.0,
+        })
+
+    # --- per-perturbation level stats (baseline-valid tokens only) ---------
     for ptype in types:
         type_df = _with_baseline(df, ptype)
         if type_df.empty:
@@ -376,11 +427,13 @@ def build_level_stats_table(
         )
         x_labels = ["Normale" if x == _BASELINE_X else label_map.get(x, str(x)) for x in x_values]
 
-        # Stack the sentinel series of every token into [n_tokens × n_levels].
+        # Stack the sentinel series of every baseline-valid token.
         series_by_metric: Dict[str, List[np.ndarray]] = {m: [] for m in METRICS}
         pairs = type_df[["img_id", "category"]].drop_duplicates().itertuples(index=False)
         for img_id, category in pairs:
             cat_df = type_df[(type_df["img_id"] == img_id) & (type_df["category"] == category)]
+            if not (cat_df["param_value"] == _BASELINE_X).any():
+                continue  # no baseline data → not comparable, skip
             for metric in METRICS:
                 y, _ = _series_with_sentinels(cat_df, x_values, metric)
                 series_by_metric[metric].append(y)
@@ -388,19 +441,16 @@ def build_level_stats_table(
         for metric in METRICS:
             stack = series_by_metric[metric]
             mat = np.vstack(stack) if stack else np.empty((0, len(x_values)))
+            gb_mean = global_baseline[metric][0]
             for j, x in enumerate(x_values):
-                col = mat[:, j]
-                col = col[~np.isnan(col)]
-                n = len(col)
-                mean = float(col.mean()) if n else np.nan
-                std = float(col.std(ddof=1)) if n > 1 else np.nan
-                if n >= 2 and not np.isnan(std):
-                    sem = std / np.sqrt(n)
-                    t_crit = stats.t.ppf(0.975, df=n - 1)
-                    ci_lo = mean - t_crit * sem
-                    ci_hi = mean + t_crit * sem
+                if x == _BASELINE_X:
+                    continue  # baseline reported once, globally
+                mean, std, ci_lo, ci_hi, n = _mean_std_ci(mat[:, j])
+                if np.isnan(mean) or np.isnan(gb_mean):
+                    delta = pct = np.nan
                 else:
-                    ci_lo = ci_hi = np.nan
+                    delta = mean - gb_mean
+                    pct = 100.0 * delta / gb_mean if gb_mean != 0 else np.nan
                 rows.append({
                     "perturbation_type": ptype,
                     "level_index": j,
@@ -408,14 +458,13 @@ def build_level_stats_table(
                     "param_label": x_labels[j],
                     "metric": metric,
                     "n_tokens": n,
-                    "mean": mean,
-                    "std": std,
-                    "ci95_low": ci_lo,
-                    "ci95_high": ci_hi,
+                    "mean": mean, "std": std, "ci95_low": ci_lo, "ci95_high": ci_hi,
+                    "delta_vs_baseline": delta,
+                    "pct_vs_baseline": pct,
                 })
 
     out = pd.DataFrame.from_records(rows)
-    logger.info("Built per-level table: %d rows across %d perturbation type(s).",
+    logger.info("Built per-level table: %d rows across %d perturbation type(s) + 1 global baseline.",
                 len(out), len(types))
     return out
 
@@ -477,10 +526,11 @@ def build_severity_table(
     for keys, g in t.groupby(group_cols, dropna=False):
         ptype, category, bucket = keys
         n_baseline_broken = int(g["baseline_broken"].sum())
-        # Baseline-valid tokens only: a token already failed at baseline is
-        # not a perturbation effect, so it is excluded from severity and from
-        # the break-rate denominator.
-        gv = g[~g["baseline_broken"]]
+        n_no_baseline = int(g["no_baseline_data"].sum())
+        # Baseline-valid tokens only: tokens already failed at baseline, or
+        # never tested at baseline, are not a perturbation effect and are
+        # excluded from severity and from the break-rate denominator.
+        gv = g[~g["baseline_broken"] & ~g["no_baseline_data"]]
         n_valid = len(gv)
         broke = gv.loc[gv["broke_by_perturbation"], "breaking_point_level_fraction"]
         n_broken = int(gv["broke_by_perturbation"].sum())
@@ -494,6 +544,7 @@ def build_severity_table(
             "mask_area_bucket": bucket,
             "n_tokens": n_valid,
             "n_baseline_broken": n_baseline_broken,
+            "n_no_baseline": n_no_baseline,
             "n_broken": n_broken,
             "break_rate": n_broken / n_valid if n_valid else np.nan,
             "mean_severity_fraction": mean_frac,
@@ -567,9 +618,15 @@ def build_paired_significance_table(token_table: pd.DataFrame) -> pd.DataFrame:
     For each (perturbation_type, metric), run a paired test comparing the
     baseline value against the value at the breaking point (or, for tokens
     that never break, at the most severe level tested).
+
+    Only baseline-valid tokens enter the test: tokens that already failed at
+    baseline (``baseline_broken``) or were never tested at baseline
+    (``no_baseline_data``) have no usable baseline reference, so they are
+    excluded — consistent with the severity / break-rate analysis.
     """
     rows = []
-    for ptype, g in token_table.groupby("perturbation_type"):
+    for ptype, g_all in token_table.groupby("perturbation_type"):
+        g = g_all[~g_all["baseline_broken"] & ~g_all["no_baseline_data"]]
         for metric in METRICS:
             st = _paired_stats(
                 g[f"baseline_{metric}"].to_numpy(),
