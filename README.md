@@ -22,7 +22,7 @@ sistematicamente la capacità di attenzionare correttamente un oggetto.
 - [Struttura del progetto](#struttura-del-progetto)
 - [Flusso di lavoro](#flusso-di-lavoro)
 - [1. Generazione delle perturbazioni](#1-generazione-delle-perturbazioni)
-- [2. Inferenza VLM ed estrazione heatmap](#2-inferenza-vlm-ed-estrazione-heatmap)
+- [2. Inferenza VLM ed estrazione heatmap](#2-inferenza-ed-estrazione-heatmap)
 - [3. Analisi e breaking point](#3-analisi-e-breaking-point)
 - [Convenzioni sui nomi dei file](#convenzioni-sui-nomi-dei-file)
 - [Perturbazioni supportate](#perturbazioni-supportate)
@@ -66,7 +66,6 @@ sistematicamente la capacità di attenzionare correttamente un oggetto.
 │   ├── main.py                    # Entry point dello stage 3 (CLI)
 │   ├── aggregate_stats.py          # tabelle statistiche aggregate
 │   ├── stats_plotter.py            # figure di sintesi quantitativa
-│   ├── main.py
 │   └── output/
 │       ├── heatmaps/
 │       ├── breaking_point_per_token/
@@ -82,8 +81,11 @@ sistematicamente la capacità di attenzionare correttamente un oggetto.
 
 ## Flusso di lavoro
 
-La pipeline è organizzata in tre stage sequenziali, ciascuno con il proprio
-entry point. Tutti i comandi vanno eseguiti **dalla root del progetto**.
+La pipeline è organizzata in tre stage sequenziali (generazione
+perturbazioni → inferenza VLM → analisi). L'analisi finale si dirama in due
+percorsi indipendenti — grafici visivi e statistiche aggregate — entrambi
+eseguibili sugli stessi output dello stage 2, in qualsiasi ordine. Tutti i
+comandi vanno eseguiti **dalla root del progetto**.
 
 ```
  imgs/ + masks/
@@ -106,14 +108,18 @@ entry point. Tutti i comandi vanno eseguiti **dalla root del progetto**.
       ▼
  output/<Perturbazione>/<param>/<img_id>/results.csv + heatmaps/
       │
-      ▼
-┌─────────────────────┐
-│  plots/             │   aggregazione risultati + rilevamento breaking point
-│  main.py            │   generazione grafici per ogni immagine/token
-└─────────────────────┘
-      │
-      ▼
- plots/output/breaking_point_per_token/<Perturbazione>/<img_id>.png
+      ├──────────────────────────┐
+      ▼                          ▼
+┌─────────────────────┐  ┌─────────────────────┐
+│  plots/             │  │  plots/              │
+│  main.py            │  │  aggregate_stats.py  │
+└─────────────────────┘  └─────────────────────┘
+      │                          │
+      ▼                          ▼
+ plots/output/              plots/output/stats/
+ breaking_point_per_token/   severity_by_group.csv
+ <Perturbazione>/<img_id>.png paired_significance.csv
+                              level_stats.csv + figures/
 ```
 
 ---
@@ -331,7 +337,7 @@ intera immagine), combinando due segnali con ruoli distinti:
    rispetto al valore baseline. Una caduta ≥ `degradation_threshold` indica
    degrado nelle prestazioni.
 
-3. **Arbitro** — `wdp` deve confermare il degrado (non deve migliorare).
+2. **Arbitro** — `wdp` deve confermare il degrado (non deve migliorare).
    Questo evita falsi positivi nei casi in cui `obj_iou` e `io_ratio`
    oscillano senza un reale deterioramento della localizzazione:
    se l'attenzione del modello resta concentrata
@@ -351,6 +357,8 @@ rappresentativi di un degrado sistematico.
   sentinella `WDP_PENALTY_NO_HEATMAP`.
 - **Baseline già a valore nullo** → impossibile stabilire un riferimento di
   degrado; il breaking point viene dichiarato immediatamente (step 0).
+
+---
 
 ## 4. Statistiche aggregate e test di significatività
 
