@@ -24,11 +24,11 @@ sistematicamente la capacità di attenzionare correttamente un oggetto.
 - [1. Generazione delle perturbazioni](#1-generazione-delle-perturbazioni)
 - [2. Inferenza VLM ed estrazione heatmap](#2-inferenza-ed-estrazione-heatmap)
 - [3. Analisi e breaking point](#3-analisi-e-breaking-point)
+- [Statistiche aggregate e test di significatività](#4-statistiche-aggregate-e-test-di-significatività)
 - [Convenzioni sui nomi dei file](#convenzioni-sui-nomi-dei-file)
 - [Perturbazioni supportate](#perturbazioni-supportate)
 - [Metriche](#metriche)
 - [Metodologia del breaking point](#metodologia-del-breaking-point)
-- [Statistiche aggregate e test di significatività](#4-statistiche-aggregate-e-test-di-significatività)
 
 ---
 
@@ -255,7 +255,7 @@ presente nell'immagine, una riga con:
 
 ---
 
-## 4. Statistiche aggregate e test di significatività
+## Statistiche aggregate e test di significatività
 
 ```bash
 python plots/aggregate_stats.py --output-dir output --masks-dir masks
