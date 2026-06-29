@@ -180,7 +180,10 @@ def _plot_trigger_heatmap(fig, inner_gs, img_id: str, ptype: str, param_label: s
     if not dir_to_check.exists() and param_label == "Normale":
         dir_to_check = base_path / "Normale" / str(img_id) / "heatmaps"
         
-    heatmap_full = dir_to_check / f"{img_id}_{category}_heatmap.png"
+    # Heatmaps are now generated as .jpg; fall back to legacy .png if present.
+    heatmap_full = dir_to_check / f"{img_id}_{category}_heatmap.jpg"
+    if not heatmap_full.exists():
+        heatmap_full = dir_to_check / f"{img_id}_{category}_heatmap.png"
     heatmap_thresh = dir_to_check / f"{img_id}_{category}_thresholded.jpg"
     
     if heatmap_full.exists() or heatmap_thresh.exists():
