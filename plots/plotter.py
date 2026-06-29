@@ -32,8 +32,11 @@ def generate_expected_params(config: dict) -> dict:
             values = list(range(int(start), stop_inclusive, int(step)))
         else:
             raw_values = np.arange(start, stop + step * 0.01, step)
-            
-            values = [round(v, 2) for v in raw_values]
+
+            # round(...) can yield -0.0 from a tiny negative float residue
+            # (e.g. 0.9 - 6*0.15 with a negative step); adding 0.0 normalises
+            # the negative zero back to a plain 0.0.
+            values = [round(v, 2) + 0.0 for v in raw_values]
             
         expected_params[name] = values
     return expected_params
@@ -58,7 +61,9 @@ _METRIC_YLIM = {
 
 _FIGURE_DPI  = 150
 _PALETTE     = plt.rcParams["axes.prop_cycle"].by_key()["color"]
-_BASELINE_X    = 0.0          # param_value assigned to "Normale"
+_BASELINE_X    = -1.0         # sentinel param_value for "Normale"; must not
+                              # collide with any real level (e.g. Saturation
+                              # factor_0.0, which is a genuine perturbation).
 _BASELINE_TYPE = "Normale"    # perturbation_type label for baseline rows
 
 WDP_PENALTY_NO_HEATMAP = 5.0
@@ -77,8 +82,28 @@ def _safe_filename(name: str) -> str:
     return re.sub(r"[^\w\-.]", "_", name)
 
 
-def _ordered_x(x_values) -> List[float]:
-    return sorted(set(float(x) for x in x_values))
+# Perturbations whose levels must be ordered DESCENDING (baseline still first),
+# because for them a higher numeric parameter means a WEAKER perturbation:
+# CannyEdge (higher threshold = fewer edges), JPEGCompression (higher quality
+# = less compression), Saturation (higher factor = closer to the original),
+# Poisson/Shot noise (higher scale = less noise). Must stay in sync with the
+# same set in aggregate_stats.py.
+_REVERSED_LEVEL_TYPES = {
+    "CannyEdge",
+    "JPEGCompression",
+    "Saturation",
+    "PoissonNoise",
+    "ShotNoise",
+}
+
+
+def _ordered_x(x_values, ptype: Optional[str] = None) -> List[float]:
+    vals = sorted(set(float(x) for x in x_values))
+    if ptype in _REVERSED_LEVEL_TYPES:
+        baseline = [v for v in vals if v == _BASELINE_X]
+        rest = sorted((v for v in vals if v != _BASELINE_X), reverse=True)
+        return baseline + rest
+    return vals
 
 
 def _x_labels(sub_df: pd.DataFrame, x_values: List[float], ptype: Optional[str] = None) -> List[str]:
@@ -217,14 +242,14 @@ def plot_metric_heatmap(
         if sub.empty:
             continue
 
-        x_values = _ordered_x(sub["param_value"].unique())
+        x_values = _ordered_x(sub["param_value"].unique(), ptype)
 
         # Ensure that all expected perturbation parameter values are included in the x_values list, even if they are missing from the data. This is important for consistent plotting across different perturbation types.
         if ptype in _EXPECTED_PARAMS:
             for expected_val in _EXPECTED_PARAMS[ptype]:
                 if expected_val not in x_values:
                     x_values.append(expected_val)
-            x_values = _ordered_x(set(x_values))
+            x_values = _ordered_x(set(x_values), ptype)
 
         x_labels = _x_labels(sub, x_values, ptype)
         img_ids  = sorted(sub["img_id"].unique())
@@ -379,14 +404,14 @@ def plot_breaking_point_profile(
         ptype_dir = save_dir / _safe_filename(ptype)
         _ensure_dir(ptype_dir)
 
-        x_values = _ordered_x(type_df["param_value"].unique())
+        x_values = _ordered_x(type_df["param_value"].unique(), ptype)
 
         # Ensure that all expected perturbation parameter values are included in the x_values list, even if they are missing from the data. This is important for consistent plotting across different perturbation types.
         if ptype in _EXPECTED_PARAMS:
             for expected_val in _EXPECTED_PARAMS[ptype]:
                 if expected_val not in x_values:
                     x_values.append(expected_val)
-            x_values = _ordered_x(set(x_values))
+            x_values = _ordered_x(set(x_values), ptype)
 
         x_labels = _x_labels(type_df, x_values, ptype)
         x_pos    = list(range(len(x_values)))

@@ -57,16 +57,53 @@ from data_loader import METRICS, load_results
 from plotter import (
     WDP_PENALTY_NO_HEATMAP,
     WDP_PENALTY_NO_TOKEN,
+    _BASELINE_X,
     _METRIC_DIRECTION,
-    _ordered_x,
     _relative_degradation,
     _with_baseline,
     detect_breaking_point,
+)
+from stats_plotter import (
+    plot_degradation_curves,
+    plot_paired_significance,
+    plot_severity_per_perturbation,
 )
 
 logger = logging.getLogger(__name__)
 
 _DEFAULT_AREA_EDGES = (0.02, 0.10)  # ratio thresholds: small < 0.02 <= medium < 0.10 <= large
+
+# Perturbations whose levels must be analysed in DESCENDING numeric order,
+# because for them a HIGHER numeric parameter means a WEAKER perturbation
+# (and a lower one a stronger perturbation), the opposite of the usual
+# convention. Examples: CannyEdge (higher threshold = fewer edges),
+# JPEGCompression (higher quality = less compression), Saturation (higher
+# factor = closer to the original), Poisson/Shot noise (higher scale = less
+# noise). Listing them here makes the levels run from the weakest to the
+# strongest perturbation, with the baseline (0.0) still first.
+_REVERSED_LEVEL_TYPES = {
+    "CannyEdge",
+    "JPEGCompression",
+    "Saturation",
+    "PoissonNoise",
+    "ShotNoise",
+}
+
+
+def _ordered_levels(values, ptype: str) -> List[float]:
+    """
+    Order the perturbation levels for analysis. The baseline (0.0) always
+    comes first; the remaining levels are sorted ascending, except for the
+    perturbations in ``_REVERSED_LEVEL_TYPES`` (e.g. CannyEdge), whose levels
+    are sorted descending so a higher threshold (less edge) precedes a lower
+    one (more edge).
+    """
+    vals = sorted(set(float(v) for v in values))
+    baseline = [v for v in vals if v == _BASELINE_X]
+    rest = [v for v in vals if v != _BASELINE_X]
+    if ptype in _REVERSED_LEVEL_TYPES:
+        rest.sort(reverse=True)
+    return baseline + rest
 
 
 # ---------------------------------------------------------------------------
@@ -213,12 +250,21 @@ def _build_token_record(
     else:
         severity_fraction = (bp_idx - 1) / max(n_levels - 2, 1)
 
+    # A token "broken at baseline" (bp_idx == 0) already failed without any
+    # perturbation: it is not a perturbation effect, so it is flagged and
+    # excluded from the severity / break-rate analysis downstream. Only
+    # ``broke_by_perturbation`` (bp_idx > 0) counts as a genuine break.
+    baseline_broken = broke and bp_idx == 0
+    broke_by_perturbation = broke and bp_idx is not None and bp_idx > 0
+
     record = {
         "perturbation_type": ptype,
         "img_id": img_id,
         "category": category,
         "n_levels": n_levels,
         "broke": broke,
+        "baseline_broken": baseline_broken,
+        "broke_by_perturbation": broke_by_perturbation,
         "breaking_point_level_index": bp_idx if broke else np.nan,
         "breaking_point_param_value": x_values[bp_idx] if broke else np.nan,
         "breaking_point_param_label": x_labels[bp_idx] if broke else None,
@@ -258,14 +304,14 @@ def build_token_table(
         if type_df.empty:
             continue
 
-        x_values = _ordered_x(type_df["param_value"].unique())
+        x_values = _ordered_levels(type_df["param_value"].unique(), ptype)
         # Re-derive labels locally (avoids importing the plotting-only helper)
         label_map = (
             type_df.drop_duplicates("param_value")
             .set_index("param_value")["perturbation_param"]
             .to_dict()
         )
-        x_labels = ["Normale" if x == 0.0 else label_map.get(x, str(x)) for x in x_values]
+        x_labels = ["Normale" if x == _BASELINE_X else label_map.get(x, str(x)) for x in x_values]
 
         pairs = type_df[["img_id", "category"]].drop_duplicates().itertuples(index=False)
         for img_id, category in pairs:
@@ -281,6 +327,97 @@ def build_token_table(
     logger.info("Built per-token table: %d rows across %d perturbation type(s).",
                 len(table), len(types))
     return table
+
+
+# ---------------------------------------------------------------------------
+# Table C — per-level stats (all tokens pooled, by perturbation × level)
+# ---------------------------------------------------------------------------
+
+def build_level_stats_table(
+    df: pd.DataFrame,
+    perturbation_types: Optional[List[str]] = None,
+) -> pd.DataFrame:
+    """
+    Aggregate each metric at every perturbation LEVEL, pooling all tokens
+    (every image/category) of a perturbation type together.
+
+    Rationale
+    ---------
+    The per-(category, area) groups in ``severity_by_group.csv`` are tiny,
+    so a confidence interval there is meaningless. Pooling all tokens at a
+    given level instead yields a large sample (tens of tokens), making the
+    mean / std / 95% CI statistically informative. The resulting table is a
+    degradation profile: how each metric behaves as the perturbation grows,
+    i.e. *how far* the model holds before it breaks.
+
+    The same sentinel treatment as the breaking-point plots is applied
+    (``_series_with_sentinels``), so a lost token contributes 0 for
+    obj_iou/io_ratio and the WDP penalty for wdp — consistent with the
+    breaking-point definition. Because every token gets a value at every
+    level, ``n_tokens`` is constant across levels within a perturbation.
+
+    Returns one row per (perturbation_type, level, metric).
+    """
+    types = perturbation_types or sorted(
+        t for t in df["perturbation_type"].unique() if t != "Normale"
+    )
+    rows = []
+
+    for ptype in types:
+        type_df = _with_baseline(df, ptype)
+        if type_df.empty:
+            continue
+
+        x_values = _ordered_levels(type_df["param_value"].unique(), ptype)
+        label_map = (
+            type_df.drop_duplicates("param_value")
+            .set_index("param_value")["perturbation_param"]
+            .to_dict()
+        )
+        x_labels = ["Normale" if x == _BASELINE_X else label_map.get(x, str(x)) for x in x_values]
+
+        # Stack the sentinel series of every token into [n_tokens × n_levels].
+        series_by_metric: Dict[str, List[np.ndarray]] = {m: [] for m in METRICS}
+        pairs = type_df[["img_id", "category"]].drop_duplicates().itertuples(index=False)
+        for img_id, category in pairs:
+            cat_df = type_df[(type_df["img_id"] == img_id) & (type_df["category"] == category)]
+            for metric in METRICS:
+                y, _ = _series_with_sentinels(cat_df, x_values, metric)
+                series_by_metric[metric].append(y)
+
+        for metric in METRICS:
+            stack = series_by_metric[metric]
+            mat = np.vstack(stack) if stack else np.empty((0, len(x_values)))
+            for j, x in enumerate(x_values):
+                col = mat[:, j]
+                col = col[~np.isnan(col)]
+                n = len(col)
+                mean = float(col.mean()) if n else np.nan
+                std = float(col.std(ddof=1)) if n > 1 else np.nan
+                if n >= 2 and not np.isnan(std):
+                    sem = std / np.sqrt(n)
+                    t_crit = stats.t.ppf(0.975, df=n - 1)
+                    ci_lo = mean - t_crit * sem
+                    ci_hi = mean + t_crit * sem
+                else:
+                    ci_lo = ci_hi = np.nan
+                rows.append({
+                    "perturbation_type": ptype,
+                    "level_index": j,
+                    "param_value": x,
+                    "param_label": x_labels[j],
+                    "metric": metric,
+                    "n_tokens": n,
+                    "mean": mean,
+                    "std": std,
+                    "ci95_low": ci_lo,
+                    "ci95_high": ci_hi,
+                })
+
+    out = pd.DataFrame.from_records(rows)
+    logger.info("Built per-level table: %d rows across %d perturbation type(s).",
+                len(out), len(types))
+    return out
 
 
 # ---------------------------------------------------------------------------
@@ -339,9 +476,14 @@ def build_severity_table(
     group_cols = ["perturbation_type", "category", "mask_area_bucket"]
     for keys, g in t.groupby(group_cols, dropna=False):
         ptype, category, bucket = keys
-        n_total = len(g)
-        broke = g.loc[g["broke"], "breaking_point_level_fraction"]
-        n_broken = int(g["broke"].sum())
+        n_baseline_broken = int(g["baseline_broken"].sum())
+        # Baseline-valid tokens only: a token already failed at baseline is
+        # not a perturbation effect, so it is excluded from severity and from
+        # the break-rate denominator.
+        gv = g[~g["baseline_broken"]]
+        n_valid = len(gv)
+        broke = gv.loc[gv["broke_by_perturbation"], "breaking_point_level_fraction"]
+        n_broken = int(gv["broke_by_perturbation"].sum())
 
         mean_frac, std_frac, ci_lo, ci_hi = _mean_ci95(broke)
         mean_area = g["mask_area_ratio"].mean()
@@ -350,9 +492,10 @@ def build_severity_table(
             "perturbation_type": ptype,
             "category": category,
             "mask_area_bucket": bucket,
-            "n_tokens": n_total,
+            "n_tokens": n_valid,
+            "n_baseline_broken": n_baseline_broken,
             "n_broken": n_broken,
-            "break_rate": n_broken / n_total if n_total else np.nan,
+            "break_rate": n_broken / n_valid if n_valid else np.nan,
             "mean_severity_fraction": mean_frac,
             "std_severity_fraction": std_frac,
             "ci95_low": ci_lo,
@@ -370,66 +513,73 @@ def build_severity_table(
 # Table B — paired significance (baseline vs. break / last level)
 # ---------------------------------------------------------------------------
 
+def _paired_stats(baseline: np.ndarray, compare: np.ndarray, direction: str) -> dict:
+    """
+    Run the paired baseline-vs-compare analysis for one metric on one group
+    of tokens. Returns the effect-size and test fields shared by the paired
+    table and the master table.
+
+    The relative degradation is signed so that a POSITIVE value always means
+    "worse", regardless of whether the metric is higher- or lower-better.
+    Both a paired t-test and a Wilcoxon signed-rank test are reported; with
+    fewer than 3 valid pairs the tests are skipped (NaN p-values + a note),
+    since they are not meaningful below that sample size.
+    """
+    valid = ~(np.isnan(baseline) | np.isnan(compare))
+    b, c = baseline[valid], compare[valid]
+    n = len(b)
+
+    diff = np.array([_relative_degradation(cv, bv, direction) if bv != 0 else np.nan
+                     for bv, cv in zip(b, c)])
+    diff = diff[~np.isnan(diff)]
+
+    out = {
+        "n_pairs": n,
+        "mean_baseline": float(np.mean(b)) if n else np.nan,
+        "mean_compare": float(np.mean(c)) if n else np.nan,
+        "mean_relative_degradation": float(np.mean(diff)) if len(diff) else np.nan,
+        "std_relative_degradation": float(np.std(diff, ddof=1)) if len(diff) > 1 else np.nan,
+    }
+
+    if n < 3:
+        out.update({
+            "ttest_stat": np.nan, "ttest_pvalue": np.nan,
+            "wilcoxon_stat": np.nan, "wilcoxon_pvalue": np.nan,
+            "note": f"n={n} < 3: test not meaningful",
+        })
+    else:
+        t_stat, t_p = stats.ttest_rel(b, c)
+        try:
+            w_stat, w_p = stats.wilcoxon(b, c)
+        except ValueError:
+            # All differences are zero, or another degenerate case
+            w_stat, w_p = np.nan, np.nan
+        out.update({
+            "ttest_stat": float(t_stat), "ttest_pvalue": float(t_p),
+            "wilcoxon_stat": float(w_stat), "wilcoxon_pvalue": float(w_p),
+            "note": "",
+        })
+    return out
+
+
 def build_paired_significance_table(token_table: pd.DataFrame) -> pd.DataFrame:
     """
     For each (perturbation_type, metric), run a paired test comparing the
     baseline value against the value at the breaking point (or, for tokens
     that never break, at the most severe level tested).
-
-    Reports both a paired t-test and a Wilcoxon signed-rank test. Groups
-    with fewer than 3 valid pairs are reported with NaN p-values and a note,
-    since a test is not meaningful below that sample size.
     """
     rows = []
     for ptype, g in token_table.groupby("perturbation_type"):
         for metric in METRICS:
-            baseline = g[f"baseline_{metric}"].to_numpy()
-            compare  = g[f"compare_{metric}"].to_numpy()
-            valid = ~(np.isnan(baseline) | np.isnan(compare))
-            b, c = baseline[valid], compare[valid]
-            n = len(b)
-
-            direction = _METRIC_DIRECTION[metric]
-            # Express the difference so that a POSITIVE value always means
-            # "degradation", regardless of metric direction.
-            diff = np.array([_relative_degradation(cv, bv, direction) if bv != 0 else np.nan
-                             for bv, cv in zip(b, c)])
-            diff = diff[~np.isnan(diff)]
-
-            row = {
-                "perturbation_type": ptype,
-                "metric": metric,
-                "n_pairs": n,
-                "mean_baseline": float(np.mean(b)) if n else np.nan,
-                "mean_compare": float(np.mean(c)) if n else np.nan,
-                "mean_relative_degradation": float(np.mean(diff)) if len(diff) else np.nan,
-                "std_relative_degradation": float(np.std(diff, ddof=1)) if len(diff) > 1 else np.nan,
-            }
-
-            if n < 3:
-                row.update({
-                    "ttest_stat": np.nan, "ttest_pvalue": np.nan,
-                    "wilcoxon_stat": np.nan, "wilcoxon_pvalue": np.nan,
-                    "note": f"n={n} < 3: test not meaningful",
-                })
-            else:
-                t_stat, t_p = stats.ttest_rel(b, c)
-                try:
-                    w_stat, w_p = stats.wilcoxon(b, c)
-                except ValueError:
-                    # All differences are zero, or another degenerate case
-                    w_stat, w_p = np.nan, np.nan
-                row.update({
-                    "ttest_stat": float(t_stat), "ttest_pvalue": float(t_p),
-                    "wilcoxon_stat": float(w_stat), "wilcoxon_pvalue": float(w_p),
-                    "note": "",
-                })
-
-            rows.append(row)
+            st = _paired_stats(
+                g[f"baseline_{metric}"].to_numpy(),
+                g[f"compare_{metric}"].to_numpy(),
+                _METRIC_DIRECTION[metric],
+            )
+            rows.append({"perturbation_type": ptype, "metric": metric, **st})
 
     out = pd.DataFrame(rows).sort_values(["perturbation_type", "metric"]).reset_index(drop=True)
     return out
-
 
 # ---------------------------------------------------------------------------
 # CLI
@@ -455,6 +605,8 @@ def _parse_args() -> argparse.Namespace:
                         help="Upper bound (exclusive) of the 'small' mask-area bucket.")
     parser.add_argument("--area-medium-max", type=float, default=_DEFAULT_AREA_EDGES[1],
                         help="Upper bound (exclusive) of the 'medium' mask-area bucket.")
+    parser.add_argument("--no-plots", action="store_true",
+                        help="Skip generating PNG figures; write the CSV tables only.")
     parser.add_argument("--verbose", "-v", action="store_true")
     return parser.parse_args()
 
@@ -487,6 +639,7 @@ def main() -> None:
         area_edges=(args.area_small_max, args.area_medium_max),
     )
     paired_table = build_paired_significance_table(token_table)
+    level_table  = build_level_stats_table(df, perturbation_types=args.perturbations)
 
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -494,14 +647,24 @@ def main() -> None:
     severity_path = out_dir / "severity_by_group.csv"
     paired_path   = out_dir / "paired_significance.csv"
     token_path    = out_dir / "per_token_raw.csv"
+    level_path    = out_dir / "level_stats.csv"
 
     severity_table.to_csv(severity_path, index=False)
     paired_table.to_csv(paired_path, index=False)
     token_table.to_csv(token_path, index=False)
+    level_table.to_csv(level_path, index=False)
 
     logger.info("Severity table  -> %s  (%d rows)", severity_path, len(severity_table))
     logger.info("Paired tests     -> %s  (%d rows)", paired_path, len(paired_table))
     logger.info("Per-token raw    -> %s  (%d rows)", token_path, len(token_table))
+    logger.info("Per-level stats  -> %s  (%d rows)", level_path, len(level_table))
+
+    if not args.no_plots:
+        fig_dir = out_dir / "figures"
+        plot_degradation_curves(level_table, fig_dir)
+        plot_severity_per_perturbation(token_table, fig_dir)
+        plot_paired_significance(paired_table, fig_dir)
+        logger.info("Figures          -> %s", fig_dir)
 
 
 if __name__ == "__main__":

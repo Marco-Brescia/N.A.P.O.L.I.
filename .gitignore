@@ -229,4 +229,5 @@ output/**/*
 !output/**/
 !output/**/*.csv
 masks_perturbed/
-plots/output/
+plots/output/breaking_point_per_token/
+plots/output/heatmaps/
