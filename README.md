@@ -111,15 +111,16 @@ comandi vanno eseguiti **dalla root del progetto**.
       ├──────────────────────────┐
       ▼                          ▼
 ┌─────────────────────┐  ┌─────────────────────┐
-│  plots/             │  │  plots/              │
-│  main.py            │  │  aggregate_stats.py  │
+│  plots/             │  │  plots/             │
+│  main.py            │  │  aggregate_stats.py │
 └─────────────────────┘  └─────────────────────┘
-      │                          │
-      ▼                          ▼
- plots/output/              plots/output/stats/
- breaking_point_per_token/   severity_by_group.csv
- <Perturbazione>/<img_id>.png paired_significance.csv
-                              level_stats.csv + figures/
+      │                           │
+      ▼                           ▼
+ plots/output/               plots/output/stats/
+ breaking_point_per_token/     severity_by_group.csv
+ <Perturbazione>/<img_id>.png  paired_significance.csv
+                               level_stats.csv
+                               figures/
 ```
 
 ---
