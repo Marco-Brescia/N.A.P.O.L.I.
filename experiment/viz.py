@@ -18,44 +18,54 @@ def save_thresholded_viz(
     save_path: str,
     mask_shape: tuple,
     threshold: float = 0.66,
+    use_otsu: bool = False,
 ) -> None:
-    """
-    Write a three-panel debug image to *save_path*: [ Original | Heatmap overlay | Thresholded mask (red) ]
-    """
+    """ Generate a set of 3 images: original, heatmap overlay, and thresholded overlay. Save them side-by-side. """
     h, w = mask_shape[:2]
 
     orig_bgr = cv2.imread(original_img_path)
     if orig_bgr is None:
-        logger.warning("Could not read source image for visualisation: %s", original_img_path)
+        logger.warning("Impossibile leggere l'immagine sorgente: %s", original_img_path)
         return
     orig_bgr = cv2.resize(orig_bgr, (w, h))
 
-    # Normalise and convert to 8-bit
-    heatmap_resized = cv2.resize(heatmap_array, (w, h))
-    heatmap_norm = _pnorm(heatmap_resized)
-    heatmap_8u = (heatmap_norm * 255).astype(np.uint8)
+    # resize heatmap to match original image dimensions
+    hm_resized = cv2.resize(heatmap_array, (w, h))
 
-    # Heatmap overlay panel
-    colormap = cv2.applyColorMap(heatmap_8u, cv2.COLORMAP_JET)
-    heatmap_panel = cv2.addWeighted(colormap, 0.6, orig_bgr, 0.4, 0)
+    # Thresholding
+    if use_otsu:
+        hm_final = hm_resized
+        t_val, binary_pred = cv2.threshold(hm_final, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+        label_text = f"Otsu Soglia: {int(t_val)}"
+    else:
+        hm_norm = _pnorm(hm_resized)
+        hm_final = (hm_norm * 255).astype(np.uint8)
+        t_val = int(255 * threshold)
+        _, binary_pred = cv2.threshold(hm_final, t_val, 255, cv2.THRESH_BINARY)
+        label_text = f"Soglia Fissa: {t_val} ({threshold * 100:.0f}%)"
 
-    # Thresholded mask panel (active pixels highlighted in red)
-    threshold_value = int(255 * threshold)
-    _, binary_pred = cv2.threshold(heatmap_8u, threshold_value, 255, cv2.THRESH_BINARY)
+    # Safety check 
+    if binary_pred.sum() == 0:
+        return
 
-    threshold_panel = orig_bgr.copy()
-    threshold_panel[binary_pred == 255] = [0, 0, 255]
-    threshold_panel = cv2.addWeighted(threshold_panel, 0.6, orig_bgr, 0.4, 0)
+    # Heatmap overlay
+    heatmap_color = cv2.applyColorMap(hm_final, cv2.COLORMAP_JET)
+    heatmap_overlay = cv2.addWeighted(heatmap_color, 0.6, orig_bgr, 0.4, 0)
+
+    # Threshold overlay
+    overlay = orig_bgr.copy()
+    overlay[binary_pred == 255] = [0, 0, 255]
+    overlay = cv2.addWeighted(overlay, 0.6, orig_bgr, 0.4, 0)
+    
     cv2.putText(
-        threshold_panel,
-        f"Threshold: {threshold_value} ({threshold * 100:.0f}%)",
-        (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 255), 2, cv2.LINE_AA,
+        overlay, label_text, (10, 30), 
+        cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255, 255), 2, cv2.LINE_AA
     )
 
-    final_viz = np.hstack((orig_bgr, heatmap_panel, threshold_panel))
-
+    debug_vis = np.hstack((orig_bgr, heatmap_overlay, overlay))
+    
     Path(save_path).parent.mkdir(parents=True, exist_ok=True)
-    cv2.imwrite(str(save_path), final_viz)
+    cv2.imwrite(str(save_path), debug_vis)
     logger.debug("Thresholded viz saved: %s", save_path)
 
 

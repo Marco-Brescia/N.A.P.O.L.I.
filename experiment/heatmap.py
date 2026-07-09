@@ -3,11 +3,18 @@ from typing import List
 
 import numpy as np
 
-from new_eval import _build_logitlens_logits, _pnorm, compute_all_metrics
-from tam import TAM
+from experiment.config import Config
+
+import cv2
 
 logger = logging.getLogger(__name__)
 
+# Global config instance for this module
+cfg = Config()
+
+if cfg.USE_OLD_TAM:
+    from old_tam.tam import TAM
+    from old_tam.new_eval import compute_all_metrics, _build_logitlens_logits, _pnorm
 
 # ---------------------------------------------------------------------------
 # Token matching
@@ -68,7 +75,11 @@ def build_global_heatmap(
     global_accumulator = np.zeros(vision_shape, dtype=np.float32)
     layer_images = []
 
-    layers_to_process = list(range(total_layers))
+    if cfg.USE_OLD_TAM:
+        logger.warning("Using old TAM implementation — consider setting USE_OLD_TAM=False for improved performance and accuracy.")
+        layers_to_process = [total_layers - 1]  # Only the last layer is relevant in old TAM
+    else:
+        layers_to_process = list(range(total_layers))
     if (total_layers - 1) not in layers_to_process:
         layers_to_process.append(total_layers - 1)
 
@@ -95,8 +106,9 @@ def build_global_heatmap(
             layer_accumulator += token_heatmap
 
         # Build visual overlay for the grid
-        layer_norm = _pnorm(layer_accumulator)
-        layer_8u = (layer_norm * 255).astype(np.uint8)
+        if not cfg.USE_OLD_TAM:
+            layer_accumulator = _pnorm(layer_accumulator)
+        layer_8u = (layer_accumulator * 255).astype(np.uint8)
         upscaled = cv2.resize(layer_8u, (orig_w, orig_h)) 
         colormap = cv2.applyColorMap(upscaled, cv2.COLORMAP_JET) 
 
@@ -110,12 +122,16 @@ def build_global_heatmap(
         layer_images.append((layer_idx, overlay))
 
         # Conditionally accumulate into global map
-        layer_metrics = compute_all_metrics(layer_accumulator, binary_mask)
-        if round(layer_metrics["io_ratio"], 4) > layer_relevance_threshold:
+        if not cfg.USE_OLD_TAM:
+            layer_metrics = compute_all_metrics(layer_accumulator, binary_mask)
+            if round(layer_metrics["io_ratio"], 4) > layer_relevance_threshold:
+                global_accumulator += layer_accumulator
+        elif layer_idx == total_layers - 1:
             global_accumulator += layer_accumulator
 
     # Produce final normalised 8-bit global heatmap
-    global_heatmap_8u = (_pnorm(global_accumulator) * 255.0).astype(np.uint8)
+    if not cfg.USE_OLD_TAM:
+        global_heatmap_8u = (_pnorm(global_accumulator) * 255.0).astype(np.uint8)
+    else:
+        global_heatmap_8u = global_accumulator.astype(np.uint8)
     return global_heatmap_8u, layer_images
-
-import cv2
