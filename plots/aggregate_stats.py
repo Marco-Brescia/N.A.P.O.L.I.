@@ -647,11 +647,11 @@ def _parse_args() -> argparse.Namespace:
         description="Build aggregated severity and paired-significance tables "
                     "from the pipeline's result CSVs.",
     )
-    parser.add_argument("--output-dir", default="output",
+    parser.add_argument("--output-dir", default= "old_tam/output", #"output",
                         help="Root directory containing the pipeline's results.csv files.")
     parser.add_argument("--masks-dir", default="masks",
                         help="Directory with baseline ground-truth masks, used for area buckets.")
-    parser.add_argument("--out-dir", default="plots/output/stats",
+    parser.add_argument("--out-dir", default="plots/old_tam/output/stats", # "plots/output/stats",
                         help="Directory where the two output CSVs are written.")
     parser.add_argument("--perturbations", nargs="+", default=None, metavar="NAME",
                         help="Limit to these perturbation type names (default: all).")
