@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a countertop next to a microwave. The cat has a white and gray coat with black markings. The microwave has a black and white checkered pattern on its door. The cat is looking at the microwave, and there are two small squares with a black and white checkered pattern in the foreground, which might be a part of the microwave's design or a reflection.",4,cat,0.3794,0.4267,0.0802

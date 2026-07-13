@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe with its head and neck visible. The giraffe is holding a black square block in front of its face, covering its eyes and mouth. The background is filled with green trees and foliage, suggesting that the photo was taken in a forest or a zoo. The giraffe appears to be in a natural setting, possibly in a wildlife park or a reserve.","[4, 5]",giraffe,0.1303,0.1947,0.0892

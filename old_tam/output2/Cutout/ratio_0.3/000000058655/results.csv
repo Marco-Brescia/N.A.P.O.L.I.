@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a tall brick building with a clock tower. The clock tower has a large clock face on top, and there are two flags hanging from the building. The building has many windows, and there is a bench outside the entrance. The sky is clear and blue.",9,clock,0.0503,0.0313,0.2065

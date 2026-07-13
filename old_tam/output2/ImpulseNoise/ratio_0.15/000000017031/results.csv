@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe's head and neck. The giraffe is looking through a window or a glass barrier, and the background is blurred, showing greenery and some trees. The giraffe has long neck and legs, and its head is slightly tilted. The image has a pixelated effect, giving it a vintage or artistic look.","[4, 5]",giraffe,0.3693,0.2841,0.0899

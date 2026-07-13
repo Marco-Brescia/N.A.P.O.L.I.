@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","The image shows a cat lying down on a dark surface. The cat has a mix of brown and white fur. The cat's paws are visible, and it appears to be resting or sleeping. There is a white cord or cable connected to the cat's paw, which could be a charging cable or a similar device. The background is dark, making the cat and the cord stand out.",4,cat,0.3054,0.4174,0.0467

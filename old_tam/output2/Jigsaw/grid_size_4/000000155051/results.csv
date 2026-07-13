@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a dark background with several clock faces and a moon. The clock faces are arranged in a way that they overlap each other, creating a sense of depth. The clock hands on the faces are pointing in different directions, indicating different times. The moon is visible in the top right corner of the image, shining brightly against the dark background.",8,clock,0.1704,0.1851,0.052

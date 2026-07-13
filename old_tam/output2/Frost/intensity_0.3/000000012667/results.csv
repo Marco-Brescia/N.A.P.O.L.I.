@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a phone on a table. The phone has a cord attached to it, and there is a banana hanging off the cord. The phone is a Philips model, as indicated by the brand name on the side. The background includes some paperwork and a piece of equipment, possibly a printer or scanner. The table appears to be made of a light-colored material, possibly plastic or laminate.",22,banana,0.2138,0.1092,0.1601

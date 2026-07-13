@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","The image shows a young child riding a horse. The child is wearing a black helmet and a pink and white checkered shirt. They are sitting on a saddle, which is brown and has some decorative elements. The child's foot is on the stirrup, and they are holding the reins with their other hand. The background shows a forest with green trees.",8,horse,0.3487,0.2943,0.1771

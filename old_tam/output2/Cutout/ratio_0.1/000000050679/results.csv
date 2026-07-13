@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image shows an orange sitting on the ground in the middle of a parking lot. The orange is large and round, with a smooth, shiny skin. In the background, there are several cars parked in rows, and some trees are visible behind them. The sky is cloudy, and the overall scene appears to be outdoors during the day.",4,orange,0.2935,0.2215,0.1073

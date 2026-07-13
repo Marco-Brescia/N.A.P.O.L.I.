@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe. It has long neck and legs, and its body is covered with brown and white spots. The giraffe is looking directly at the camera, and its mouth is slightly open. The background is filled with green trees and foliage.","[4, 5]",giraffe,0.2079,0.2912,0.0745

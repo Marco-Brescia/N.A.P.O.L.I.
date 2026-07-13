@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a countertop next to a microwave. The microwave has a light blue exterior with black buttons on the front. The cat has a mix of white, gray, and brown fur. There are black squares around the cat, possibly indicating that the image has been processed or edited. The countertop is light-colored, and the overall scene appears to be indoors.",4,cat,0.6553,0.5967,0.0522

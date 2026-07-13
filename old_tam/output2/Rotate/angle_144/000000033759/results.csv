@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000033759,"Describe this image in detail, use simple terms","The image shows a person performing a trick on a trampoline. The person is upside down, with their legs and arms extended, and they are holding onto a trampoline bar. The trampoline is enclosed by a mesh fence, and there is a baseball flying in the air above the person. The person is wearing a green and white uniform with a yellow belt. The background shows a grassy area and some trees.",4,person,0.1541,0.1592,0.1229

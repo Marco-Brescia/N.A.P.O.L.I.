@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000138115,"Describe this image in detail, use simple terms","The image shows a person with a surprised or shocked expression. They have short, gray hair and are wearing a dark jacket. The person is holding up a checkerboard pattern, which is a grid of black and white squares. The checkerboard is in front of the person's face, covering part of their mouth and nose. The background is a plain, light-colored wall.",4,person,0.176,0.5789,0.0201

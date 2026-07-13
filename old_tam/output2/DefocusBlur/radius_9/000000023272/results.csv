@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000023272,"Describe this image in detail, use simple terms","The image shows a blurry scene with a car in the foreground. The car has a black exterior with some white detailing. In the background, there are some green bushes and a building with a red brick facade. The overall image is out of focus, making it difficult to see any specific details.",8,car,0.6902,0.7938,0.015

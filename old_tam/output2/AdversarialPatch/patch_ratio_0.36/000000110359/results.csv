@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is upside down, with its wings and tail pointing upwards. The plane is in the middle of the image, and the background is a clear blue sky.",4,plane,0.0362,0.0361,0.1612

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky with a moon visible below it. The moon appears to be partially covered by a layer of snow or frost, giving it a reddish hue. The sky is filled with small, white dots, which could be stars or snowflakes. The plane is in the middle of the image, and the moon is positioned below it, slightly to the left. The overall scene has a cold, wintry feel to it.",4,plane,0.0693,0.054,0.2055

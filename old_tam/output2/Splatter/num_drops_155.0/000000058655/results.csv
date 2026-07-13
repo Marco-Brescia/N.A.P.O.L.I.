@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a clock tower with a large clock face on it. The clock tower is made of brick and has a classic architectural style. There are several flags hanging from the building, and the sky in the background is dark, suggesting it is either early morning or late evening. The clock tower is illuminated, making it stand out against the dark sky.",4,clock,0.0399,0.0296,0.2255

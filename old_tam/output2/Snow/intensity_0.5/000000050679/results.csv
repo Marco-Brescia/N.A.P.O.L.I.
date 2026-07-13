@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image shows a single orange on the ground. The orange is lying on its side, with its top facing up. The background features a parking lot with several cars parked in rows. The sky is cloudy, and there are some trees visible in the distance. The overall scene appears to be outdoors, possibly during the daytime.",5,orange,0.426,0.2561,0.1051

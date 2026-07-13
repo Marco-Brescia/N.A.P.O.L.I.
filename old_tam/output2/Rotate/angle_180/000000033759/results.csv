@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000033759,"Describe this image in detail, use simple terms","The image shows a person upside down on a fence. The person is wearing a baseball uniform, including a helmet and a baseball glove. They are holding a water bottle in their right hand. The background shows a grassy area and some trees. The person appears to be in mid-air, possibly after a fall or a jump.",4,person,0.1773,0.1482,0.1578

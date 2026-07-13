@@ -1,0 +1,3 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000049269,"Describe this image in detail, use simple terms",The image shows a horse and a dog. The horse is brown and has a black bridle on its head. The dog is white with black spots and is licking the horse's nose. The background shows green grass and a clear sky.,7,dog,0.5089,0.2699,0.1267
+000000049269,"Describe this image in detail, use simple terms",The image shows a horse and a dog. The horse is brown and has a black bridle on its head. The dog is white with black spots and is licking the horse's nose. The background shows green grass and a clear sky.,4,horse,0.5258,0.4182,0.0618

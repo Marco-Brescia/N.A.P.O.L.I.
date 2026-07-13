@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","This image is a collage of pictures showing a cat. The cat is lying down on a surface, possibly a table or a desk. The cat's fur is striped, and it appears to be resting or sleeping. The background is a bit blurry, but it seems to be a room with some furniture and possibly a window. The cat's eyes are closed, and it looks relaxed.",9,cat,0.5193,0.4616,0.0293

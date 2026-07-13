@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","The image shows a small airplane flying in the sky. The airplane has wings and a tail, and it is flying at a relatively low altitude. The sky is blue with some clouds, and there are several small, black dots scattered across the sky. The dots are not part of the airplane and seem to be randomly placed. The airplane is the main focus of the image, and the dots add a sense of motion and movement to the scene.",5,airplane,0.0307,0.0546,0.1292

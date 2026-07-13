@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear lying down in a grassy area. The bear has a fluffy, light-colored fur coat and is looking up towards the sky. The background is blurred, making it difficult to see details, but it appears to be a natural setting with greenery. The bear's eyes are wide open, and it seems to be resting or observing its surroundings.",4,bear,0.4164,0.6722,0.0233

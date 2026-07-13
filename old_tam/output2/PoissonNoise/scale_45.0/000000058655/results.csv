@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a tall brick building with a clock on a pole in front of it. The clock is round and has Roman numerals on the face. The building has many windows and a large entrance with steps leading up to it. There are two flags hanging from the building, one on each side of the entrance. The sky is clear and blue, indicating it might be daytime. The building appears to be an old or historic structure.",9,clock,0.0433,0.0339,0.2159

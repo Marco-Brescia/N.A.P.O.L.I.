@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a silhouette of an airplane flying in the sky. The airplane is facing downwards, and the sun is shining brightly behind it, creating a bright light source. The airplane appears to be a commercial jet, with its wings spread wide and its tail fin visible. The background is a deep blue sky, which contrasts with the silhouette of the airplane, making it stand out prominently.",7,airplane,0.0141,0.0265,0.177

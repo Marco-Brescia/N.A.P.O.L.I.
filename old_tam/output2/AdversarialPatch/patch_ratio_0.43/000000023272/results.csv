@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000023272,"Describe this image in detail, use simple terms","The image shows a car with a checkered pattern on the hood. The car has a grill and a front bumper. In the background, there is a building with a window and some greenery. The checkered pattern on the hood is a distinctive feature of the car.",4,car,0.541,0.8129,0.0147

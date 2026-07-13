@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is blue and white, and it's flying high up in the sky. There's also a balloon in the sky, which is orange and appears to be floating. The sky is blue and dotted with small white dots, giving it a speckled appearance.",4,plane,0.0679,0.0485,0.1883

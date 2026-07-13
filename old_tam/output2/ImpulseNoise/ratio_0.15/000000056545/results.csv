@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000056545,"Describe this image in detail, use simple terms","This image shows a bird perched on a branch. The bird has a long, slender body and is mostly grayish in color. The background is filled with green leaves, indicating that the bird is in a tree. The image appears to be slightly blurry, which might be due to the focus or the quality of the photograph.",4,bird,0.4686,0.4021,0.0541

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear in a grassy area. The bear appears to be walking or moving through the grass. The bear has a rough, textured coat and is looking forward. The background is green, suggesting it might be a grassy field or meadow. The bear's face is close to the camera, and there is some noise or graininess in the image, which might be due to the quality of the photo or the lighting conditions.",4,bear,0.265,0.7112,0.0159

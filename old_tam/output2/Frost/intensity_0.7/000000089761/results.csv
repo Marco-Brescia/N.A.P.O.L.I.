@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a toilet that is surrounded by a lot of grass and dirt. The toilet is made of a light-colored material, possibly porcelain or ceramic. The background is filled with a lot of small, dark spots, which could be dirt or debris. The overall scene gives a feeling of being outdoors, possibly in a garden or a backyard.",4,toilet,0.2666,0.2101,0.1273

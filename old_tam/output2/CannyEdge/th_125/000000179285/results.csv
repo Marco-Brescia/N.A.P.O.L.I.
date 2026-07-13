@@ -1,0 +1,3 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000179285,"Describe this image in detail, use simple terms","The image shows a tennis racket with a green tennis ball attached to it. The racket has a blue frame and a net with yellow strings. The ball is resting on the strings, and the word ""2"" is visible on the ball. The background is a solid green color.",10,ball,0.1397,0.1108,0.1424
+000000179285,"Describe this image in detail, use simple terms","The image shows a tennis racket with a green tennis ball attached to it. The racket has a blue frame and a net with yellow strings. The ball is resting on the strings, and the word ""2"" is visible on the ball. The background is a solid green color.",5,racket,0.513,0.7803,0.0123

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a table. The cat has a mix of brown and white fur. In the background, there is a computer monitor, which appears to be turned on and displaying some content. The monitor is white and has a screen that is partially visible. The cat is looking towards the monitor, and the overall image is somewhat blurry.",4,cat,0.6644,0.5815,0.0595

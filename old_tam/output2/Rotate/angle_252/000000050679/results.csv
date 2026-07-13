@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image shows an orange placed on a flat surface, possibly a wall or a ledge. The orange has a slightly brownish skin with some spots and blemishes. In the background, there are some trees and a cloudy sky, suggesting it might be taken outdoors during the day. The surface on which the orange is placed appears to be smooth and grey.",4,orange,0.5078,0.263,0.1231

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a red fire hydrant in a grassy area. The hydrant has black accents and is positioned in front of a house with a white exterior and purple flowers on the roof. The grass around the hydrant is green and appears to be well-maintained. In the background, there is a tree with green leaves and some purple flowers. The sky is overcast, and the overall scene is calm and peaceful.","[5, 6, 7]",fire hydrant,0.0985,0.1452,0.1105

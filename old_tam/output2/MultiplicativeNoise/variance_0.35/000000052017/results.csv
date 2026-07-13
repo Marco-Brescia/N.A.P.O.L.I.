@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000052017,"Describe this image in detail, use simple terms","The image shows a small, single-engine airplane flying in the sky. The airplane has a yellow body with red stripes and the letters ""SP-AWF"" on the tail. The propeller is blue and the wings are open. The sky is visible in the background, and the overall image has a grainy, pixelated effect.",8,airplane,0.1576,0.1631,0.083

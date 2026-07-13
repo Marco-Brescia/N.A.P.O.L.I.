@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000183500,"Describe this image in detail, use simple terms","This image shows a drawing of an airplane on a textured background. The airplane is drawn with lines and has a simple design, with wings, a tail, and a body. The background appears to be a rough, speckled surface, possibly a stone or concrete wall. The drawing is somewhat blurry, giving it a hand-drawn look.",7,airplane,0.3172,0.2123,0.0745

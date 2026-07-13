@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is seen from above, and it is surrounded by a large number of small, white dots that appear to be stars. The dots are scattered throughout the sky, creating a starry effect. The plane is flying at a relatively low altitude, and its silhouette is clearly visible against the blue sky.",4,plane,0.0709,0.0539,0.1573

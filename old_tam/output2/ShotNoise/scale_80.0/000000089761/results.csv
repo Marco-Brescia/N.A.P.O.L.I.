@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a toilet sitting on the ground next to a tree. The toilet is white and has a lid that is closed. The tree has a rough, textured bark and appears to be in a natural setting, possibly a garden or a backyard. There are some plants and grass around the toilet. The overall scene gives a somewhat unusual or unexpected feel.",4,toilet,0.324,0.2424,0.1235

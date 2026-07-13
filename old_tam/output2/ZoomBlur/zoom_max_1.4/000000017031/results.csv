@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","This image shows a giraffe's head and neck. The giraffe is looking directly at the camera, and the image is taken with a technique called motion blur, which makes the background appear out of focus. The background is green, suggesting a natural setting, possibly a forest or a grassy area. The giraffe's face is in sharp focus, with its eyes and nose clearly visible.","[4, 5]",giraffe,0.3457,0.2857,0.0741

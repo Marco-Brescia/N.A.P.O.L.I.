@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a dark night sky with raindrops falling. In the upper right corner, there is a large clock with Roman numerals. The clock face is illuminated by the light from the rain, making the numbers and hands visible. In the lower left corner, there is a small, bright moon shining through the raindrops. The overall scene is dark and rainy, with the moon providing a contrast to the darkness.",22,clock,0.3533,0.2827,0.1285

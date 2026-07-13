@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is in the middle of the frame, and it's flying above the moon. The moon is visible below the plane, and it appears to be a full moon. The sky is clear and blue, and there are no clouds in the sky. The plane is flying at a relatively low altitude, and the moon is positioned in the middle of the frame, slightly to the left.",4,plane,0.0416,0.0373,0.2046

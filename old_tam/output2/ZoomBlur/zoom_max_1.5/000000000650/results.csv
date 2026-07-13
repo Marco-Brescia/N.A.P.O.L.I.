@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000000650,"Describe this image in detail, use simple terms","The image shows a cat. The cat has a striped pattern with shades of gray and white. It appears to be looking down and is in motion, as indicated by the blur around its body. The background is out of focus, making it difficult to see any specific details. The overall effect is that the cat is spinning or moving quickly.",4,cat,0.2395,0.2319,0.0765

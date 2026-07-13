@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear in a grassy field. The bear has a white fur coat with some brown patches. The bear is looking directly at the camera, and its face is covered in frost or ice, giving it a icy appearance. The background is blurred, making the bear the main focus of the image.",4,bear,0.3725,0.7028,0.0172

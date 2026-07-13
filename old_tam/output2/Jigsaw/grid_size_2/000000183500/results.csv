@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000183500,"Describe this image in detail, use simple terms","The image is a collage of four pictures showing different angles of a biplane flying in the sky. The biplane has red and white colors with a propeller at the front. The pictures are taken from different perspectives, showing the plane from different angles. The sky is cloudy, and the plane appears to be in motion, with its wings spread wide.",14,plane,0.2107,0.2035,0.0739

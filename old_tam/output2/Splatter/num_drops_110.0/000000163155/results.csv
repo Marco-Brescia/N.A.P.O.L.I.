@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on a ledge or a platform. The cat has a striped coat with shades of gray and white. The background features a brick wall, and there are small, colorful dots or specks falling from above, creating a playful and whimsical atmosphere. The overall scene has a light and airy feel.",4,cat,0.5448,0.3914,0.0677

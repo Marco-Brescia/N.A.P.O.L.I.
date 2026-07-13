@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a dark background with a few distinct elements. On the right side, there is a clock face with Roman numerals. The clock hands are not visible, and the numbers are arranged in a circular pattern. On the left side, there is a small, bright object that appears to be a moon or a similar celestial body. The background is completely black, making the objects stand out clearly.",20,clock,0.2598,0.2155,0.1625

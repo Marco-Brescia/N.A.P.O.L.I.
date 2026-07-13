@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock and the moon in the night sky. The clock has a gold face with Roman numerals and the year ""1902"" printed on it. The clock is on the left side of the image, and the moon is on the right side, appearing as a small, bright white spot against the dark sky. The image is blurry, making it difficult to see the details clearly.",4,clock,0.3872,0.2959,0.1237

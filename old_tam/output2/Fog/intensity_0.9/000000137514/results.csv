@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a white cat sitting on a white surface. The cat has a white coat with some black markings. In the background, there is a white microwave oven with a transparent door. The microwave has a few buttons and a display screen. The overall image has a soft, blurred effect, giving it a dreamy or ethereal appearance.",5,cat,0.5624,0.5153,0.0621

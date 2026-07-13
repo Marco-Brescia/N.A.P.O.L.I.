@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is blue with some red and white markings on its tail. The sky is blue with a few white clouds. There is also a large, orange object in the sky, which looks like a balloon or a large kite. The orange object is much larger than the plane and is positioned in the lower left corner of the image.",4,plane,0.0617,0.044,0.1983

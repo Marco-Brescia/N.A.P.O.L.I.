@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000324483,"Describe this image in detail, use simple terms","The image shows a close-up of a cat's face. The cat has a black and white fur pattern, and its ears are pointed up. The cat's eyes are closed, and it appears to be resting or sleeping. The background is blurred, but it seems to be an indoor setting with some furniture and decorations.",8,cat,0.6163,0.5438,0.0326

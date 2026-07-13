@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on top of a rocky hill. The sheep has a checkered pattern on its body, which is unusual for sheep. The sky is blue with some clouds, and the hill is covered with rocks.",4,sheep,0.0412,0.03,0.2091

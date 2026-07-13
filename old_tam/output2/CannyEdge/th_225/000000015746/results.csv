@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a red fire hydrant in a grassy area. The hydrant is old and has some rust and wear on it. It has two black caps on the top and a black base. In the background, there is a white house with a green roof and some purple flowers on the roof. There are also some trees and bushes around the house. The grass is green and there are some small white flowers in the foreground.","[5, 6, 7]",fire hydrant,0.2156,0.2094,0.0934

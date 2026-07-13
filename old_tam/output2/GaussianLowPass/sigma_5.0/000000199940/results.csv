@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","The image shows a black cat standing in front of a bottle. The cat has a green bottle with a red label and a green bottle cap. The background is blurry, making it difficult to see details. The cat appears to be looking at the bottle.",5,cat,0.3461,0.4036,0.0357

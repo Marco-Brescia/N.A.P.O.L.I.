@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","The image shows a small airplane flying in the sky. The airplane has a blue and yellow color scheme with a red cross on its wings. The sky is blue with some white clouds, and the airplane is flying at a slight angle, giving a sense of motion.",5,airplane,0.0655,0.0694,0.1185

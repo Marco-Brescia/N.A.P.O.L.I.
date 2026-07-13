@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a toilet that is mounted on a tree trunk. The toilet is white and has a lid that is closed. The tree trunk is large and has a rough, textured bark. The ground around the toilet is covered with dry grass and some small plants. In the background, there are some bushes and a wooden bench. The overall scene appears to be in a garden or backyard setting.",4,toilet,0.344,0.2746,0.1094

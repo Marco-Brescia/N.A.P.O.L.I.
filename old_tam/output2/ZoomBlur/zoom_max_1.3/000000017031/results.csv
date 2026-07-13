@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe's head and neck. The giraffe is looking directly at the camera, and its face is blurred, giving it a dreamy, ethereal appearance. The background is a blurred green, suggesting a natural setting, possibly a forest or a grassy area. The giraffe's head is slightly tilted, and its eyes are open, giving it a curious and alert expression.","[4, 5]",giraffe,0.2277,0.2484,0.0844

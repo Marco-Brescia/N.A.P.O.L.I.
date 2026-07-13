@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a desk with a telephone on it. The telephone has a cord that is connected to it, and there is a banana resting on the phone. The background includes a piece of paper with some writing on it, and there is also a stapler on the desk. The desk appears to be made of a light-colored material.",26,banana,0.0871,0.081,0.1682

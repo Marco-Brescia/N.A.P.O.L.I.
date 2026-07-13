@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a red fire hydrant in a grassy area. Behind the hydrant, there is a white building with a window and some greenery. The hydrant has black caps on its top and bottom.","[5, 6, 7]",fire hydrant,0.1888,0.1931,0.0908

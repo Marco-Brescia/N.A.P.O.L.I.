@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000056545,"Describe this image in detail, use simple terms","The image shows a bird perched on a branch. The bird is blurry, making it difficult to see its details clearly. The background is out of focus, with green foliage and some light shining through, creating a bokeh effect. The overall image has a dreamy, abstract quality.",4,bird,0.3404,0.3491,0.0564

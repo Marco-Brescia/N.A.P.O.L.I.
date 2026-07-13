@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on top of a rocky hill. The sky is cloudy, and the sheep is facing away from the camera, looking towards the left side of the image. The rocks are large and uneven, with some parts of them being more prominent than others. The sheep appears to be standing on a small ledge or a small hill.",4,sheep,0.0387,0.0332,0.2018

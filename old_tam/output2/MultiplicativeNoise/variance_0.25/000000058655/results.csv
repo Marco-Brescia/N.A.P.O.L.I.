@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a tall brick building with a clock tower. The clock tower has a large, ornate clock face on top. There are several flags hanging from the building, and a flagpole is visible in front of the building. The building has a staircase leading up to the entrance, and there are potted plants on the steps. The sky is clear, and the building appears to be in a historical or urban setting.",9,clock,0.0597,0.0424,0.2115

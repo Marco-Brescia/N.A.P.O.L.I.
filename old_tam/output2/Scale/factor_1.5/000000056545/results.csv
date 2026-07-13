@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000056545,"Describe this image in detail, use simple terms","The image shows a bird perched on a branch. The bird has a light gray or white plumage with some darker markings on its wings and tail. Its eyes are dark, and it has a short beak. The background is blurred, but it appears to be a natural setting with green foliage.",4,bird,0.6249,0.6166,0.0252

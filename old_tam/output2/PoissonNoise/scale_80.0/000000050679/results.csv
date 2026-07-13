@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image shows an orange sitting on the ground in the middle of a parking lot. The parking lot is paved with black asphalt, and there are white lines marking the parking spaces. In the background, there are several cars parked along the edge of the lot. The sky appears to be overcast, and there are trees visible in the distance. The overall scene suggests a quiet, everyday moment in a parking lot.",4,orange,0.4993,0.2661,0.1035

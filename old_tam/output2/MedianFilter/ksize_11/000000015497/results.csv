@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","The image shows a cat lying on a dark surface. The cat has a mix of brown, white, and black fur. In front of the cat, there is a glass with a yellowish liquid, possibly ice cream. The cat appears to be looking at the glass. The background is dark, making the cat and the glass the main focus of the image.",4,cat,0.5323,0.4761,0.0449

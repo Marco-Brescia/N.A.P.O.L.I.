@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a desk with a telephone on it. The telephone is a standard landline model, and it has a cord attached to it. There is a banana placed on the phone, which is a bit unusual. The background of the image is a desk with various items on it, including a stapler and some papers. The desk appears to be in a home or office setting.",32,banana,0.1167,0.1119,0.1601

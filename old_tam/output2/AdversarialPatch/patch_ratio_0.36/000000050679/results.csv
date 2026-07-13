@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image shows an orange with a checkerboard pattern on it. The orange is sitting on a road, and there are several cars in the background. The sky is cloudy, and there are trees and buildings in the distance. The orange is the main focus of the image, and the checkerboard pattern on it adds a unique visual element.",4,orange,0.2846,0.186,0.1147

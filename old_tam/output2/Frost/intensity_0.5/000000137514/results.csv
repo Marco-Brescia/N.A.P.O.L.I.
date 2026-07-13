@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a surface. The cat has a fluffy coat with patches of gray and white. The background includes a piece of furniture with a screen, possibly a television or a monitor, and some buttons or controls on it. The cat appears to be resting or looking off to the side.",4,cat,0.4688,0.4509,0.0861

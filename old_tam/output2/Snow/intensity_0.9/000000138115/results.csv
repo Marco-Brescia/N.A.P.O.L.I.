@@ -1,0 +1,3 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000138115,"Describe this image in detail, use simple terms","The image shows a person holding an orange. The person has short, white hair and is wearing a dark shirt. The orange is bright yellow and appears to be ripe. The background is blurred with a lot of white dots, making it difficult to see any details.",7,orange,0.566,0.2701,0.1073
+000000138115,"Describe this image in detail, use simple terms","The image shows a person holding an orange. The person has short, white hair and is wearing a dark shirt. The orange is bright yellow and appears to be ripe. The background is blurred with a lot of white dots, making it difficult to see any details.",4,person,0.3481,0.81,0.0079

@@ -1,0 +1,3 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","The image shows a person sitting on a horse. The person is wearing a pink and white checkered shirt, jeans, and a black hat. They are also wearing a brown boot. The horse is sitting on a purple saddle. The background shows trees and a clear sky.",8,horse,0.2379,0.2526,0.2043
+000000045070,"Describe this image in detail, use simple terms","The image shows a person sitting on a horse. The person is wearing a pink and white checkered shirt, jeans, and a black hat. They are also wearing a brown boot. The horse is sitting on a purple saddle. The background shows trees and a clear sky.",4,person,0.1146,0.1663,0.0877

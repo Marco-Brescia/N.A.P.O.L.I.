@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000077595,"Describe this image in detail, use simple terms","The image shows a cat with its head sticking out from under a blanket. The cat has a brown and white striped pattern. The cat's ears are visible, and it appears to be resting or sleeping. In the background, there is a computer monitor and some furniture, including a dresser. The scene seems to be indoors, possibly in a bedroom or a living room.",4,cat,0.2851,0.2545,0.0907

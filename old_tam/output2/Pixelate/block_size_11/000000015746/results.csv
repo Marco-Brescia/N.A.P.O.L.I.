@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a fire hydrant. It is painted in a bright red color with a black top. The hydrant is surrounded by green grass and some trees in the background. The image is pixelated, making it difficult to see details clearly.","[4, 5, 6]",fire hydrant,0.1979,0.2061,0.0936

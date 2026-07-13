@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000056545,"Describe this image in detail, use simple terms","The image shows a bird perched on a branch. The bird has a grayish-brown plumage with some white spots on its back and wings. It appears to be in the middle of a rain shower, as there are droplets of water visible around it. The background is blurred, but it seems to be a tree with green leaves. The bird is looking up, possibly observing the rain.",4,bird,0.4413,0.3688,0.0585

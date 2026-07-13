@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a red fire hydrant in a grassy area. The hydrant has a black top and is surrounded by green grass and some small plants. There are also some flowers and trees in the background. The sky appears to be cloudy, and there are some light raindrops falling. The overall scene looks like it might be during a rainy day.","[5, 6, 7]",fire hydrant,0.0521,0.1197,0.1115

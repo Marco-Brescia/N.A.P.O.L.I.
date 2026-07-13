@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is in the foreground, and the moon is in the background. The plane is flying over the moon, and the moon is partially visible in the sky. The sky is clear with a blue color, and there are no clouds or other objects in the sky. The plane appears to be a commercial jet, and its wings are spread out.",4,plane,0.0515,0.0449,0.2358

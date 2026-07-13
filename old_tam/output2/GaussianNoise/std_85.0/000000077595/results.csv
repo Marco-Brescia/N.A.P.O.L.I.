@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000077595,"Describe this image in detail, use simple terms","The image shows a cat sitting inside a basket. The cat has a striped pattern on its fur and is looking directly at the camera. The basket is made of a woven material and has a plaid pattern. The background appears to be indoors, possibly in a room with a window or a door. The overall image has a grainy, pixelated effect.",4,cat,0.3572,0.2719,0.0976

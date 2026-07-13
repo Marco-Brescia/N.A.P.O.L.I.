@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000052017,"Describe this image in detail, use simple terms","The image is a collage of nine pictures of an airplane. The airplane is yellow with a blue tail and has the letters ""SP-AWF"" on the side. The pictures show the airplane from different angles, including close-ups and a wide view. The sky is overcast, and the ground is not visible in any of the pictures.",10,airplane,0.1385,0.1384,0.0598

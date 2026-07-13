@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000052017,"Describe this image in detail, use simple terms","The image shows a small, yellow airplane flying in the sky. The airplane has a red tail and a red stripe on its side. The propeller is blue and there are red wheels on the bottom. The airplane is in flight, and the background is a cloudy sky.",7,airplane,0.1384,0.1382,0.093

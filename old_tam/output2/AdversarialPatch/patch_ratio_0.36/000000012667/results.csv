@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a desk with a few items on it. There is a black telephone with a checkered pattern on the receiver. The phone is connected to a cord that is coiled around it. On the desk, there is also a banana placed on the receiver. In the background, there is a white object that appears to be a stapler. The desk has some papers and a notebook with writing on it.",48,banana,0.0667,0.069,0.1698

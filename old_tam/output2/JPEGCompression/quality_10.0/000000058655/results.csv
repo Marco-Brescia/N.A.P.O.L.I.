@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a tall brick building with a clock on a pole in front of it. The building has multiple floors and a large clock face on the front. The clock has Roman numerals and is mounted on a decorative pole with ornate details. The sky in the background is clear and blue, suggesting it is daytime. The building appears to be a historic or significant structure, possibly a government or public building.",9,clock,0.0712,0.0544,0.2146

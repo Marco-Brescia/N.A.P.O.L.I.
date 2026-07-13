@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000144114,"Describe this image in detail, use simple terms","The image shows a collage of several photos of an airplane in the sky. The airplane has a red and white color scheme and is flying at a low altitude. The photos are arranged in a grid pattern, with each photo showing a different angle or perspective of the airplane. The sky is mostly clear with some clouds, and the airplane appears to be performing some sort of aerial maneuver or trick.",10,airplane,0.1169,0.1102,0.0592

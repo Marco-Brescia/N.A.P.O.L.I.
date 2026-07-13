@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms",The image shows a tall brick building with a clock on a street lamp. The building has several windows and a large entrance with a door. There is an American flag hanging from a flagpole on the left side of the building. The clock on the street lamp is round and has a black frame with gold accents. The sky is clear and blue.,9,clock,0.0382,0.0319,0.2111

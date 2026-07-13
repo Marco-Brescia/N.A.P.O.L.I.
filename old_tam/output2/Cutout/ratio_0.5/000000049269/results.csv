@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000049269,"Describe this image in detail, use simple terms","The image shows two horses in a grassy field. One horse is standing tall, with its head turned to the side, and the other horse is lying down, facing the standing horse. The standing horse has a brown coat and is wearing a bridle. The lying horse is white with a brown mane. The background shows a few trees and a clear sky.",12,horse,0.2908,0.3324,0.0903

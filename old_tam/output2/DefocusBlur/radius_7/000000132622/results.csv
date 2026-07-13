@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear in a grassy area. The bear appears to be walking or moving through the grass. The bear's fur is light-colored, possibly white or light brown, and it has a thick, fluffy coat. The background is blurred, making it difficult to see details, but it seems to be a natural environment with green grass. The bear's face is in focus, showing its eyes and nose, and it looks alert and curious.",4,bear,0.2972,0.7369,0.0136

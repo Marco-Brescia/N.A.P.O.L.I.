@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000052017,"Describe this image in detail, use simple terms","The image shows a small, yellow airplane flying in the sky. The airplane has a red tail and a blue nose. The sky is filled with small, white dots, which could be snow or a speckled effect. The airplane appears to be in mid-flight, with its wings spread out.",7,airplane,0.1656,0.1512,0.086

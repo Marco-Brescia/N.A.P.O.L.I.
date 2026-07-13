@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000179285,"Describe this image in detail, use simple terms","The image shows a tennis ball on a green court. The ball is in the center of the image, and it appears to be in motion, as indicated by the blur around it. The court has a grid pattern, and the ball is positioned in the middle of the grid. The overall color scheme of the image is green, which is typical for tennis courts.",5,ball,0.2423,0.1543,0.1602

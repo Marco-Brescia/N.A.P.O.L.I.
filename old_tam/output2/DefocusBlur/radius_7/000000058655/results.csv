@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a tall building with a clock on a pole in front of it. The building is made of brick and has several windows. There is a flag on the building, and the clock on the pole is black with a white face. The sky is clear and blue, indicating it might be daytime. The overall scene suggests a historical or urban setting.",8,clock,0.0855,0.0566,0.2166

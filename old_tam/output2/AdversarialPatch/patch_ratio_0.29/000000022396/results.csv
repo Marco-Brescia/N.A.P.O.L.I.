@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is in the middle of the image, and it's flying in a straight line. The sky is clear with a blue color, and there is a bright, round object in the lower left corner of the image. This object looks like the moon, but it's not completely visible. The plane has a checkered pattern on its wings, and it's flying at a high altitude.",4,plane,0.0212,0.0255,0.2135

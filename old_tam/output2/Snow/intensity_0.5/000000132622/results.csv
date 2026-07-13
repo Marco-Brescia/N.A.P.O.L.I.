@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear walking through a grassy area. The bear appears to be wet, possibly from recent rain, and its fur is covered in droplets of water. The background is blurred, making it difficult to see details, but it seems to be a natural setting with greenery. The bear's expression is calm and focused, and it looks like it's moving forward.",4,bear,0.3785,0.7411,0.015

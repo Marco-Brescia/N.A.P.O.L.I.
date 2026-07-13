@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000056545,"Describe this image in detail, use simple terms","This is a picture of a bird. The bird has a grayish-brown body with some darker markings on its wings and tail. It has a short beak and is perched on a branch. The background is blurred, showing green foliage, which suggests that the bird is in a forest or a similar natural environment.",6,bird,0.4429,0.371,0.0584

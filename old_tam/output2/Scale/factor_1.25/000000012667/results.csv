@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a banana sitting on top of a telephone. The banana is yellow and has a green stem. The telephone is black and has a screen on it. The background includes a white desk or table with some objects on it, but they are not clearly visible.",4,banana,0.6091,0.2018,0.1381

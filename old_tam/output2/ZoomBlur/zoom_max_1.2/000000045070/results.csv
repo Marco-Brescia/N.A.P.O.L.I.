@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","The image shows a person riding a bike. The person is wearing a pink and white checkered shirt and blue jeans. The background is blurred, creating a dreamy effect, and it appears to be a green, outdoor setting with trees and grass. The overall effect is like looking through a kaleidoscope or a dreamy lens.",4,person,0.2332,0.2648,0.0625

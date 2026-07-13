@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","The image shows a small airplane flying in the sky. The airplane has two wings and four propellers. The sky is blue with some clouds, and there are several small, black dots scattered across the image, possibly representing points of interest or data points. The airplane is in the center of the image, and the background is the sky.",5,airplane,0.0415,0.0564,0.1304

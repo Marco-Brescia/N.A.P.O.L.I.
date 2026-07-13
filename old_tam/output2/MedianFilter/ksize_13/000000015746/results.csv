@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a red fire hydrant with black caps on its sides. The hydrant is in a grassy area with some green bushes and trees in the background. There is a white house with a thatched roof in the distance. The overall image is blurry, making it difficult to see details clearly.","[5, 6, 7]",fire hydrant,0.1562,0.195,0.0987

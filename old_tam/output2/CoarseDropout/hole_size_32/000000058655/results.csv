@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a tall brick building with a clock tower. The clock tower has a large, ornate clock face with Roman numerals. There are several windows on the building, and a flag is hanging from one of the windows. The building has a classic architectural style with a green roof. In front of the building, there is a sidewalk with a bench and some plants. The sky is clear and blue.",9,clock,0.0439,0.033,0.2054

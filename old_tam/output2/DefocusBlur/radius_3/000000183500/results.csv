@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000183500,"Describe this image in detail, use simple terms","The image shows a vintage biplane flying in the sky. The plane has two sets of wings, one on each side of the fuselage. The wings are painted in a red and white color scheme with some red accents. The fuselage is white with red and black markings. The plane has two propellers, one on each wing. The tail of the plane has a red and white design with a circular emblem. The sky in the background is cloudy.",6,plane,0.1947,0.196,0.0933

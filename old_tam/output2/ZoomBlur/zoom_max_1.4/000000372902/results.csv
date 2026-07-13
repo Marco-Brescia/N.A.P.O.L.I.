@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000372902,"Describe this image in detail, use simple terms","The image shows a car parked on the side of a road. The car is partially visible, with its rear end and part of its body showing. The car is surrounded by green plants, including ferns and other types of grass. The plants are in front of the car, and the car appears to be parked on a paved surface. The overall scene gives a sense of a quiet, natural setting near a road.",4,car,0.3611,0.3611,0.091

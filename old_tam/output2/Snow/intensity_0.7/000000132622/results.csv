@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear in the wild. The bear has a thick, fluffy coat and is surrounded by green grass. The bear appears to be walking through the grass, and there are small, white dots scattered around the image, giving it a snowy or misty appearance.",4,bear,0.5105,0.7717,0.0118

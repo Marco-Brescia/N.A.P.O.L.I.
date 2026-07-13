@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","The image shows a black cat standing upright. The cat has a playful and curious expression, with its front paws raised and its tail curled. The cat is holding a bottle of wine, which is green with a label that says ""Romeo."" The background is blurred, but it appears to be a room with some furniture and decorations. The overall effect of the image is a bit whimsical and surreal.",5,cat,0.2225,0.4188,0.0307

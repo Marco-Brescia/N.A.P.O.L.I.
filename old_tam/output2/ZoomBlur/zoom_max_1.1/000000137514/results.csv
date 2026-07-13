@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a surface. The cat has a mix of white, brown, and black fur. It appears to be looking at something in front of it, possibly a computer monitor or a screen. The background includes a white object with a grid pattern, which could be a part of a computer or a device with a similar design. The overall image is blurry, giving it a dreamy or out-of-focus appearance.",4,cat,0.5147,0.5105,0.0697

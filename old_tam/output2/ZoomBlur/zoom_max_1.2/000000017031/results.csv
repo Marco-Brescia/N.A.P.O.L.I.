@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe's head and neck. The giraffe is looking directly at the camera, and its eyes are focused on the viewer. The background is blurred, creating a bokeh effect, which makes the giraffe stand out more prominently. The colors in the background are vibrant, with shades of green and yellow, suggesting a natural setting, possibly a zoo or a wildlife park.","[4, 5]",giraffe,0.3081,0.282,0.0775

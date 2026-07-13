@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a tall building with a clock on top. The building has a brownish color and appears to be made of bricks. There are many small white dots scattered throughout the image, giving it a snowy or frosty appearance. The sky in the background is blue with some clouds.",8,clock,0.0933,0.0513,0.2153

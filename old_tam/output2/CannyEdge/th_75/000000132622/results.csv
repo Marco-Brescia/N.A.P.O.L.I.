@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear in a natural setting. The bear has a thick, white fur coat and is standing in a grassy area. The bear's face is visible, and it appears to be looking forward. The background is blurred, making it difficult to see specific details, but it seems to be a natural environment with greenery. The bear's fur looks soft and fluffy, and it has a calm and serious expression.",4,bear,0.3312,0.7292,0.0155

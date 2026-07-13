@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a tall brick building with a clock on a pole in front of it. The clock has a decorative design and shows the time. There are two flags on the building, one of which is flying at half-mast. The building has several windows and doors, and there are plants and a light fixture near the entrance. The sky in the background is cloudy.",9,clock,0.041,0.0283,0.2307

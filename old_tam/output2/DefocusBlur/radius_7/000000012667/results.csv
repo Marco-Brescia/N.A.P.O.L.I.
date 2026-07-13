@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a banana placed on a desk. The banana is yellow and appears to be ripe. The desk has a black corded telephone on it, which is also yellow. The phone has a black dial pad and a screen on the top right corner. In the background, there is a microscope and some other items on the desk. The image is out of focus, making it difficult to see the details clearly.",4,banana,0.1209,0.1225,0.1588

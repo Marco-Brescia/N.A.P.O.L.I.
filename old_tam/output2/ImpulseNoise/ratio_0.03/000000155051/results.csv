@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a night sky with a large, round clock in the upper right corner. The clock has Roman numerals on its face, and it is illuminated by the moon in the lower left corner. The moon is small and appears to be in the same plane as the clock, suggesting that the clock is in the sky. The sky is dark, indicating it is nighttime.",11,clock,0.3646,0.3,0.1312

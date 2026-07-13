@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock and a small object against a dark background. The clock is large and has Roman numerals on it. The time on the clock is not visible. The small object is also on the dark background, but it is much smaller than the clock. The overall scene is dark, with the clock and the small object being the only sources of light.",4,clock,0.2415,0.2132,0.1597

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000372902,"Describe this image in detail, use simple terms","The image shows a car parked on the side of a road. There are two small plants growing near the car, with some white specks or dots scattered around them. The plants have green leaves and appear to be in a parking lot or a similar outdoor setting. The car has a black bumper and a black tailgate.",4,car,0.3247,0.3871,0.074

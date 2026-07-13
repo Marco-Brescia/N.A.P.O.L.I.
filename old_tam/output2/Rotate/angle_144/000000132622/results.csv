@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear. It has a brown and white fur coat, and it's looking up at something. The bear's eyes are wide open, and it has a big, open mouth. The bear is surrounded by greenery, and the background is blurred, making it difficult to see more details.",4,bear,0.3022,0.6843,0.0211

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a collage of pictures of giraffes. Each picture shows a different angle of a giraffe's neck and head. The giraffes are surrounded by greenery, indicating they are in a forest or a park with trees. The pictures are arranged in a grid, with each picture showing a different part of the giraffe's face and neck.","[20, 21]",giraffe,0.3155,0.3067,0.0582

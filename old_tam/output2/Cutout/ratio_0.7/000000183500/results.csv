@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000183500,"Describe this image in detail, use simple terms","The image shows two airplanes flying in the sky. One airplane is red and white, and the other is red and black. They are both biplanes, which means they have two sets of wings. The red and white airplane has a propeller on the front, and the red and black airplane has a propeller on the back. The sky in the background is cloudy, and the airplanes are flying at a high altitude.",11,airplane,0.0862,0.1368,0.0913

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000094336,"Describe this image in detail, use simple terms","This image shows a cat sitting on a stone surface. The cat has a brown and black coat with some white markings. It has large, pointed ears and is looking directly at the camera. The stone surface has a rough texture, and there is a small object, possibly a coin, attached to the cat's collar. The overall image has a slightly blurred or distorted effect, giving it a surreal or artistic appearance.",4,cat,0.4249,0.4135,0.0599

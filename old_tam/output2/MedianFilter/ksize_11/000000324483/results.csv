@@ -1,0 +1,3 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000324483,"Describe this image in detail, use simple terms","The image shows a cat sitting inside a suitcase. The cat has a fluffy coat with patches of white and brown. The suitcase is green with black stripes. The background is blurred, but it appears to be a room with some furniture and a window with lace curtains.",4,cat,0.5885,0.5563,0.0304
+000000324483,"Describe this image in detail, use simple terms","The image shows a cat sitting inside a suitcase. The cat has a fluffy coat with patches of white and brown. The suitcase is green with black stripes. The background is blurred, but it appears to be a room with some furniture and a window with lace curtains.",8,suitcase,0.5275,0.4776,0.0401

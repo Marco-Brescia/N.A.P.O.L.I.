@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000052017,"Describe this image in detail, use simple terms","The image shows a small, yellow airplane with red and blue accents. The airplane has a single propeller and is flying in the sky. The propeller is blue, and the airplane has the registration number ""SP-AWF"" on the side. The sky in the background is clear and blue.",7,airplane,0.1409,0.1516,0.0883

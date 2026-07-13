@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a toilet that is placed in front of a tree. The tree has a textured bark with a pattern of small, irregular shapes. The toilet is white and appears to be old, with some rust and wear visible on its surface. The ground around the toilet is covered with small, green plants, and there is some dry grass and dirt visible. The setting seems to be outdoors, possibly in a garden or a backyard.",4,toilet,0.4719,0.2933,0.1173

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000052017,"Describe this image in detail, use simple terms","This image shows a small, single-engine airplane flying in the sky. The airplane is depicted in a way that makes it look like it's flying over a textured surface, possibly a concrete or stone ground. The airplane has a simple design with a single propeller at the front and a small cockpit. The background is blurred, making it difficult to see any specific details about the ground or the sky.",8,airplane,0.2537,0.189,0.0748

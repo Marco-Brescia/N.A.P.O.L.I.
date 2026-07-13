@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000324483,"Describe this image in detail, use simple terms","The image shows a cat with a fluffy coat. The cat is surrounded by a lot of small, white dots, which could be snow or a similar substance. The cat's fur is light brown with some white markings. The background is blurred, making it difficult to see details, but there appears to be some greenery and possibly a yellow object, possibly a flower or a piece of furniture.",4,cat,0.406,0.4782,0.0374

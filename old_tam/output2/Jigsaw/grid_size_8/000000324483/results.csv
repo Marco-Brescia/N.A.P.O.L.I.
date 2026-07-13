@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000324483,"Describe this image in detail, use simple terms","This image is a collage of several small pictures, each showing a close-up of a cat's face. The cats have different fur patterns and colors, and they are all looking in different directions. The collage is arranged in a grid pattern, with each picture taking up a small square in the grid. The background is blurred, making it difficult to see any specific details.",17,cat,0.4073,0.4326,0.0143

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a red fire hydrant in a grassy area. The hydrant has black caps and is positioned in front of a house with a white exterior and purple flowers on the roof. The grass around the hydrant is green and appears to be well-maintained. In the background, there are trees with green leaves and some purple flowers on them. The sky is not visible in the image.","[5, 6, 7]",fire hydrant,0.0689,0.126,0.1135

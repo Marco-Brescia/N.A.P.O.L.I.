@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","The image shows a black cat standing on its hind legs. The cat is holding a green bottle with a red label in its mouth. The background is a bit blurry, but it appears to be a room with some furniture and items. The overall effect of the image is somewhat abstract and artistic.",5,cat,0.353,0.4825,0.0281

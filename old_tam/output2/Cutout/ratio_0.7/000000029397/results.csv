@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000029397,"Describe this image in detail, use simple terms","The image shows a wooden bench with a sign on it. The sign has text on it, but the text is not clearly legible. The bench is made of wood and appears to be made of two pieces of wood joined together. The background shows a concrete wall with some graffiti on it. The ground is made of red bricks.",5,bench,0.3772,0.3879,0.0446

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock and a small light source. The clock is on the right side of the image, with its hands pointing to a time that is not clearly visible. The clock face is illuminated, showing Roman numerals around the edge. The light source is on the left side of the image, appearing as a small, round, and colorful light. The background is dark, making the clock and light source stand out.",4,clock,0.1847,0.195,0.1662

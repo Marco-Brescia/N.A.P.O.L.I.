@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane has two wings, and each wing has a circular design with a star in the middle. The plane is in the air, and the background is a clear blue sky with some clouds. The plane appears to be a commercial jet, and the design on the wings is typical of many modern aircraft.",4,plane,0.0909,0.0882,0.1041

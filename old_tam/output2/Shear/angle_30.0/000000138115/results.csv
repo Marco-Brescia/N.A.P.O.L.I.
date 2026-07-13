@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000138115,"Describe this image in detail, use simple terms","The image shows a person holding a large, round, yellow fruit. The person has white hair and is wearing a black jacket. The fruit looks like a mango or a similar type of fruit.",4,person,0.2319,0.6149,0.0293

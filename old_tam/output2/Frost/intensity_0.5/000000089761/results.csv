@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a toilet that is covered in a textured, brownish material. The toilet is placed on a grassy surface, and there is a tree trunk behind it, which appears to be covered in the same textured material. The overall scene has a somewhat surreal or artistic quality.",4,toilet,0.3819,0.2697,0.1125

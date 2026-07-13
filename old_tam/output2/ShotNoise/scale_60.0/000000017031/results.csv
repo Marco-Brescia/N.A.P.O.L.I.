@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe. It has long necks and a long, straight tail. The giraffe has a brown and white pattern on its skin. It is looking directly at the camera with its mouth slightly open. The background is green and blurred, indicating it might be in a forest or a zoo.","[4, 5]",giraffe,0.1964,0.2759,0.0792

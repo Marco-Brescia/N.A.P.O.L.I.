@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on a concrete surface. The cat has a striped coat with brown and white patches. It has a white face and chest, and its ears are pointed. The cat is looking to the side, and its tail is hanging down. The background includes a brick wall and a concrete floor. The overall scene appears to be outdoors, possibly in a courtyard or a patio area.",4,cat,0.1822,0.1156,0.1416

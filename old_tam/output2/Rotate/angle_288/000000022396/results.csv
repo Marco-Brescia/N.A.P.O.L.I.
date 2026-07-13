@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky with the moon visible in the background. The moon is partially visible, with its light and shadow creating a beautiful contrast against the blue sky. The plane is in the foreground, and its wings and tail are clearly visible. The scene is serene and peaceful, with the moon adding a magical element to the sky.",4,plane,0.0496,0.0359,0.2228

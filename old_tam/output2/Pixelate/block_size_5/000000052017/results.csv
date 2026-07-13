@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000052017,"Describe this image in detail, use simple terms","The image shows a small, yellow airplane flying in the sky. The airplane has a red and yellow design on its body. The wings are open, and there is a propeller on the front. The sky is cloudy, and the airplane is moving from left to right.",7,airplane,0.1702,0.1676,0.0826

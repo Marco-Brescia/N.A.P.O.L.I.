@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe with its head and neck visible. The giraffe is surrounded by greenery, suggesting it might be in a natural or zoo setting. The background is blurred, making it difficult to see specific details, but it appears to be a grassy area with some trees. The giraffe's head is tilted slightly, and it seems to be looking towards the camera.","[4, 5]",giraffe,0.4164,0.2918,0.0842

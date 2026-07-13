@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear in a grassy field. The bear is wet, possibly from rain, and has a wet, fluffy coat. It appears to be walking through the grass, and there are some small plants and flowers around it. The bear's eyes are wide open, and it looks alert and curious. The background is green and blurred, focusing attention on the bear.",4,bear,0.4113,0.7633,0.0133

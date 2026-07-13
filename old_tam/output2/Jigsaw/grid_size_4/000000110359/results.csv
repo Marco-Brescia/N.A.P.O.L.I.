@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a collage of pictures of an airplane. The airplane is flying in the sky, and the pictures are arranged in a grid pattern. The airplane has wings and a tail fin, and it appears to be a commercial jet. The background is a clear blue sky.",9,airplane,0.0427,0.0442,0.0945

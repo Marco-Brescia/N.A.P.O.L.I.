@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","The image shows a cat lying down on a dark surface. The cat has a mix of brown and white fur. The cat's eyes are closed, and it appears to be resting or sleeping. The cat's fur is slightly blurred, giving the image a dreamy or abstract quality. The background is dark, which makes the cat stand out more prominently.",4,cat,0.5162,0.4905,0.0415

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is in the upper right corner of the image. Below the plane, there is a large, bright, and round object in the sky. This object is the moon. The moon is partially covered by the plane, and the plane is flying above the moon. The sky is clear and blue.",4,plane,0.0072,0.023,0.2186

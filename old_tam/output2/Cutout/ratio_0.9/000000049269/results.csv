@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000049269,"Describe this image in detail, use simple terms","The image shows a horse standing in a grassy field. The horse has a brown coat with a white face and a white mane. It is wearing a bridle on its nose. In the foreground, there is a black square box with a white border. The horse is partially obscured by this box, making it difficult to see its entire body. The background shows a clear sky and some trees, indicating that the horse is in a natural, outdoor setting.",4,horse,0.343,0.3447,0.078

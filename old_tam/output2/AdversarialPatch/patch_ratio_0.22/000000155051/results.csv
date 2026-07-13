@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a dark night sky with a bright moon on the left side. In the sky above the moon, there is a large clock with Roman numerals. The clock face is illuminated, and there is a checkered pattern in the center of the clock face. The checkered pattern is a visual illusion that makes the clock appear to be moving.",27,clock,0.2571,0.2079,0.1674

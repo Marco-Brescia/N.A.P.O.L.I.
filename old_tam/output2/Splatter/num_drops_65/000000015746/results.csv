@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a fire hydrant in a grassy area. The hydrant is red and has a black top. There are some small, glowing lights around it, giving it a glowing effect. In the background, there is a house with a roof and some trees. The grass is green and there are some dandelions in the foreground.","[4, 5, 6]",fire hydrant,0.1221,0.1602,0.108

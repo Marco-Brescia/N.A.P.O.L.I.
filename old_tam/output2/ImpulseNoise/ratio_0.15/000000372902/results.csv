@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000372902,"Describe this image in detail, use simple terms","This image shows a close-up of some plants growing in a garden or outdoor area. The plants have green leaves and appear to be in a natural setting. In the background, there is a black object, possibly a car or a piece of machinery, partially visible. The image has a grainy texture, suggesting it might be a high-resolution photo or a digital manipulation.",43,car,0.3373,0.4221,0.0698

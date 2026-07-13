@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat lying down on a surface. The cat has a striped pattern with white, brown, and black fur. It is looking up at the camera with a relaxed expression. The cat is lying next to a piece of electronic equipment, possibly a microwave or a toaster oven, which has a control panel with buttons. The surface on which the cat is lying appears to be a countertop or a table.",4,cat,0.7453,0.4933,0.0637

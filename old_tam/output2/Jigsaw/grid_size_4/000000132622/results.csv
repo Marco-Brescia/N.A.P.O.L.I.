@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","This image is a collage of pictures of a bear. The bear is in a grassy area, and it appears to be looking at something in the distance. The bear has a brown and white fur coat, and its face is visible in each picture. The background is green, and there are some small plants and grasses around the bear.",9,bear,0.5231,0.7431,0.007

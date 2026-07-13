@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock and a moon. The clock is on the right side of the image and has Roman numerals on its face. The clock face is white and has black hands and numbers. The moon is on the left side of the image and is also white. The background is a light gray color, and the overall image has a soft, blurred effect.",4,clock,0.3185,0.2731,0.1418

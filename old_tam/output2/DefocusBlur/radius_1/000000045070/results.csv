@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","The image shows a young child sitting on a horse. The child is wearing a pink and blue plaid shirt, a black helmet, and jeans. The child is holding onto the reins of the horse with one hand. The horse is wearing a saddle, and the saddle has a purple blanket underneath it. The background shows a forest with green trees. The child appears to be enjoying the ride.",9,horse,0.2819,0.261,0.1946

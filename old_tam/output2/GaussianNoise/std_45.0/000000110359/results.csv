@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is seen from a top-down perspective, with its wings and tail visible. The sky is blue, and the plane appears to be in flight, moving across the sky. The image has a grainy texture, giving it a slightly pixelated look.",4,plane,0.0577,0.046,0.1633

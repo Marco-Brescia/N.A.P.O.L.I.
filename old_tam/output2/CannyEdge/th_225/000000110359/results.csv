@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is oriented vertically, with its nose pointing upwards and its tail pointing downwards. The plane is in the foreground, and the background is a clear blue sky. The plane appears to be a commercial jet, with wings and engines visible. The image is taken from a low angle, looking up at the plane.",4,plane,0.0596,0.0502,0.1589

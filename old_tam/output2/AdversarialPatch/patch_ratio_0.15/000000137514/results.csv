@@ -1,0 +1,3 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a counter next to a microwave. The cat has a mix of white and gray fur. In front of the cat, there is a small, square object with a black and white checkerboard pattern. The microwave has a grid-like pattern on its door.",4,cat,0.4155,0.4907,0.0688
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a counter next to a microwave. The cat has a mix of white and gray fur. In front of the cat, there is a small, square object with a black and white checkerboard pattern. The microwave has a grid-like pattern on its door.",8,counter,0.3097,0.3132,0.1157

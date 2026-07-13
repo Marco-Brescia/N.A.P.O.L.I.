@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000033759,"Describe this image in detail, use simple terms","The image is pixelated, making it difficult to see any clear details. It appears to be a scene with some greenery, possibly grass or plants, and a person standing in the background. The person is wearing a shirt and appears to be in a natural setting.",33,person,0.2449,0.1687,0.1757

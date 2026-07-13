@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000183500,"Describe this image in detail, use simple terms","The image shows a biplane flying in the sky. The plane has a white body with red and yellow accents. There are two sets of wings, one on each side of the plane. The wings have red tips and a red stripe running along the middle. The tail of the plane is also red and white. The plane has a propeller at the front. The background shows a cloudy sky.",5,plane,0.1385,0.1554,0.0873

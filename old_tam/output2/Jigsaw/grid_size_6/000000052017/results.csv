@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000052017,"Describe this image in detail, use simple terms","The image is a collage of airplane wings and parts. It shows several different angles and perspectives of airplane wings, with a focus on the tail section. The wings are in various positions, some are horizontal, and some are vertical. The background is a plain, light-colored surface, possibly a wall or a table. The collage gives a sense of movement and motion, as if the wings are flying or moving.",6,airplane,0.0428,0.0995,0.0567

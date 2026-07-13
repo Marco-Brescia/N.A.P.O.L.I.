@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane has two engines and is painted in a dark color with some light-colored accents. The wings are spread wide, and the plane is flying at a moderate altitude. The sky is clear with a few clouds, and the plane is the main focus of the image.",4,plane,0.0824,0.0794,0.1105

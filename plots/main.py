@@ -46,7 +46,7 @@ def _parse_args() -> argparse.Namespace:
         epilog=__doc__,
     )
     parser.add_argument(
-        "--output-dir", default= "old_tam/output", #"output",
+        "--output-dir", default= "old_tam/output2", #"output",
         help="Root directory containing result CSVs (default: 'output').",
     )
     parser.add_argument(

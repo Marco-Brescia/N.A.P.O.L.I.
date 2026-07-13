@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a banana sitting on a telephone receiver. The telephone is a black model with a screen and buttons, and it is placed on a desk. There is also a stapler and a piece of paper with writing on it in the background. The banana is hanging off the phone cord, which is black and coiled.",4,banana,0.0857,0.0977,0.1563

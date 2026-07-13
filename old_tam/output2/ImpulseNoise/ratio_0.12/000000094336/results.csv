@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000094336,"Describe this image in detail, use simple terms","The image shows a cat sitting on a plate. The cat has a brown and black coat with a red dot on its head. The plate is white and the cat is laying on it. The background is a bit blurry, but it appears to be a wooden surface.",4,cat,0.499,0.4033,0.0609

@@ -1,0 +1,3 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000049269,"Describe this image in detail, use simple terms","This image shows a horse and a dog in a field. The horse is brown and has a white face and ears. The dog is also brown and has a white face and ears. The field is covered with white dots, giving the image a dotted or pixelated appearance.",7,dog,0.4894,0.3281,0.1024
+000000049269,"Describe this image in detail, use simple terms","This image shows a horse and a dog in a field. The horse is brown and has a white face and ears. The dog is also brown and has a white face and ears. The field is covered with white dots, giving the image a dotted or pixelated appearance.",4,horse,0.4476,0.4259,0.0583

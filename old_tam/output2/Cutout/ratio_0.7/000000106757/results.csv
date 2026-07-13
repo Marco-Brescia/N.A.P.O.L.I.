@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000106757,"Describe this image in detail, use simple terms","The image shows two elephants in a fenced area. One elephant is partially visible on the left side, and the other elephant is more prominently visible in the center. The elephants are standing on a dirt ground, and there are ropes or fences around them. In the background, there are trees and some greenery. The sky appears to be clear with a few clouds.",11,elephant,0.4821,0.5241,0.042

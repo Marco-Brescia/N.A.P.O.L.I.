@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000324483,"Describe this image in detail, use simple terms","The image shows a cat with a long, white beard. The cat's fur is a mix of brown and white, and it has a calm expression. The background is blurred, making it difficult to see details, but it appears to be a room with some furniture, possibly a couch or a chair. The overall effect of the image is a bit dreamy or abstract.",4,cat,0.6441,0.5042,0.0344

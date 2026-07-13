@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock and a moon in the night sky. The clock is on the right side of the image and has Roman numerals on its face. The moon is on the left side, appearing as a small, bright light against the dark background. The clock is illuminated, showing the time, while the moon is not. The contrast between the illuminated clock and the dark sky creates a striking visual effect.",4,clock,0.1823,0.1914,0.15

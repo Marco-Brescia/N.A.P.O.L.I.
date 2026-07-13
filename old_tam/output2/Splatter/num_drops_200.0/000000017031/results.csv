@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe with its head raised and looking towards the camera. The giraffe has a long neck and a distinctive pattern of spots and stripes. The background is filled with greenery, possibly trees or bushes, and there are small, bright lights shining through the leaves, creating a glowing effect. The overall scene has a magical and serene atmosphere.","[4, 5]",giraffe,0.1849,0.2217,0.1024

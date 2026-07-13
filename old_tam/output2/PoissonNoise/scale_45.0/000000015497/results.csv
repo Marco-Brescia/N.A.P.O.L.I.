@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","The image shows a cat lying on a dark surface. The cat has a white and brown coat with green eyes. Next to the cat, there is a popsicle on a stick. The popsicle is light-colored, possibly yellow or beige. The background is dark, making the cat and the popsicle stand out.",4,cat,0.4405,0.4744,0.0434

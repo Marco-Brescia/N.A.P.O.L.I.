@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear in motion. The bear is moving through a grassy area, and the background is blurred, giving the impression of speed and movement. The bear has a fluffy coat and is looking down, possibly sniffing the ground or searching for something. The grass is green and appears to be wet, suggesting it might have rained recently. The bear's fur is light brown with darker patches, and its eyes are dark.",4,bear,0.3971,0.729,0.0152

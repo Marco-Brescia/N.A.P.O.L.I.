@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","The image shows a person sitting on a saddle. The saddle is made of leather and has a stirrup on the right side. The person is wearing a pink and white checkered shirt, blue jeans, and a black hat. The background shows green trees and a clear sky.",4,person,0.1412,0.1991,0.0966

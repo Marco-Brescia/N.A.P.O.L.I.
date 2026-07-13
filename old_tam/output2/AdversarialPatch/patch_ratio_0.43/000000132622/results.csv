@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear standing in a grassy field. The bear has its head down, and its back is turned to the camera. In front of the bear, there is a black and white checkerboard pattern. The bear's fur is white, and it appears to be in a natural setting, possibly a forest or a meadow. The grass around the bear is green and lush.",4,bear,0.3409,0.7191,0.014

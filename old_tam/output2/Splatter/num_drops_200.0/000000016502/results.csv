@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on top of a rocky hill. The sky is filled with raindrops, creating a dramatic and somewhat surreal effect. The sheep appears to be looking up at the raindrops, which are scattered across the sky in a pattern. The overall scene has a dreamy and somewhat melancholic atmosphere.",4,sheep,0.0542,0.0537,0.1872

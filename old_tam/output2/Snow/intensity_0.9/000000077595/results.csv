@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000077595,"Describe this image in detail, use simple terms","The image shows a cat sitting on a chair. The cat has a brown and white fur coat and is wearing a plaid scarf. The background is blurred, but it appears to be a snowy scene with snowflakes falling. The overall atmosphere of the image is cold and wintry.",4,cat,0.2983,0.2592,0.089

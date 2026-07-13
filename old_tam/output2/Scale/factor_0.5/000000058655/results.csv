@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a tall brick building with a clock on a pole in front of it. The building has several floors and a large clock face on the front. The sky is clear and blue, suggesting it is daytime. The clock is lit up, and there are flags hanging from the building. The perspective of the photo is from below, looking up at the building and the clock.",9,clock,0.016,0.0124,0.2129

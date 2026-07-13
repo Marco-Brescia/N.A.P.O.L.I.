@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a red fire hydrant with a black top. The hydrant is in a grassy area with some green bushes and flowers in the background. The hydrant has two black bolts on each side, and there are some purple flowers on the building behind it. The hydrant appears to be old and has some rust and wear on it.","[5, 6, 7]",fire hydrant,0.3119,0.4059,0.0504

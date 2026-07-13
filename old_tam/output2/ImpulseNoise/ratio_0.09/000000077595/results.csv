@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000077595,"Describe this image in detail, use simple terms","The image shows a cat sitting on a chair. The cat has a brown and white coat and is wrapped in a plaid blanket. The chair is made of wood and has a cushion on it. The background appears to be indoors, possibly a living room or a bedroom. The overall scene has a cozy and comfortable feel.",4,cat,0.3804,0.2934,0.0893

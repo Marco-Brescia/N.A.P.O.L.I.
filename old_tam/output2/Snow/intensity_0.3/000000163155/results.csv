@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on a surface. The cat has a striped coat with shades of gray and white. The background appears to be a brick wall, and there is a bit of snow or small particles in the air, giving the scene a snowy or cold atmosphere. The cat seems to be looking to the side, and the overall setting looks like it might be a cold day.",4,cat,0.5613,0.4296,0.0577

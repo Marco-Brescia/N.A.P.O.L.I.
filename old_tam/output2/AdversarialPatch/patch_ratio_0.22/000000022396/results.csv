@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane has a checkered pattern on its tail. Below the plane, there is a large, round object in the sky. It appears to be the moon. The sky is clear with no clouds.",4,plane,0.023,0.0257,0.2144

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a toilet sitting on the ground next to a tree trunk. The toilet is white and has a checkered pattern on its seat. The tree trunk is large and rough, with a textured surface that appears to be bark. The ground around the toilet is covered with grass and some small plants. In the background, there is a wooden fence and some greenery.",4,toilet,0.1656,0.1883,0.1261

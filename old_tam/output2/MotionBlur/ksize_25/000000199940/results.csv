@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","The image shows a black cat standing in front of a bottle of wine. The cat is looking directly at the camera, and the bottle is in the foreground. The background is blurred, making it difficult to see any details. The cat appears to be in a room with some furniture and items in the background.",5,cat,0.294,0.4604,0.0278

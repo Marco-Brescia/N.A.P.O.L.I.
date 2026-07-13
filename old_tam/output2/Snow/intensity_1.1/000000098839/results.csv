@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000098839,"Describe this image in detail, use simple terms","The image shows a person sitting in front of a television screen. The screen is covered with a lot of small, white dots, making it difficult to see any details on the screen. The person appears to be holding a remote control, and there is a reflection of the television screen on the person's face. The background is not clearly visible due to the white dots.",10,television,0.4043,0.4955,0.0249

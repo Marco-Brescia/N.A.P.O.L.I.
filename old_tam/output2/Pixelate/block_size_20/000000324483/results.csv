@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000324483,"Describe this image in detail, use simple terms","The image is pixelated, making it difficult to see any clear details. It appears to be a close-up of a cat, but the colors and shapes are not distinct enough to identify the cat or its surroundings.",24,cat,0.296,0.4312,0.0377

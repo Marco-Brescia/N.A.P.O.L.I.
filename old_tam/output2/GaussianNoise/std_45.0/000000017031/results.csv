@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe. It has long neck and legs, and its head is turned to the side. The giraffe has a brown and white pattern on its skin, which is typical for giraffes. The background is blurred, but it appears to be a natural setting with greenery, suggesting it might be in a forest or a savannah.","[4, 5]",giraffe,0.3777,0.2783,0.0804

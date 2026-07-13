@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a fire hydrant in a grassy area. The hydrant is red with a black top and has two handles on either side. The background is blurred, making it difficult to see details, but it appears to be a garden or a yard with some plants and flowers. The overall effect of the image is slightly distorted, giving it a dreamy or surreal appearance.","[4, 5, 6]",fire hydrant,0.2103,0.2066,0.0863

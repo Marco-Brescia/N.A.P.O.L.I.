@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane has two wings, each with two engines. The wings are rectangular and have a pattern of circles on them. The plane is flying at a moderate altitude, and the sky is a clear blue color. The plane appears to be a small, single-engine aircraft, possibly used for training or utility purposes.",4,plane,0.0791,0.079,0.1155

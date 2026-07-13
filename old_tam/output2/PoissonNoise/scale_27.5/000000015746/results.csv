@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a red fire hydrant in a grassy area. The hydrant is painted red and has a black top. It has two black caps on the sides, one on each side. Behind the hydrant, there is a white house with a green roof. There are some flowers and greenery around the house. The grass is green and appears to be well-maintained.","[5, 6, 7]",fire hydrant,0.1712,0.2022,0.0954

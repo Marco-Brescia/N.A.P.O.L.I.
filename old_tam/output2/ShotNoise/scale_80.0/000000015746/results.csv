@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a red fire hydrant in a grassy area. The hydrant is surrounded by green grass and some dandelions. In the background, there is a house with a roof covered in purple flowers, possibly wisteria. The house has a window with a white frame and a white curtain. There are also some trees and bushes around the house. The sky appears to be overcast.","[5, 6, 7]",fire hydrant,0.1553,0.1848,0.1019

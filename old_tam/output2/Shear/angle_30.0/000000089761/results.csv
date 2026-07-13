@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a toilet sitting on the ground next to a large tree. The toilet is white and appears to be old or used, with some dirt and grime on it. The tree has a rough, textured bark and is surrounded by some grass and leaves. The setting seems to be outdoors, possibly in a garden or backyard.",4,toilet,0.445,0.2829,0.1369

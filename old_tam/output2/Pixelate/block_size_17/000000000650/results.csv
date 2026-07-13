@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000000650,"Describe this image in detail, use simple terms","The image shows a cat sitting on a surface. The cat has a black and white coat, and it appears to be resting or sleeping. The background is blurred, making it difficult to see any specific details. The cat's position is slightly tilted, and it seems to be looking down or to the side.",4,cat,0.3966,0.3378,0.0731

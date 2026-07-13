@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image shows a large, round object on the ground that looks like an orange. It's placed on a paved surface, possibly a road or parking lot. In the background, there are several cars parked or driving, and some trees and bushes are visible. The sky appears to be overcast, and the overall scene gives a sense of a parking area or a roadside.",15,orange,0.4204,0.2533,0.1004

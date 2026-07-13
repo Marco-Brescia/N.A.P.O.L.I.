@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","This image shows a plane flying in the sky with the moon visible below it. The plane is in the middle of the image, and the moon is to the left. The plane has a white body with some red and blue markings on its tail. The sky is blue with some clouds. There are black dots scattered across the sky, which could be stars or other objects.",4,plane,0.0488,0.0406,0.2245

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on a ledge. The cat has a striped coat with shades of gray and white. It is looking to the side, possibly observing something. The ledge is made of wood and is next to a brick wall. The background is a plain, light-colored surface.",4,cat,0.4875,0.3924,0.0636

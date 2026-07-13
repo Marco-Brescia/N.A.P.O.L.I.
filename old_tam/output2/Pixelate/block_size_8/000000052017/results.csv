@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000052017,"Describe this image in detail, use simple terms","The image shows a small, colorful airplane flying in the sky. The airplane is yellow with some red and black accents. It has two wings, one on each side, and a propeller at the front. The sky is gray, and the airplane appears to be in motion, possibly performing a maneuver.",7,airplane,0.1905,0.166,0.0844

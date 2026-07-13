@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on top of a rocky hill. The sheep has a white woolly coat and is standing on a small patch of grass. The sky is blue with some white clouds, and the hill is covered in green grass. The sheep appears to be looking towards the camera.",4,sheep,0.04,0.0383,0.2036

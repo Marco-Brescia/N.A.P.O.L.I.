@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","The image shows a cat lying on its back on a dark surface. The cat has a white and brown striped coat. It is playing with a white and brown cord, which it is holding with its front paws. The cat's eyes are open, and it appears to be looking up at the cord. The background is dark, making the cat and the cord stand out.",4,cat,0.5926,0.5212,0.0441

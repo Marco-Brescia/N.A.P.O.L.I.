@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","In the image, there is a black cat standing next to a bottle of wine. The cat is looking at the bottle, and the bottle has a label that says ""NOTRO"" and ""BONAPARDO"" on it. The label also features a red flower design. The background appears to be indoors, with a white wall and some furniture.",8,cat,0.4532,0.7859,0.0082

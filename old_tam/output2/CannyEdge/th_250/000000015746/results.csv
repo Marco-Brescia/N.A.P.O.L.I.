@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a red fire hydrant in a grassy area. The hydrant is old and has some rust and wear on it. Behind the hydrant, there is a white house with a green roof. The house has a window with a white frame and a pinkish flower arrangement on the porch. There are also some trees and greenery in the background. The sky is clear, and the overall scene looks peaceful.","[5, 6, 7]",fire hydrant,0.1994,0.2004,0.0931

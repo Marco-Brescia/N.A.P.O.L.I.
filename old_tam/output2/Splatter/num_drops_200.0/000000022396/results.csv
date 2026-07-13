@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying through the sky, with the moon visible below it. The moon appears to be partially eclipsed by the plane, creating a dramatic effect. The plane is flying at a high altitude, and the stars in the sky are visible through the plane's windows. The overall scene is quite striking, with the moon and the plane creating a visually appealing contrast against the dark sky.",4,plane,0.0438,0.045,0.2212

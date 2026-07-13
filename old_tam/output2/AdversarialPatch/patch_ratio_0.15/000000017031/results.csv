@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe with its head turned to the side. The giraffe has a distinctive pattern of brown and white stripes on its body. On its head, there is a checkered pattern, which looks like a flag or a patterned cloth. The background is filled with green trees and bushes, suggesting that the giraffe is in a natural, forested area.","[4, 5]",giraffe,0.1774,0.2431,0.085

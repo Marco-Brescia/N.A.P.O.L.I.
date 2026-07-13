@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image shows an orange lying on the ground in the middle of a road. The road has white lines marking its edges. In the background, there are several cars parked along the side of the road. The sky appears to be overcast, and there are trees and some buildings visible in the distance. The overall scene looks like a typical day in a parking lot or a similar area.",4,orange,0.4372,0.2706,0.1005

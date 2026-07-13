@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","The image shows a young child sitting on a horse. The child is wearing a black helmet and a pink and white checkered shirt. The saddle is purple and has a decorative pattern. The child is holding onto the reins of the horse, which is not fully visible in the image. The background shows a forested area with trees.",9,horse,0.2334,0.2407,0.1964
