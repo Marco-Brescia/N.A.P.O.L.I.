@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows an airplane flying through the sky. The airplane is shown from a top-down perspective, with its wings spread out and its body visible. The background is a gradient of blue, and there are small, white dots scattered throughout the sky, giving the impression that the airplane is flying through a snowstorm. The dots are small and evenly distributed, creating a snowy effect.",4,airplane,0.0724,0.0573,0.152

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a tall building with a clock on top. The building has many windows and is made of brick. The clock is on a tower that is attached to the building. The sky is blue with some white clouds, and there are snowflakes falling in the foreground. The overall scene gives the impression of a winter day.",8,clock,0.1028,0.0466,0.2287

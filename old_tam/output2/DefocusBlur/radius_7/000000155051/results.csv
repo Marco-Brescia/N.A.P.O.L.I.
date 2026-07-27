@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock hanging on a wall. The clock face is yellow and has Roman numerals on it. The clock hands are pointing towards the number 10. In the background, there is a bright light source, possibly a streetlight or a moon, which is causing a blurred effect. The rest of the image is dark, making the clock and the light source stand out.",4,clock,0.3869,0.3188,0.1103

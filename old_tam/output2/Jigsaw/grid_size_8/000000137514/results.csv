@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","This image is a collage of several small pictures, each showing a close-up of a cat's paw. The cats appear to be resting or sleeping, with their paws stretched out in front of them. The pictures are arranged in a grid pattern, with each row and column containing one cat's paw. The background is a striped pattern, possibly a wall or a surface.",17,cat,0.394,0.4121,0.0192

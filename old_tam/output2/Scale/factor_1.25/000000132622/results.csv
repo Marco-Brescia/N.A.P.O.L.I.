@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear. The bear has a thick, fluffy coat that is a mix of brown and white. It has large, round ears and a black nose. The bear is standing in a grassy area, and there are some plants in the foreground. The bear appears to be looking directly at the camera.",4,bear,0.5301,0.9143,0.0026

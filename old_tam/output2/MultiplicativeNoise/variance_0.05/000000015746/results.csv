@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a red fire hydrant in a grassy area. The hydrant is surrounded by green grass and some plants. In the background, there is a house with a white roof and a flower garden with purple flowers. The hydrant has two black caps on it, one on each side. The grass around the hydrant is slightly overgrown, and there are some dandelions in the foreground.","[5, 6, 7]",fire hydrant,0.1484,0.175,0.1012

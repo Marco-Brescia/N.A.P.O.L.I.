@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a clock on a pole in front of a building. The clock is black with gold trim and has a white face with black numbers and hands. The building is made of brick and has a large window on the ground floor. There is an American flag flying on a flagpole attached to the building. The sky is clear and blue. The perspective of the photo is from below, looking up at the clock and the building.",4,clock,0.1336,0.0496,0.237

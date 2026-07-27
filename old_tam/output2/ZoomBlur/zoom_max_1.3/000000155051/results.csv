@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a dark scene with a clock in the upper right corner. The clock face is illuminated, showing the time as 10:00. The background is completely black, making the clock stand out. In the bottom left corner, there are blurred lights that resemble a moon or a star, creating a bokeh effect. The overall lighting is low, and the image has a slightly blurry quality.",8,clock,0.3153,0.2577,0.142

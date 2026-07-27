@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a surface. The cat has a mix of white and gray fur. In the background, there is a microwave oven. The microwave has a screen with a grid pattern, and the cat is looking directly at the camera. The overall scene has a slightly blurry or out-of-focus effect, giving it a dreamy or artistic appearance.",4,cat,0.6071,0.4952,0.0707

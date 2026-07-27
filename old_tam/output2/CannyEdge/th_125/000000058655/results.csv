@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a tall building with a clock tower on top. The building has a red brick facade with decorative elements. There are several windows on the building, and the clock tower has a clock face on top. The clock tower is surrounded by a black lamp post with a clock on top. The sky is clear and blue, and there are some trees and bushes in the background.",8,clock,0.065,0.0513,0.2214

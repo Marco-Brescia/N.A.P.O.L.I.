@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000138115,"Describe this image in detail, use simple terms",The image shows a person holding a black object in front of their face. The person has a bald head and is wearing a dark jacket. The background is plain and light-colored.,4,person,0.3986,0.7204,0.0135

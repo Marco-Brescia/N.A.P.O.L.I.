@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a desk with a black telephone on it. The telephone has a cord attached to it, and there is a banana placed on the cord. The desk appears to be in a cluttered or messy state, with various other objects scattered around.",25,banana,0.336,0.1286,0.1543

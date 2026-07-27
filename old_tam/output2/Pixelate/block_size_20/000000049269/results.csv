@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000049269,"Describe this image in detail, use simple terms","The image shows a horse standing in a field. The horse has a brown coat and is standing on its hind legs, which is unusual for horses. The field is covered with green grass, and the sky is visible in the background. The image is pixelated, which means it has been edited to look like a mosaic of small, colorful squares.",4,horse,0.3346,0.3261,0.0863

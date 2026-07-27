@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is seen from a low angle, so it appears to be flying very close to the ground. The sky is clear and blue, with no clouds visible. The plane has two engines on its wings, and it is flying in a straight line. The perspective of the photo makes the plane look large and imposing against the blue sky.",4,plane,0.0328,0.037,0.1665

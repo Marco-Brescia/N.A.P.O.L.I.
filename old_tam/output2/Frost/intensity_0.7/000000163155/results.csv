@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","This image shows a cat sitting on a surface. The cat has a light-colored fur with darker patches, and it appears to be looking to the side. The surface it is sitting on looks like a textured, possibly concrete or stone, with a mix of brown and gray colors. The background is blurred, making it difficult to see more details.",4,cat,0.4869,0.3713,0.0771

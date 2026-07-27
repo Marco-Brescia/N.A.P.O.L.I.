@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on a concrete surface. The cat has a mix of brown and white fur, with some darker markings. It appears to be looking up and to the side, possibly at something in the distance. The background consists of a blurred brick wall, suggesting that the cat is outdoors. The overall scene gives a sense of a quiet, peaceful moment.",4,cat,0.4137,0.3327,0.0835

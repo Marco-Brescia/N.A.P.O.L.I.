@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe's head and neck. The giraffe has a long neck and a long, curved neck. Its head is turned slightly to the side, and it has large, expressive eyes. The giraffe's ears are large and pointed, and it has a brown and white pattern on its skin. The background is blurred, but it appears to be a natural setting with greenery, possibly a forest or a zoo.","[4, 5]",giraffe,0.3161,0.3759,0.0583

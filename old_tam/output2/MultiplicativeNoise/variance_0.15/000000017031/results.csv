@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe. It has long neck and legs, and its head is tilted slightly to the side. The giraffe has large ears and a long, curved neck. The background is green, with some trees and foliage visible. The image has a grainy, textured effect.","[4, 5]",giraffe,0.2145,0.2886,0.0752

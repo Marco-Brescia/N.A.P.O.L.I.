@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","This image appears to be a distorted or pixelated version of a picture. It shows a black cat with white spots, possibly snow or frost, on its fur. The cat is standing in front of a building with a window or a glass door. The overall effect is that the image is blurry and has a grainy texture.",19,cat,0.248,0.4041,0.0321

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000029397,"Describe this image in detail, use simple terms","The image shows a person wearing orange pants and blue and yellow shoes, standing on a wooden beam. The person is leaning against the beam, and there is a blue sign with white text on it attached to the beam. The background includes a brick wall and a concrete surface.",4,person,0.1918,0.1493,0.1936

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is seen from a low angle, so it appears to be flying high up in the sky. The plane is dark-colored, and its wings are spread out, indicating that it is in flight. The sky is clear and blue, with no clouds visible. The plane is the main focus of the image, and it is positioned against the backdrop of the sky.",4,plane,0.0548,0.0491,0.1572

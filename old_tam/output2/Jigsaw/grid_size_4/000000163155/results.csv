@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","This image is a collage of several pictures of a cat. The cat is sitting on a surface, possibly a ledge or a window sill. The cat has a striped pattern with brown and white fur. The background includes a brick wall, suggesting that the cat is in an outdoor or semi-outdoor setting. The cat appears to be looking down or to the side, and its posture suggests it might be resting or observing something.",10,cat,0.4808,0.3638,0.0323

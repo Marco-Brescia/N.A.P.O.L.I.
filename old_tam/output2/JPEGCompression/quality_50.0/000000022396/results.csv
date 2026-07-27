@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky, with the moon visible below it. The plane is a commercial jet, and it has a dark body with a red and blue logo on the tail. The moon is partially visible, with its light side illuminated by the sun, creating a golden hue. The sky is clear with a gradient of blue tones, indicating it might be either early morning or late evening.",4,plane,0.0419,0.0352,0.2289

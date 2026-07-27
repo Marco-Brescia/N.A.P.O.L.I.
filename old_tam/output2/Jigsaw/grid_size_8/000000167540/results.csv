@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","The image is a collage of airplane wings and parts, arranged in a grid pattern. The background is a blue sky with some clouds. The wings are in various positions, some are flying, and others are stationary. The text ""Daniele N"" is visible in the middle of the image. The overall effect is a collage of airplane parts against a blue sky background.",6,airplane,0.0591,0.065,0.0696

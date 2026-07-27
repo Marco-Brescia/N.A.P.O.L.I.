@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000056545,"Describe this image in detail, use simple terms","The image shows a bird perched on a branch. The bird has a grayish-brown plumage with some darker markings on its wings and back. It has a short beak and appears to be looking up, possibly at something in the sky. The background is blurred, but it seems to be a tree with green leaves, and there are small, white specks that could be raindrops or snowflakes. The overall scene gives a sense of a rainy or snowy day.",4,bird,0.3309,0.3402,0.0626

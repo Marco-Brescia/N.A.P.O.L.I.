@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","The image shows a cat lying down on a black background. The cat has a white and brown coat with black markings on its face and paws. The cat appears to be looking up, and there are white dots scattered around the image, giving it a snowy or starry effect.",4,cat,0.5964,0.5501,0.033

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on the ground. The cat has a mix of brown and white fur. The background is a brick wall, and there are many tiny dots or specks scattered throughout the image, giving it a textured appearance. The cat appears to be looking to the side, and the overall scene has a somewhat abstract or artistic feel.",4,cat,0.639,0.4625,0.0512

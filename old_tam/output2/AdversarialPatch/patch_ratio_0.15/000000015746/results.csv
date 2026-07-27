@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a red fire hydrant with a black checkered pattern on it. The hydrant is in a grassy area with some flowers and trees in the background. There is a house with a roof covered in purple flowers, and some greenery around. The hydrant is positioned in front of the house, and there are some dandelions in the grass.","[5, 6, 7]",fire hydrant,0.0963,0.1388,0.1094

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a fire hydrant in a grassy area. The hydrant is red with black accents and has two valves on it. Behind the hydrant, there is a house with a roof and some trees. The grass around the hydrant is green and some dandelions are visible. The overall scene appears to be outdoors, possibly in a residential area.","[4, 5, 6]",fire hydrant,0.1054,0.1487,0.109

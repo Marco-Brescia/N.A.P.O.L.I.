@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is seen from a low angle, looking up at it. The sky is clear and blue, and the plane is flying at a moderate altitude. The plane has wings and a tail, and it appears to be a commercial jet. The image gives a sense of the plane's size and the vastness of the sky it is flying in.",4,plane,0.0163,0.0141,0.204

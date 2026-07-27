@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","This image is a collage of several small, square pictures arranged in a grid pattern. Each square shows a close-up of an orange, with the background showing a road and some trees. The oranges are orange in color and appear to be ripe. The collage gives the impression of a mosaic or a pattern made up of individual orange pictures.",25,orange,0.4158,0.2589,0.0374

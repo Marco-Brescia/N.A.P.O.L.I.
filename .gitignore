@@ -231,3 +231,8 @@ output/**/*
 masks_perturbed/
 plots/output/breaking_point_per_token/
 plots/output/heatmaps/
+plots/old_tam/output/breaking_point_per_token/
+plots/old_tam/output/heatmaps/
+old_tam/output2/**/*
+!old_tam/output2/**/
+!old_tam/output2/**/*.csv

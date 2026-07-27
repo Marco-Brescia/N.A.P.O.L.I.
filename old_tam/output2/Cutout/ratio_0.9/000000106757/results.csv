@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000106757,"Describe this image in detail, use simple terms","The image shows a close-up of an elephant. The elephant is standing on a dirt ground, and there is a rope or fence around it. The background shows some greenery and a clear sky.",8,elephant,0.5204,0.5493,0.0391

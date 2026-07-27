@@ -1,4 +1,5 @@
 from dataclasses import dataclass, field
+import os
 from typing import List
 
 
@@ -26,3 +27,12 @@ class Config:
     # Retry
     max_retries: int = 10
     retry_sleep_seconds: float = 1.0
+
+    USE_OLD_TAM: bool = True
+
+    def __post_init__(self):
+        # define the output folder based on the USE_OLD_TAM flag
+        out_folder = "old_tam/output2" if self.USE_OLD_TAM else self.output_dir
+
+        # Since the dataclass is frozen, we need to use object.__setattr__ to modify the output_dir attribute
+        object.__setattr__(self, 'output_dir', out_folder)

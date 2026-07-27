@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock with Roman numerals on it, hanging in the dark. The clock face is illuminated, showing the time. In the background, there are blurred lights that resemble the moon, creating a bokeh effect. The overall scene is dark, with the clock being the only source of light.",4,clock,0.3702,0.288,0.1422

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","This image shows a night sky filled with stars. In the center, there is a large, round object that looks like a clock face. The clock has numbers and hands, but it is not a real clock. The stars are small and scattered throughout the sky, creating a dark background. In the bottom left corner, there is a small, round object that looks like the moon.",25,clock,0.5273,0.3689,0.1109

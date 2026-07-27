@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a night scene with a clock and the moon. The clock is on the right side of the image and has Roman numerals on its face. The clock reads ""1902"" at the top. The moon is visible in the bottom left corner of the image, appearing as a bright, white orb against the dark sky. The overall scene is set against a black background, emphasizing the contrast between the illuminated clock and the dark sky.",8,clock,0.1774,0.1974,0.1541

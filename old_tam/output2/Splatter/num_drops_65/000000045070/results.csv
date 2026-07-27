@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","The image shows a young child riding a horse. The child is wearing a pink and white checkered shirt, jeans, and a black helmet. The horse is purple, and the child is holding onto the reins. The background features green trees and a cloudy sky. The child appears to be enjoying the ride.",8,horse,0.2298,0.2691,0.1888

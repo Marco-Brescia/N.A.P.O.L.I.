@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a toilet that is made of stone. The toilet is white and has a pedestal base. The stone appears to be a dark color, possibly black or dark gray, and has a speckled pattern. The background of the image is blurred, but it seems to be an outdoor setting with some greenery and trees.",4,toilet,0.347,0.2818,0.0962

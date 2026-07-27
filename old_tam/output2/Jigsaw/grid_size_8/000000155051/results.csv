@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","This image appears to be a close-up of a clock face with the hands pointing to different times. The clock face is dark, and the numbers and hands are illuminated. The numbers on the clock face are Roman numerals, and the hands are black. The background is also dark, making the clock face stand out.",10,clock,0.0805,0.1572,0.0379

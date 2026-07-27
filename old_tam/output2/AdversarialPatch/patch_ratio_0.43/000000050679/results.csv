@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image shows a large, round orange with a checkerboard pattern on it. The orange is placed on a road with several cars in the background. The sky is cloudy, and there are trees and buildings in the distance. The orange is slightly tilted, and the checkerboard pattern is clearly visible.",7,orange,0.2535,0.1889,0.1197

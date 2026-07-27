@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000009378,"Describe this image in detail, use simple terms","The image shows a person with long, curly hair wearing a black shirt and a striped cap. They are holding a checkered object in front of their face, which is blurred out. The background appears to be an indoor setting with a crowd of people, suggesting a performance or event.",4,person,0.0785,0.1776,0.0952

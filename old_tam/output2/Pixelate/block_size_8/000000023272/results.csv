@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000023272,"Describe this image in detail, use simple terms","The image shows a small, enclosed area with some greenery. There are plants and possibly some flowers in the background. In the foreground, there is a small, dark-colored object that appears to be a cat. The cat is sitting or lying down, and it seems to be in a relaxed position. The overall scene looks like a garden or a small patio area.",41,cat,0.068,0.0546,0.1934

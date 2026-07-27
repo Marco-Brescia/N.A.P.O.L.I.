@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock with a dark background. The clock face is visible, but it is not clear what time it is. There is also a small, blurry object on the left side of the image, which could be a moon or a star. The overall lighting is low, making it difficult to see the details of the clock and the object.",4,clock,0.4197,0.2997,0.1365

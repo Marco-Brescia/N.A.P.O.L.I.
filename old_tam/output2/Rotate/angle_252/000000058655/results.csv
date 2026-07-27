@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms",The image shows a street clock mounted on a pole. The clock has a classic design with Roman numerals and a black frame. The time on the clock is approximately 10:10. The building behind the clock is a brick structure with multiple windows. There is an American flag hanging from a flagpole on the building. The sky is clear and blue.,5,clock,0.0867,0.0531,0.2293

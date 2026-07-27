@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000000650,"Describe this image in detail, use simple terms","The image shows a cat sitting on the ground. The cat has a black coat with some white markings on its face and paws. The background appears to be outdoors, with some greenery and possibly a wall or fence. The cat is looking down and appears to be resting or observing something on the ground.",4,cat,0.4927,0.3173,0.075

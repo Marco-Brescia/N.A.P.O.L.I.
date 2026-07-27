@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","The image shows a young girl sitting on a horse. She is wearing a black helmet, a pink and white checkered shirt, and blue jeans. The horse has a purple saddle and a black saddle blanket. The background is green with trees. There are two checkered squares superimposed on the image.",9,horse,0.2783,0.264,0.199

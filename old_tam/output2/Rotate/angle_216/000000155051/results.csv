@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock with a white face and black hands. The clock is set to a time of 10:00. The background is completely dark, making the clock the only source of light in the image. The clock has Roman numerals on the outer edge of the face, indicating the hours.",4,clock,0.1619,0.148,0.1649

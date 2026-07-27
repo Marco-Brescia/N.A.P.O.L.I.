@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear walking through grass. The bear has a light brown coat with darker markings on its face and paws. The grass is green and appears to be wet, possibly from recent rain. The bear's fur is slightly wet, and there are small droplets of water around it. The bear's eyes are closed, and it seems to be moving slowly.",4,bear,0.3674,0.718,0.0149

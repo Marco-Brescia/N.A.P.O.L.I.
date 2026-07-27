@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear standing in a grassy area. The bear has a thick, fluffy coat and is looking directly at the camera. The grass around the bear is green and appears to be wet, suggesting it might have rained recently. The bear's fur is wet, and there are droplets of water on its face and body. The bear's ears are perked up, and it has a calm and curious expression.",4,bear,0.5052,0.7356,0.0149

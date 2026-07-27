@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a white toilet sitting on the ground. The toilet is placed in front of a large tree trunk, which has a rough, textured bark. The tree trunk is surrounded by some greenery and leaves, indicating it might be in a garden or backyard setting. The ground around the toilet is covered with leaves and grass, suggesting it might be a sunny day.",5,toilet,0.4134,0.2758,0.1144

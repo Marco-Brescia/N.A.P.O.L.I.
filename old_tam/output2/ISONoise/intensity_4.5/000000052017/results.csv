@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000052017,"Describe this image in detail, use simple terms","The image shows a small, yellow airplane with a red tail and a blue propeller. The airplane has the registration number ""SP-AWF"" on the side. It is flying in the sky, and the background is a clear, light-colored sky.",7,airplane,0.1224,0.1316,0.0926

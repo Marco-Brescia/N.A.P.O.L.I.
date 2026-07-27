@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is dark-colored, possibly black or dark blue, and it has wings spread wide. The sky is blue with white dots, which could be snowflakes or small particles. The plane appears to be in mid-flight, and the background is clear, showing the plane against the blue sky.",4,plane,0.168,0.0956,0.1039

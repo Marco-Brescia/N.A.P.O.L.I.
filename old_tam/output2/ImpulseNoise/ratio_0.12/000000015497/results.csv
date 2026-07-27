@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","This image shows a cat lying down on a black background. The cat has a mix of white and brown fur. It appears to be holding a toy in its mouth, which is also on the black background. The toy looks like a small ball or a small object. The overall scene is simple and minimalistic.",4,cat,0.6116,0.5307,0.0387

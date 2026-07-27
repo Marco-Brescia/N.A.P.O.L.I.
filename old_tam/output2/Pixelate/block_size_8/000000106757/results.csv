@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000106757,"Describe this image in detail, use simple terms","The image shows a person and an animal. The person is wearing a white shirt and appears to be interacting with the animal. The animal is large and appears to be a bear or a similar species. The background shows greenery, suggesting the photo was taken outdoors.",4,person,0.4453,0.4096,0.0792

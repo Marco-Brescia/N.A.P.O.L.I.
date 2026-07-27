@@ -11,7 +11,11 @@ import numpy as np
 from config import Config
 from heatmap import build_global_heatmap, find_target_tokens
 from models import ImageTask, MaskEntry
-from new_eval import compute_all_metrics, run_inference
+
+if Config().USE_OLD_TAM:
+    from old_tam.new_eval import compute_all_metrics, run_inference
+
+
 from viz import make_layer_grid, save_thresholded_viz
 
 logger = logging.getLogger(__name__)
@@ -110,13 +114,14 @@ def process_image(
             )
 
         # Layer grid 
-        grid_path = os.path.join(heatmaps_dir, f"{task.image_id}_{entry.category}_heatmap.jpg")
-        make_layer_grid(
-            layer_images=layer_images,
-            token_label=entry.category,
-            out_path=grid_path,
-        )
-        del layer_images  # Free memory eagerly
+        if not cfg.USE_OLD_TAM:
+            grid_path = os.path.join(heatmaps_dir, f"{task.image_id}_{entry.category}_heatmap.jpg")
+            make_layer_grid(
+                layer_images=layer_images,
+                token_label=entry.category,
+                out_path=grid_path,
+            )
+            del layer_images  # Free memory eagerly
 
         # Thresholded visualisation
         threshold_path = os.path.join(
@@ -128,6 +133,7 @@ def process_image(
             save_path=threshold_path,
             mask_shape=entry.mask.shape,
             threshold=cfg.viz_threshold,
+            use_otsu=cfg.USE_OLD_TAM,  # Use Otsu's method if using old TAM logic
         )
 
         # Metrics

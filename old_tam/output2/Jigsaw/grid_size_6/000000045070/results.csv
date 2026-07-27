@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","This image is a collage of several small, square pictures. Each picture shows a person wearing a cowboy hat and a plaid shirt, sitting on a saddle. The background is green, and there are trees visible in the distance. The pictures are arranged in a grid pattern.",16,person,0.3154,0.3484,0.0284

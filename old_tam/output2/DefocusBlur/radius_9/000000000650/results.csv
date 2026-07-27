@@ -1,0 +1,3 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000000650,"Describe this image in detail, use simple terms","The image shows a cat sitting on the roof of a car. The cat has a white and gray coat, and it appears to be looking around. The background is blurred, making it difficult to see details, but it seems to be an outdoor setting with some greenery and a fence.",11,car,0.6694,0.5029,0.0829
+000000000650,"Describe this image in detail, use simple terms","The image shows a cat sitting on the roof of a car. The cat has a white and gray coat, and it appears to be looking around. The background is blurred, making it difficult to see details, but it seems to be an outdoor setting with some greenery and a fence.",4,cat,0.4046,0.3099,0.0772

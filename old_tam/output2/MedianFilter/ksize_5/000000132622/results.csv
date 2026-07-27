@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear walking through a grassy area. The bear has a thick, fluffy coat that is primarily white with some brown patches. Its face is large and round, with dark eyes and a black nose. The bear appears to be in motion, as if it is walking through the grass. The background is blurred, making it difficult to see details, but it seems to be a natural environment with green grass.",4,bear,0.4034,0.7466,0.013

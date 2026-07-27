@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000033759,"Describe this image in detail, use simple terms","This image is a pixelated picture of a person. The person appears to be standing and is wearing a shirt. The colors are muted and the image is very dark, making it difficult to see any details. The person is standing on a surface that looks like grass or a similar texture.",9,person,0.3468,0.2272,0.1369

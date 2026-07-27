@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a tall building with a clock on top. The building has many windows and is made of brick. There is a clock on a pole in front of the building. The sky is clear and blue. The image has a grainy texture, giving it a slightly pixelated look.",8,clock,0.0759,0.0555,0.2194

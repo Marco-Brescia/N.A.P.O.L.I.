@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a toilet in a garden or backyard setting. The toilet is surrounded by a lot of white dots, which might be snow or a similar substance. The background includes some greenery and a tree trunk, suggesting that the toilet is in a natural, outdoor area.",4,toilet,0.4127,0.2693,0.1141

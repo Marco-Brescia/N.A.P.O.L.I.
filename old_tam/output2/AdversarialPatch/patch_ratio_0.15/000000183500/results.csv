@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000183500,"Describe this image in detail, use simple terms","The image shows a small, vintage airplane flying in the sky. The airplane has two wings, each with two propellers. The propellers are yellow and orange. The airplane has a checkered pattern on its side, which is a classic design. The sky is cloudy, and the airplane is flying at a moderate altitude. The photo is signed ""Desrosiers Photo"" in the bottom right corner.",7,airplane,0.1088,0.1284,0.0933

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is in the middle of the frame, and it appears to be a commercial jet. The sky is filled with a lot of colorful dots, which might be a result of the camera's noise or a filter effect. The plane is flying at a relatively low altitude, and the sun is visible in the background, creating a bright spot on the left side of the image.",4,plane,0.0437,0.0322,0.2268

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky, with the moon visible below it. The plane is in the upper right corner of the image, and the moon is in the lower left corner. The sky is clear with a blue color, and the plane appears to be flying at a moderate altitude. The moon is partially visible, with its bright side illuminated by the sunlight.",4,plane,0.0421,0.038,0.2156

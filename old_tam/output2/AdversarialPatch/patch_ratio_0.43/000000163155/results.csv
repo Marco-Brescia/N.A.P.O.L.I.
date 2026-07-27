@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on a wooden surface, possibly a porch or a ledge. The cat has a striped coat with a mix of gray and white fur. In front of the cat, there is a black and white checkered object, which appears to be a chessboard. The background consists of a brick wall and a blurred outdoor setting, suggesting that the cat is outdoors.",4,cat,0.2452,0.3179,0.0777

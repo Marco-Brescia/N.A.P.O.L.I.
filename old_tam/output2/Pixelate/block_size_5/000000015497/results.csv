@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","The image shows a cat lying down on a dark surface. The cat has a mix of brown, white, and black fur. It appears to be resting or sleeping. Next to the cat, there is a small, round object that looks like a ball or a toy. The lighting in the image is low, making it difficult to see the details of the cat's fur and the ball.",4,cat,0.5324,0.5259,0.0415

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear standing in a grassy field. The bear has a thick, fluffy coat and is looking directly at the camera. The background is a bit blurry, but it appears to be a natural setting with some grass and possibly some trees or bushes. The bear's fur is a mix of light and dark shades, giving it a natural, rugged appearance.",4,bear,0.4268,0.7288,0.0156

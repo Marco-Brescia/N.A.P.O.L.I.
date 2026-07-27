@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000183500,"Describe this image in detail, use simple terms","The image shows a small, old-fashioned airplane. It has a single propeller at the front and is painted in a red and white striped pattern. The airplane is surrounded by a snowflake-like pattern, giving it a festive and winter-like appearance.",8,airplane,0.1836,0.1735,0.0819

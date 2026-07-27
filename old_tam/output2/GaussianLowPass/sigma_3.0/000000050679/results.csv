@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image shows a pumpkin lying on the ground in the middle of a parking lot. The pumpkin is orange and appears to be ripe, with a smooth, round shape. The background is blurred, but you can see some trees, parked cars, and a cloudy sky. The parking lot is paved with asphalt, and there are white lines marking the parking spaces.",20,orange,0.4504,0.2846,0.0913

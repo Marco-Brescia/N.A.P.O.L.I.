@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000009378,"Describe this image in detail, use simple terms","The image shows a person with long, curly hair wearing a black shirt and a blue beanie. The person is bending forward, and their face is partially obscured by a black rectangular shape. The background appears to be an indoor setting with a crowd of people, some of whom are also wearing black shirts. The overall atmosphere seems to be a performance or event.",4,person,0.2619,0.3065,0.0752

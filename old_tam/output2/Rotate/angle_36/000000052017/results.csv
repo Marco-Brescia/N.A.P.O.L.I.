@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000052017,"Describe this image in detail, use simple terms","The image shows a small, yellow airplane with red accents. The airplane has a single propeller at the front and is flying in the air. The tail of the airplane is red, and there is a red stripe on the side. The airplane has the registration number ""SP-AWF"" on the side. The sky in the background is gray, indicating it might be a cloudy day.",7,airplane,0.1046,0.1278,0.1037

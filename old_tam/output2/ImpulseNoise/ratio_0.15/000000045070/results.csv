@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","The image shows a person sitting on a chair. The person is wearing a pink and white striped shirt and a black hat. The chair is on a purple mat. The background is green, and there are trees visible. The person appears to be sitting in a relaxed position.",4,person,0.1155,0.1908,0.0823

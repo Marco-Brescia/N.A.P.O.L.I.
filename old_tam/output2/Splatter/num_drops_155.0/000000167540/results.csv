@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","The image shows a small airplane flying in the sky. The airplane has two wings and four engines. The sky is dark with a few stars visible, and the airplane is illuminated by the light from its engines. The image is taken during the night or in a dark environment.",5,airplane,0.0701,0.0713,0.1235

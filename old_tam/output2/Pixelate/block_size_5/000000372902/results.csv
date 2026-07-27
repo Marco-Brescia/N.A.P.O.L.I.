@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000372902,"Describe this image in detail, use simple terms","The image shows a close-up of a small area with some plants and a train track. The plants have green leaves and are growing near the edge of a gravel or stone surface. The train track is visible in the background, and there is some snow on the ground. The overall scene suggests a quiet, outdoor setting, possibly near a railway line.",52,ground,0.2151,0.2274,0.0492

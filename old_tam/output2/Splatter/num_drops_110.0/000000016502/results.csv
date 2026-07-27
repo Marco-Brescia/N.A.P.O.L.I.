@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on top of a rocky hill. The sky is cloudy with raindrops falling, creating a dramatic and somewhat surreal atmosphere. The sheep is looking towards the camera, and the background features a mix of dark and light clouds, giving the scene a moody feel.",4,sheep,0.0455,0.0368,0.2028

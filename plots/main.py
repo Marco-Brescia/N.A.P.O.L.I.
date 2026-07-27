@@ -46,12 +46,12 @@ def _parse_args() -> argparse.Namespace:
         epilog=__doc__,
     )
     parser.add_argument(
-        "--output-dir", default="output",
+        "--output-dir", default= "old_tam/output2", #"output",
         help="Root directory containing result CSVs (default: 'output').",
     )
     parser.add_argument(
-        "--plots-dir", default="plots/output",
-        help="Directory where PNGs are saved (default: 'plots/output').",
+        "--plots-dir", default="plots/old_tam/output", # "plots/output",
+        help="Directory where PNGs are saved (default: 'plots/old_tam/output').",
     )
     parser.add_argument(
         "--plots",

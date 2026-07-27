@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms",The image shows a desk with a telephone on it. The telephone has a corded handset and a dial pad. There is a banana placed on the desk next to the telephone. The background includes a piece of paper with some writing on it. The desk appears to be made of wood.,26,banana,0.1596,0.1145,0.1579

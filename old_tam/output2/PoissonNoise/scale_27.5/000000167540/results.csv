@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","The image shows a small airplane flying in the sky. The airplane has two wings, each with a circular design in the center. The wings are yellow with a blue outline. The airplane has two engines, one on each wing. The sky in the background is blue with some clouds. The photo has a grainy texture, giving it a slightly rough appearance.",5,airplane,0.0731,0.0723,0.1138

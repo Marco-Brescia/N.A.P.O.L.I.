@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on a ledge. The cat has a striped coat with a mix of gray, white, and black stripes. The cat's tail is long and has a black tip. The background consists of a brick wall, and the cat appears to be looking to the side. The overall image has a grainy texture, giving it a slightly pixelated appearance.",4,cat,0.4889,0.3717,0.0676

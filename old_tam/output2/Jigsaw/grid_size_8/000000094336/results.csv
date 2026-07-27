@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000094336,"Describe this image in detail, use simple terms","This image is a collage of pictures showing various cats. The cats are arranged in a grid-like pattern, with each cat occupying a different section of the image. The cats are in different positions and orientations, creating a dynamic and interesting visual effect. The collage appears to be a playful and creative way to display the cats.",23,cat,0.2792,0.3312,0.0211

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe with its head turned slightly to the side. The giraffe has long, straight horns on its head and a long neck. It is surrounded by greenery, including trees and bushes, which are out of focus in the background. The giraffe appears to be in a natural setting, possibly a zoo or a wildlife reserve.","[4, 5]",giraffe,0.2259,0.2594,0.0778

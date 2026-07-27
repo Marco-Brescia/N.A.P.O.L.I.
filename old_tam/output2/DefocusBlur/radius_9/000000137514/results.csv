@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a table. The cat has a white and brown striped coat. In the background, there is a computer monitor, which appears to be turned on. The monitor is turned off, but you can see some green and white lights on it. The cat is looking to the left, and the overall picture is blurry, making it difficult to see details clearly.",4,cat,0.649,0.4827,0.0832

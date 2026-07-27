@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is in the foreground, and it's flying at a low altitude. The sky is blue with some clouds, and there are many small, black dots scattered throughout the sky. These dots are not part of the plane or the sky; they are small, black, and appear to be floating in the air. The plane is flying over these dots, and the dots are scattered in various directions.",4,plane,0.0439,0.0445,0.1669

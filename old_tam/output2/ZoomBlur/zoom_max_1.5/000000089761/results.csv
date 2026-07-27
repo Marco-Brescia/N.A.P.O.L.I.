@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a white toilet with a lid that is closed. The toilet is placed in a grassy area with some trees in the background. The toilet is surrounded by a dark, textured surface that appears to be bark or a similar material. The overall scene has a surreal or abstract quality due to the blending of the toilet and the tree bark.",5,toilet,0.4245,0.2836,0.1149

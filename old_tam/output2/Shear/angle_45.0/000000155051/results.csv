@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock with a dark background. The clock face is illuminated, displaying the time. The clock hands are pointing towards the number 10. Below the clock, there is a small, bright, circular object that appears to be the moon. The moon is partially visible, with its light shining through the dark sky.",4,clock,0.2652,0.2595,0.1129

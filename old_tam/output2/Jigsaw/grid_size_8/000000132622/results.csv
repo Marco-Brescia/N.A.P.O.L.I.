@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","This image is a collage of several small, square pictures of animals. The animals appear to be bears, and they are shown in different positions and angles. The pictures are arranged in a grid pattern, with each square containing a different bear. The bears have their faces and ears visible, and they are surrounded by green grass. The overall effect is a collage of bear faces in various poses.",46,bear,0.3911,0.7124,0.0052

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000106757,"Describe this image in detail, use simple terms","The image shows a large elephant standing on a path. The elephant is surrounded by greenery, including trees and bushes. The path is visible in the background, and the sky is clear with a few clouds. The overall scene appears to be outdoors, possibly in a zoo or a wildlife reserve.",5,elephant,0.4014,0.5697,0.0325

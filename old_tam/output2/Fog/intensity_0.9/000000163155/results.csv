@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on a surface. The cat has a white body with gray stripes and is looking to the side. The background is blurred, making it difficult to see any details, but it appears to be a light-colored room with a brick wall on the left side. The overall tone of the image is soft and diffused.",4,cat,0.4761,0.3728,0.0709

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000052017,"Describe this image in detail, use simple terms","The image shows a pixelated figure of a person lying down on their back. The figure is wearing a red shirt and has a blue object, possibly a hat or a piece of clothing, on their head. The background is plain and light-colored.",9,person,0.004,0.0019,0.2533

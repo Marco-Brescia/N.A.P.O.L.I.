@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a surface. The cat has a mix of white and gray stripes on its body. The cat's eyes are closed, and it appears to be resting or sleeping. In the background, there is a computer monitor with a blue and white pattern. The monitor is turned on, and the cat is looking towards it. The overall image has a soft, blurred effect, giving it a dreamy or ethereal quality.",4,cat,0.572,0.5088,0.069

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","The image shows two black cats standing next to each other. One cat is closer to the camera, and the other is slightly behind and to the side. They are both looking at a green bottle with a red light on it. The background is blurry, but it appears to be an indoor setting with some light sources.",13,cat,0.3725,0.4844,0.0276

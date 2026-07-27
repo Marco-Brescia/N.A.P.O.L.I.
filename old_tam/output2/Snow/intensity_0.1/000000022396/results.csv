@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky with a moon visible below it. The moon is partially visible, with its light side illuminated by the sunlight. The plane is in the upper right corner of the image, and it appears to be a commercial jet. The sky is filled with stars, creating a starry background.",4,plane,0.0359,0.0315,0.2175

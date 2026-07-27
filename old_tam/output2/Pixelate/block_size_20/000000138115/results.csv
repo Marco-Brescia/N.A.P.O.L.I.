@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000138115,"Describe this image in detail, use simple terms","The image shows a person with a pixelated face. The person is wearing a yellow shirt. The background is a solid color, possibly black or dark.",4,person,0.5792,0.8137,0.0081

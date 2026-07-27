@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000056545,"Describe this image in detail, use simple terms","This image shows a bird perched on a branch. The bird has a grayish-brown body with a slightly lighter grayish-brown head and wings. The background is blurred, but it appears to be a tree with green leaves and some white flowers or blossoms. The bird's feathers are detailed, and you can see the texture of its feathers.",4,bird,0.4393,0.4223,0.0561

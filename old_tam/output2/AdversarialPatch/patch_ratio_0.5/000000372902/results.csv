@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000372902,"Describe this image in detail, use simple terms","The image shows a car parked on the side of the road. There are two small, green plants growing near the car. The plants have a checkered pattern, which is a design made up of squares of different colors. The car has a black and white checkered pattern on its side. The plants are growing in front of the car, and the car's bumper is visible.",4,car,0.3005,0.3808,0.0814

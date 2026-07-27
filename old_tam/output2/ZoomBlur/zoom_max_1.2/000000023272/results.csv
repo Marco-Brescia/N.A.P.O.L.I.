@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000023272,"Describe this image in detail, use simple terms","The image shows a blurry scene of a car and some greenery. The car appears to be moving quickly, as indicated by the motion blur. The greenery outside the car window includes bushes and possibly some plants. The overall effect is that the car and the greenery are moving together, creating a sense of motion.",8,car,0.4827,0.7575,0.0225

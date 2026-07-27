@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms",The image shows a tall brick building with many windows. There is a clock on a pole in front of the building. The clock has a white face with black numbers and hands. The building has a classic architectural style with a large entrance and a staircase leading up to it. There are American flags hanging from the building. The sky is clear and blue.,14,clock,0.0552,0.0503,0.2127

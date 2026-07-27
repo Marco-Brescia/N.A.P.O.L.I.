@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a white toilet in a natural setting. The toilet is surrounded by trees and some greenery. The scene appears to be outdoors, possibly in a garden or a backyard. The toilet is placed on a patch of dirt or gravel, and the surrounding area is slightly blurred, giving a sense of movement or a quick capture of the moment.",5,toilet,0.3665,0.268,0.1164

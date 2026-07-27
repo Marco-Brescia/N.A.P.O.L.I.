@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a surface, possibly a table or a countertop. The cat has a striped pattern with white and gray fur. In the background, there is a microwave oven. The microwave has a dark screen and some buttons on its front. The overall image has a grainy, pixelated effect, giving it a somewhat blurry appearance.",4,cat,0.555,0.5378,0.0649

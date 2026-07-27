@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear standing in a grassy field. The bear has a white fur coat with some brown patches. In front of the bear, there is a black and white checkerboard pattern that covers most of the bear's face. The background is blurred, making it difficult to see the details of the grass or the sky.",4,bear,0.3086,0.6894,0.0169

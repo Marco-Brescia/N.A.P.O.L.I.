@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep hanging off the side of a cliff. The cliff is made of rocks and has some green moss growing on it. The sky is blue with some white clouds. The sheep is hanging by its front legs, with its back legs hanging off the edge of the cliff.",4,sheep,0.049,0.0353,0.2107

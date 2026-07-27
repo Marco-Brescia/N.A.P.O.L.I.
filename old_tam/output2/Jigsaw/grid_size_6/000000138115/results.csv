@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000138115,"Describe this image in detail, use simple terms","This image is a collage of several small, square pictures. Each picture shows a close-up of an orange. The oranges are held up to the camera, and the background is plain. The pictures are arranged in a grid pattern, with each square containing a different angle and perspective of the orange. The collage gives the impression of a playful or whimsical arrangement.",20,orange,0.4203,0.2078,0.0708

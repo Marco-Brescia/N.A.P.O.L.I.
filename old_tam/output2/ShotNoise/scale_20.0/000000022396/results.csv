@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is dark in color, and it's flying at a high altitude. In the foreground, there is a bright, round object that appears to be the sun. The sun is partially obscured by the plane, and the plane's shadow is visible on the ground. The sky is clear with a blue color, and there are no other objects or features visible in the image.",4,plane,0.0553,0.0401,0.2088

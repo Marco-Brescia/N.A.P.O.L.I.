@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock with a blurry background. The clock face is visible, but the details are not clear due to the motion blur. The clock hands are also blurred, making it difficult to see the exact time. The background is dark, and there is a small, blurry light source on the left side of the image. The overall effect is that the clock is moving or spinning, creating a sense of motion.",4,clock,0.3923,0.3013,0.1322

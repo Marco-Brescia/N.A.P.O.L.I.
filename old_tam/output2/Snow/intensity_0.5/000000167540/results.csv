@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane has a dark color with some markings on its wings. The sky is filled with white dots, which could be snow or small particles. The plane appears to be in mid-flight, and the background is mostly clear with some clouds.",4,plane,0.1009,0.0871,0.1059

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on the floor. The cat has a brown and white coat, and it appears to be looking down or to the side. The background consists of a brick wall, and the floor is also made of bricks. The cat's fur is visible, and it seems to be in a relaxed position.",4,cat,0.4944,0.3823,0.0626

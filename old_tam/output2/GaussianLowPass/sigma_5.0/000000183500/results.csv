@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000183500,"Describe this image in detail, use simple terms",The image shows a biplane flying in the sky. The plane has red wings and a white body with some red markings. The propeller is visible at the front of the plane. The background is a cloudy sky.,5,plane,0.1753,0.1862,0.0815

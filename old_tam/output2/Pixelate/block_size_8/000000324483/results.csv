@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000324483,"Describe this image in detail, use simple terms","The image shows a cat with a mix of brown, black, and white fur. The cat has large, pointed ears and is looking slightly to the side. The cat is surrounded by some green and yellow objects, which could be plants or decorations. The background is a light-colored surface, possibly a wall or a table.",4,cat,0.5923,0.5369,0.0316

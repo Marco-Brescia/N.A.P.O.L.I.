@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a desk with a few items on it. There is a black corded telephone with a banana hanging off the hook. The phone is from the brand ""Philips."" There is also a stapler on the desk, and a piece of paper with some writing on it. The desk appears to be made of a light-colored material.",21,banana,0.1205,0.1168,0.158

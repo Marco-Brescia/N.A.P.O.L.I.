@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is seen from above, with its wings and tail visible. The background is a blurred, snowy or icy landscape, giving the impression that the plane is flying over a winter or cold environment. The overall scene is serene and peaceful, with the plane's silhouette contrasting against the snowy backdrop.",4,plane,0.0843,0.0684,0.1464

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a tall, red-brick building with a clock on a pole in front of it. The building has several windows and a large clock face on the front. The clock is round and has a gold frame. The sky in the background is clear and blue. The overall image has a blurred effect, giving it a dreamy or artistic look.",12,clock,0.0507,0.0523,0.2173

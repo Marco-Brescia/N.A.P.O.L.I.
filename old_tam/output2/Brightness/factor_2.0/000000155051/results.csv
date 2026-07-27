@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock with a gold face and black Roman numerals. The clock is mounted on a wall and is illuminated by a light source, possibly from the moon or another source in the sky. The clock face is visible against a dark background, and the time on the clock is approximately 10:10. The moon is visible in the lower left corner of the image, appearing as a bright, white circle against the dark sky.",4,clock,0.1803,0.1942,0.1481

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000372902,"Describe this image in detail, use simple terms","The image shows a close-up of a car's bumper and some plants growing near it. The plants have green leaves and appear to be small, possibly young plants. The car's bumper is visible, and it seems to be parked on a surface, possibly a road or a driveway. The overall scene suggests that the plants are growing in an area near the car.",8,car,0.4702,0.4285,0.0702

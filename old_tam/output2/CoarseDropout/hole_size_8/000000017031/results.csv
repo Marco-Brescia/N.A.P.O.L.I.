@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe standing in a forested area. The giraffe has a long neck and a distinctive pattern of brown and white patches on its body. The background is filled with green trees and bushes, creating a natural setting. There are also small black dots scattered around the image, possibly indicating points of interest or annotations.","[4, 5]",giraffe,0.2291,0.2861,0.0804

@@ -1,0 +1,3 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000179285,"Describe this image in detail, use simple terms","The image shows a tennis racket with a tennis ball inside it. The racket is blue and has a grid pattern on the frame. The tennis ball is white and has some green and yellow markings on it. The background is green, which is typical for a tennis court.",9,ball,0.1145,0.1117,0.1594
+000000179285,"Describe this image in detail, use simple terms","The image shows a tennis racket with a tennis ball inside it. The racket is blue and has a grid pattern on the frame. The tennis ball is white and has some green and yellow markings on it. The background is green, which is typical for a tennis court.",5,racket,0.4426,0.7364,0.0146

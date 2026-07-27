@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000033759,"Describe this image in detail, use simple terms","The image shows a person playing baseball. They are wearing a helmet, a green shirt, and a baseball glove. The person is standing on a baseball field, holding a black square block in front of their face. The background includes a chain-link fence and some greenery.",4,person,0.1619,0.1438,0.1468

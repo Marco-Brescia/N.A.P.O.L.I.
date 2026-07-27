@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000324483,"Describe this image in detail, use simple terms","The image shows a cat sitting behind a pair of green bags. The cat has a fluffy coat with a mix of orange, white, and black colors. It has long whiskers and is looking up, possibly at something in the distance. The bags are green and appear to be made of a sturdy material. The overall image has a grainy, pixelated effect, giving it a vintage or artistic look.",4,cat,0.5126,0.4927,0.0398

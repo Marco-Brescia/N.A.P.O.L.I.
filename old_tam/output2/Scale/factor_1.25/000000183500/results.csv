@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000183500,"Describe this image in detail, use simple terms","The image shows a vintage biplane flying in the sky. The plane has a white body with red accents and a red tail fin. The wings are red with white stripes, and there are red propellers on the front. The plane has two seats, and the pilot is visible in the cockpit. The background shows a cloudy sky.",6,plane,0.1281,0.2134,0.0683

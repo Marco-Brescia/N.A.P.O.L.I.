@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000056545,"Describe this image in detail, use simple terms","This image is a collage of four pictures of a bird. The bird is perched on a branch, surrounded by green leaves and branches. The bird has a grayish-brown plumage with a slightly darker head and neck. Its beak is open, and it appears to be vocalizing or making a sound. The background is blurred, making the bird the main focus of the collage.",10,bird,0.3635,0.3668,0.0423

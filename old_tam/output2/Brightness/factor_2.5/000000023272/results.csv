@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000023272,"Describe this image in detail, use simple terms","The image shows a car with a person sitting inside. The person is wearing a hat and appears to be looking out the window. The car has a grill and headlights, and there is a reflection of the person and the car on the hood. The background includes some greenery and a building.",4,car,0.8065,0.7939,0.0174

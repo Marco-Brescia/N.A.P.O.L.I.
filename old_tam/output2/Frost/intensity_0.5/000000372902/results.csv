@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000372902,"Describe this image in detail, use simple terms","The image shows a scene with some plants and a car. The plants are green and appear to be growing in a patch of dirt or gravel. In the background, there is a car, but it is partially obscured by the plants. The car is on a road or pavement, and the scene has a slightly blurred or distorted effect, giving it a surreal or dreamlike quality.",10,car,0.2204,0.3279,0.0828

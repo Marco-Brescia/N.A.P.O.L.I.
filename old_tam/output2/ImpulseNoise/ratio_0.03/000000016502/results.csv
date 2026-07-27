@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on top of a rocky hill. The sky is blue with some clouds, and there are many small, white dots scattered throughout the sky, which could be birds or insects. The sheep is white with black markings on its face and legs. The hill is covered with green grass, and there are some rocks around the sheep.",4,sheep,0.0641,0.0562,0.1866

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is seen from below, and it appears to be a commercial jet. The plane has two engines on its wings, and it is flying against a clear blue sky. The plane's body is dark, and the wings are spread out, showing the plane's shape and structure.",4,plane,0.0391,0.0392,0.1602

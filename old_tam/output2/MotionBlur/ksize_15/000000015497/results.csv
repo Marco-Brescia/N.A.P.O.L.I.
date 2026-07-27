@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","The image shows a cat lying on a dark surface. The cat has a mix of brown, white, and black fur. It is looking directly at the camera with a calm expression. To the left of the cat, there is a small, round object that appears to be a toy or a piece of food. The background is dark, making the cat and the toy stand out more prominently.",4,cat,0.5697,0.485,0.0454

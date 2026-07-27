@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on the ground. The cat has a white body with some brown patches, and it appears to be looking up. The background is blurred, making it difficult to see any details.",4,cat,0.3244,0.3986,0.1005

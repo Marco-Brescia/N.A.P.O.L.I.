@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","The image shows a black cat standing on its hind legs, holding a green bottle with its front paws. The cat appears to be in a playful or curious mood, as if it's trying to drink from the bottle. The background is blurred, making it difficult to see any specific details, but it seems to be an indoor setting with some furniture and decorations. The overall scene has a whimsical and playful feel.",5,cat,0.3463,0.4338,0.0328

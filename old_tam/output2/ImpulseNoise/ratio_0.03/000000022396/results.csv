@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is in the middle of the picture, and it's flying high up in the sky. The sky is blue, and there are many small, white dots scattered throughout the image, which could be clouds or other small objects in the sky. In the bottom left corner of the image, there is a bright, orange object that looks like the sun or a bright light.",4,plane,0.0623,0.044,0.1956

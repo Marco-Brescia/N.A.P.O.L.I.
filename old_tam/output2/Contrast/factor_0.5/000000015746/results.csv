@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","The image shows a red fire hydrant in a grassy area. The hydrant has black caps on its top and bottom, and it is surrounded by green grass and some plants. In the background, there is a white house with a roof and some trees. The sky appears to be overcast.","[5, 6, 7]",fire hydrant,0.0897,0.1399,0.1071

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat standing on a surface. The cat has a white and brown coat. The background appears to be a brick wall, and there are many small, white dots scattered throughout the image, which could be snow or small particles. The overall scene gives the impression of a snowy or snowy-like environment.",4,cat,0.3732,0.3718,0.0676

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000022396,"Describe this image in detail, use simple terms","The image shows an airplane flying in the sky. The airplane is in the upper right corner of the picture, and it appears to be a commercial jet. The background is a cloudy or foggy sky, with a large, round, and somewhat blurry object in the foreground. This object could be a satellite or a large cloud. The overall scene gives a sense of a cloudy day with the airplane flying through the clouds.",4,airplane,0.0562,0.0554,0.1877

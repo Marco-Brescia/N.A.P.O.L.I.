@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a toilet sitting on top of a large, rough, brown log. The log has a textured surface with cracks and uneven edges. The toilet is white and has a standard design with a cistern and a bowl. The log is placed on a patch of grass and some dirt, and there is a fence and some trees in the background.",4,toilet,0.4019,0.2421,0.119

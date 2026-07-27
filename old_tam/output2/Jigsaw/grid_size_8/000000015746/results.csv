@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015746,"Describe this image in detail, use simple terms","This image is a collage of several photos of a fire hydrant. The fire hydrant is red and has a black top. The background shows green grass and some trees. The collage is arranged in a grid pattern, with each photo showing a different angle or part of the hydrant. The overall theme is a close-up view of the fire hydrant.","[10, 11, 12]",fire hydrant,0.1799,0.1853,0.0389

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane has a blue and white color scheme with some red and yellow accents. The wings are large and have a rectangular shape. The plane has two engines, one on each wing. The sky in the background is blue with some white clouds. The plane appears to be in motion, as it is slightly blurred, giving it a sense of speed.",4,plane,0.0839,0.0737,0.1123

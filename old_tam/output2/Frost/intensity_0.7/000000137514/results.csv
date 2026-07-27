@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a surface. The cat has a gray and white fur pattern, and it appears to be looking down or to the side. The surface the cat is on is textured, possibly made of stone or a similar material. There are also some transparent objects, possibly glass or plastic, in the background. The overall scene has a somewhat blurry or out-of-focus quality.",4,cat,0.4542,0.4751,0.0764

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms",The image shows a bear walking through grass. The bear has a fluffy coat and is looking directly at the camera. The grass around the bear is green and appears to be dry. The bear's fur is light brown or beige.,4,bear,0.4659,0.7385,0.0137

@@ -1,0 +1,3 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000179285,"Describe this image in detail, use simple terms","The image shows a tennis racket with a tennis ball on it. The racket is blue and has the brand ""HEAD"" written on it. The tennis ball is green and has the word ""Wilson"" written on it. The background is green, which is typical for a tennis court.",9,ball,0.0886,0.0903,0.1687
+000000179285,"Describe this image in detail, use simple terms","The image shows a tennis racket with a tennis ball on it. The racket is blue and has the brand ""HEAD"" written on it. The tennis ball is green and has the word ""Wilson"" written on it. The background is green, which is typical for a tennis court.",5,racket,0.2178,0.6793,0.0187

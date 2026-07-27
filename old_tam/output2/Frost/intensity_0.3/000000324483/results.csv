@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000324483,"Describe this image in detail, use simple terms","The image shows a cat sitting inside a green backpack. The cat has a fluffy coat with brown and white markings. It has long whiskers and is looking up, possibly curious about its surroundings. The backpack has a zipper and appears to be made of a mesh material. The background is blurred, but it seems to be an indoor setting with some objects and possibly a wall or a window.",4,cat,0.5136,0.4782,0.0389

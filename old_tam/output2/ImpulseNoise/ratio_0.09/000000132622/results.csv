@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear walking through grass. The bear has a thick, fluffy coat and is looking forward. The grass around the bear is green and appears to be wet, possibly from rain. The bear's fur is a mix of white and brown, and it has a black nose and eyes. The overall scene gives a sense of a natural, outdoor setting.",4,bear,0.4754,0.7552,0.013

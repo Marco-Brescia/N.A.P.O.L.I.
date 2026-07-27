@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","This image is a pixelated representation of a plane flying in the sky. The plane is depicted with a simple, blocky design, with wings, a tail, and a body. The background is a solid blue color, which is typical for a pixel art style. The plane appears to be in mid-flight, with its wings spread out and its body tilted slightly. The overall design is very simple and cartoonish.",9,plane,0.1063,0.0893,0.112

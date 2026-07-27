@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a desk with a telephone on it. The telephone is a Philips model, and it has a banana hanging from its cord. The banana is yellow and appears to be ripe. The desk has some papers and a pen on it. The background includes a computer monitor and some other office equipment.",22,banana,0.1189,0.1049,0.1586

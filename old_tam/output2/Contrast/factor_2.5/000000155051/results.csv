@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock with a black background. The clock face is illuminated, displaying the time. The clock has Roman numerals on the outer edge of the dial, and the hands of the clock are black. The clock reads approximately 10:10. There is a small white dot on the left side of the image, which could be a reflection or a light source.",4,clock,0.2298,0.2077,0.1504

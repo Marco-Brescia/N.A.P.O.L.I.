@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000163155,"Describe this image in detail, use simple terms","The image shows a cat sitting on a ledge or a step. The cat has a striped coat with shades of gray and white. It appears to be looking to its left, with its ears perked up. The background consists of a brick wall, and the overall scene is set outdoors.",4,cat,0.5427,0.3935,0.0638

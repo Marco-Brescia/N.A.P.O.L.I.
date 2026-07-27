@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","The image shows a cat sitting on a dark surface. The cat has a mix of brown, white, and black fur. In front of the cat, there is a piece of ice cream on a stick. The ice cream is partially visible, and the cat seems to be looking at it. The overall lighting in the image is low, making it difficult to see the details clearly.",4,cat,0.548,0.4906,0.0431

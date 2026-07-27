@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","This image shows a plane flying in the sky. The plane is shown from above, and it appears to be a silhouette against a blue sky filled with tiny, white dots. The dots are arranged in a way that creates the illusion of the plane flying through the sky. The dots are small and evenly spaced, giving the impression that the plane is moving through a cloud of tiny particles.",4,plane,0.0689,0.0571,0.1579

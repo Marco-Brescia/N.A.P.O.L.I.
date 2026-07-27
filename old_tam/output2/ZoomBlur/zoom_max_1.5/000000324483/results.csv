@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000324483,"Describe this image in detail, use simple terms","The image shows a cat with a long, white beard. The cat's fur is a mix of brown and white, and it has a slightly open mouth, showing its teeth. The cat is sitting on a green surface, and there are some blurred lines and patterns around it, giving the image a dreamy or abstract look.",4,cat,0.6021,0.5448,0.03

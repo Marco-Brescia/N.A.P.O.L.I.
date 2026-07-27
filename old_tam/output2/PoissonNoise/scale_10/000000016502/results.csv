@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on top of a rock. The sky is blue with some white clouds, and the rock is covered with green moss. The sheep is facing the camera, and it appears to be looking down at the camera.",4,sheep,0.0963,0.0544,0.1799

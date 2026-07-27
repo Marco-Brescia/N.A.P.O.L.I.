@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","The image shows a black cat standing on its hind legs next to a bottle. The cat is holding the bottle with its front paws, and the bottle has a green label with some red and yellow designs on it. The background appears to be indoors, with a white wall and some furniture visible. The cat's expression seems to be playful or curious.",5,cat,0.3998,0.4547,0.0308

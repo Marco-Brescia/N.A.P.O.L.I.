@@ -1,0 +1,3 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000138115,"Describe this image in detail, use simple terms","The image shows a person holding an orange. The person is wearing a black shirt. The background is blurred with a lot of white dots, making it difficult to see any details.",7,orange,0.6191,0.2867,0.0987
+000000138115,"Describe this image in detail, use simple terms","The image shows a person holding an orange. The person is wearing a black shirt. The background is blurred with a lot of white dots, making it difficult to see any details.",4,person,0.4204,0.7816,0.0097

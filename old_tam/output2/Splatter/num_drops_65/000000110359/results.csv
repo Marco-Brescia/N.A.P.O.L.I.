@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is in the foreground, and it's flying against a dark blue sky. The plane has wings and a tail, and it appears to be a commercial jet. The sky is filled with small, bright lights that resemble stars or lights from distant objects. The plane is flying at a low altitude, and the lights in the sky create a beautiful, almost ethereal effect.",4,plane,0.0429,0.0456,0.1667

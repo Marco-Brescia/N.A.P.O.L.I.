@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","The image shows a giraffe's head and neck. The giraffe is looking towards the camera, and its head is slightly tilted. The background is blurred, creating a dreamy effect. The giraffe's skin has a pattern of stripes, and its eyes are small and dark. The overall effect of the image is that it is a bit out of focus, giving it a soft and dreamy appearance.","[4, 5]",giraffe,0.3561,0.2867,0.0772

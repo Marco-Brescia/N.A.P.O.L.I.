@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image shows a sheep standing on top of a rocky hill. The sky is filled with a lot of small, glowing lights that resemble stars or lights from a distant source. The sheep is looking towards the sky, and the background is a dark blue with some lighter patches, possibly indicating clouds or a different layer of the sky. The overall scene has a dreamy, otherworldly feel.",4,sheep,0.081,0.042,0.2031

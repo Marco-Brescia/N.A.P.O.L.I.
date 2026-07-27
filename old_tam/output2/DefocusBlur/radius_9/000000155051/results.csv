@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock hanging on a wall. The clock face is illuminated, showing the time. The background is dark, making the clock stand out. There is also a small, blurry object in the bottom left corner of the image, which could be a light or a reflection.",4,clock,0.3454,0.2998,0.1223

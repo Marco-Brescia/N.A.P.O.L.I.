@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000045070,"Describe this image in detail, use simple terms","The image shows a young child riding a horse. The child is wearing a pink shirt and a black helmet. The horse is purple, and the child is sitting on a saddle. The background is green, indicating a forest or a park.",8,horse,0.3505,0.2867,0.1753

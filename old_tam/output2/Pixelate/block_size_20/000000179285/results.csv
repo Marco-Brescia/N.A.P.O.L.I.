@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000179285,"Describe this image in detail, use simple terms","This image appears to be a pixelated or blocky representation of a green object, possibly a ball or a piece of fruit. The pixelation makes it difficult to see the details clearly, but it seems to be a circular shape with a green color. The background is also green, which matches the color of the object.",19,ball,0.2407,0.1405,0.1558

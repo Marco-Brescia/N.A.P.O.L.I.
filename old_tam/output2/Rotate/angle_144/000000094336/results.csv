@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000094336,"Describe this image in detail, use simple terms","The image shows a cat looking up from inside a toilet. The cat has a brown and white fur pattern, and it appears to be inside the toilet bowl. The toilet is white and has a silver handle on the side. The cat is looking directly at the camera, and the perspective is from below, making it seem like the cat is looking up at the camera.",4,cat,0.5857,0.4545,0.0643

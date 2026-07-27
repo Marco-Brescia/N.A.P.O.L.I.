@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000183500,"Describe this image in detail, use simple terms","The image shows a small, vintage airplane flying in the sky. The airplane has two sets of wings, one on each side. The wings are red and white, with a red tail fin at the back. The airplane has two propellers, one on each wing. The propellers are yellow. The airplane has two seats, one on each side, and the seats are red. The airplane is flying against a cloudy sky.",7,airplane,0.162,0.1673,0.0802

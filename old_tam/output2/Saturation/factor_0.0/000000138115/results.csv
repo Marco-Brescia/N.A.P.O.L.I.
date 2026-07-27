@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000138115,"Describe this image in detail, use simple terms","The image is a black and white photo of an older man. He has a big, wide smile and is holding a white ball in his hand. The man is wearing a dark jacket and appears to be in a room with a plain background.",11,man,0.7019,0.7711,0.0101

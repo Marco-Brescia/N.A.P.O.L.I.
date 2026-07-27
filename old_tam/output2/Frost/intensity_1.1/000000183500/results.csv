@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000183500,"Describe this image in detail, use simple terms","This image shows a close-up of a textured surface, possibly a wall or a piece of fabric. The texture appears to be a combination of small, irregular shapes and patterns. There is a faint, curved line that looks like a bird's wing or a stylized drawing of a plane. The overall color of the image is a mix of dark and light shades, giving it a somewhat monochromatic appearance.",56,plane,0.1956,0.177,0.072

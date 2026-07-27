@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock and a moon in the sky. The clock is on the right side of the image, with its hands pointing towards the number 12. The moon is on the left side, appearing as a small, bright spot against the dark sky. The clock is illuminated, making it stand out against the night sky.",4,clock,0.3458,0.2817,0.1304

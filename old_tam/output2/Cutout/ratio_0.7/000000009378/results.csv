@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000009378,"Describe this image in detail, use simple terms","The image shows a person with long, curly hair wearing a beanie. They are standing in front of a crowd, and the person is partially obscured by a black rectangular shape. The background appears to be an indoor setting with dim lighting.",4,person,0.2519,0.3024,0.0778

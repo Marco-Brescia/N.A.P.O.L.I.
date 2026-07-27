@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000144114,"Describe this image in detail, use simple terms","The image shows a red and white airplane flying in the sky. The airplane has two wings and is in the process of taking off or landing. The wings are spread wide, and the airplane is moving quickly, as indicated by the motion blur. The background is a cloudy sky, and the airplane is positioned in the center of the image.",7,airplane,0.0757,0.1016,0.1071

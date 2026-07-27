@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000056545,"Describe this image in detail, use simple terms","The image shows a bird perched on a branch. The bird has a grayish-brown plumage with a slightly lighter underbelly. Its beak is short and sharp, and it has a small, rounded head. The bird appears to be in a tree with green leaves in the background. The bird's wings are partially visible, and it seems to be looking forward.",4,bird,0.3493,0.3704,0.0597

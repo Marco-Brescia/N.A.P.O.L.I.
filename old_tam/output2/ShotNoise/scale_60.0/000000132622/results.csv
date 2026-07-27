@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear in a grassy field. The bear has a thick, fluffy coat and is looking directly at the camera. The bear's fur is light brown with some darker patches. The grass around the bear is green and tall. The bear appears to be walking or standing still.",4,bear,0.5303,0.7227,0.015

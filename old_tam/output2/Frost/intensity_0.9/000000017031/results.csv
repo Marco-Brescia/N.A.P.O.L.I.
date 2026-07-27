@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","This image shows a giraffe's shadow on a surface. The shadow is blurry and not very clear, but you can still make out the outline of the giraffe's body. The surface appears to be a rough, textured one, possibly a stone or concrete. The overall color of the shadow is a mix of dark and light shades, giving it a somewhat grainy appearance.","[4, 5]",giraffe,0.4127,0.3022,0.0809

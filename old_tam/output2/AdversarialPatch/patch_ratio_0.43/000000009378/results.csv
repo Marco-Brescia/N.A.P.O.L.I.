@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000009378,"Describe this image in detail, use simple terms","The image shows a person with long, curly hair wearing a black shirt and a blue and white striped cap. They are holding a checkered object, which appears to be a piece of chalk or a similar item. The background is dark and blurred, suggesting that the focus is on the person and the object they are holding.",4,person,0.0624,0.222,0.0876

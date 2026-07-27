@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000179285,"Describe this image in detail, use simple terms","This image shows a tennis racket with a checkered pattern on the strings. The strings are black and white, forming a checkerboard pattern. The racket is blue and has a grid pattern on the frame. In the background, there is a blurred green surface, possibly a court or a grassy area.",5,racket,0.2547,0.6358,0.0229

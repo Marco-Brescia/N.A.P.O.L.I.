@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a tall building with a clock on its side. The building has many windows and appears to be made of brick or stone. The clock is large and round, and it is mounted on the side of the building. The sky in the background is clear and blue.",8,clock,0.0868,0.0501,0.2267

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000199940,"Describe this image in detail, use simple terms","The image shows a black cat with a blurry background. The cat appears to be in a room with some furniture and items. There is a bottle with a label that says ""NOTRO"" on it, and there is also a flower on the bottle. The background is out of focus, making it difficult to see specific details.",5,cat,0.3862,0.4691,0.0273

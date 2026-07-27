@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear in a grassy area. The bear has a thick, fluffy coat and is looking directly at the camera. The background is blurred, making the bear the main focus. There are small, greenish specks floating in the air around the bear, which could be droplets of water or small insects. The bear appears to be in a natural setting, possibly a forest or a grassy field.",4,bear,0.3331,0.7365,0.0146

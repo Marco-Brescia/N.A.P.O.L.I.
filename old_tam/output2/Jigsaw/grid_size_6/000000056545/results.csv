@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000056545,"Describe this image in detail, use simple terms","This image is a collage of several small, square pictures, each showing a bird perched on a branch. The birds are grayish in color and appear to be in a tree. The background is green, indicating the presence of leaves and branches. The collage is arranged in a grid pattern, with each square showing a different angle or perspective of the bird.",15,bird,0.2384,0.3026,0.0278

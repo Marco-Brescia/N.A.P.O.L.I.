@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","In this image, there is a sheep standing on top of a rock. The sheep has a white coat with some darker markings. The rock is large and has a rough texture. The background shows a clear blue sky with some clouds. The overall scene looks like it might be in a mountainous or rocky area.",7,sheep,0.084,0.0561,0.1822

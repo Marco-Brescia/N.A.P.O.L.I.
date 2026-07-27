@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a night scene with a clock and a moon. The clock is on the right side of the image, with the hands pointing to the number 12. The clock face is illuminated, showing Roman numerals. On the left side of the image, there is a small, bright moon. The background is dark, indicating it is nighttime.",8,clock,0.2482,0.2125,0.1599

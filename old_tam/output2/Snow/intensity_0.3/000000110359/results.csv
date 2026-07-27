@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is seen from above, with its wings spread wide and its tail pointing downwards. The sky is filled with small, white, star-like dots, giving the impression that the plane is flying through a snowy or icy environment. The plane appears to be a commercial jet, with its wings and body clearly visible.",4,plane,0.0551,0.0505,0.1559

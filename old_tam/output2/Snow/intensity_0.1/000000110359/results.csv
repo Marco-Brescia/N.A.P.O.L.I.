@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a plane flying in the sky. The plane is seen from below, with its wings spread wide and its tail pointing upwards. The sky is clear with a few small white dots, which could be stars or clouds. The plane appears to be a commercial jet, with its wings and tail fins clearly visible. The overall scene gives a sense of freedom and the vastness of the sky.",4,plane,0.0626,0.0418,0.1623

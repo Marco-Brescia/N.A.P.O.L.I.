@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","This image is a collage of several small pictures, arranged in a grid pattern. The pictures show a sheep standing on top of a rock, with a blue sky and some clouds in the background. The sheep is white and appears to be in a peaceful setting. The rock formations are rugged and have grass growing on them. The overall scene looks like a scenic landscape.",20,sheep,0.0495,0.0324,0.1705

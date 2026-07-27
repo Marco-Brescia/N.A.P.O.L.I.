@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a toilet sitting in a garden or yard. The toilet is white and has a checkered pattern on its lid. The toilet is placed next to a large, textured tree trunk, which appears to be a tree with a rough, bark-like texture. The ground around the toilet is covered with dry leaves and grass, and there is a wooden bench or table in the background. The overall scene suggests a rustic or natural setting.",4,toilet,0.1651,0.1872,0.1251

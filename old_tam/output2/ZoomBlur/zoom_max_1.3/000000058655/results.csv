@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000058655,"Describe this image in detail, use simple terms","The image shows a tall, red-brick building with a clock tower. The clock tower is quite prominent and has a large, ornate clock face on it. The building appears to be made of brick and has a classic architectural style. The sky in the background is clear and blue, indicating that the photo was taken during the day. The overall effect of the image is slightly blurred, giving it a dreamy or artistic appearance.",12,clock,0.056,0.0645,0.1999

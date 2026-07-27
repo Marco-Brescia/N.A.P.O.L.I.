@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a desk with a phone on it. The phone is black and has a cord attached to it. There is also a banana placed on the phone. The desk has some papers and a pen on it. The background is a bit blurry, but it appears to be an office setting. The image has a snowy or frosty effect, giving it a cold and wintry look.",27,banana,0.0834,0.1016,0.1635

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","This image shows a night sky with a large, round object in the upper right corner that looks like a clock. The clock has Roman numerals and a black face with a white background. Below the clock, there is a smaller, round object that appears to be a moon. The sky is dark, and there are many small, white dots scattered throughout the image, giving it a starry appearance.",21,clock,0.4549,0.3144,0.1296

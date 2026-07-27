@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000132622,"Describe this image in detail, use simple terms","The image shows a bear in a grassy field. The bear has a thick, fluffy coat and is looking directly at the camera. The bear's fur is a mix of white and brown, and it appears to be wet, possibly from recent rain. The grass around the bear is green and lush, and there are some small flowers or plants visible. The bear seems to be in a natural environment, possibly a forest or a meadow.",4,bear,0.508,0.766,0.0123

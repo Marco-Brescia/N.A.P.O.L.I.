@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000017031,"Describe this image in detail, use simple terms","This image is a collage of pictures of giraffes. The giraffes are in different positions and sizes, and they are surrounded by greenery. The collage is arranged in a checkerboard pattern, with each section showing a different giraffe.","[47, 48]",giraffe,0.1925,0.2263,0.0476

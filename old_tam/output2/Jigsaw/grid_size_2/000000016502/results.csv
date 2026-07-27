@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000016502,"Describe this image in detail, use simple terms","The image is a collage of three pictures. In the first picture, there is a sheep standing on top of a rocky hill. The sky is clear with a few clouds. In the second picture, the sheep is still on the hill, but it is looking down at the ground. In the third picture, the sheep is standing on the ground, looking up at the sky. The sheep appears to be enjoying the view.",17,sheep,0.0368,0.0309,0.2116

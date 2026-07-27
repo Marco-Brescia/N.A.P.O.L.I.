@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000167540,"Describe this image in detail, use simple terms","The image shows a small airplane flying in the sky. The airplane has two wings and four propellers. The background is a blurred, snowy or icy landscape, giving the impression that the airplane is flying over a winter or cold environment. The image has a high-contrast, almost surreal quality to it, with the airplane appearing to be floating in the air.",5,airplane,0.0964,0.107,0.1006

@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image shows a street scene with a few cars parked along the side of the road. There is an orange fruit, possibly an orange, lying on the ground in the middle of the street. The fruit is partially covered by a black square shape, which makes it look like it's floating or floating in the air. The background shows trees and a cloudy sky, indicating it might be a fall day.",21,orange,0.2377,0.1856,0.1222

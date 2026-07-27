@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","The image shows a cat lying on a dark surface. The cat has a white and brown coat with green eyes. It appears to be playing or resting with its paws on a toy or a piece of string. The background is dark, making the cat and the toy stand out.",4,cat,0.6199,0.5294,0.0391

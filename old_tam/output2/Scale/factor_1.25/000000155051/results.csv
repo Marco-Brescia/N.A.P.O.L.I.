@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000155051,"Describe this image in detail, use simple terms","The image shows a clock and the moon in the night sky. The clock has Roman numerals on its face, indicating the time. The clock face is illuminated, showing the time as approximately 10:10. The moon is visible in the lower left corner of the image, appearing bright and round. The background is dark, suggesting it is nighttime.",4,clock,0.2448,0.2412,0.1504

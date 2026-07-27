@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000110359,"Describe this image in detail, use simple terms","The image shows a large airplane flying in the sky. The airplane is seen from a bird's-eye view, with its wings spread wide and its tail fin visible. The sky is filled with tiny, white dots, which appear to be stars. The airplane is surrounded by these stars, creating a striking contrast between the dark silhouette of the airplane and the bright, sparkling background.",5,airplane,0.0597,0.0526,0.1639

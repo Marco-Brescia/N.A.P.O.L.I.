@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000015497,"Describe this image in detail, use simple terms","The image shows a cat. The cat has a white face and body, with brown and black patches. It appears to be looking down and might be playing with something. The background is dark, making the cat and its features stand out.",4,cat,0.5965,0.5207,0.0431

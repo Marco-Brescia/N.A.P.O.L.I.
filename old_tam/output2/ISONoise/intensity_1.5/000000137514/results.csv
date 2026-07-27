@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000137514,"Describe this image in detail, use simple terms","The image shows a cat sitting on a countertop next to a microwave. The cat has a mix of white and brown fur, and it appears to be resting or looking relaxed. The microwave is white and has a glass door. The background is a kitchen countertop.",4,cat,0.7296,0.6017,0.0527

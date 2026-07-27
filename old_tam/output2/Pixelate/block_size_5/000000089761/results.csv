@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000089761,"Describe this image in detail, use simple terms","The image shows a white toilet bowl placed on a gravel or stone surface. The toilet is surrounded by a natural, outdoor setting with some greenery in the background. The toilet has a pedestal base and a lid that is closed. The overall scene suggests a garden or backyard setting.",5,toilet,0.3614,0.259,0.1132

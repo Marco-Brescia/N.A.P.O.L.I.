@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000050679,"Describe this image in detail, use simple terms","The image is a collage of several orange slices arranged in a grid pattern. Each orange slice is placed on a textured surface, possibly a road or a parking lot. The background shows a parking lot with cars and trees, indicating an outdoor setting. The collage is made up of multiple smaller images, each showing a different angle or perspective of the same orange slice.",7,orange,0.3277,0.2259,0.0569

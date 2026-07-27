@@ -1,0 +1,2 @@
+img_id,prompt,output,target_token_id,readable_token,obj_iou,io_ratio,wdp
+000000012667,"Describe this image in detail, use simple terms","The image shows a desk with a phone on it. The phone is black and has a cord attached to it. There is a banana hanging off the cord, which is yellow and green. The desk has some other items on it, including a stapler and a box. The phone has a display screen on the right side, and the cord is coiled around the phone.",26,banana,0.3945,0.1193,0.1622
